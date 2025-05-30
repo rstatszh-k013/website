@@ -5,9 +5,9 @@ project:
 website:
   page-navigation: true
   title: "rstatsZH - Data Science mit R"
-  description: "Webseite des Kurses für Frühling 2025"
-  site-url: "https://rstatszh-k010.github.io/website"
-  repo-url: "https://github.com/rstatszh-k010/website"
+  description: "Webseite des Kurses für September 2025"
+  site-url: "https://rstatszh-k011.github.io/website"
+  repo-url: "https://github.com/rstatszh-k011/website"
   search: false
   page-footer: 
     left: | 
@@ -19,7 +19,7 @@ website:
         href: "mailto:datashop@statistik.zh.ch"
         aria-label: Email
       - icon: github
-        href: https://github.com/rstatszh-k010/website
+        href: https://github.com/rstatszh-k011/website
         aria-label: GitHub
   
   sidebar:
@@ -31,7 +31,7 @@ website:
     collapse-level: 1
     tools:
       - icon: github
-        href: https://github.com/rstatszh-k010/
+        href: https://github.com/rstatszh-k011/
         text: "GitHub Organisation"
     contents:
       - section: "Vorbereitung"
@@ -79,6 +79,8 @@ format:
       light: [litera, theme.scss]
     code-copy: true
     code-overflow: wrap
+    link-external-icon: true
+    link-external-newwindow: true
     toc: true
     mainfont: "Atkinson Hyperlegible"
     grid:
@@ -87,7 +89,7 @@ format:
       margin-width: 300px
     include-in-header: 
         - text: |
-            <script defer data-domain="rstatszh-k010.github.io/website" src="https://plausible.io/js/script.js"></script>
+            <script defer data-domain="rstatszh-k011.github.io/website" src="https://plausible.io/js/script.js"></script>
 
 execute: 
   freeze: auto

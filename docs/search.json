@@ -2854,6 +2854,13 @@
     "href": "folien/md-09-quarto.html#abbildung-querverweise",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Abbildung Querverweise",
+    "text": "Abbildung Querverweise\n\nMit Code\nTODO"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#abbildung-querverweise-1",
+    "href": "folien/md-09-quarto.html#abbildung-querverweise-1",
+    "title": "Erstellung von Berichten und Folien mit Quarto",
+    "section": "Abbildung Querverweise",
     "text": "Abbildung Querverweise\nDas Vorhandensein der Beschriftung (Blauer Pinguin) und der Bezeichnung (#fig-blue-penguin) machen diese Abbildung referenzierbar:\n\n\nMarkdown:\nSiehe @fig-blue-penguin für einen süssen blauen Pinguin.\n![Blauer Pinguin](img/md-09/blue-penguin.png){#fig-blue-penguin}\n\nAusgabe:\nSiehe Figure 2 für einen süssen blauen Pinguin.\n\n\n\n\n\n\nFigure 2: Blauer Pinguin"
   },
   {
