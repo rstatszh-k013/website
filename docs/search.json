@@ -1059,7 +1059,7 @@
     "href": "folien/md-02-datenvisualisierung.html#installation-auf-dem-dap",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Installation auf dem DAP",
-    "text": "Installation auf dem DAP\nUm in den vollen Genuss der R-Analyse Umgebung zu kommen, musst du im Serviceportal folgende Module bestellen:"
+    "text": "Installation auf dem DAP\nUm die komplette R-Toolbox auf dem DAP nutzen zu können, musst du im Serviceportal folgende Module bestellen:\n\n\n\n\n\n\n\nWichtige Hinweise wie ihr eure R-Installation auf dem DAP konfigurieren könnt, findet ihr auf zHub. Beachtet insbesondere dioe “Best practices”."
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#community",
@@ -1073,7 +1073,7 @@
     "href": "folien/md-02-datenvisualisierung.html#r-fachgruppe",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "R-Fachgruppe",
-    "text": "R-Fachgruppe\n\n\nAufgaben\n\nUpdates des R-Bundles\nWeiterentwicklung der Installation anhand eurer Bedürfnisse\nSupport bei Installationsproblemen\n\n\nVertretungen\n\nThomas Knecht (JI)\nPhilipp Bosch (JI)\nSarah Gerhard (BI)\nMiriam Hofstetter (VD)\nAndreas Gubler (BD)\nGianluca Macauda (GD)\nFabian Berger (SD)\nJörg Sintermann (BD)\nNina Schnyder (JI)\nGian-Marco Alt (BD)\nJoëlle Ninon Albrecht (JI)"
+    "text": "R-Fachgruppe\n\n\nAufgaben\n\nUpdates des R-Bundles\nWeiterentwicklung der Installation anhand eurer Bedürfnisse\nSupport bei Installationsproblemen\n\n\nVertretungen\n\nThomas Knecht (JI - STAT)\nPhilipp Bosch (JI - STAT)\nSarah Gerhard (BI)\nMiriam Hofstetter (VD)\nAndreas Gubler (BD)\nGianluca Macauda (GD)\nFabian Berger (SD)\nJörg Sintermann (BD)\nNatalie Wrede (JI - JUWE)\nGian-Marco Alt (BD)"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#ihr-seid-dran-fragen",
@@ -3587,5 +3587,12 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#installation-auf-dem-dap-ii",
+    "href": "folien/md-02-datenvisualisierung.html#installation-auf-dem-dap-ii",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Installation auf dem DAP (II)",
+    "text": "Installation auf dem DAP (II)\nDamit du auch auf dem DAP zwischen R & den Kursunterlagen auf Github kommunizieren kannst, brauchst du unbedingt noch Git auf deinem DAP. Auch hier löst du eine Bestellung im Serviceportal:\n\n\n\n\nSobald dir die Software zugewiesen wurde und alles auf dem DAP installiert ist, solltest du auch von deinem DAP R-Studio am Kurs teilnehmen können."
   }
 ]

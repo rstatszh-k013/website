@@ -10,7 +10,7 @@ format:
     transition: fade
     slide-number: true
     chalkboard: true
-footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
+    footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
 editor: source
 execute:
   freeze: auto
@@ -164,7 +164,7 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |
 
 ## Installation auf dem DAP
 
-Um in den vollen Genuss der R-Analyse Umgebung zu kommen, musst du im Serviceportal folgende Module bestellen:
+Um die komplette R-Toolbox auf dem DAP nutzen zu können, musst du im Serviceportal folgende Module bestellen:
 
 ::: columns
 ::: {.column width="30%"}
@@ -177,6 +177,23 @@ Um in den vollen Genuss der R-Analyse Umgebung zu kommen, musst du im Servicepor
 ![](img/md-02/serviceportal_RTools.PNG)
 
 ![](img/md-02/serviceportal_tinytex.PNG)
+
+Wichtige Hinweise wie ihr eure R-Installation auf dem DAP konfigurieren könnt, findet ihr auf [zHub](https://ktzuerich.sharepoint.com/sites/zh-informatik/SitePages/Datenanalyse-mit-R---R-Studio.aspx). Beachtet insbesondere dioe "Best practices". 
+:::
+:::
+
+## Installation auf dem DAP (II)
+
+Damit du auch auf dem DAP zwischen R & den Kursunterlagen auf Github kommunizieren kannst, brauchst du unbedingt noch Git auf deinem DAP. 
+Auch hier löst du eine Bestellung im Serviceportal:
+
+::: columns
+::: {.column width="50%"}
+![](img/md-02/git_for_windows_DAP.png){width="80%"}
+:::
+
+::: {.column width="50%"}
+Sobald dir die Software zugewiesen wurde und alles auf dem DAP installiert ist, solltest du auch von deinem DAP R-Studio am Kurs teilnehmen können. 
 :::
 :::
 
@@ -192,6 +209,9 @@ Im Kanal könnt ihr:
 -   Neue Infos zum R-Bundle erhalten
 -   Up-to-date bleiben was in der Community läuft
 
+![](img/md-02/r_channel_screenshot.png){width="80%" fig-align="center"}
+
+
 ## R-Fachgruppe {.scrollable}
 
 ::: columns
@@ -206,9 +226,9 @@ Aufgaben
 ::: {.column width="50%"}
 Vertretungen
 
--   Thomas Knecht (JI)
+-   Thomas Knecht (JI - STAT)
 
--   Philipp Bosch (JI)
+-   Philipp Bosch (JI - STAT)
 
 -   Sarah Gerhard (BI)
 
@@ -222,11 +242,10 @@ Vertretungen
 
 -   Jörg Sintermann (BD)
 
--   Nina Schnyder (JI)
+-   Natalie Wrede (JI - JUWE)
 
 -   Gian-Marco Alt (BD)
 
--   Joëlle Ninon Albrecht (JI)
 :::
 :::
 
