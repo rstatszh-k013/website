@@ -41,7 +41,7 @@ Die Daten müssen nicht bereits in den vorgegeben Kriterien der [Leitlinien des 
 
 ## Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud
 
-1. Öffne die GitHub Organisation für den Kurs <https://github.com/rstatszh-k010>
+1. Öffne die GitHub Organisation für den Kurs <https://github.com/rstatszh-k011>
 
 2. Rechts neben dem Feld ["Find a repository"]{.highlight-yellow} klicke auf den grünen ["New"]{.highlight-yellow} Button.
 
@@ -51,7 +51,7 @@ Die Daten müssen nicht bereits in den vorgegeben Kriterien der [Leitlinien des 
 
 5. Im Feld ["Quick setup"]{.highlight-yellow} klicke auf das Clipboard neben der HTTPs URL.
 
-6. Öffne den rstatszh-k010 Arbeitsbereich (Workspace) auf Posit Cloud <https://posit.cloud/spaces/591694/content/all?sort=name_asc>
+6. Öffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud <https://posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV>
 
 7. Klicke auf "New Project" > "New Project from Git Repository"
 
@@ -123,7 +123,7 @@ Wir empfehlen das R-Paket `here` zu verwenden, um auf Dateien in deinem Projekt 
 
 ## Schritt 6: Übertrage deine Änderungen auf GitHub
 
-1. Überprüfe ob dein Projekt den gleichen Aufbau hat wie das Projekt von Rainbow Train: <https://github.com/rstatszh-k010/projekt-rainbow-train>
+1. Überprüfe ob dein Projekt den gleichen Aufbau hat wie das Projekt von Rainbow Train: <https://github.com/rstatszh-k011/projekt-rainbow-train>
 
 2. Falls der Aufbau nicht übereinstimmt, nehme nochmals Veränderungen vor.
 
@@ -149,7 +149,7 @@ Wir empfehlen das R-Paket `here` zu verwenden, um auf Dateien in deinem Projekt 
 
 1. Öffne [github.com](https://github.com/) in deinem Browser.
 
-2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k010](https://github.com/rstatszh-k010)
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k011](https://github.com/rstatszh-k011)
 
 3. Finde das Repository [projekt-USERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
 

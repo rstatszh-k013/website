@@ -10,7 +10,7 @@ In dieser Übung erstellt ihr ein neues Repository wie in [Zusatzaufgabe 2 aus M
 
 ## Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud
 
-1. Öffne die GitHub Organisation für den Kurs <https://github.com/rstatszh-k010>
+1. Öffne die GitHub Organisation für den Kurs <https://github.com/rstatszh-k011>
 
 2. Rechts neben dem Feld ["Find a repository"]{.highlight-yellow} klicke auf den grünen ["New"]{.highlight-yellow} Button.
 
@@ -20,7 +20,7 @@ In dieser Übung erstellt ihr ein neues Repository wie in [Zusatzaufgabe 2 aus M
 
 5. Im Feld ["Quick setup"]{.highlight-yellow} klicke auf das Clipboard neben der HTTPs URL.
 
-6. Öffne den rstatszh-k010 Arbeitsbereich (Workspace) auf Posit Cloud: [posit.cloud/spaces/591694/content/](https://posit.cloud/spaces/591694/content/)
+6. Öffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: [posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV](https://posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV)
 
 7. Klicke auf "New Project" > "New Project from Git Repository"
 
@@ -85,7 +85,7 @@ gss_cat |>
 
 1. Öffne [github.com](https://github.com/) in deinem Browser.
 
-2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k010](https://github.com/rstatszh-k010)
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k011](https://github.com/rstatszh-k011)
 
 3. Finde das Repository [r4ds-uebungen-USERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
 

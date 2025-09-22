@@ -34,7 +34,7 @@
     "href": "index.html#was-muss-ich-vor-tag-1-vorbereiten",
     "title": "Vorbereitung - rstatsZH Kurs 011",
     "section": " Was muss ich vor Tag 1 vorbereiten?",
-    "text": "Was muss ich vor Tag 1 vorbereiten?\nArbeite durch die folgenden Schritte:\n\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R for Data Science.\nSchritt 4: Fülle den Fragebogen bis Freitag, den 19. September 2025 aus.",
+    "text": "Was muss ich vor Tag 1 vorbereiten?\nArbeite durch die folgenden Schritte:\n\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und trete dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R for Data Science.\nSchritt 4: Fülle den Fragebogen bis Freitag, den 19. September 2025 aus.",
     "crumbs": [
       "Vorbereitung"
     ]
@@ -238,7 +238,7 @@
     "href": "module/md-01.html",
     "title": "Modul 1",
     "section": "",
-    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernenden können die vier Fenster der RStudio IDE identifizieren.",
+    "text": "[1] \"de_DE.UTF-8\"\n\n\n\n\nDie Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernenden können die vier Fenster der RStudio IDE identifizieren.",
     "crumbs": [
       "Modul 01"
     ]
@@ -248,7 +248,7 @@
     "href": "module/md-01.html#lernziele",
     "title": "Modul 1",
     "section": "",
-    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernenden können die vier Fenster der RStudio IDE identifizieren.",
+    "text": "[1] \"de_DE.UTF-8\"\n\n\n\n\nDie Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernenden können die vier Fenster der RStudio IDE identifizieren.",
     "crumbs": [
       "Modul 01"
     ]
@@ -278,7 +278,7 @@
     "href": "module/md-01.html#zusatzaufgaben",
     "title": "Modul 1",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-09-23.\n\nZusatzaufgabe 1: Git configuration\n\nVielen Dank für die Bearbeitung der Aufgabe.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 30. September 2025.\n\nZusatzaufgabe 1: Git configuration\n\nVielen Dank für die Bearbeitung der Aufgabe.",
     "crumbs": [
       "Modul 01"
     ]
@@ -352,7 +352,7 @@
     "href": "zusatzaufgaben/md-06/za-06-01-abschlussprojekt.html#fragen-braucht-es-unterstützung",
     "title": "Abschlussprojekt",
     "section": "Fragen? Braucht es Unterstützung?",
-    "text": "Fragen? Braucht es Unterstützung?\nDu hast nun gelernt wie du mich mittels GitHub Issues erreichen kannst. Falls du Fragen hast, zögere nicht mich zu kontaktieren. Ich bin gerne bereit dir zu helfen.\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\n\n… eröffne eine Issue."
+    "text": "Fragen? Braucht es Unterstützung?\nDu hast nun gelernt wie du mich mittels GitHub Issues erreichen kannst. Falls du Fragen hast, zögere nicht mich zu kontaktieren. Ich bin gerne bereit dir zu helfen.\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\n\n… eröffne eine Issue."
   },
   {
     "objectID": "zusatzaufgaben/md-09/za-09-01-abschlussprojekt.html",
@@ -373,7 +373,7 @@
     "href": "zusatzaufgaben/md-09/za-09-01-abschlussprojekt.html#fragen-braucht-es-unterstützung",
     "title": "Abschlussprojekt",
     "section": "Fragen? Braucht es Unterstützung?",
-    "text": "Fragen? Braucht es Unterstützung?\nDu hast nun gelernt wie du mich mittels GitHub Issues erreichen kannst. Falls du Fragen hast, zögere nicht mich zu kontaktieren. Ich bin gerne bereit dir zu helfen.\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\n\n… eröffne eine Issue."
+    "text": "Fragen? Braucht es Unterstützung?\nDu hast nun gelernt wie du mich mittels GitHub Issues erreichen kannst. Falls du Fragen hast, zögere nicht mich zu kontaktieren. Ich bin gerne bereit dir zu helfen.\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\n\n… eröffne eine Issue."
   },
   {
     "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html",
@@ -408,7 +408,7 @@
     "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-1-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud",
     "title": "Abschlussprojekt",
     "section": "Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud",
-    "text": "Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k010\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\nIm Feld “Repository name” schreibe projekt-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\nSkrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) auf Posit Cloud https://posit.cloud/spaces/591694/content/all?sort=name_asc\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
+    "text": "Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k011\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\nIm Feld “Repository name” schreibe projekt-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\nSkrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud https://posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
   },
   {
     "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-2-erstelle-neue-ordner",
@@ -443,28 +443,28 @@
     "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-6-übertrage-deine-änderungen-auf-github",
     "title": "Abschlussprojekt",
     "section": "Schritt 6: Übertrage deine Änderungen auf GitHub",
-    "text": "Schritt 6: Übertrage deine Änderungen auf GitHub\n\nÜberprüfe ob dein Projekt den gleichen Aufbau hat wie das Projekt von Rainbow Train: https://github.com/rstatszh-k010/projekt-rainbow-train\nFalls der Aufbau nicht übereinstimmt, nehme nochmals Veränderungen vor.\nSobald du den Aufbau abgeschlossen hast, navigiere zum Git-Bereich im Fenster oben rechts.\nAktiviere die Kontrollkästchen neben allen Dateien, um sie für den Commit vorzubereiten.\nKlicke auf die Schaltfläche “Commit”.\nGib eine Commit-Nachricht in das Feld “Commit Message” ein (z.B. Projekt aufsetzen).\nKlicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.\nKlicke auf die Schaltfläche “Push”.\nGib deinen GitHub-Benutzernamen im Feld Username an.\nGib deinen GitHub Personal Access Token (PAT) im Feld “Password” ein.\nDas Fenster kann geschlossen werden."
+    "text": "Schritt 6: Übertrage deine Änderungen auf GitHub\n\nÜberprüfe ob dein Projekt den gleichen Aufbau hat wie das Projekt von Rainbow Train: https://github.com/rstatszh-k011/projekt-rainbow-train\nFalls der Aufbau nicht übereinstimmt, nehme nochmals Veränderungen vor.\nSobald du den Aufbau abgeschlossen hast, navigiere zum Git-Bereich im Fenster oben rechts.\nAktiviere die Kontrollkästchen neben allen Dateien, um sie für den Commit vorzubereiten.\nKlicke auf die Schaltfläche “Commit”.\nGib eine Commit-Nachricht in das Feld “Commit Message” ein (z.B. Projekt aufsetzen).\nKlicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.\nKlicke auf die Schaltfläche “Push”.\nGib deinen GitHub-Benutzernamen im Feld Username an.\nGib deinen GitHub Personal Access Token (PAT) im Feld “Password” ein.\nDas Fenster kann geschlossen werden."
   },
   {
     "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-7-eröffne-ein-issue-auf-github",
     "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-7-eröffne-ein-issue-auf-github",
     "title": "Abschlussprojekt",
     "section": "Schritt 7: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 7: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Daten für das Abschlussprojekt ausgewählt”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse mir ein Kommentar, falls du möchtest."
+    "text": "Schritt 7: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Daten für das Abschlussprojekt ausgewählt”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse mir ein Kommentar, falls du möchtest."
   },
   {
     "objectID": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html",
     "href": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html",
     "title": "Daten Visualisierung mit ggplot2",
     "section": "",
-    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-02a-erstelle-ein-diagramm.qmd\nmd-02b-daten-zusammenfassen.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
+    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-02a-erstelle-ein-diagramm.qmd\nmd-02b-daten-zusammenfassen.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
   },
   {
     "objectID": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html#schritt-1-klone-das-repository-für-modul-2",
     "href": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html#schritt-1-klone-das-repository-für-modul-2",
     "title": "Daten Visualisierung mit ggplot2",
     "section": "",
-    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-02a-erstelle-ein-diagramm.qmd\nmd-02b-daten-zusammenfassen.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
+    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-02a-erstelle-ein-diagramm.qmd\nmd-02b-daten-zusammenfassen.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
   },
   {
     "objectID": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html#schritt-2-übertrage-deine-änderungen-auf-github",
@@ -478,7 +478,7 @@
     "href": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html#schritt-3-eröffne-ein-issue-auf-github",
     "title": "Daten Visualisierung mit ggplot2",
     "section": "Schritt 3: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage."
+    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage."
   },
   {
     "objectID": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html",
@@ -499,7 +499,7 @@
     "href": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-2-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud",
     "title": "Mit OGD Daten arbeiten",
     "section": "Schritt 2: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud",
-    "text": "Schritt 2: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k010\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\n\n\n\nIm Feld “Repository name” schreibe ogd-daten-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\n\n\n\nSkrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\n\n\n\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\n\n\n\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) auf Posit Cloud: posit.cloud/spaces/591694/content/\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
+    "text": "Schritt 2: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k011\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\n\n\n\nIm Feld “Repository name” schreibe ogd-daten-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\n\n\n\nSkrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\n\n\n\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\n\n\n\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
   },
   {
     "objectID": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-3-lade-die-daten-in-das-projekt-auf-posit-cloud",
@@ -527,7 +527,7 @@
     "href": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-6-eröffne-ein-issue-auf-github",
     "title": "Mit OGD Daten arbeiten",
     "section": "Schritt 6: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 6: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository ogd-daten-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
+    "text": "Schritt 6: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository ogd-daten-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
   },
   {
     "objectID": "zusatzaufgaben/md-04/za-04-02-odg-erkunden.html",
@@ -541,7 +541,7 @@
     "href": "zusatzaufgaben/md-04/za-04-02-odg-erkunden.html#schritt-1-öffne-das-projekt-in-der-posit-cloud",
     "title": "OGD importieren und erkunden",
     "section": "Schritt 1: öffne das Projekt in der Posit Cloud",
-    "text": "Schritt 1: öffne das Projekt in der Posit Cloud\n\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) auf Posit Cloud: posit.cloud/spaces/591694/content/\nFinde das Projekt ogd-daten-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf das Projekt um es zu öffnen."
+    "text": "Schritt 1: öffne das Projekt in der Posit Cloud\n\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV\nFinde das Projekt ogd-daten-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf das Projekt um es zu öffnen."
   },
   {
     "objectID": "zusatzaufgaben/md-04/za-04-02-odg-erkunden.html#schritt-2-daten-importieren",
@@ -562,7 +562,7 @@
     "href": "zusatzaufgaben/md-04/za-04-02-odg-erkunden.html#schritt-4-eröffne-ein-issue-auf-github",
     "title": "OGD importieren und erkunden",
     "section": "Schritt 4: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository ogd-daten-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zwei Fragen an den Datensatz”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce, deine Fragen an den Datensatz, und mögliche Hürden bei welchen ich dich unterstützen könnte."
+    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository ogd-daten-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zwei Fragen an den Datensatz”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce, deine Fragen an den Datensatz, und mögliche Hürden bei welchen ich dich unterstützen könnte."
   },
   {
     "objectID": "folien/md-05-datumswerte.html#lernziele-für-diese-woche",
@@ -667,7 +667,7 @@
     "href": "folien/md-05-datumswerte.html#danke-1",
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "folien/md-03-datentransformation.html#lernziele-für-diese-woche",
@@ -688,7 +688,7 @@
     "href": "folien/md-03-datentransformation.html#dplyr-rules",
     "title": "Daten Transformation mit dplyr",
     "section": "dplyr rules",
-    "text": "dplyr rules\nRegeln der dplyr-Funktionen:\n\n\nDas erste Argument ist immer ein Dataframe.\nNachfolgende Argumente sagen, was mit diesem Dataframe geschehen soll.\nGibt immer einen Dataframe zurück.\nNichts wird an Ort und Stelle verändert."
+    "text": "dplyr rules\nRegeln der dplyr-Funktionen:\n\nDas erste Argument ist immer ein Dataframe.\nNachfolgende Argumente sagen, was mit diesem Dataframe geschehen soll.\nGibt immer einen Dataframe zurück.\nNichts wird an Ort und Stelle verändert."
   },
   {
     "objectID": "folien/md-03-datentransformation.html#funktionen-argumente",
@@ -814,7 +814,7 @@
     "href": "folien/md-03-datentransformation.html#danke-1",
     "title": "Daten Transformation mit dplyr",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "folien/md-04-daten-management.html#lernziele-für-diese-woche",
@@ -828,14 +828,14 @@
     "href": "folien/md-04-daten-management.html#variablen-typen",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Variablen Typen",
-    "text": "Variablen Typen\n\n\n\nNumerisch\nDiskrete Variablen\n\nnicht negative\nzählbare\nganze Zahlen\nz.B. Anzahl Schüler, Würfelwurf\n\nStetige (kontinuierliche) Variablen\n\nunendliche Anzahl von Werten\nzwischen zwei Werten\nauch Datums/Uhrzeitwerte\nz.B. Länge, Gewicht, Grösse\n\n\nNicht numerisch\nKategoriale Variablen\n\nendliche Anzahl von Werten\neindeutige Gruppen (z.B. EU Länder)\nordinal, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)"
+    "text": "Variablen Typen\n\n\nNumerisch\nDiskrete Variablen\n\nnicht negative\nzählbare\nganze Zahlen\nz.B. Anzahl Schüler, Würfelwurf\n\nStetige (kontinuierliche) Variablen\n\nunendliche Anzahl von Werten\nzwischen zwei Werten\nauch Datums/Uhrzeitwerte\nz.B. Länge, Gewicht, Grösse\n\n\nNicht numerisch\nKategoriale Variablen\n\nendliche Anzahl von Werten\neindeutige Gruppen (z.B. EU Länder)\nordinal, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)"
   },
   {
     "objectID": "folien/md-04-daten-management.html#ordinal-skalierte-daten-in-r",
     "href": "folien/md-04-daten-management.html#ordinal-skalierte-daten-in-r",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "ordinal skalierte Daten in R",
-    "text": "ordinal skalierte Daten in R\n\n\n\n\nordinal skalierte Daten sind kategoriale Daten, die eine logische Reihenfolge aufweisen\nin R werden Text-Daten standardmässig als character gespeichert\nBeurteilungen: sehr gut, gut, mittel, schlecht, sehr schlecht\ndie Reihenfolge von Text Daten ist aplhabetisch\n\n\n\ndf |&gt; \n    arrange(beurteilung) \n\n# A tibble: 5 × 2\n  name    beurteilung  \n  &lt;chr&gt;   &lt;chr&gt;        \n1 Bob     gut          \n2 Charlie mittel       \n3 Diana   schlecht     \n4 Alice   sehr gut     \n5 Eve     sehr schlecht"
+    "text": "ordinal skalierte Daten in R\n\n\n\nordinal skalierte Daten sind kategoriale Daten, die eine logische Reihenfolge aufweisen\nin R werden Text-Daten standardmässig als character gespeichert\nBeurteilungen: sehr gut, gut, mittel, schlecht, sehr schlecht\ndie Reihenfolge von Text Daten ist aplhabetisch\n\n\n\ndf |&gt; \n    arrange(beurteilung) \n\n# A tibble: 5 × 2\n  name    beurteilung  \n  &lt;chr&gt;   &lt;chr&gt;        \n1 Bob     gut          \n2 Charlie mittel       \n3 Diana   schlecht     \n4 Alice   sehr gut     \n5 Eve     sehr schlecht"
   },
   {
     "objectID": "folien/md-04-daten-management.html#ordinal-skalierte-daten-in-r-1",
@@ -996,7 +996,7 @@
     "href": "folien/md-04-daten-management.html#danke-1",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#section",
@@ -1017,7 +1017,7 @@
     "href": "folien/md-02-datenvisualisierung.html#stack-overflow",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Stack Overflow",
-    "text": "Stack Overflow\n\n\n\nWas ist das?\n\nDas größte Unterstützungsnetzwerk für (Coding-)Probleme\nKann anfangs einschüchternd sein\nUpvote-System\n\n\n\n\nArbeitsablauf\n\nLies dir zuerst kurz die Frage durch, die gepostet wurde.\nLies dir dann die Antwort durch, die als “richtig” markiert wurde.\nLies dir dann eine oder zwei weitere Antworten mit vielen Zustimmungen durch.\nSieh dir dann die “linked posts” an."
+    "text": "Stack Overflow\n\n\nWas ist das?\n\nDas größte Unterstützungsnetzwerk für (Coding-)Probleme\nKann anfangs einschüchternd sein\nUpvote-System\n\n\n\n\nArbeitsablauf\n\nLies dir zuerst kurz die Frage durch, die gepostet wurde.\nLies dir dann die Antwort durch, die als “richtig” markiert wurde.\nLies dir dann eine oder zwei weitere Antworten mit vielen Zustimmungen durch.\nSieh dir dann die “linked posts” an."
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#tipps-für-ai-werkzeuge",
@@ -1060,6 +1060,13 @@
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Installation auf dem DAP",
     "text": "Installation auf dem DAP\nUm die komplette R-Toolbox auf dem DAP nutzen zu können, musst du im Serviceportal folgende Module bestellen:\n\n\n\n\n\n\n\nWichtige Hinweise wie ihr eure R-Installation auf dem DAP konfigurieren könnt, findet ihr auf zHub. Beachtet insbesondere dioe “Best practices”."
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#installation-auf-dem-dap-ii",
+    "href": "folien/md-02-datenvisualisierung.html#installation-auf-dem-dap-ii",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Installation auf dem DAP (II)",
+    "text": "Installation auf dem DAP (II)\nDamit du auch auf dem DAP zwischen R & den Kursunterlagen auf Github kommunizieren kannst, brauchst du unbedingt noch Git auf deinem DAP. Auch hier löst du eine Bestellung im Serviceportal:\n\n\n\n\nSobald dir die Software zugewiesen wurde und alles auf dem DAP installiert ist, solltest du auch von deinem DAP R-Studio am Kurs teilnehmen können."
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#community",
@@ -1199,7 +1206,7 @@
     "href": "folien/md-02-datenvisualisierung.html#variablen-typen",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Variablen Typen",
-    "text": "Variablen Typen\n\n\n\nNumerisch\nDiskrete Variablen\n\nnicht negative\nzählbare\nganze Zahlen\nz.B. Anzahl Schüler, Würfelwurf\n\nStetige (kontinuierliche) Variablen\n\nunendliche Anzahl von Werten\nzwischen zwei Werten\nauch Datums/Uhrzeitwerte\nz.B. Länge, Gewicht, Grösse\n\n\nNicht numerisch\nKategoriale Variablen\n\nendliche Anzahl von Werten\neindeutige Gruppen (z.B. EU Länder)\nordinal, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)"
+    "text": "Variablen Typen\n\n\nNumerisch\nDiskrete Variablen\n\nnicht negative\nzählbare\nganze Zahlen\nz.B. Anzahl Schüler, Würfelwurf\n\nStetige (kontinuierliche) Variablen\n\nunendliche Anzahl von Werten\nzwischen zwei Werten\nauch Datums/Uhrzeitwerte\nz.B. Länge, Gewicht, Grösse\n\n\nNicht numerisch\nKategoriale Variablen\n\nendliche Anzahl von Werten\neindeutige Gruppen (z.B. EU Länder)\nordinal, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#histogramm",
@@ -1241,7 +1248,7 @@
     "href": "folien/md-02-datenvisualisierung.html#danke-1",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "folien/md-10-funktionen.html#lernziele-für-diese-woche",
@@ -1493,7 +1500,7 @@
     "href": "folien/md-10-funktionen.html#danke-1",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "folien/md-06-daten-typen.html#modul-5---zusatzaufgabe-3",
@@ -1675,7 +1682,7 @@
     "href": "folien/md-06-daten-typen.html#danke-1",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "abschlussprojekt/index.html",
@@ -1832,21 +1839,21 @@
     "href": "folien/md-01-willkommen.html#verhaltenskodex",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Verhaltenskodex",
-    "text": "Verhaltenskodex\n\n\n\nDiversität und Inklusion\nNamen und Pronomen\nLernprozess\nrstatszh-k010.github.io/website/verhaltenskodex.html\n\n\n\n\n\n\n\n\n\nPhoto by: Sharon McCutcheon\n\n\nDiversität und Inklusion sind auch mir sehr wichtig und mit einem Verhaltenskodex für unsere gemeinsame Zusammenarbeit versuche ich dies zu unterstützen. Bitte nehmt euch etwas Zeit diesen zu lesen. Ihr findet den Verhaltenskodex auf der Webseite für den Kurs.\nIch spreche euch basierend auf eurem Namen an, lasst mich wissen falls du einen anderen Namen und Pronomen bevorzugst.\nIch bin selbst in einem Prozess mehr pber verschiedene Perspektiven und Identitäten zu lernen. Sollte ich im Unterricht etwas sagen, dass dir Unbehagen bereitet, lass es mich bitte wissen."
+    "text": "Verhaltenskodex\n\n\n\nDiversität und Inklusion\nNamen und Pronomen\nLernprozess\nrstatszh-k011.github.io/website/verhaltenskodex.html\n\n\n\n\n\n\n\n\n\nPhoto by: Sharon McCutcheon\n\n\nDiversität und Inklusion sind auch mir sehr wichtig und mit einem Verhaltenskodex für unsere gemeinsame Zusammenarbeit versuche ich dies zu unterstützen. Bitte nehmt euch etwas Zeit diesen zu lesen. Ihr findet den Verhaltenskodex auf der Webseite für den Kurs.\nIch spreche euch basierend auf eurem Namen an, lasst mich wissen falls du einen anderen Namen und Pronomen bevorzugst.\nIch bin selbst in einem Prozess mehr pber verschiedene Perspektiven und Identitäten zu lernen. Sollte ich im Unterricht etwas sagen, dass dir Unbehagen bereitet, lass es mich bitte wissen."
   },
   {
     "objectID": "folien/md-01-willkommen.html#website-zum-kurs",
     "href": "folien/md-01-willkommen.html#website-zum-kurs",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Website zum Kurs",
-    "text": "Website zum Kurs\nrstatszh-k010.github.io/website/"
+    "text": "Website zum Kurs\nrstatszh-k011.github.io/website/"
   },
   {
     "objectID": "folien/md-01-willkommen.html#wir-sind-dran-öffne-und-speichere-die-kurswebsite-als-lesezeichen",
     "href": "folien/md-01-willkommen.html#wir-sind-dran-öffne-und-speichere-die-kurswebsite-als-lesezeichen",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Wir sind dran: Öffne und speichere die Kurswebsite als Lesezeichen",
-    "text": "Wir sind dran: Öffne und speichere die Kurswebsite als Lesezeichen\n\n\nÖffne einen Webbrowser auf deinem Arbeitsgerät.\nGehe zur Website des Kurses: rstatszh-k010.github.io/website/\nErstelle einen Lesezeichenordner mit dem Namen rstatszh-k010 in deiner Lesezeichenleiste.\nFüge dem Ordner rstatszh-k010 das Lesezeichen zur Kurs-Webseite hinzu.\n\n\n\n\n\n−+\n05:00"
+    "text": "Wir sind dran: Öffne und speichere die Kurswebsite als Lesezeichen\n\n\nÖffne einen Webbrowser auf deinem Arbeitsgerät.\nGehe zur Website des Kurses: rstatszh-k011.github.io/website/\nErstelle einen Lesezeichenordner mit dem Namen rstatszh-k011 in deiner Lesezeichenleiste.\nFüge dem Ordner rstatszh-k011 das Lesezeichen zur Kurs-Webseite hinzu.\n\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "folien/md-01-willkommen.html#lernziele-für-diese-woche",
@@ -1937,7 +1944,7 @@
     "href": "folien/md-01-willkommen.html#ihr-seid-dran-md-01-uebungen",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Ihr seid dran: md-01-uebungen",
-    "text": "Ihr seid dran: md-01-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-01-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei “hallo-quarto.qmd” und klicke darauf, um sie im Fenster oben links zu öffnen.\nRender das Dokument.\nFüge deinen Namen zum Schlüssel author: im YAML-Header hinzu\nRender das Dokument.\nUntersuche die Komponenten des Dokuments und führe eine weitere Aktualisierung und ein erneutes Rendern durch.\nBesprich die Notizen zu den von dir vorgenommenen Aktualisierungen. Notiere alle Aspekte des Dokuments, die nach der Tour und deiner ersten Interaktion damit unklar sind.\n\n\n\n\n\n−+\n15:00"
+    "text": "Ihr seid dran: md-01-uebungen\n\n\nÖffne posit.cloud in deinem Browser\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-01-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei “hallo-quarto.qmd” und klicke darauf, um sie im Fenster oben links zu öffnen.\nRender das Dokument.\nFüge deinen Namen zum Schlüssel author: im YAML-Header hinzu\nRender das Dokument.\nUntersuche die Komponenten des Dokuments und führe eine weitere Aktualisierung und ein erneutes Rendern durch.\nBesprich die Notizen zu den von dir vorgenommenen Aktualisierungen. Notiere alle Aspekte des Dokuments, die nach der Tour und deiner ersten Interaktion damit unklar sind.\n\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-01-willkommen.html#von-deiner-eigenen-arbeitsumgebung-aus",
@@ -2007,21 +2014,21 @@
     "href": "folien/md-01-willkommen.html#ihr-seid-dran-klone-ein-repository-von-github",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Ihr seid dran: Klone ein Repository von GitHub",
-    "text": "Ihr seid dran: Klone ein Repository von GitHub\n\nÖffne einen Webbrowser auf deinem Laptop.\nGehe zur Website des Kurses: rstatszh-k010.github.io/website/\nFalls noch nicht geschehen, füge die Website des Kurses zu deinen Lesezeichen hinzu.\nKlicke im Menü auf der linken Seite auf Modul 1\nIn der Modulübersicht, scrolle nach unten zur Sektion “Zusatzaufgaben” und öffne “Zusatzaufgabe 1: Git configuration”\nFolge den Anweisungen auf der Website, um das Repository von GitHub zu klonen.\n\n\n\n\n−+\n15:00"
+    "text": "Ihr seid dran: Klone ein Repository von GitHub\n\nÖffne einen Webbrowser auf deinem Laptop.\nGehe zur Website des Kurses: rstatszh-k011.github.io/website/\nKlicke im Menü auf der linken Seite auf Modul 1\nIn der Modulübersicht, scrolle nach unten zur Sektion “Zusatzaufgaben” und öffne “Zusatzaufgabe 1: Git configuration”\nFolge den Anweisungen auf der Website, um das Repository von GitHub zu klonen.\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-01-willkommen.html#modul-1-dokumentation",
     "href": "folien/md-01-willkommen.html#modul-1-dokumentation",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Modul 1 Dokumentation",
-    "text": "Modul 1 Dokumentation\n\nrstatszh-k010.github.io/website/module/md-01.html"
+    "text": "Modul 1 Dokumentation\n\nrstatszh-k011.github.io/website/module/md-01.html"
   },
   {
     "objectID": "folien/md-01-willkommen.html#danke-1",
     "href": "folien/md-01-willkommen.html#danke-1",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "folien/md-07-daten-formen.html#lernziele-für-diese-woche",
@@ -2385,7 +2392,7 @@
     "href": "folien/md-07-daten-formen.html#danke-1",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "folien/md-08-text-daten.html#lernziele-für-diese-woche",
@@ -2560,7 +2567,7 @@
     "href": "folien/md-08-text-daten.html#danke-1",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "folien/md-09-quarto.html#lernziele-für-diese-woche",
@@ -2756,7 +2763,7 @@
     "href": "folien/md-09-quarto.html#code-für-wen-ist-es",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Code, für wen ist es?",
-    "text": "Code, für wen ist es?\n\n\nDie Art und Weise, wie du Code anzeigst, ist in verschiedenen Kontexten sehr unterschiedlich.\nIn einem Lehrszenario wie heute möchte ich wirklich Code anzeigen.\nIn einem Unternehmen möchtest du vielleicht eine datenwissenschaftliche Ausgabe haben, die den Quellcode anzeigt, UND eine Ausgabe, die sich an die Nutzer:innen richtet und den Code verbirgt."
+    "text": "Code, für wen ist es?\n\nDie Art und Weise, wie du Code anzeigst, ist in verschiedenen Kontexten sehr unterschiedlich.\nIn einem Lehrszenario wie heute möchte ich wirklich Code anzeigen.\nIn einem Unternehmen möchtest du vielleicht eine datenwissenschaftliche Ausgabe haben, die den Quellcode anzeigt, UND eine Ausgabe, die sich an die Nutzer:innen richtet und den Code verbirgt."
   },
   {
     "objectID": "folien/md-09-quarto.html#ein--und-ausblenden-von-code-mit-echo",
@@ -2959,7 +2966,7 @@
     "href": "folien/md-09-quarto.html#danke-1",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nZugang zu Folien als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nZugang zu Folien als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "folien/quarto/lernende.html",
@@ -2994,7 +3001,7 @@
     "href": "zusatzaufgaben/md-04/za-04-01-r4ds-uebungen.html#schritt-1-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud",
     "title": "R for Data Science (r4ds) Übungen",
     "section": "Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud",
-    "text": "Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k010\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\nIm Feld “Repository name” schreibe r4ds-uebungen-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\nSkrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) auf Posit Cloud: posit.cloud/spaces/591694/content/\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
+    "text": "Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k011\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\nIm Feld “Repository name” schreibe r4ds-uebungen-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\nSkrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
   },
   {
     "objectID": "zusatzaufgaben/md-04/za-04-01-r4ds-uebungen.html#schritt-2-erstelle-eine-quarto-datei-für-übungen-aus-dem-kapitel-16-factors",
@@ -3015,21 +3022,21 @@
     "href": "zusatzaufgaben/md-04/za-04-01-r4ds-uebungen.html#schritt-4-eröffne-ein-issue-auf-github",
     "title": "R for Data Science (r4ds) Übungen",
     "section": "Schritt 4: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository r4ds-uebungen-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Repository für Übungen erstellt”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
+    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository r4ds-uebungen-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Repository für Übungen erstellt”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
   },
   {
     "objectID": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html",
     "href": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html",
     "title": "Daten Transformation mit dplyr",
     "section": "",
-    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository md-03-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) auf Posit Cloud: https://posit.cloud/spaces/591694/content/\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-03a-daten-transformation.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
+    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-03-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: https://posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-03a-daten-transformation.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
   },
   {
     "objectID": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html#schritt-1-klone-das-repository-für-modul-3",
     "href": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html#schritt-1-klone-das-repository-für-modul-3",
     "title": "Daten Transformation mit dplyr",
     "section": "",
-    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository md-03-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) auf Posit Cloud: https://posit.cloud/spaces/591694/content/\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-03a-daten-transformation.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
+    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-03-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: https://posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-03a-daten-transformation.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
   },
   {
     "objectID": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html#schritt-2-übertrage-deine-änderungen-auf-github",
@@ -3043,7 +3050,7 @@
     "href": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html#schritt-3-eröffne-ein-issue-auf-github",
     "title": "Daten Transformation mit dplyr",
     "section": "Schritt 3: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository md-03-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
+    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-03-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
   },
   {
     "objectID": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html",
@@ -3106,7 +3113,7 @@
     "href": "zusatzaufgaben/md-05/za-05-03-lernende.html#schritt-1-klone-das-repository-für-modul-5",
     "title": "Mit R arbeiten - Lernende im Kanton Zürich",
     "section": "Schritt 1: Klone das Repository für Modul 5",
-    "text": "Schritt 1: Klone das Repository für Modul 5\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository md-05-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) auf Posit Cloud https://posit.cloud/spaces/591694/content/all?sort=name_asc\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-05-ktzh-lernende.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
+    "text": "Schritt 1: Klone das Repository für Modul 5\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-05-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud https://posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-05-ktzh-lernende.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
   },
   {
     "objectID": "zusatzaufgaben/md-05/za-05-03-lernende.html#schritt-2-übertrage-deine-änderungen-auf-github",
@@ -3120,7 +3127,7 @@
     "href": "zusatzaufgaben/md-05/za-05-03-lernende.html#schritt-3-eröffne-ein-issue-auf-github",
     "title": "Mit R arbeiten - Lernende im Kanton Zürich",
     "section": "Schritt 3: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository md-05-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
+    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-05-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
   },
   {
     "objectID": "zusatzaufgaben/md-07/za-07-01-abschlussprojekt.html",
@@ -3162,7 +3169,7 @@
     "href": "zusatzaufgaben/md-07/za-07-01-abschlussprojekt.html#schritt-4-lade-das-dictionary-hoch",
     "title": "Abschlussprojekt",
     "section": "Schritt 4: Lade das Dictionary hoch",
-    "text": "Schritt 4: Lade das Dictionary hoch\n\nÖffne dein Abschlussprojekt auf Posit Cloud https://posit.cloud/spaces/591694/content/.\nNutze den Files Tab im unteren rechten Fenster, um das Daten-Codebook codebook.csv im CSV-Format in den Ordner daten/processed hochzuladen."
+    "text": "Schritt 4: Lade das Dictionary hoch\n\nÖffne dein Abschlussprojekt auf Posit Cloud https://posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV.\nNutze den Files Tab im unteren rechten Fenster, um das Daten-Codebook codebook.csv im CSV-Format in den Ordner daten/processed hochzuladen."
   },
   {
     "objectID": "zusatzaufgaben/md-07/za-07-01-abschlussprojekt.html#schritt-5-bereite-deine-verarbeitete-analysefähige-processed-daten-vor",
@@ -3188,44 +3195,44 @@
   {
     "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html",
     "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html",
-    "title": "rstatsZH - Data Science mit R",
+    "title": "Interaktion mit GitHub",
     "section": "",
     "text": "Nehme die Einladung zum Beitritt der GitHub Organisation für den Kurs an."
   },
   {
     "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-0-einladung-zur-github-organisation-annehmen",
     "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-0-einladung-zur-github-organisation-annehmen",
-    "title": "rstatsZH - Data Science mit R",
+    "title": "Interaktion mit GitHub",
     "section": "",
     "text": "Nehme die Einladung zum Beitritt der GitHub Organisation für den Kurs an."
   },
   {
     "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-1-klone-ein-repository",
     "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-1-klone-ein-repository",
-    "title": "rstatsZH - Data Science mit R",
+    "title": "Interaktion mit GitHub",
     "section": "Schritt 1: Klone ein Repository",
-    "text": "Schritt 1: Klone ein Repository\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\n\n\n\nFinde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\n\n\n\nKlicke auf die grüne Schaltfläche “Code”.\n\n\n\nKopiere die HTTPS-URL in deine Zwischenablage.\n\n\n\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) auf posit.cloud\n\n\n\nKlicke auf “New Project” &gt; “New Project from Git Repository”\n\n\n\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\n\n\n\nWarte, bis das Projekt bereitgestellt wurde.\n\n\n\nFahre mit dem nächsten Schritt 2 fort."
+    "text": "Schritt 1: Klone ein Repository\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: https://github.com/rstatszh-k011/\n\n\n\nFinde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\n\n\n\nKlicke auf die grüne Schaltfläche “Code”.\n\n\n\nKopiere die HTTPS-URL in deine Zwischenablage.\n\n\n\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf posit.cloud\n\n\n\nKlicke auf “New Project” &gt; “New Project from Git Repository”\n\n\n\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\n\n\n\nWarte, bis das Projekt bereitgestellt wurde.\n\n\n\nFahre mit dem nächsten Schritt 2 fort."
   },
   {
     "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-2-stelle-dich-git-vor",
     "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-2-stelle-dich-git-vor",
-    "title": "rstatsZH - Data Science mit R",
+    "title": "Interaktion mit GitHub",
     "section": "Schritt 2: Stelle dich Git vor",
     "text": "Schritt 2: Stelle dich Git vor\n\nFalls das Projekt aus Schritt 1 geschlossen wurde, öffne das Projekt git-configuration-BENUTZERNAME in Posit Cloud, das mit deinem GitHub-Benutzernamen endet.\nÖffne die Datei git-configuration.qmd, welche du im Datei Manager (“Files”) im Fenster unten rechts findest. Die Datei öffnet sich im Fenster oben rechts.\n\n\n\nBearbeite den Code-Abschnitt unter “Git configuration details” und ersetze die Platzhalter durch deinen Namen und deine E-Mail-Adresse (anhand dieser Daten wird Git dich identifizieren, wenn du Änderungen vornimmst und diese gespeichert werden). Beachte: Die Anführungszeichen müssen beibehalten werden.\n\n\n\nRender das Dokument in dem du auf den “Render” Button klickst.\n\n\n\nBehalte das Projekt git-configuration-BENUTZERNAME in RStudio geöffnet. Fahre mit Schritt 3 fort."
   },
   {
     "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-3-übertrage-deine-änderungen-und-speichere-sie",
     "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-3-übertrage-deine-änderungen-und-speichere-sie",
-    "title": "rstatsZH - Data Science mit R",
+    "title": "Interaktion mit GitHub",
     "section": "Schritt 3: Übertrage deine Änderungen und speichere sie",
-    "text": "Schritt 3: Übertrage deine Änderungen und speichere sie\n\nNavigiere zum Git-Bereich im Fenster oben rechts.\nAktiviere das Kontrollkästchen neben der Datei git-configuration.qmd, um sie für den Commit vorzubereiten.\n\n\n\nKlicke auf die Schaltfläche “Commit”.\n\n\n\nGib eine Commit-Nachricht in das Feld “Commit Message” ein (z.B. Git configuration abgeschlossen).\n\n\n\nKlicke auf die Schaltfläche “Commit”. Klicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.\n\n\n\nKlicke auf die Schaltfläche “Push”.\n\n\n\nGib deinen GitHub-Benutzernamen im Feld Username an.\n\n 8. Gib deinen GitHub Personal Access Token (PAT) im Feld “Password” ein.\n\n\nDas Fenster kann geschlossen werden.\n\n\n\n\n\n\n\n\nVerwende nicht dein GitHub-Passwort\n\n\n\nDu musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung auf den Kurs erstellt hast um deine Änderungen zurück an GitHub zu übertragen."
+    "text": "Schritt 3: Übertrage deine Änderungen und speichere sie\n\nNavigiere zum Git-Bereich im Fenster oben rechts.\nAktiviere das Kontrollkästchen neben der Datei git-configuration.qmd, um sie für den Commit vorzubereiten.\n\n\n\nKlicke auf die Schaltfläche “Commit”.\n\n\n\nGib eine Commit-Nachricht in das Feld “Commit Message” ein (z.B. Git configuration abgeschlossen).\n\n\n\nKlicke auf die Schaltfläche “Commit”. Klicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.\n\n\n\nKlicke auf die Schaltfläche “Push”.\n\n\n\nGib deinen GitHub-Benutzernamen im Feld Username an.\n\n\n\nGib deinen GitHub Personal Access Token (PAT) ein.\n\n\n\nDas Fenster kann geschlossen werden.\n\n\n\n\n\n\n\n\nVerwende nicht dein GitHub-Passwort\n\n\n\nDu musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung auf den Kurs erstellt hast um deine Änderungen zurück an GitHub zu übertragen."
   },
   {
     "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-4-eröffne-ein-issue-auf-github",
     "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-4-eröffne-ein-issue-auf-github",
-    "title": "rstatsZH - Data Science mit R",
+    "title": "Interaktion mit GitHub",
     "section": "Schritt 4: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne [github.com] (https://github.com/) in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Git configuration abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage."
+    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: https://github.com/rstatszh-k011/\nFinde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Git configuration abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
   },
   {
     "objectID": "module/md-02.html",
@@ -3589,10 +3596,27 @@
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
   },
   {
-    "objectID": "folien/md-02-datenvisualisierung.html#installation-auf-dem-dap-ii",
-    "href": "folien/md-02-datenvisualisierung.html#installation-auf-dem-dap-ii",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Installation auf dem DAP (II)",
-    "text": "Installation auf dem DAP (II)\nDamit du auch auf dem DAP zwischen R & den Kursunterlagen auf Github kommunizieren kannst, brauchst du unbedingt noch Git auf deinem DAP. Auch hier löst du eine Bestellung im Serviceportal:\n\n\n\n\nSobald dir die Software zugewiesen wurde und alles auf dem DAP installiert ist, solltest du auch von deinem DAP R-Studio am Kurs teilnehmen können."
+    "objectID": "module/md-01.html#termine",
+    "href": "module/md-01.html#termine",
+    "title": "Modul 1",
+    "section": " Termine",
+    "text": "Termine\nKurstermin: 23. September 2025\nZusatzaufgabe fällig: 30. September 2025",
+    "crumbs": [
+      "Modul 01"
+    ]
+  },
+  {
+    "objectID": "folien/md-01-willkommen.html",
+    "href": "folien/md-01-willkommen.html",
+    "title": "Willkommen zum Kurs & Werkzeugkiste",
+    "section": "",
+    "text": "Lars Schöbitz\n\n\n\n\n\n\n\nUmweltingenieur 🔨\nForscher im Ruhestand 🛏\nRStudio zertifizierte Lehrkraft\nData Steward an der ETH Zurich\n\n\n\n\n\n\nDie folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:\n\nTeilnehmer:innen werden in der Lage sein, eine Reihe gängiger datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von Datenanalyseprojekten zu veranschaulichen und öffentlich zu kommunizieren.\n\n. . .\n\nTeilnehmer:innen können das Quarto-Dateiformat und den visuellen Bearbeitungsmodus der RStudio IDE zu verwenden, um technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten, Querverweisen, Abbildungen und Tabellen zu erstellen.\n\n. . .\n\nTeilnehmer:innen können Git Versionskontrolle verwerden um: (1) Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten.\n\n\n\n\n\n\nWähle einen Gegenstand aus und mache dir eine Minute lang Notizen.\nWas hat der Gegenstand, den du ausgewählt hast, mit dem Grund zu tun, warum du hier bist?\n\n\n\n\n\n\n−+\n01:00\n\n\n\n\n\n\n\nNehmt euch jeweils 2 Minuten Zeit, um euch auszutauschen:\n\nWas hat der Gegenstand, den ihr ausgewählt habt, mit dem Grund eurer Anwesenheit zu tun?\n\n\n\n\n\n\n−+\n05:00\n\n\n\n\n\n\n\nreadr::read_csv(\"../data/tbl-00-rstatszh-kursplan.csv\") |&gt; \n  dplyr::select(modul, datum, titel) |&gt; \n  dplyr::mutate(datum = format(datum, format = \"%d %B %Y\")) |&gt; \n  knitr::kable()\n\nRows: 13 Columns: 5\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (3): titel, modul, link\ndbl  (1): woche\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\n\n\n\n\n\n\nmodul\ndatum\ntitel\n\n\n\n\nModul 01\n23 September 2025\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n30 September 2025\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n07 Oktober 2025\nDaten Transformation mit dplyr\n\n\nModul 04\n14 Oktober 2025\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n21 Oktober 2025\nBedingte Anweisungen & Datumswerte & OGD Ressourcen\n\n\nModul 06\n28 Oktober 2025\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n04 November 2025\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n11 November 2025\nMit Text Daten arbeiten & KTZH Corporate Design mit statR\n\n\nModul 09\n18 November 2025\nErstellung von Berichten und Folien mit Quarto\n\n\nModul 10\n25 November 2025\nFunktionen schreiben & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n02 Dezember 2025\nArbeitszeit für Abschlussprojekt\n\n\nAbschlussprojekt\n09 Dezember 2025\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n16 Dezember 2025\nAbschlussveranstaltung\n\n\n\n\n\n\n\n\n\nKurstermin: 2025-09-23\nZusatzaufgabe fällig: 2025-09-30\n\n\n\n\n\nIch bin dran: Vortragssegmente + Live-Coding\nWir sind dran: Live-Coding + Mitmachen\nIhr seid dran: Übungen in Paaren\n\n\n\n\n\nDer Kursleiter schreibt und spricht den Code laut vor\nDer Kursleiter erklärt Konzepte und Prinzipien, die relevant sind\nCode wird auf dem Bildschirm angezeigt\n\n\n\n\n\nDer Kursleiter schreibt und spricht den Code laut vor\nDer Kursleiter erklärt relevante Konzepte und Prinzipien\nDer Code wird auf dem Bildschirm angezeigt\nDie Lernenden machen mit, indem sie denselben Code schreiben und ausführen\n\n\n\n\n\nZwei Lernende arbeiten in Paaren in Break-out Räumen zusammen\nEine Person tippt und teilt die Bildschirmanzeige\nEine Person bietet Kommentare und Vorschläge an, und tippt selbst auch mit\n\n\n\n\n\nWährend Live-Coding: hebt die Hand mittels Zoom und unterbrecht mich. Ich werde versuchen, mich um dein Anliegen zu kümmern, wenn es die Zeit erlaubt. Offene Fragen werden dokumentiert.\nWährend Übungen in Break-out Räumen: Ihr könnt mich zu euch rufen. Bei einem Grossteil der Übungen werde ich versuchen in jedem Raum einmal vorbeizuschauen.\n\n\n\n\n\n\n\nDiversität und Inklusion\nNamen und Pronomen\nLernprozess\nrstatszh-k011.github.io/website/verhaltenskodex.html\n\n\n\n\n\n\n\n\n\n\nPhoto by: Sharon McCutcheon\n\n\nDiversität und Inklusion sind auch mir sehr wichtig und mit einem Verhaltenskodex für unsere gemeinsame Zusammenarbeit versuche ich dies zu unterstützen. Bitte nehmt euch etwas Zeit diesen zu lesen. Ihr findet den Verhaltenskodex auf der Webseite für den Kurs.\nIch spreche euch basierend auf eurem Namen an, lasst mich wissen falls du einen anderen Namen und Pronomen bevorzugst.\nIch bin selbst in einem Prozess mehr pber verschiedene Perspektiven und Identitäten zu lernen. Sollte ich im Unterricht etwas sagen, dass dir Unbehagen bereitet, lass es mich bitte wissen.\n\n\n\n\nrstatszh-k011.github.io/website/\n\n\n\n\n\nÖffne einen Webbrowser auf deinem Arbeitsgerät.\nGehe zur Website des Kurses: rstatszh-k011.github.io/website/\nErstelle einen Lesezeichenordner mit dem Namen rstatszh-k011 in deiner Lesezeichenleiste.\nFüge dem Ordner rstatszh-k011 das Lesezeichen zur Kurs-Webseite hinzu.\n\n\n\n\n\n−+\n05:00\n\n\n\n\n\n\n\nlernziele &lt;- readr::read_csv(here::here(\"data/tbl-01-rstatszh-lernziele.csv\")) |&gt; \n  dplyr::filter(modul == params$modul) |&gt;\n  dplyr::pull(lernziele)\n\nRows: 36 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): titel, lernziele\ndbl  (1): modul\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nDie Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernenden können die vier Fenster der RStudio IDE identifizieren.\n\n\n\n\n\n\n\n\nArtwork from @juliesquid for @openscapes (illustrated by @allison_horst)"
+  },
+  {
+    "objectID": "folien/md-01-willkommen.html#kurstermine-und-aufgaben",
+    "href": "folien/md-01-willkommen.html#kurstermine-und-aufgaben",
+    "title": "Willkommen zum Kurs & Werkzeugkiste",
+    "section": " Kurstermine und Aufgaben",
+    "text": "Kurstermine und Aufgaben\n\nKurstermin: 2025-09-23\nZusatzaufgabe fällig: 2025-09-30"
   }
 ]

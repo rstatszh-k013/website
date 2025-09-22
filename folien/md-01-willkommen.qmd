@@ -1,7 +1,7 @@
 ---
 title: "{{< var md-01.titel >}}"
 subtitle: "{{< var course.long-titel >}}"
-author: "Lars Schöbitz"
+author: "{{< var author >}}"
 date: "2025-09-23"
 date-format: "MMM D, YYYY"
 format: 
@@ -163,7 +163,7 @@ readr::read_csv("../data/tbl-00-rstatszh-kursplan.csv") |>
 - Diversität und Inklusion
 - Namen und Pronomen
 - Lernprozess
-- [rstatszh-k010.github.io/website/verhaltenskodex.html](https://rstatszh-k010.github.io/website/verhaltenskodex.html)
+- [{{< var course.site-short >}}verhaltenskodex.html]({{< var course.site >}}verhaltenskodex.html)
 
 
 :::
@@ -196,21 +196,7 @@ bereitet, lass es mich bitte wissen.
 
 ## Website zum Kurs {.center-align .large}
 
-[rstatszh-k010.github.io/website/](https://rstatszh-k010.github.io/website/)
-
-## Wir sind dran: Öffne und speichere die Kurswebsite als Lesezeichen
-
-::: task
-1. Öffne einen Webbrowser auf deinem Arbeitsgerät.
-2. Gehe zur Website des Kurses: [rstatszh-k010.github.io/website/](https://rstatszh-k010.github.io/website/)
-3. Erstelle einen Lesezeichenordner mit dem Namen rstatszh-k010 in deiner Lesezeichenleiste.
-4. Füge dem Ordner rstatszh-k010 das Lesezeichen zur Kurs-Webseite hinzu.
-:::
-
-```{r}
-#| echo: false
-countdown(minutes = 5)
-```
+[{{< var course.site-short >}}]({{< var course.site >}})
 
 ## Lernziele (für diese Woche)
 
@@ -322,8 +308,8 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 ## Ihr seid dran: md-01-uebungen
 
 ::: task
-1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2. Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
+1. Öffne [posit.cloud]({{< var course.posit-cloud >}}) in deinem Browser 
+2. Öffne den {{< var course.iteration >}} Arbeitsbereich (Workspace) für den Kurs.
 3. Klicke auf [Start]{.highlight-yellow} neben [md-01-uebungen]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei "hallo-quarto.qmd" und klicke darauf, um sie im Fenster oben links zu öffnen.
 4. Render das Dokument.
@@ -488,11 +474,10 @@ Zurücklehnen und genießen!
 ## Ihr seid dran: Klone ein Repository von GitHub {.smaller}
 
 1. Öffne einen Webbrowser auf deinem Laptop.
-2. Gehe zur Website des Kurses: [rstatszh-k010.github.io/website/](https://rstatszh-k010.github.io/website/)
-3. Falls noch nicht geschehen, füge die Website des Kurses zu deinen Lesezeichen hinzu.
-4. Klicke im Menü auf der linken Seite auf [Modul 1]{.highlight-yellow}
-5. In der Modulübersicht, scrolle nach unten zur Sektion ["Zusatzaufgaben"]{.highlight-yellow} und öffne ["Zusatzaufgabe 1: Git configuration"]{.highlight-yellow}
-6. Folge den Anweisungen auf der Website, um das Repository von GitHub zu klonen.
+2. Gehe zur Website des Kurses: [{{< var course.site-short >}}]({{< var course.site >}})
+3. Klicke im Menü auf der linken Seite auf [Modul 1]{.highlight-yellow}
+4. In der Modulübersicht, scrolle nach unten zur Sektion ["Zusatzaufgaben"]{.highlight-yellow} und öffne ["Zusatzaufgabe 1: Git configuration"]{.highlight-yellow}
+5. Folge den Anweisungen auf der Website, um das Repository von GitHub zu klonen.
 
 ```{r}
 #| echo: false
@@ -505,10 +490,10 @@ countdown(minutes = 15)
 ## Modul 1 Dokumentation
 
 ::: learn-more
-[rstatszh-k010.github.io/website/module/md-01.html](https://rstatszh-k010.github.io/website/module/md-01.html)
+[{{< var course.site-short >}}module/md-01.html]({{< var course.site >}}module/md-01.html)
 
 ```{=html}
-<iframe src="https://rstatszh-k010.github.io/website/module/md-01.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 1 documentation"></iframe>
+<iframe src="{{< var course.site >}}module/md-01.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 1 documentation"></iframe>
 ```
 :::
 
@@ -518,7 +503,7 @@ countdown(minutes = 15)
 
 Folien erstellt mit revealjs und Quarto: <https://quarto.org/docs/presentations/revealjs/>
 
-Access slides als [PDF auf GitHub](https://github.com/rstatszh-k010/website/raw/main/folien/md-01-willkommen.pdf)
+Access slides als [PDF auf GitHub]({{< var course.github-org >}}website/raw/main/folien/md-01-willkommen.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 
