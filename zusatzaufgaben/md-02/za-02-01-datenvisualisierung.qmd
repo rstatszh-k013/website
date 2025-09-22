@@ -6,7 +6,7 @@ title: "Daten Visualisierung mit `ggplot2`"
 
 1. Öffne github.com in deinem Browser.
 
-2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k010](https://github.com/rstatszh-k010)
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k011](https://github.com/rstatszh-k011)
 
 3. Finde das Repository [md-02-zusatzaufgaben-BENUTZERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.
 
@@ -14,7 +14,7 @@ title: "Daten Visualisierung mit `ggplot2`"
 
 5. Kopiere die HTTPS-URL in deine Zwischenablage.
 
-6. Öffne den rstatszh-k010 Arbeitsbereich (Workspace) auf [posit.cloud](https://posit.cloud/spaces/591694/content/all?sort=name_asc)
+6. Öffne den rstatszh-k011 Arbeitsbereich (Workspace) auf [posit.cloud](https://posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV)
 
 7. Klicke auf "New Project" > "New Project from Git Repository"
 
@@ -70,7 +70,7 @@ Du musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung
 
 1. Öffne [github.com](https://github.com/) in deinem Browser.
 
-2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k010](https://github.com/rstatszh-k010)
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k011](https://github.com/rstatszh-k011)
 
 3. Finde das Repository [md-02-zusatzaufgaben-BENUTZERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
 

@@ -1,5 +1,6 @@
 ---
-Titel: "Interaktion mit GitHub"
+title: "Interaktion mit GitHub"
+subtitle: "Zusatzaufgabe für {{< var md-01.titel >}}"
 execute:
     echo: false
 ---
@@ -14,7 +15,7 @@ execute:
 
 1. Öffne github.com in deinem Browser.
 
-2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k010](https://github.com/rstatszh-k010)
+2. Navigiere zur GitHub-Organisation für den Kurs: [{{< var course.github-org >}}]({{< var course.github-org >}})
 
 ![](images/gh-clone-01.png){width=50%}
 
@@ -30,7 +31,7 @@ execute:
 
 ![](images/gh-clone-03.png){width=50%}
 
-6. Öffne den rstatszh-k010 Arbeitsbereich (Workspace) auf [posit.cloud](https://posit.cloud/spaces/591694/content/all?sort=name_asc)
+6. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf [posit.cloud]({{< var course.posit-cloud >}})
 
 ![](images/gh-clone-04.png){width=50%}
 
@@ -93,7 +94,8 @@ execute:
 7. Gib deinen GitHub-Benutzernamen im Feld Username an. 
 
 ![](images/gh-clone-11.png){width=50%}
-8. Gib [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} im Feld ["Password"]{.highlight-yellow} ein.
+
+8. Gib [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} ein.
 
 ![](images/gh-clone-13.png){width=50%}
 
@@ -109,9 +111,9 @@ Du musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung
 
 ## Schritt 4: Eröffne ein Issue auf GitHub
 
-1. Öffne [github.com] (https://github.com/) in deinem Browser.
+1. Öffne [github.com](https://github.com/) in deinem Browser.
 
-2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k010](https://github.com/rstatszh-k010)
+2. Navigiere zur GitHub-Organisation für den Kurs: [{{< var course.github-org >}}]({{< var course.github-org >}})
 
 3. Finde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.
 
@@ -121,4 +123,4 @@ Du musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung
 
 6. Schreibe in das Feld "Title": "Git configuration abgeschlossen".
 
-7. Markiere im Feld "Leave a comment" den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage.
+7. Markiere im Feld "Leave a comment" den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage.

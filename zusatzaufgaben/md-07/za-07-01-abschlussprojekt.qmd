@@ -68,7 +68,7 @@ library(readr)
 
 ## Schritt 4: Lade das Dictionary hoch
 
-1. Öffne dein Abschlussprojekt auf Posit Cloud <https://posit.cloud/spaces/591694/content/>.
+1. Öffne dein Abschlussprojekt auf Posit Cloud <https://posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV>.
 
 2. Nutze den Files Tab im unteren rechten Fenster, um das Daten-Codebook `codebook.csv` im CSV-Format in den Ordner `daten/processed` hochzuladen.
 
