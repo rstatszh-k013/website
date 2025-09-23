@@ -275,7 +275,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 
 ::: task
 1. Öffne [posit.cloud/spaces/643775](https://posit.cloud/spaces/643775) in deinem Browser.
-2. Falls du dich nicht im ds4owd-002 Arbeitsbereich befindest, öffne diesen.
+2. Falls du dich nicht im rstatsZH-K011 Arbeitsbereich befindest, öffne diesen.
 3. Klicke auf [Start]{.highlight-yellow} neben [md-01-exercises]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei `hello-quarto.qmd` und [klicke darauf]{.highlight-yellow}.
 5. Klicke auf den [Render-Button]{.highlight-yellow} um das Dokument zu rendern. Möglicherweise musst du [Pop-ups erlauben]{.highlight-yellow} in deinem Browser.
