@@ -215,7 +215,7 @@ Zurücklehnen und genießen!
 
 ## Pause machen
 
-[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+[Bitte steh auf und beweg dich.]{.highlight-yellow}
 
 ![](img/md-04/pixel-art-tree.png){width="50%"}
 
@@ -477,7 +477,7 @@ write_csv(befragung_sum_alter,
 
 ## Pause machen
 
-[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+[Bitte steh auf und beweg dich.]{.highlight-yellow}
 
 ![](img/md-04/pixel-art-tree.png){width="50%"}
 

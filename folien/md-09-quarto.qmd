@@ -465,7 +465,7 @@ countdown(20)
 
 ## Pause machen
 
-[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+[Bitte steh auf und beweg dich.]{.highlight-yellow}
 
 ![](img/md-04/pixel-art-tree.png){width="50%"}
 
@@ -779,7 +779,7 @@ lang: de
 
 ## Pause machen
 
-[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+[Bitte steh auf und beweg dich.]{.highlight-yellow}
 
 ![](img/md-04/pixel-art-tree.png){width="50%"}
 

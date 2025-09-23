@@ -247,7 +247,7 @@ Zurücklehnen und genießen!
 
 ## Pause machen
 
-[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+[Bitte steh auf und beweg dich.]{.highlight-yellow}
 
 ![](img/md-01/coffee-break.jpg){width="25%"}
 
@@ -358,7 +358,7 @@ countdown(minutes = 15)
 
 ## Pause machen
 
-[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+[Bitte steh auf und beweg dich.]{.highlight-yellow}
 
 ![](img/md-01/coffee-break.jpg){width="25%"}
 
