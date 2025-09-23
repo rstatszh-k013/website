@@ -49,12 +49,6 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |
 {1:length(lernziele)}. {lernziele[1:length(lernziele)]}
 ```
 
-## {{< fa calendar >}} Termine
-
-**Kurstermin:** `r session_date_formatted`
-
-**Zusatzaufgabe fällig:** `r homework_due_formatted`
-
 ## {{< fa display >}} Folien
 
 [Zeige Folien im Vollbildmodus an](../folien/md-01-willkommen.html) | [Download Folien als PDF](https://github.com/rstatszh-k011/website/raw/main/folien/md-01-willkommen.pdf)

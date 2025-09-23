@@ -49,30 +49,23 @@ library(epoxy)
 :::
 :::
 
-## Lernziele des Kurses {.scrollable}
+## Lernziele des Kurses {.scrollable .smaller}
 
-Die folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:
+Die folgenden übergeordneten Lernziele sind für diesen Kurs definiert:
 
-1.  Teilnehmer:innen werden in der Lage sein, eine Reihe gängiger
-    datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R
-    tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von
-    Datenanalyseprojekten zu veranschaulichen und öffentlich zu
-    kommunizieren.
+1.  [Datenwissenschaftliche Werkzeuge beherrschen]{.underline} - [(R, RStudio IDE, Git, GitHub, tidyverse, Quarto)]{.highlight-yellow} verwenden, um Daten effektiv zu analysieren und zu kommunizieren.
 
-. . . 
+. . .
 
-2.  Teilnehmer:innen können das Quarto-Dateiformat und den visuellen
-    Bearbeitungsmodus der RStudio IDE zu verwenden, um
-    technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten,
-    Querverweisen, Abbildungen und Tabellen zu erstellen.
-    
-. . . 
+2.  [Reproduzierbare Dokumente erstellen]{.underline} - Professionelle Berichte mit [Quarto]{.highlight-yellow} erstellen, einschliesslich Querverweisen, Abbildungen und Tabellen.
 
-3.  Teilnehmer:innen können Git Versionskontrolle verwerden um: (1)
-    Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu
-    übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu
-    öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines
-    Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten.
+. . .
+
+3.  [Open Source Government praktizieren]{.underline} - [Daten und Code offen]{.highlight-yellow} teilen und dabei Best Practices für [Reproduzierbarkeit]{.highlight-yellow} und Zusammenarbeit befolgen.
+
+. . .
+
+4.  [Ein Portfolio aufbauen]{.underline} - Praxisnahe Projekte abschliessen, die [deine Fähigkeiten]{.highlight-yellow} demonstrieren.
 
 ## Du bist dran: Über Dich
 
@@ -219,45 +212,6 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |
 
 ::: aside
 Artwork from [\@juliesquid](https://twitter.com/juliesquid) for [\@openscapes](https://twitter.com/openscapes) (illustrated by [\@allison_horst](https://twitter.com/allison_horst))
-:::
-
-# Quarto {background-color="#4C326A"}
-
-## Wir holen euch dort ab, wo ihr seid
-
-::: columns
-::: {.column width="50%"}
-::: {.fragment .fade-in-then-semi-out}
-Ich gehe davon aus, dass du:
-
-– [nicht]{.highlight-yellow} über Erfahrung mit R oder Git verfügst
-
-- [nicht]{.highlight-yellow} schon einmal in einer IDE gearbeitet hast (z. B. RStudio IDE)
-
-- etwas über R lernen möchtest
-
-- mehr über Quarto und das Veröffentlichen von Berichten erfahren möchtest
-
-- lernen möchtest, wie man mit GitHub Projekte verwaltet
-:::
-:::
-
-::: {.column width="50%"}
-::: {.fragment .fade-in}
-
-Ich bringe dir bei:
-
-- R
-
-- Quarto-Syntax und -Formate
-
-- Markdown
-
-- Git über RStudio IDE nutzen
-
-- GitHub-Issues, Projektmanagement und Veröffentlichung
-:::
-:::
 :::
 
 # Posit Cloud & RStudio IDE {background-color="#4C326A"}

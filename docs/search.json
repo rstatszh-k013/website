@@ -254,6 +254,16 @@
     ]
   },
   {
+    "objectID": "module/md-01.html#termine",
+    "href": "module/md-01.html#termine",
+    "title": "Modul 1",
+    "section": " Termine",
+    "text": "Termine\nKurstermin: 23. September 2025\nZusatzaufgabe fällig: 30. September 2025",
+    "crumbs": [
+      "Modul 01"
+    ]
+  },
+  {
     "objectID": "module/md-01.html#folien",
     "href": "module/md-01.html#folien",
     "title": "Modul 1",
@@ -1776,7 +1786,7 @@
     "href": "folien/md-01-willkommen.html#lernziele-des-kurses",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Lernziele des Kurses",
-    "text": "Lernziele des Kurses\nDie folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:\n\nTeilnehmer:innen werden in der Lage sein, eine Reihe gängiger datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von Datenanalyseprojekten zu veranschaulichen und öffentlich zu kommunizieren.\n\n\n\nTeilnehmer:innen können das Quarto-Dateiformat und den visuellen Bearbeitungsmodus der RStudio IDE zu verwenden, um technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten, Querverweisen, Abbildungen und Tabellen zu erstellen.\n\n\n\n\nTeilnehmer:innen können Git Versionskontrolle verwerden um: (1) Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten."
+    "text": "Lernziele des Kurses\nDie folgenden übergeordneten Lernziele sind für diesen Kurs definiert:\n\nDatenwissenschaftliche Werkzeuge beherrschen - (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) verwenden, um Daten effektiv zu analysieren und zu kommunizieren.\n\n\n\nReproduzierbare Dokumente erstellen - Professionelle Berichte mit Quarto erstellen, einschliesslich Querverweisen, Abbildungen und Tabellen.\n\n\n\n\nOpen Source Government praktizieren - Daten und Code offen teilen und dabei Best Practices für Reproduzierbarkeit und Zusammenarbeit befolgen.\n\n\n\n\nEin Portfolio aufbauen - Praxisnahe Projekte abschliessen, die deine Fähigkeiten demonstrieren."
   },
   {
     "objectID": "folien/md-01-willkommen.html#du-bist-dran-über-dich",
@@ -1847,13 +1857,6 @@
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Website zum Kurs",
     "text": "Website zum Kurs\nrstatszh-k011.github.io/website/"
-  },
-  {
-    "objectID": "folien/md-01-willkommen.html#wir-sind-dran-öffne-und-speichere-die-kurswebsite-als-lesezeichen",
-    "href": "folien/md-01-willkommen.html#wir-sind-dran-öffne-und-speichere-die-kurswebsite-als-lesezeichen",
-    "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "Wir sind dran: Öffne und speichere die Kurswebsite als Lesezeichen",
-    "text": "Wir sind dran: Öffne und speichere die Kurswebsite als Lesezeichen\n\n\nÖffne einen Webbrowser auf deinem Arbeitsgerät.\nGehe zur Website des Kurses: rstatszh-k011.github.io/website/\nErstelle einen Lesezeichenordner mit dem Namen rstatszh-k011 in deiner Lesezeichenleiste.\nFüge dem Ordner rstatszh-k011 das Lesezeichen zur Kurs-Webseite hinzu.\n\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "folien/md-01-willkommen.html#lernziele-für-diese-woche",
@@ -3594,29 +3597,5 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
-  },
-  {
-    "objectID": "module/md-01.html#termine",
-    "href": "module/md-01.html#termine",
-    "title": "Modul 1",
-    "section": " Termine",
-    "text": "Termine\nKurstermin: 23. September 2025\nZusatzaufgabe fällig: 30. September 2025",
-    "crumbs": [
-      "Modul 01"
-    ]
-  },
-  {
-    "objectID": "folien/md-01-willkommen.html",
-    "href": "folien/md-01-willkommen.html",
-    "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "Lars Schöbitz\n\n\n\n\n\n\n\nUmweltingenieur 🔨\nForscher im Ruhestand 🛏\nRStudio zertifizierte Lehrkraft\nData Steward an der ETH Zurich\n\n\n\n\n\n\nDie folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:\n\nTeilnehmer:innen werden in der Lage sein, eine Reihe gängiger datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von Datenanalyseprojekten zu veranschaulichen und öffentlich zu kommunizieren.\n\n. . .\n\nTeilnehmer:innen können das Quarto-Dateiformat und den visuellen Bearbeitungsmodus der RStudio IDE zu verwenden, um technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten, Querverweisen, Abbildungen und Tabellen zu erstellen.\n\n. . .\n\nTeilnehmer:innen können Git Versionskontrolle verwerden um: (1) Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten.\n\n\n\n\n\n\nWähle einen Gegenstand aus und mache dir eine Minute lang Notizen.\nWas hat der Gegenstand, den du ausgewählt hast, mit dem Grund zu tun, warum du hier bist?\n\n\n\n\n\n\n−+\n01:00\n\n\n\n\n\n\n\nNehmt euch jeweils 2 Minuten Zeit, um euch auszutauschen:\n\nWas hat der Gegenstand, den ihr ausgewählt habt, mit dem Grund eurer Anwesenheit zu tun?\n\n\n\n\n\n\n−+\n05:00\n\n\n\n\n\n\n\nreadr::read_csv(\"../data/tbl-00-rstatszh-kursplan.csv\") |&gt; \n  dplyr::select(modul, datum, titel) |&gt; \n  dplyr::mutate(datum = format(datum, format = \"%d %B %Y\")) |&gt; \n  knitr::kable()\n\nRows: 13 Columns: 5\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (3): titel, modul, link\ndbl  (1): woche\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\n\n\n\n\n\n\nmodul\ndatum\ntitel\n\n\n\n\nModul 01\n23 September 2025\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n30 September 2025\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n07 Oktober 2025\nDaten Transformation mit dplyr\n\n\nModul 04\n14 Oktober 2025\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n21 Oktober 2025\nBedingte Anweisungen & Datumswerte & OGD Ressourcen\n\n\nModul 06\n28 Oktober 2025\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n04 November 2025\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n11 November 2025\nMit Text Daten arbeiten & KTZH Corporate Design mit statR\n\n\nModul 09\n18 November 2025\nErstellung von Berichten und Folien mit Quarto\n\n\nModul 10\n25 November 2025\nFunktionen schreiben & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n02 Dezember 2025\nArbeitszeit für Abschlussprojekt\n\n\nAbschlussprojekt\n09 Dezember 2025\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n16 Dezember 2025\nAbschlussveranstaltung\n\n\n\n\n\n\n\n\n\nKurstermin: 2025-09-23\nZusatzaufgabe fällig: 2025-09-30\n\n\n\n\n\nIch bin dran: Vortragssegmente + Live-Coding\nWir sind dran: Live-Coding + Mitmachen\nIhr seid dran: Übungen in Paaren\n\n\n\n\n\nDer Kursleiter schreibt und spricht den Code laut vor\nDer Kursleiter erklärt Konzepte und Prinzipien, die relevant sind\nCode wird auf dem Bildschirm angezeigt\n\n\n\n\n\nDer Kursleiter schreibt und spricht den Code laut vor\nDer Kursleiter erklärt relevante Konzepte und Prinzipien\nDer Code wird auf dem Bildschirm angezeigt\nDie Lernenden machen mit, indem sie denselben Code schreiben und ausführen\n\n\n\n\n\nZwei Lernende arbeiten in Paaren in Break-out Räumen zusammen\nEine Person tippt und teilt die Bildschirmanzeige\nEine Person bietet Kommentare und Vorschläge an, und tippt selbst auch mit\n\n\n\n\n\nWährend Live-Coding: hebt die Hand mittels Zoom und unterbrecht mich. Ich werde versuchen, mich um dein Anliegen zu kümmern, wenn es die Zeit erlaubt. Offene Fragen werden dokumentiert.\nWährend Übungen in Break-out Räumen: Ihr könnt mich zu euch rufen. Bei einem Grossteil der Übungen werde ich versuchen in jedem Raum einmal vorbeizuschauen.\n\n\n\n\n\n\n\nDiversität und Inklusion\nNamen und Pronomen\nLernprozess\nrstatszh-k011.github.io/website/verhaltenskodex.html\n\n\n\n\n\n\n\n\n\n\nPhoto by: Sharon McCutcheon\n\n\nDiversität und Inklusion sind auch mir sehr wichtig und mit einem Verhaltenskodex für unsere gemeinsame Zusammenarbeit versuche ich dies zu unterstützen. Bitte nehmt euch etwas Zeit diesen zu lesen. Ihr findet den Verhaltenskodex auf der Webseite für den Kurs.\nIch spreche euch basierend auf eurem Namen an, lasst mich wissen falls du einen anderen Namen und Pronomen bevorzugst.\nIch bin selbst in einem Prozess mehr pber verschiedene Perspektiven und Identitäten zu lernen. Sollte ich im Unterricht etwas sagen, dass dir Unbehagen bereitet, lass es mich bitte wissen.\n\n\n\n\nrstatszh-k011.github.io/website/\n\n\n\n\n\nÖffne einen Webbrowser auf deinem Arbeitsgerät.\nGehe zur Website des Kurses: rstatszh-k011.github.io/website/\nErstelle einen Lesezeichenordner mit dem Namen rstatszh-k011 in deiner Lesezeichenleiste.\nFüge dem Ordner rstatszh-k011 das Lesezeichen zur Kurs-Webseite hinzu.\n\n\n\n\n\n−+\n05:00\n\n\n\n\n\n\n\nlernziele &lt;- readr::read_csv(here::here(\"data/tbl-01-rstatszh-lernziele.csv\")) |&gt; \n  dplyr::filter(modul == params$modul) |&gt;\n  dplyr::pull(lernziele)\n\nRows: 36 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): titel, lernziele\ndbl  (1): modul\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nDie Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernenden können die vier Fenster der RStudio IDE identifizieren.\n\n\n\n\n\n\n\n\nArtwork from @juliesquid for @openscapes (illustrated by @allison_horst)"
-  },
-  {
-    "objectID": "folien/md-01-willkommen.html#kurstermine-und-aufgaben",
-    "href": "folien/md-01-willkommen.html#kurstermine-und-aufgaben",
-    "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": " Kurstermine und Aufgaben",
-    "text": "Kurstermine und Aufgaben\n\nKurstermin: 2025-09-23\nZusatzaufgabe fällig: 2025-09-30"
   }
 ]
