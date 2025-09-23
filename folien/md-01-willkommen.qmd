@@ -228,6 +228,18 @@ Artwork from [\@juliesquid](https://twitter.com/juliesquid) for [\@openscapes](h
 
 ## - {background-image="img/md-01/screenshot/screenshot.014.png"}
 
+## Bildschirm Setup - Frage
+
+::: columns
+::: {.column width="50%"}
+1: Ein Bildschirm ![](img/md-01/bram-naus-N1gUD_dCvJE-unsplash.jpg)
+:::
+
+::: {.column width="50%"}
+2: Zwei oder mehr Bildschirme ![](img/md-01/daniel-korpai-vHVfpi3h5xk-unsplash.jpg)
+:::
+:::
+
 # Was ist Quarto? {background-color="#4C326A"}
 
 ## Quarto ...
@@ -262,15 +274,15 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 ## Ihr seid dran: md-01-uebungen
 
 ::: task
-1. Öffne [posit.cloud]({{< var course.posit-cloud >}}) in deinem Browser 
-2. Öffne den {{< var course.iteration >}} Arbeitsbereich (Workspace) für den Kurs.
-3. Klicke auf [Start]{.highlight-yellow} neben [md-01-uebungen]{.highlight-yellow}.
-4. Suche im Dateimanager im Fenster unten rechts die Datei "hallo-quarto.qmd" und klicke darauf, um sie im Fenster oben links zu öffnen.
-4. Render das Dokument.
-5. Füge deinen Namen zum Schlüssel `author:` im YAML-Header hinzu
-6. Render das Dokument.
-7. Untersuche die Komponenten des Dokuments und führe eine weitere Aktualisierung und ein erneutes Rendern durch.
-8. Besprich die Notizen zu den von dir vorgenommenen Aktualisierungen. Notiere alle Aspekte des Dokuments, die nach der Tour und deiner ersten Interaktion damit unklar sind.
+1. Öffne [posit.cloud/spaces/643775](https://posit.cloud/spaces/643775) in deinem Browser.
+2. Falls du dich nicht im ds4owd-002 Arbeitsbereich befindest, öffne diesen.
+3. Klicke auf [Start]{.highlight-yellow} neben [md-01-exercises]{.highlight-yellow}.
+4. Suche im Dateimanager im Fenster unten rechts die Datei `hello-quarto.qmd` und [klicke darauf]{.highlight-yellow}.
+5. Klicke auf den [Render-Button]{.highlight-yellow} um das Dokument zu rendern. Möglicherweise musst du [Pop-ups erlauben]{.highlight-yellow} in deinem Browser.
+6. Im YAML-Header, ersetze beim Schlüssel `author:` den Text `Your Name` mit deinem Namen.
+7. [Rendere]{.highlight-yellow} das Dokument erneut.
+8. Untersuche die Komponenten des Dokuments und führe eine weitere Aktualisierung durch und rendere erneut.
+9. Besprich deine Notizen über die vorgenommenen Aktualisierungen mit deinen Raumpartner:innen.
 :::
 
 ```{r}

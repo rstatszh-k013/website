@@ -1940,14 +1940,14 @@
     "href": "folien/md-01-willkommen.html#pause-machen",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "folien/md-01-willkommen.html#ihr-seid-dran-md-01-uebungen",
     "href": "folien/md-01-willkommen.html#ihr-seid-dran-md-01-uebungen",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Ihr seid dran: md-01-uebungen",
-    "text": "Ihr seid dran: md-01-uebungen\n\n\nÖffne posit.cloud in deinem Browser\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-01-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei “hallo-quarto.qmd” und klicke darauf, um sie im Fenster oben links zu öffnen.\nRender das Dokument.\nFüge deinen Namen zum Schlüssel author: im YAML-Header hinzu\nRender das Dokument.\nUntersuche die Komponenten des Dokuments und führe eine weitere Aktualisierung und ein erneutes Rendern durch.\nBesprich die Notizen zu den von dir vorgenommenen Aktualisierungen. Notiere alle Aspekte des Dokuments, die nach der Tour und deiner ersten Interaktion damit unklar sind.\n\n\n\n\n\n−+\n15:00"
+    "text": "Ihr seid dran: md-01-uebungen\n\n\nÖffne posit.cloud/spaces/643775 in deinem Browser.\nFalls du dich nicht im ds4owd-002 Arbeitsbereich befindest, öffne diesen.\nKlicke auf Start neben md-01-exercises.\nSuche im Dateimanager im Fenster unten rechts die Datei hello-quarto.qmd und klicke darauf.\nKlicke auf den Render-Button um das Dokument zu rendern. Möglicherweise musst du Pop-ups erlauben in deinem Browser.\nIm YAML-Header, ersetze beim Schlüssel author: den Text Your Name mit deinem Namen.\nRendere das Dokument erneut.\nUntersuche die Komponenten des Dokuments und führe eine weitere Aktualisierung durch und rendere erneut.\nBesprich deine Notizen über die vorgenommenen Aktualisierungen mit deinen Raumpartner:innen.\n\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-01-willkommen.html#von-deiner-eigenen-arbeitsumgebung-aus",
@@ -1982,7 +1982,7 @@
     "href": "folien/md-01-willkommen.html#pause-machen-1",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\n\n\n−+\n05:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "folien/md-01-willkommen.html#versionskontrolle-mit-git-und-github",
@@ -3597,5 +3597,26 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "folien/md-01-willkommen.html#bildschirm-setup---poll",
+    "href": "folien/md-01-willkommen.html#bildschirm-setup---poll",
+    "title": "Willkommen zum Kurs & Werkzeugkiste",
+    "section": "Bildschirm Setup - Poll",
+    "text": "Bildschirm Setup - Poll\n\n\nEin Bildschirm \n\nZwei oder mehr Bildschirme"
+  },
+  {
+    "objectID": "folien/md-01-willkommen.html#quarto",
+    "href": "folien/md-01-willkommen.html#quarto",
+    "title": "Willkommen zum Kurs & Werkzeugkiste",
+    "section": "Quarto …",
+    "text": "Quarto …\n\nist ein neues, open-source, wissenschaftliches und technisches Publikationssystem\nzielt darauf ab, den Prozess der Erstellung von Berichten und der Zusammenarbeit drastisch zu verbessern\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "folien/md-01-willkommen.html#bildschirm-setup---frage",
+    "href": "folien/md-01-willkommen.html#bildschirm-setup---frage",
+    "title": "Willkommen zum Kurs & Werkzeugkiste",
+    "section": "Bildschirm Setup - Frage",
+    "text": "Bildschirm Setup - Frage\n\n\n1: Ein Bildschirm \n\n2: Zwei oder mehr Bildschirme"
   }
 ]
