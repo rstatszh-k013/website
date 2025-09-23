@@ -368,20 +368,6 @@ countdown(minutes = 15)
 | Dashboards       | [flexdashboard](https://pkgs.rstudio.com/flexdashboard/)                     | [Quarto Dashboards](https://quarto.org/docs/dashboards/index.html)          |
 +------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 
-## Pause machen
-
-[Bitte steh auf und beweg dich.]{.highlight-yellow}
-
-![](img/md-01/coffee-break.jpg){width="25%"}
-
-```{r}
-countdown(minutes = 5)
-```
-
-::: aside
-Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
-:::
-
 # Versionskontrolle {background-color="#4C326A"}
 
 ## Versionskontrolle mit Git und GitHub 
@@ -435,6 +421,20 @@ knitr::include_graphics("img/md-01/github-logo.png")
 
 ::: {.hand-purple-large style="text-align: center;"}
 Zurücklehnen und genießen!
+:::
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow}
+
+![](img/md-01/coffee-break.jpg){width="25%"}
+
+```{r}
+countdown(minutes = 5)
+```
+
+::: aside
+Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 :::
 
 ## Ihr seid dran: Klone ein Repository von GitHub {.smaller}
