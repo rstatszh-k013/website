@@ -178,7 +178,7 @@ Um die komplette R-Toolbox auf dem DAP nutzen zu können, musst du im Servicepor
 
 ![](img/md-02/serviceportal_tinytex.PNG)
 
-Wichtige Hinweise wie ihr eure R-Installation auf dem DAP konfigurieren könnt, findet ihr auf [zHub](https://ktzuerich.sharepoint.com/sites/zh-informatik/SitePages/Datenanalyse-mit-R---R-Studio.aspx). Beachtet insbesondere dioe "Best practices". 
+Wichtige Hinweise wie ihr eure R-Installation auf dem DAP konfigurieren könnt, findet ihr auf [zHub](https://ktzuerich.sharepoint.com/sites/zh-informatik/SitePages/Datenanalyse-mit-R---R-Studio.aspx). Beachtet insbesondere die "Best practices". 
 :::
 :::
 
