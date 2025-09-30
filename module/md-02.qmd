@@ -53,7 +53,7 @@ Letzte Woche hatte ich bereits die Kapitel für Daten Visualisierungen aufgelist
 
 ## {{< fa code >}} Zusatzaufgaben
 
-Bitte erledige die folgende Aufgabe bis {{< var md-02.date >}}.
+Bitte erledige die folgende Aufgabe bis {{< var md-02.homework-due >}}.
 
 -   [Zusatzaufgabe 1](../zusatzaufgaben/md-02/za-02-01-datenvisualisierung.qmd): Daten Visualisierung mit `ggplot2`
 

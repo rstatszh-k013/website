@@ -95,6 +95,6 @@ gss_cat |>
 
 6. Schreibe in das Feld "Title": "Repository für Übungen erstellt".
 
-7. Markiere im Feld "Leave a comment" den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage.
+7. Markiere im Feld "Add a description" den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage.
 
 

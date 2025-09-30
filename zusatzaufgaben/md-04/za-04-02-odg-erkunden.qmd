@@ -60,4 +60,4 @@ In dieser Übungen arbeiten wir weiter mit dem Repository welches du in [Zusatza
 
 6. Schreibe in das Feld "Title": "Zwei Fragen an den Datensatz".
 
-7. Markiere im Feld "Leave a comment" den Kursleiter mit @larnsce, deine Fragen an den Datensatz, und mögliche Hürden bei welchen ich dich unterstützen könnte.
+7. Markiere im Feld "Add a description" den Kursleiter mit @larnsce, deine Fragen an den Datensatz, und mögliche Hürden bei welchen ich dich unterstützen könnte.

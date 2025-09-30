@@ -159,4 +159,4 @@ Wir empfehlen das R-Paket `here` zu verwenden, um auf Dateien in deinem Projekt 
 
 6. Schreibe in das Feld "Title": "Daten für das Abschlussprojekt ausgewählt".
 
-7. Markiere im Feld "Leave a comment" den Kursleiter mit @larnsce und hinterlasse mir ein Kommentar, falls du möchtest.
+7. Markiere im Feld "Add a description" den Kursleiter mit @larnsce und hinterlasse mir ein Kommentar, falls du möchtest.
