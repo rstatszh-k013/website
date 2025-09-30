@@ -128,7 +128,7 @@
     "href": "module/md-09.html#zusatzaufgabe",
     "title": "Modul 9",
     "section": " Zusatzaufgabe",
-    "text": "Zusatzaufgabe\nBitte erledige die folgende Aufgabe bis 2025-11-18.\n\nZusatzaufgabe 1: Abschlussprojekt - Querverweise",
+    "text": "Zusatzaufgabe\nBitte erledige die folgende Aufgabe bis 25. November 2025.\n\nZusatzaufgabe 1: Abschlussprojekt - Querverweise",
     "crumbs": [
       "Modul 09"
     ]
@@ -178,7 +178,7 @@
     "href": "module/md-06.html#zusatzaufgabe",
     "title": "Modul 6",
     "section": " Zusatzaufgabe",
-    "text": "Zusatzaufgabe\nBitte erledige die folgende Aufgabe bis 2025-10-28.\n\nZusatzaufgabe 1: Abschlussprojekt",
+    "text": "Zusatzaufgabe\nBitte erledige die folgende Aufgabe bis 04. November 2025.\n\nZusatzaufgabe 1: Abschlussprojekt",
     "crumbs": [
       "Modul 06"
     ]
@@ -228,7 +228,7 @@
     "href": "module/md-10.html#zusatzaufgaben",
     "title": "Modul 10",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-11-25.\n\nZusatzaufgabe 1: Kantons-Communities beitreten\nZusatzaufgabe 2: Abschlussprojekt bis 10.12.2024 abschliessen\nAnbschlussprojekt fertigstellen",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 02. Dezember 2025.\n\nZusatzaufgabe 1: Kantons-Communities beitreten\nZusatzaufgabe 2: Abschlussprojekt bis 10.12.2024 abschliessen\nAnbschlussprojekt fertigstellen",
     "crumbs": [
       "Modul 10"
     ]
@@ -328,7 +328,7 @@
     "href": "module/md-03.html#zusatzaufgaben",
     "title": "Modul 3",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-10-07.\n\nZusatzaufgabe 1: Daten Transformation mit dplyr\nZusatzaufgabe 2: Mit OGD Daten arbeiten\n\nVielen Dank für die Bearbeitung der Aufgaben.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 14. Oktober 2025.\n\nZusatzaufgabe 1: Daten Transformation mit dplyr\nZusatzaufgabe 2: Mit OGD Daten arbeiten\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 03"
     ]
@@ -450,7 +450,7 @@
     "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-7-eröffne-ein-issue-auf-github",
     "title": "Abschlussprojekt",
     "section": "Schritt 7: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 7: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Daten für das Abschlussprojekt ausgewählt”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse mir ein Kommentar, falls du möchtest."
+    "text": "Schritt 7: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Daten für das Abschlussprojekt ausgewählt”.\nMarkiere im Feld “Add a description” den Kursleiter mit @larnsce und hinterlasse mir ein Kommentar, falls du möchtest."
   },
   {
     "objectID": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html",
@@ -478,7 +478,7 @@
     "href": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html#schritt-3-eröffne-ein-issue-auf-github",
     "title": "Daten Visualisierung mit ggplot2",
     "section": "Schritt 3: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage."
+    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Add a description” den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage."
   },
   {
     "objectID": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html",
@@ -527,7 +527,7 @@
     "href": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-6-eröffne-ein-issue-auf-github",
     "title": "Mit OGD Daten arbeiten",
     "section": "Schritt 6: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 6: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository ogd-daten-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
+    "text": "Schritt 6: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository ogd-daten-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Add a description” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
   },
   {
     "objectID": "zusatzaufgaben/md-04/za-04-02-odg-erkunden.html",
@@ -562,7 +562,7 @@
     "href": "zusatzaufgaben/md-04/za-04-02-odg-erkunden.html#schritt-4-eröffne-ein-issue-auf-github",
     "title": "OGD importieren und erkunden",
     "section": "Schritt 4: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository ogd-daten-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zwei Fragen an den Datensatz”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce, deine Fragen an den Datensatz, und mögliche Hürden bei welchen ich dich unterstützen könnte."
+    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository ogd-daten-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zwei Fragen an den Datensatz”.\nMarkiere im Feld “Add a description” den Kursleiter mit @larnsce, deine Fragen an den Datensatz, und mögliche Hürden bei welchen ich dich unterstützen könnte."
   },
   {
     "objectID": "folien/md-05-datumswerte.html#lernziele-für-diese-woche",
@@ -3015,7 +3015,7 @@
     "href": "zusatzaufgaben/md-04/za-04-01-r4ds-uebungen.html#schritt-4-eröffne-ein-issue-auf-github",
     "title": "R for Data Science (r4ds) Übungen",
     "section": "Schritt 4: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository r4ds-uebungen-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Repository für Übungen erstellt”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
+    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository r4ds-uebungen-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Repository für Übungen erstellt”.\nMarkiere im Feld “Add a description” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
   },
   {
     "objectID": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html",
@@ -3043,7 +3043,7 @@
     "href": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html#schritt-3-eröffne-ein-issue-auf-github",
     "title": "Daten Transformation mit dplyr",
     "section": "Schritt 3: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-03-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
+    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-03-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Add a description” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
   },
   {
     "objectID": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html",
@@ -3120,7 +3120,7 @@
     "href": "zusatzaufgaben/md-05/za-05-03-lernende.html#schritt-3-eröffne-ein-issue-auf-github",
     "title": "Mit R arbeiten - Lernende im Kanton Zürich",
     "section": "Schritt 3: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-05-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
+    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-05-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Add a description” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
   },
   {
     "objectID": "zusatzaufgaben/md-07/za-07-01-abschlussprojekt.html",
@@ -3225,7 +3225,7 @@
     "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-4-eröffne-ein-issue-auf-github",
     "title": "Interaktion mit GitHub",
     "section": "Schritt 4: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: https://github.com/rstatszh-k011/\nFinde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Git configuration abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
+    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: https://github.com/rstatszh-k011/\nFinde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Git configuration abgeschlossen”.\nMarkiere im Feld “Add a description” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
   },
   {
     "objectID": "module/md-02.html",
@@ -3272,7 +3272,7 @@
     "href": "module/md-02.html#zusatzaufgaben",
     "title": "Modul 2",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-10-07.\n\nZusatzaufgabe 1: Daten Visualisierung mit ggplot2\n\nVielen Dank für die Bearbeitung der Aufgaben.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 07. Oktober 2025.\n\nZusatzaufgabe 1: Daten Visualisierung mit ggplot2\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 02"
     ]
@@ -3322,7 +3322,7 @@
     "href": "module/md-05.html#übungsaufgaben",
     "title": "Modul 5",
     "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\nBitte erledige die folgende Aufgabe bis 2025-10-21.\n\nZusatzaufgabe 1: OGD Ressourcen\nZusatzaufgabe 2: Abschlussprojekt - Daten auswählen\nZusatzaufgabe 3: Mit R arbeiten - Lernende im Kanton Zürich\n\nVielen Dank für die Bearbeitung der Aufgaben.",
+    "text": "Übungsaufgaben\nBitte erledige die folgende Aufgabe bis 28. Oktober 2025.\n\nZusatzaufgabe 1: OGD Ressourcen\nZusatzaufgabe 2: Abschlussprojekt - Daten auswählen\nZusatzaufgabe 3: Mit R arbeiten - Lernende im Kanton Zürich\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 05"
     ]
@@ -3372,7 +3372,7 @@
     "href": "module/md-04.html#zusatzaufgaben",
     "title": "Modul 4",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-10-14.\n\nZusatzaufgabe 1: R for Data Science (r4ds) Übungen\nZusatzaufgabe 2: OGD Daten importieren und erkunden\n\nVielen Dank für die Bearbeitung der Aufgaben.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 21. Oktober 2025.\n\nZusatzaufgabe 1: R for Data Science (r4ds) Übungen\nZusatzaufgabe 2: OGD Daten importieren und erkunden\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 04"
     ]
@@ -3422,7 +3422,7 @@
     "href": "module/md-07.html#zusatzaufgaben",
     "title": "Modul 7",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-11-04.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 11. November 2025.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
     "crumbs": [
       "Modul 07"
     ]

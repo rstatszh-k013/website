@@ -16,14 +16,31 @@ editor_options:
 
 ```{r}
 #| label: setup
+#| include: false
 
 library(epoxy)
+library(dplyr)
+library(here)
+
+# Read variables from _variables.yml
+vars <- yaml::read_yaml(here::here("_variables.yml"))
+
+# Extract dates for this module
+session_date <- vars$`md-02`$date |> as.Date()
+homework_due_date <- vars$`md-02`$`homework-due` |> as.Date()
+
+# Set locale for German date formatting
+Sys.setlocale("LC_TIME", "de_DE.UTF-8")
+
+# Format dates for display
+session_date_formatted <- format(session_date, "%d. %B %Y")
+homework_due_formatted <- format(homework_due_date, "%d. %B %Y")
 ```
 
 ```{r}
 #| label: lernziele
 
-lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |> 
+lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |>
   dplyr::filter(modul == params$modul) |>
   dplyr::pull(lernziele)
 
@@ -53,7 +70,7 @@ Letzte Woche hatte ich bereits die Kapitel für Daten Visualisierungen aufgelist
 
 ## {{< fa code >}} Zusatzaufgaben
 
-Bitte erledige die folgende Aufgabe bis {{< var md-02.homework-due >}}.
+Bitte erledige die folgende Aufgabe bis **`r homework_due_formatted`**.
 
 -   [Zusatzaufgabe 1](../zusatzaufgaben/md-02/za-02-01-datenvisualisierung.qmd): Daten Visualisierung mit `ggplot2`
 
