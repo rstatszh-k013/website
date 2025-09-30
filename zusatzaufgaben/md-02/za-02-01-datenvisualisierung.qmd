@@ -24,8 +24,8 @@ title: "Daten Visualisierung mit `ggplot2`"
 
 10. Öffne den Reiter "Files" im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:
 
-- `md-02a-erstelle-ein-diagramm.qmd`
-- `md-02b-daten-zusammenfassen.qmd`
+- `01-erstelle-diagramm.qmd`
+- `02-daten-zusammenfassen.qmd`
 
 11. Fahre mit dem nächsten Schritt 2 fort.
 

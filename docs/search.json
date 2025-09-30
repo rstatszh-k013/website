@@ -457,14 +457,14 @@
     "href": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html",
     "title": "Daten Visualisierung mit ggplot2",
     "section": "",
-    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-02a-erstelle-ein-diagramm.qmd\nmd-02b-daten-zusammenfassen.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
+    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\n01-erstelle-diagramm.qmd\n02-daten-zusammenfassen.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
   },
   {
     "objectID": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html#schritt-1-klone-das-repository-für-modul-2",
     "href": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html#schritt-1-klone-das-repository-für-modul-2",
     "title": "Daten Visualisierung mit ggplot2",
     "section": "",
-    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-02a-erstelle-ein-diagramm.qmd\nmd-02b-daten-zusammenfassen.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
+    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\n01-erstelle-diagramm.qmd\n02-daten-zusammenfassen.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
   },
   {
     "objectID": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html#schritt-2-übertrage-deine-änderungen-auf-github",
@@ -1192,7 +1192,7 @@
     "href": "folien/md-02-datenvisualisierung.html#wir-sind-dran-md-02-uebungen",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Wir sind dran: md-02-uebungen",
-    "text": "Wir sind dran: md-02-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-02-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei md-02b-daten-visualisierung.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+    "text": "Wir sind dran: md-02-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-02-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-daten-visualisierung.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#pause-machen-1",
@@ -1968,13 +1968,6 @@
     "text": "Viele Quarto Formate\n\n\n\nFeature\nR Markdown\nQuarto\n\n\n\n\nCross References\nhtml_document2\npdf_document2\nword_document2\nQuarto Crossrefs\n\n\nWebsites & Blogs\nblogdown\ndistill\nQuarto Websites\nQuarto Blogs\n\n\nBooks\nbookdown\nQuarto Books\n\n\nInteractivity\nShiny Documents\nQuarto Interactive Documents\n\n\nJournal Articles\nrticles\nJournal Articles\n\n\nDashboards\nflexdashboard\nQuarto Dashboards"
   },
   {
-    "objectID": "folien/md-01-willkommen.html#pause-machen-1",
-    "href": "folien/md-01-willkommen.html#pause-machen-1",
-    "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\n\n\n−+\n05:00\n\n\n\n\n\nPhoto by Blake Wisz"
-  },
-  {
     "objectID": "folien/md-01-willkommen.html#versionskontrolle-mit-git-und-github",
     "href": "folien/md-01-willkommen.html#versionskontrolle-mit-git-und-github",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
@@ -2001,6 +1994,13 @@
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Ich bin dran: Ein Rundgang durch GitHub",
     "text": "Ich bin dran: Ein Rundgang durch GitHub\n\nZurücklehnen und genießen!"
+  },
+  {
+    "objectID": "folien/md-01-willkommen.html#pause-machen-1",
+    "href": "folien/md-01-willkommen.html#pause-machen-1",
+    "title": "Willkommen zum Kurs & Werkzeugkiste",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\n\n\n−+\n05:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "folien/md-01-willkommen.html#ihr-seid-dran-klone-ein-repository-von-github",
