@@ -499,7 +499,7 @@
     "href": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-2-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud",
     "title": "Mit OGD Daten arbeiten",
     "section": "Schritt 2: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud",
-    "text": "Schritt 2: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k011\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\n\n\n\nIm Feld “Repository name” schreibe ogd-daten-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\n\n\n\nSkrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\n\n\n\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\n\n\n\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
+    "text": "Schritt 2: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k011\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\n\n\n\nIm Feld “Repository name” schreibe ogd-daten-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\n\n\n\nScrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\n\n\n\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\n\n\n\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
   },
   {
     "objectID": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-3-lade-die-daten-in-das-projekt-auf-posit-cloud",
@@ -737,7 +737,7 @@
     "href": "folien/md-03-datentransformation.html#wir-sind-dran-md-03-uebungen",
     "title": "Daten Transformation mit dplyr",
     "section": "Wir sind dran: md-03-uebungen",
-    "text": "Wir sind dran: md-03-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+    "text": "Wir sind dran: md-03-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#pause-machen",
@@ -751,7 +751,7 @@
     "href": "folien/md-03-datentransformation.html#ihr-seid-dran-02-dplyr-ihr.qmd",
     "title": "Daten Transformation mit dplyr",
     "section": "Ihr seid dran: 02-dplyr-ihr.qmd",
-    "text": "Ihr seid dran: 02-dplyr-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-dplyr-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n25:00"
+    "text": "Ihr seid dran: 02-dplyr-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-dplyr-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n25:00"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#r-terminologie",
@@ -779,7 +779,7 @@
     "href": "folien/md-03-datentransformation.html#wir-sind-dran-03-dplyr-wir.qmd",
     "title": "Daten Transformation mit dplyr",
     "section": "Wir sind dran: 03-dplyr-wir.qmd",
-    "text": "Wir sind dran: 03-dplyr-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n25:00"
+    "text": "Wir sind dran: 03-dplyr-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n25:00"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#pause-machen-1",
@@ -800,7 +800,7 @@
     "href": "folien/md-03-datentransformation.html#modul-3-dokumentation",
     "title": "Daten Transformation mit dplyr",
     "section": "Modul 3 Dokumentation",
-    "text": "Modul 3 Dokumentation\n\nrstatszh-k010.github.io/website/module/md-03.html"
+    "text": "Modul 3 Dokumentation\n\nrstatszh-k011.github.io/website/module/md-03.html"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#zusatzaufgaben-abgabedatum",

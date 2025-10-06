@@ -38,7 +38,7 @@ In dieser Zusatzaufgabe geht es darum einen Datensatz selbst zu identifizieren u
 
 ![](images/05-ogd-username.png){width=80%} 
 
-4. Skrolle auf der gleichen Seite nach unten und klicke auf ["Create repository"]{.highlight-yellow}.
+4. Scrolle auf der gleichen Seite nach unten und klicke auf ["Create repository"]{.highlight-yellow}.
 
 ![](images/06-create-repository.png){width=80%} 
 

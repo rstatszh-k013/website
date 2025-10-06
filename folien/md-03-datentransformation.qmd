@@ -233,7 +233,7 @@ treibhausgase |>
 
 ::: task
 1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2. Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
+2. Öffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.
 3. Klicke auf [Continue]{.highlight-yellow} neben [md-03-uebungen]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei [`01-dplyr-wir.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 :::
@@ -260,7 +260,7 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 ::: task
 1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2. Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
+2. Öffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.
 3. Klicke auf [Continue]{.highlight-yellow} neben [md-03-uebungen]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei [`02-dplyr-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 5. Folge den Anweisungen in der Datei.
@@ -323,7 +323,7 @@ treibhausgase |>
 
 ::: task
 1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2. Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
+2. Öffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.
 3. Klicke auf [Continue]{.highlight-yellow} neben [md-03-uebungen]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei [`03-dplyr-wir.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 :::
@@ -359,10 +359,10 @@ countdown(15)
 ## Modul 3 Dokumentation
 
 ::: learn-more
-[rstatszh-k010.github.io/website/module/md-03.html](https://rstatszh-k010.github.io/website/module/md-03.html)
+[rstatszh-k011.github.io/website/module/md-03.html](https://rstatszh-k011.github.io/website/module/md-03.html)
 
 ```{=html}
-<iframe src="https://rstatszh-k010.github.io/website/module/md-03.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 3 Dokumentation"></iframe>
+<iframe src="https://rstatszh-k011.github.io/website/module/md-03.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 3 Dokumentation"></iframe>
 ```
 :::
 
@@ -375,8 +375,8 @@ countdown(15)
 
 ## Danke! `r emo::ji("sunflower")` 
 
-Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ 
+Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/
 
-Access slides als [PDF auf GitHub](https://github.com/rstatszh-k010/website/raw/main/folien/md-03-datentransformation.pdf)
+Access slides als [PDF auf GitHub](https://github.com/rstatszh-k011/website/raw/main/folien/md-03-datentransformation.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
