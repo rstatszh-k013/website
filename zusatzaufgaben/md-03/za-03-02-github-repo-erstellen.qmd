@@ -47,7 +47,7 @@ In dieser Zusatzaufgabe geht es darum einen Datensatz selbst zu identifizieren u
 
 ![](images/07-quick-setup.png){width=80%} 
 
-6. Öffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: [{{< var course.posit-cloud-space >}}]({{< var course.posit-cloud-space >}})
+6. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf Posit Cloud: [{{< var course.posit-cloud-space >}}]({{< var course.posit-cloud-space >}})
 
 7. Klicke auf "New Project" > "New Project from Git Repository"
 
@@ -152,7 +152,7 @@ Du musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung
 
 1. Öffne [github.com](https://github.com/) in deinem Browser.
 
-2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k011]({{< var course.github-org >}})
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/{{< var course.code >}}]({{< var course.github-org >}})
 
 3. Finde das Repository [ogd-daten-USERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
 
