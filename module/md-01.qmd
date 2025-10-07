@@ -52,7 +52,7 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |
 
 ## {{< fa display >}} Folien
 
-[Zeige Folien im Vollbildmodus an](../folien/md-01-willkommen.html) | [Download Folien als PDF](https://github.com/rstatszh-k011/website/raw/main/folien/md-01-willkommen.pdf)
+[Zeige Folien im Vollbildmodus an](../folien/md-01-willkommen.html) | [Download Folien als PDF]({{< var course.github-org >}}website/raw/main/folien/md-01-willkommen.pdf)
 
 ```{=html}
 <iframe class="slide-deck" src="../folien/md-01-willkommen.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>

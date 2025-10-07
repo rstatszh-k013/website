@@ -359,10 +359,10 @@ countdown(15)
 ## Modul 3 Dokumentation
 
 ::: learn-more
-[rstatszh-k011.github.io/website/module/md-03.html](https://rstatszh-k011.github.io/website/module/md-03.html)
+[{{< var course.site-short >}}module/md-03.html]({{< var course.site >}}module/md-03.html)
 
 ```{=html}
-<iframe src="https://rstatszh-k011.github.io/website/module/md-03.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 3 Dokumentation"></iframe>
+<iframe src="{{< var course.site >}}module/md-03.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 3 Dokumentation"></iframe>
 ```
 :::
 
@@ -377,6 +377,6 @@ countdown(15)
 
 Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/
 
-Access slides als [PDF auf GitHub](https://github.com/rstatszh-k011/website/raw/main/folien/md-03-datentransformation.pdf)
+Access slides als [PDF auf GitHub]({{< var course.github-org >}}website/raw/main/folien/md-03-datentransformation.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).

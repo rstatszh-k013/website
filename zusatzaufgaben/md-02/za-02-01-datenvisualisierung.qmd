@@ -6,7 +6,7 @@ title: "Daten Visualisierung mit `ggplot2`"
 
 1. Öffne github.com in deinem Browser.
 
-2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k011](https://github.com/rstatszh-k011)
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k011]({{< var course.github-org >}})
 
 3. Finde das Repository [md-02-zusatzaufgaben-BENUTZERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.
 
@@ -70,7 +70,7 @@ Du musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung
 
 1. Öffne [github.com](https://github.com/) in deinem Browser.
 
-2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k011](https://github.com/rstatszh-k011)
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k011]({{< var course.github-org >}})
 
 3. Finde das Repository [md-02-zusatzaufgaben-BENUTZERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
 

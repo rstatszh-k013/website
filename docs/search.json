@@ -408,7 +408,7 @@
     "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-1-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud",
     "title": "Abschlussprojekt",
     "section": "Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud",
-    "text": "Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k011\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\nIm Feld “Repository name” schreibe projekt-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\nSkrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud https://posit.cloud/spaces/598027/\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
+    "text": "Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k011/\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\nIm Feld “Repository name” schreibe projekt-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\nSkrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud https://posit.cloud/spaces/598027/\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
   },
   {
     "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-2-erstelle-neue-ordner",
@@ -499,7 +499,7 @@
     "href": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-2-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud",
     "title": "Mit OGD Daten arbeiten",
     "section": "Schritt 2: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud",
-    "text": "Schritt 2: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k011\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\n\n\n\nIm Feld “Repository name” schreibe ogd-daten-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\n\n\n\nScrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\n\n\n\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\n\n\n\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: https://posit.cloud/spaces/598027/\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
+    "text": "Schritt 2: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k011/\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\n\n\n\nIm Feld “Repository name” schreibe ogd-daten-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\n\n\n\nScrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\n\n\n\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\n\n\n\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: https://posit.cloud/spaces/598027/\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
   },
   {
     "objectID": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-3-lade-die-daten-in-das-projekt-auf-posit-cloud",
@@ -541,7 +541,7 @@
     "href": "zusatzaufgaben/md-04/za-04-02-odg-erkunden.html#schritt-1-öffne-das-projekt-in-der-posit-cloud",
     "title": "OGD importieren und erkunden",
     "section": "Schritt 1: öffne das Projekt in der Posit Cloud",
-    "text": "Schritt 1: öffne das Projekt in der Posit Cloud\n\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV\nFinde das Projekt ogd-daten-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf das Projekt um es zu öffnen."
+    "text": "Schritt 1: öffne das Projekt in der Posit Cloud\n\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: https://posit.cloud/spaces/598027/\nFinde das Projekt ogd-daten-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf das Projekt um es zu öffnen."
   },
   {
     "objectID": "zusatzaufgaben/md-04/za-04-02-odg-erkunden.html#schritt-2-daten-importieren",
@@ -2994,7 +2994,7 @@
     "href": "zusatzaufgaben/md-04/za-04-01-r4ds-uebungen.html#schritt-1-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud",
     "title": "R for Data Science (r4ds) Übungen",
     "section": "Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud",
-    "text": "Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k011\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\nIm Feld “Repository name” schreibe r4ds-uebungen-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\nSkrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
+    "text": "Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k011/\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\nIm Feld “Repository name” schreibe r4ds-uebungen-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\nSkrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) auf Posit Cloud: https://posit.cloud/spaces/598027/\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
   },
   {
     "objectID": "zusatzaufgaben/md-04/za-04-01-r4ds-uebungen.html#schritt-2-erstelle-eine-quarto-datei-für-übungen-aus-dem-kapitel-16-factors",
@@ -3162,7 +3162,7 @@
     "href": "zusatzaufgaben/md-07/za-07-01-abschlussprojekt.html#schritt-4-lade-das-dictionary-hoch",
     "title": "Abschlussprojekt",
     "section": "Schritt 4: Lade das Dictionary hoch",
-    "text": "Schritt 4: Lade das Dictionary hoch\n\nÖffne dein Abschlussprojekt auf Posit Cloud https://posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV.\nNutze den Files Tab im unteren rechten Fenster, um das Daten-Codebook codebook.csv im CSV-Format in den Ordner daten/processed hochzuladen."
+    "text": "Schritt 4: Lade das Dictionary hoch\n\nÖffne dein Abschlussprojekt auf Posit Cloud https://posit.cloud/spaces/598027/.\nNutze den Files Tab im unteren rechten Fenster, um das Daten-Codebook codebook.csv im CSV-Format in den Ordner daten/processed hochzuladen."
   },
   {
     "objectID": "zusatzaufgaben/md-07/za-07-01-abschlussprojekt.html#schritt-5-bereite-deine-verarbeitete-analysefähige-processed-daten-vor",

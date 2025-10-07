@@ -29,7 +29,7 @@ Du hast nun gelernt wie du mich mittels GitHub Issues erreichen kannst. Falls du
 
 1. Öffne [github.com](https://github.com/) in deinem Browser.
 
-2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k011](https://github.com/rstatszh-k011)
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k011]({{< var course.github-org >}})
 
 3. Finde das Repository [projekt-USERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
 
