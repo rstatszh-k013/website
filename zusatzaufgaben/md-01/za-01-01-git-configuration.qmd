@@ -31,7 +31,7 @@ execute:
 
 ![](images/gh-clone-03.png){width=50%}
 
-6. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf [posit.cloud]({{< var course.posit-cloud-signup >}})
+6. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf [posit.cloud/spaces/{{< var course.posit-cloud-space-id >}}/join]({{< var course.posit-cloud-signup >}})
 
 ![](images/gh-clone-04.png){width=50%}
 

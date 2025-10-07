@@ -10,7 +10,7 @@ In dieser Übung erstellt ihr ein neues Repository wie in [Zusatzaufgabe 2 aus M
 
 ## Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud
 
-1. Öffne die GitHub Organisation für den Kurs {{< var course.github-org >}}
+1. Öffne die GitHub Organisation [github.com/{{< var course.code >}}]({{< var course.github-org >}}) für den Kurs
 
 2. Rechts neben dem Feld ["Find a repository"]{.highlight-yellow} klicke auf den grünen ["New"]{.highlight-yellow} Button.
 
@@ -20,7 +20,7 @@ In dieser Übung erstellt ihr ein neues Repository wie in [Zusatzaufgabe 2 aus M
 
 5. Im Feld ["Quick setup"]{.highlight-yellow} klicke auf das Clipboard neben der HTTPs URL.
 
-6. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf Posit Cloud: {{< var course.posit-cloud-space >}}
+6. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf [posit.cloud/spaces/{{< var course.posit-cloud-space-id >}}]({{< var course.posit-cloud-space >}})
 
 7. Klicke auf "New Project" > "New Project from Git Repository"
 

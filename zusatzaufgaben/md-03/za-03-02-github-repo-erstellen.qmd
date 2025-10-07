@@ -29,7 +29,7 @@ In dieser Zusatzaufgabe geht es darum einen Datensatz selbst zu identifizieren u
 
 ## Schritt 2: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud
 
-1. Öffne die GitHub Organisation für den Kurs {{< var course.github-org >}}
+1. Öffne die GitHub Organisation [github.com/{{< var course.code >}}]({{< var course.github-org >}}) für den Kurs
 
 2. Rechts neben dem Feld ["Find a repository"]{.highlight-yellow} klicke auf den grünen ["New"]{.highlight-yellow} Button.
 
@@ -47,7 +47,7 @@ In dieser Zusatzaufgabe geht es darum einen Datensatz selbst zu identifizieren u
 
 ![](images/07-quick-setup.png){width=80%} 
 
-6. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf Posit Cloud: [{{< var course.posit-cloud-space >}}]({{< var course.posit-cloud-space >}})
+6. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf [posit.cloud/spaces/{{< var course.posit-cloud-space-id >}}]({{< var course.posit-cloud-space >}})
 
 7. Klicke auf "New Project" > "New Project from Git Repository"
 

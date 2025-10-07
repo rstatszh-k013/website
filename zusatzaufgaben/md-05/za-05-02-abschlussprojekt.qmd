@@ -41,7 +41,7 @@ Die Daten müssen nicht bereits in den vorgegeben Kriterien der [Leitlinien des 
 
 ## Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud
 
-1. Öffne die GitHub Organisation für den Kurs {{< var course.github-org >}}
+1. Öffne die GitHub Organisation [github.com/{{< var course.code >}}]({{< var course.github-org >}}) für den Kurs
 
 2. Rechts neben dem Feld ["Find a repository"]{.highlight-yellow} klicke auf den grünen ["New"]{.highlight-yellow} Button.
 
@@ -51,7 +51,7 @@ Die Daten müssen nicht bereits in den vorgegeben Kriterien der [Leitlinien des 
 
 5. Im Feld ["Quick setup"]{.highlight-yellow} klicke auf das Clipboard neben der HTTPs URL.
 
-6. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf Posit Cloud {{< var course.posit-cloud-space >}}
+6. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf [posit.cloud/spaces/{{< var course.posit-cloud-space-id >}}]({{< var course.posit-cloud-space >}})
 
 7. Klicke auf "New Project" > "New Project from Git Repository"
 
@@ -123,7 +123,7 @@ Wir empfehlen das R-Paket `here` zu verwenden, um auf Dateien in deinem Projekt 
 
 ## Schritt 6: Übertrage deine Änderungen auf GitHub
 
-1. Überprüfe ob dein Projekt den gleichen Aufbau hat wie das Projekt von Rainbow Train: {{< var course.github-org >}}projekt-rainbow-train
+1. Überprüfe ob dein Projekt den gleichen Aufbau hat wie das [Projekt von Rainbow Train: github.com/{{< var course.code >}}/projekt-rainbow-train]({{< var course.github-org >}}projekt-rainbow-train)
 
 2. Falls der Aufbau nicht übereinstimmt, nehme nochmals Veränderungen vor.
 

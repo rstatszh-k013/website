@@ -6,7 +6,7 @@ In dieser Übungen arbeiten wir weiter mit dem Repository welches du in [Zusatza
 
 ## Schritt 1: öffne das Projekt in der Posit Cloud
 
-1. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf Posit Cloud: {{< var course.posit-cloud-space >}}
+1. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf [posit.cloud/spaces/{{< var course.posit-cloud-space-id >}}]({{< var course.posit-cloud-space >}})
 
 2. Finde das Projekt [ogd-daten-USERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
 

@@ -14,7 +14,7 @@ title: "Daten Transformation mit `dplyr`"
 
 5. Kopiere die HTTPS-URL in deine Zwischenablage.
 
-6. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf Posit Cloud: {{< var course.posit-cloud-space >}}
+6. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf [posit.cloud/spaces/{{< var course.posit-cloud-space-id >}}]({{< var course.posit-cloud-space >}})
 
 7. Klicke auf "New Project" > "New Project from Git Repository"
 
