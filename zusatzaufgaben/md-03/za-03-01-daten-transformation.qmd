@@ -22,9 +22,9 @@ title: "Daten Transformation mit `dplyr`"
 
 9. Warte, bis das Projekt bereitgestellt wurde.
 
-10. Öffne den Reiter "Files" im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:
+10. Öffne den Reiter "Files" im Fenster unten links und arbeite durch die Aufgaben in der folgenden Datei:
 
-- `md-03a-daten-transformation.qmd`
+- `01-daten-transformation.qmd`
 
 11. Fahre mit dem nächsten Schritt 2 fort.
 
