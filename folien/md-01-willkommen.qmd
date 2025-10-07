@@ -274,7 +274,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 ## Ihr seid dran: md-01-uebungen
 
 ::: task
-1. Öffne [posit.cloud/spaces/643775](https://posit.cloud/spaces/643775) in deinem Browser.
+1. Öffne [posit.cloud/spaces/{{< var course.posit-cloud-space-id >}}]({{< var course.posit-cloud-space >}}) in deinem Browser.
 2. Falls du dich nicht im rstatsZH-K011 Arbeitsbereich befindest, öffne diesen.
 3. Klicke auf [Start]{.highlight-yellow} neben [md-01-exercises]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei `hello-quarto.qmd` und [klicke darauf]{.highlight-yellow}.

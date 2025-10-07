@@ -138,4 +138,4 @@ Du musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung
 
 6. Schreibe in das Feld "Title": "Zusatzaufgaben abgeschlossen".
 
-7. Markiere im Feld "Add a description" den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage.
+7. Markiere im Feld "Add a description" den Kursleiter mit @larnsce und bestätige, dass du die Aufgabe abgeschlossen hast. Du kannst auch eine Nachricht oder offene Frage hinterlassen.
