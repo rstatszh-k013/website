@@ -8,7 +8,8 @@ course:
   site: "https://rstatszh-k011.github.io/website/"
   site-short: "rstatszh-k011.github.io/website/"
   github-org: "https://github.com/rstatszh-k011/"
-  posit-cloud: "https://posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV"
+  posit-cloud-space: "https://posit.cloud/spaces/598027/"
+  posit-cloud-signup: "https://posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV"
 
 md-01:
   titel: "Willkommen zum Kurs & Werkzeugkiste"

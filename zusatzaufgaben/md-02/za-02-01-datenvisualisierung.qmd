@@ -14,7 +14,7 @@ title: "Daten Visualisierung mit `ggplot2`"
 
 5. Kopiere die HTTPS-URL in deine Zwischenablage.
 
-6. Öffne den rstatszh-k011 Arbeitsbereich (Workspace) auf [posit.cloud](https://posit.cloud/spaces/598027/join?access_code=rYiY4Jmg-pU5XKJzRxZiCqeQjJqZ8YEfm7Vma8OV)
+6. Öffne den rstatszh-k011 Arbeitsbereich (Workspace) auf [posit.cloud]({{< var course.posit-cloud-space >}})
 
 7. Klicke auf "New Project" > "New Project from Git Repository"
 
