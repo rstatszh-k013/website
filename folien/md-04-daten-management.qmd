@@ -43,7 +43,7 @@ homework_due_formatted <- format(homework_due_date, "%A, %d. %B")
 ```
 
 ```{r}
-
+#| echo: false 
 befragung <- read_csv(
     here::here("folien/daten/raw/KTZH_00001341_00002759_frage7a1.csv"))
 
@@ -53,6 +53,7 @@ befragung <- read_csv(
 
 ```{r}
 #| label: lernziele
+#| echo: false 
 
 lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |> 
   dplyr::filter(modul == params$modul) |>
