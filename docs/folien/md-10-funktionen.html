@@ -1,219 +1,356 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lars Schöbitz">
+
+<title>Funktionen schreiben &amp; Parameterisierung von Berichten – rstatsZH - Data Science mit R</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-881edc3defd80494a56e07c4f7fe3ff6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+<script src="../site_libs/countdown-0.4.0/countdown.js"></script>
+<script defer="" data-domain="rstatszh-k011.github.io/website" src="https://plausible.io/js/script.js"></script>
 
-  <meta name="author" content="Lars Schöbitz">
-  <title>rstatsZH - Data Science mit R – Funktionen schreiben &amp; Parameterisierung von Berichten</title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-      vertical-align: middle;
-    }
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-  </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-e50d29e4b01d135ac64d43589b43f1d2.css">
-  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
-  <style type="text/css">
-    .reveal div.sourceCode {
-      margin: 0;
-      overflow: auto;
-    }
-    .reveal div.hanging-indent {
-      margin-left: 1em;
-      text-indent: -1em;
-    }
-    .reveal .slide:not(.center) {
-      height: 100%;
-    }
-    .reveal .slide.scrollable {
-      overflow-y: auto;
-    }
-    .reveal .footnotes {
-      height: 100%;
-      overflow-y: auto;
-    }
-    .reveal .slide .absolute {
-      position: absolute;
-      display: block;
-    }
-    .reveal .footnotes ol {
-      counter-reset: ol;
-      list-style-type: none; 
-      margin-left: 0;
-    }
-    .reveal .footnotes ol li:before {
-      counter-increment: ol;
-      content: counter(ol) ". "; 
-    }
-    .reveal .footnotes ol li > p:first-child {
-      display: inline-block;
-    }
-    .reveal .slide ul,
-    .reveal .slide ol {
-      margin-bottom: 0.5em;
-    }
-    .reveal .slide ul li,
-    .reveal .slide ol li {
-      margin-top: 0.4em;
-      margin-bottom: 0.2em;
-    }
-    .reveal .slide ul[role="tablist"] li {
-      margin-bottom: 0;
-    }
-    .reveal .slide ul li > *:first-child,
-    .reveal .slide ol li > *:first-child {
-      margin-block-start: 0;
-    }
-    .reveal .slide ul li > *:last-child,
-    .reveal .slide ol li > *:last-child {
-      margin-block-end: 0;
-    }
-    .reveal .slide .columns:nth-child(3) {
-      margin-block-start: 0.8em;
-    }
-    .reveal blockquote {
-      box-shadow: none;
-    }
-    .reveal .tippy-content>* {
-      margin-top: 0.2em;
-      margin-bottom: 0.7em;
-    }
-    .reveal .tippy-content>*:last-child {
-      margin-bottom: 0.2em;
-    }
-    .reveal .slide > img.stretch.quarto-figure-center,
-    .reveal .slide > img.r-stretch.quarto-figure-center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; 
-    }
-    .reveal .slide > img.stretch.quarto-figure-left,
-    .reveal .slide > img.r-stretch.quarto-figure-left  {
-      display: block;
-      margin-left: 0;
-      margin-right: auto; 
-    }
-    .reveal .slide > img.stretch.quarto-figure-right,
-    .reveal .slide > img.r-stretch.quarto-figure-right  {
-      display: block;
-      margin-left: auto;
-      margin-right: 0; 
-    }
-  </style>
-  <link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
-  <script src="../site_libs/countdown-0.4.0/countdown.js"></script>
+
 </head>
-<body class="quarto-light">
-  <div class="reveal">
-    <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Funktionen schreiben &amp; Parameterisierung von Berichten</h1>
-  <p class="subtitle">rstatsZH - Data Science mitR</p>
+<body class="nav-sidebar docked quarto-light">
 
-<div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Lars Schöbitz 
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      rstatsZH - Data Science mit R
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">rstatsZH - Data Science mit R</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/rstatszh-k011/" title="GitHub Organisation" class="quarto-navigation-tool px-1" aria-label="GitHub Organisation"><i class="bi bi-github"></i></a>
 </div>
-</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vorbereitung</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vorbereitung/01-github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schritt 1: GitHub</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vorbereitung/02-posit-cloud.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schritt 2: Posit Cloud</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vorbereitung/03-r4ds-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schritt 3: Kursbuch</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vorbereitung/04-umfrage.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schritt 4: Umfrage</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kalendar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kurskalender</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../module/md-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 01</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../module/md-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 02</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../module/md-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 03</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../module/md-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 04</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../module/md-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 05</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../module/md-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 06</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../module/md-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 07</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../module/md-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 08</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../module/md-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 09</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../module/md-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 10</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../abschlussprojekt/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abschlussprojekt</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#lernziele-für-diese-woche" id="toc-lernziele-für-diese-woche" class="nav-link active" data-scroll-target="#lernziele-für-diese-woche">Lernziele (für diese Woche)</a></li>
+  <li><a href="#funktionen" id="toc-funktionen" class="nav-link" data-scroll-target="#funktionen">Funktionen</a>
+  <ul class="collapse">
+  <li><a href="#lernende-kanton-zürich" id="toc-lernende-kanton-zürich" class="nav-link" data-scroll-target="#lernende-kanton-zürich">Lernende Kanton Zürich</a></li>
+  <li><a href="#prozentrechnung" id="toc-prozentrechnung" class="nav-link" data-scroll-target="#prozentrechnung">Prozentrechnung</a></li>
+  <li><a href="#prozentrechnung-formel" id="toc-prozentrechnung-formel" class="nav-link" data-scroll-target="#prozentrechnung-formel">Prozentrechnung: Formel</a></li>
+  <li><a href="#prozentrechnung-funktion" id="toc-prozentrechnung-funktion" class="nav-link" data-scroll-target="#prozentrechnung-funktion">Prozentrechnung: Funktion</a></li>
+  <li><a href="#prozentrechnung-funktion-anwenden" id="toc-prozentrechnung-funktion-anwenden" class="nav-link" data-scroll-target="#prozentrechnung-funktion-anwenden">Prozentrechnung: Funktion anwenden</a></li>
+  <li><a href="#prozentrechnung-funktion-anwenden-1" id="toc-prozentrechnung-funktion-anwenden-1" class="nav-link" data-scroll-target="#prozentrechnung-funktion-anwenden-1">Prozentrechnung: Funktion anwenden</a></li>
+  <li><a href="#prozentrechnung-funktion-anpassen" id="toc-prozentrechnung-funktion-anpassen" class="nav-link" data-scroll-target="#prozentrechnung-funktion-anpassen">Prozentrechnung: Funktion anpassen</a></li>
+  <li><a href="#prozentrechnung-funktion-anpassen-1" id="toc-prozentrechnung-funktion-anpassen-1" class="nav-link" data-scroll-target="#prozentrechnung-funktion-anpassen-1">Prozentrechnung: Funktion anpassen</a></li>
+  <li><a href="#prozentrechnung-funktion-anwenden-2" id="toc-prozentrechnung-funktion-anwenden-2" class="nav-link" data-scroll-target="#prozentrechnung-funktion-anwenden-2">Prozentrechnung: Funktion anwenden</a></li>
+  <li><a href="#ihr-seid-dran-01-funktionen.qmd" id="toc-ihr-seid-dran-01-funktionen.qmd" class="nav-link" data-scroll-target="#ihr-seid-dran-01-funktionen.qmd">Ihr seid dran: <code>01-funktionen.qmd</code></a></li>
+  </ul></li>
+  <li><a href="#paramter-in-quarto-dokumenten" id="toc-paramter-in-quarto-dokumenten" class="nav-link" data-scroll-target="#paramter-in-quarto-dokumenten">Paramter in Quarto Dokumenten</a>
+  <ul class="collapse">
+  <li><a href="#parameter-in-quarto-dokumenten" id="toc-parameter-in-quarto-dokumenten" class="nav-link" data-scroll-target="#parameter-in-quarto-dokumenten">Parameter in Quarto Dokumenten</a></li>
+  <li><a href="#parameter-in-quarto-dokumenten-1" id="toc-parameter-in-quarto-dokumenten-1" class="nav-link" data-scroll-target="#parameter-in-quarto-dokumenten-1">Parameter in Quarto Dokumenten</a></li>
+  <li><a href="#parameter-in-quarto-dokumenten-2" id="toc-parameter-in-quarto-dokumenten-2" class="nav-link" data-scroll-target="#parameter-in-quarto-dokumenten-2">Parameter in Quarto Dokumenten</a></li>
+  <li><a href="#aufgabenstellung" id="toc-aufgabenstellung" class="nav-link" data-scroll-target="#aufgabenstellung">Aufgabenstellung</a></li>
+  <li><a href="#klone-das-repository-md-10-paramater-benutzername" id="toc-klone-das-repository-md-10-paramater-benutzername" class="nav-link" data-scroll-target="#klone-das-repository-md-10-paramater-benutzername">Klone das Repository md-10-paramater-BENUTZERNAME</a></li>
+  <li><a href="#pause-machen" id="toc-pause-machen" class="nav-link" data-scroll-target="#pause-machen">Pause machen</a></li>
+  <li><a href="#md-10-paramater-benutzername" id="toc-md-10-paramater-benutzername" class="nav-link" data-scroll-target="#md-10-paramater-benutzername">md-10-paramater-BENUTZERNAME</a></li>
+  <li><a href="#pause-machen-1" id="toc-pause-machen-1" class="nav-link" data-scroll-target="#pause-machen-1">Pause machen</a></li>
+  </ul></li>
+  <li><a href="#webseiten-publizieren" id="toc-webseiten-publizieren" class="nav-link" data-scroll-target="#webseiten-publizieren">Webseiten publizieren</a>
+  <ul class="collapse">
+  <li><a href="#beispiel---vorrausetzungen" id="toc-beispiel---vorrausetzungen" class="nav-link" data-scroll-target="#beispiel---vorrausetzungen">Beispiel - Vorrausetzungen</a></li>
+  <li><a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages">GitHub Pages</a></li>
+  <li><a href="#quartopub" id="toc-quartopub" class="nav-link" data-scroll-target="#quartopub">QuartoPub</a></li>
+  <li><a href="#andere-dienste" id="toc-andere-dienste" class="nav-link" data-scroll-target="#andere-dienste">Andere Dienste</a></li>
+  </ul></li>
+  <li><a href="#wie-gehts-weiter" id="toc-wie-gehts-weiter" class="nav-link" data-scroll-target="#wie-gehts-weiter">Wie geht’s weiter?</a>
+  <ul class="collapse">
+  <li><a href="#abschlussprojekt" id="toc-abschlussprojekt" class="nav-link" data-scroll-target="#abschlussprojekt">Abschlussprojekt</a></li>
+  <li><a href="#abschlussveranstaltung" id="toc-abschlussveranstaltung" class="nav-link" data-scroll-target="#abschlussveranstaltung">Abschlussveranstaltung</a></li>
+  <li><a href="#raus-aus-posit-cloud" id="toc-raus-aus-posit-cloud" class="nav-link" data-scroll-target="#raus-aus-posit-cloud">Raus aus Posit Cloud</a></li>
+  <li><a href="#rein-in-die-kantons-communities" id="toc-rein-in-die-kantons-communities" class="nav-link" data-scroll-target="#rein-in-die-kantons-communities">Rein in die Kantons-Communities</a></li>
+  <li><a href="#besucht-die-meetups" id="toc-besucht-die-meetups" class="nav-link" data-scroll-target="#besucht-die-meetups">Besucht die Meetups</a></li>
+  </ul></li>
+  <li><a href="#rückblick" id="toc-rückblick" class="nav-link" data-scroll-target="#rückblick">Rückblick</a>
+  <ul class="collapse">
+  <li><a href="#lernziele-des-kurses" id="toc-lernziele-des-kurses" class="nav-link" data-scroll-target="#lernziele-des-kurses">Lernziele des Kurses</a></li>
+  <li><a href="#ihr-seid-dran-5-min-nachdenken-notizen-machen" id="toc-ihr-seid-dran-5-min-nachdenken-notizen-machen" class="nav-link" data-scroll-target="#ihr-seid-dran-5-min-nachdenken-notizen-machen">Ihr seid dran: 5 min Nachdenken + Notizen machen</a></li>
+  <li><a href="#bitte-ausfüllen" id="toc-bitte-ausfüllen" class="nav-link" data-scroll-target="#bitte-ausfüllen">Bitte ausfüllen</a></li>
+  <li><a href="#wie-es-für-mich-weiter-geht" id="toc-wie-es-für-mich-weiter-geht" class="nav-link" data-scroll-target="#wie-es-für-mich-weiter-geht">Wie es für mich weiter geht</a></li>
+  <li><a href="#zeitpuffer-modul-10" id="toc-zeitpuffer-modul-10" class="nav-link" data-scroll-target="#zeitpuffer-modul-10">Zeitpuffer: Modul 10</a></li>
+  </ul></li>
+  <li><a href="#zusatzaufgaben-modul-10" id="toc-zusatzaufgaben-modul-10" class="nav-link" data-scroll-target="#zusatzaufgaben-modul-10">Zusatzaufgaben Modul 10</a>
+  <ul class="collapse">
+  <li><a href="#modul-10-dokumentation" id="toc-modul-10-dokumentation" class="nav-link" data-scroll-target="#modul-10-dokumentation">Modul 10 Dokumentation</a></li>
+  <li><a href="#zusatzaufgaben-abgabedatum" id="toc-zusatzaufgaben-abgabedatum" class="nav-link" data-scroll-target="#zusatzaufgaben-abgabedatum">Zusatzaufgaben Abgabedatum</a></li>
+  </ul></li>
+  <li><a href="#danke" id="toc-danke" class="nav-link" data-scroll-target="#danke">Danke</a>
+  <ul class="collapse">
+  <li><a href="#danke-1" id="toc-danke-1" class="nav-link" data-scroll-target="#danke-1">Danke! 🌻</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="md-10-funktionen.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Funktionen schreiben &amp; Parameterisierung von Berichten</h1>
+<p class="subtitle lead">rstatsZH - Data Science mitR</p>
 </div>
 
-  <p class="date">Nov 25, 2025</p>
-</section>
-<section id="lernziele-für-diese-woche" class="slide level2">
-<h2>Lernziele (für diese Woche)</h2>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lars Schöbitz </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Nov 25, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="lernziele-für-diese-woche" class="level2">
+<h2 class="anchored" data-anchor-id="lernziele-für-diese-woche">Lernziele (für diese Woche)</h2>
 <div class="cell">
 <ol type="1">
 <li>Die Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko</li>
@@ -222,17 +359,14 @@ Lars Schöbitz
 </ol>
 </div>
 </section>
-<section>
-<section id="funktionen" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Funktionen</h1>
-
-</section>
-<section id="lernende-kanton-zürich" class="slide level2">
-<h2>Lernende Kanton Zürich</h2>
+<section id="funktionen" class="level1" data-background-color="#4C326A">
+<h1 data-background-color="#4C326A">Funktionen</h1>
+<section id="lernende-kanton-zürich" class="level2">
+<h2 class="anchored" data-anchor-id="lernende-kanton-zürich">Lernende Kanton Zürich</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
-<span id="cb1-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
-<span id="cb1-3"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="hcrcqrifov" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>#hcrcqrifov table {
@@ -684,7 +818,7 @@ Lars Schöbitz
 }
 </style>
 
-<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
 <tr class="gt_col_headings header">
 <th id="stand" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">stand</th>
@@ -2027,17 +2161,17 @@ Lars Schöbitz
 </div>
 </div>
 </section>
-<section id="prozentrechnung" class="slide level2">
-<h2>Prozentrechnung</h2>
+<section id="prozentrechnung" class="level2">
+<h2 class="anchored" data-anchor-id="prozentrechnung">Prozentrechnung</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2" data-code-line-numbers="7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
-<span id="cb2-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
-<span id="cb2-3"><a></a>    <span class="fu">group_by</span>(stufe) <span class="sc">|&gt;</span> </span>
-<span id="cb2-4"><a></a>    <span class="fu">summarise</span>(</span>
-<span id="cb2-5"><a></a>        <span class="at">total =</span> <span class="fu">sum</span>(anzahl)</span>
-<span id="cb2-6"><a></a>    ) <span class="sc">|&gt;</span> </span>
-<span id="cb2-7"><a></a>    <span class="fu">mutate</span>(<span class="at">prozent =</span> total <span class="sc">/</span> <span class="fu">sum</span>(total) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb2-8"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
+<span id="cb2-2"><a href="#cb2-2"></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
+<span id="cb2-3"><a href="#cb2-3"></a>    <span class="fu">group_by</span>(stufe) <span class="sc">|&gt;</span> </span>
+<span id="cb2-4"><a href="#cb2-4"></a>    <span class="fu">summarise</span>(</span>
+<span id="cb2-5"><a href="#cb2-5"></a>        <span class="at">total =</span> <span class="fu">sum</span>(anzahl)</span>
+<span id="cb2-6"><a href="#cb2-6"></a>    ) <span class="sc">|&gt;</span> </span>
+<span id="cb2-7"><a href="#cb2-7"></a>    <span class="fu">mutate</span>(<span class="at">prozent =</span> total <span class="sc">/</span> <span class="fu">sum</span>(total) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb2-8"><a href="#cb2-8"></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="bxairqixbi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>#bxairqixbi table {
@@ -2489,7 +2623,7 @@ Lars Schöbitz
 }
 </style>
 
-<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
 <tr class="gt_col_headings header">
 <th id="stufe" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">stufe</th>
@@ -2530,17 +2664,17 @@ Lars Schöbitz
 </div>
 </div>
 </section>
-<section id="prozentrechnung-formel" class="slide level2">
-<h2>Prozentrechnung: Formel</h2>
+<section id="prozentrechnung-formel" class="level2">
+<h2 class="anchored" data-anchor-id="prozentrechnung-formel">Prozentrechnung: Formel</h2>
 <p>Für die Prozentrechnung, gilt immer folgende Formel:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>total <span class="sc">/</span> <span class="fu">sum</span>(total) <span class="sc">*</span> <span class="dv">100</span></span>
-<span id="cb3-2"><a></a></span>
-<span id="cb3-3"><a></a>x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>total <span class="sc">/</span> <span class="fu">sum</span>(total) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="prozentrechnung-funktion" class="slide level2 smaller">
-<h2>Prozentrechnung: Funktion</h2>
+<section id="prozentrechnung-funktion" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="prozentrechnung-funktion">Prozentrechnung: Funktion</h2>
 <p>Die Formel für die Prozenrechnung kann als eine Funktion festgehalten werden. Es braucht drei Dinge:</p>
 <ol type="1">
 <li><p>Einen <strong>Namen</strong>: <span class="highlight-yellow"><code>berechne_prozent</code></span> beschreibt was die Funktion macht.</p></li>
@@ -2548,15 +2682,15 @@ Lars Schöbitz
 <li><p>Den <strong>Körper</strong>: Der Körper <span class="highlight-yellow"><code>x / sum(x) * 100</code></span> ist der Code, der in allen Aufrufen wiederholt wird.</p></li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb4-2"><a></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span>
-<span id="cb4-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="prozentrechnung-funktion-anwenden" class="slide level2">
-<h2>Prozentrechnung: Funktion anwenden</h2>
+<section id="prozentrechnung-funktion-anwenden" class="level2">
+<h2 class="anchored" data-anchor-id="prozentrechnung-funktion-anwenden">Prozentrechnung: Funktion anwenden</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 100</code></pre>
 </div>
@@ -2564,7 +2698,7 @@ Lars Schöbitz
 <p><br></p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 11.53846 19.23077 69.23077</code></pre>
 </div>
@@ -2573,82 +2707,82 @@ Lars Schöbitz
 <p><br></p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] NA NA NA NA</code></pre>
 </div>
 </div>
 </div>
 </section>
-<section id="prozentrechnung-funktion-anwenden-1" class="slide level2">
-<h2>Prozentrechnung: Funktion anwenden</h2>
+<section id="prozentrechnung-funktion-anwenden-1" class="level2">
+<h2 class="anchored" data-anchor-id="prozentrechnung-funktion-anwenden-1">Prozentrechnung: Funktion anwenden</h2>
 <ul>
 <li>die Funktion <span class="highlight-yellow"><code>berechne_prozent</code></span> funktioniert nicht, wenn es fehlende Werte gibt.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb11-2"><a></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span>
-<span id="cb11-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] NA NA NA NA</code></pre>
 </div>
 </div>
 </section>
-<section id="prozentrechnung-funktion-anpassen" class="slide level2">
-<h2>Prozentrechnung: Funktion anpassen</h2>
+<section id="prozentrechnung-funktion-anpassen" class="level2">
+<h2 class="anchored" data-anchor-id="prozentrechnung-funktion-anpassen">Prozentrechnung: Funktion anpassen</h2>
 <ul>
 <li><span class="highlight-yellow"><code>na.rm = TRUE</code></span> entfernt fehlende Werte von der Berechnung (ignoriert die Werte)</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb14-2"><a></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="dv">100</span></span>
-<span id="cb14-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 11.53846 19.23077 69.23077       NA</code></pre>
 </div>
 </div>
 </div>
 </section>
-<section id="prozentrechnung-funktion-anpassen-1" class="slide level2">
-<h2>Prozentrechnung: Funktion anpassen</h2>
+<section id="prozentrechnung-funktion-anpassen-1" class="level2">
+<h2 class="anchored" data-anchor-id="prozentrechnung-funktion-anpassen-1">Prozentrechnung: Funktion anpassen</h2>
 <ul>
 <li><span class="highlight-yellow"><code>round</code></span> rundet die Ergebnisse auf eine Dezimalstelle</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb17-2"><a></a>    <span class="fu">round</span>(x <span class="sc">/</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>)</span>
-<span id="cb17-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">round</span>(x <span class="sc">/</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 11.5 19.2 69.2   NA</code></pre>
 </div>
 </div>
 </div>
 </section>
-<section id="prozentrechnung-funktion-anwenden-2" class="slide level2">
-<h2>Prozentrechnung: Funktion anwenden</h2>
+<section id="prozentrechnung-funktion-anwenden-2" class="level2">
+<h2 class="anchored" data-anchor-id="prozentrechnung-funktion-anwenden-2">Prozentrechnung: Funktion anwenden</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20" data-code-line-numbers="7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
-<span id="cb20-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
-<span id="cb20-3"><a></a>    <span class="fu">group_by</span>(stufe) <span class="sc">|&gt;</span> </span>
-<span id="cb20-4"><a></a>    <span class="fu">summarise</span>(</span>
-<span id="cb20-5"><a></a>        <span class="at">total =</span> <span class="fu">sum</span>(anzahl)</span>
-<span id="cb20-6"><a></a>    ) <span class="sc">|&gt;</span> </span>
-<span id="cb20-7"><a></a>    <span class="fu">mutate</span>(<span class="at">prozent =</span> <span class="fu">berechne_prozent</span>(total)) <span class="sc">|&gt;</span> </span>
-<span id="cb20-8"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
+<span id="cb20-2"><a href="#cb20-2"></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
+<span id="cb20-3"><a href="#cb20-3"></a>    <span class="fu">group_by</span>(stufe) <span class="sc">|&gt;</span> </span>
+<span id="cb20-4"><a href="#cb20-4"></a>    <span class="fu">summarise</span>(</span>
+<span id="cb20-5"><a href="#cb20-5"></a>        <span class="at">total =</span> <span class="fu">sum</span>(anzahl)</span>
+<span id="cb20-6"><a href="#cb20-6"></a>    ) <span class="sc">|&gt;</span> </span>
+<span id="cb20-7"><a href="#cb20-7"></a>    <span class="fu">mutate</span>(<span class="at">prozent =</span> <span class="fu">berechne_prozent</span>(total)) <span class="sc">|&gt;</span> </span>
+<span id="cb20-8"><a href="#cb20-8"></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="zahsynplgn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>#zahsynplgn table {
@@ -3100,7 +3234,7 @@ Lars Schöbitz
 }
 </style>
 
-<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
 <tr class="gt_col_headings header">
 <th id="stufe" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">stufe</th>
@@ -3141,8 +3275,8 @@ Lars Schöbitz
 </div>
 </div>
 </section>
-<section id="ihr-seid-dran-01-funktionen.qmd" class="slide level2">
-<h2>Ihr seid dran: <code>01-funktionen.qmd</code></h2>
+<section id="ihr-seid-dran-01-funktionen.qmd" class="level2">
+<h2 class="anchored" data-anchor-id="ihr-seid-dran-01-funktionen.qmd">Ihr seid dran: <code>01-funktionen.qmd</code></h2>
 <div class="task">
 <ol type="1">
 <li>Öffne <a href="https://posit.cloud">posit.cloud</a> in deinem Browser (verwende dein Lesezeichen).</li>
@@ -3154,7 +3288,7 @@ Lars Schöbitz
 </ol>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="fu">countdown</span>(<span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">countdown</span>(<span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="countdown" id="timer_b9680f5d" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
@@ -3162,14 +3296,12 @@ Lars Schöbitz
 </div>
 </div>
 </div>
-</section></section>
-<section>
-<section id="paramter-in-quarto-dokumenten" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Paramter in Quarto Dokumenten</h1>
-
 </section>
-<section id="parameter-in-quarto-dokumenten" class="slide level2">
-<h2>Parameter in Quarto Dokumenten</h2>
+</section>
+<section id="paramter-in-quarto-dokumenten" class="level1" data-background-color="#4C326A">
+<h1 data-background-color="#4C326A">Paramter in Quarto Dokumenten</h1>
+<section id="parameter-in-quarto-dokumenten" class="level2">
+<h2 class="anchored" data-anchor-id="parameter-in-quarto-dokumenten">Parameter in Quarto Dokumenten</h2>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>---
@@ -3192,22 +3324,22 @@ lernende_ktzh |&gt;
 </div>
 </div>
 </section>
-<section id="parameter-in-quarto-dokumenten-1" class="slide level2">
-<h2>Parameter in Quarto Dokumenten</h2>
+<section id="parameter-in-quarto-dokumenten-1" class="level2">
+<h2 class="anchored" data-anchor-id="parameter-in-quarto-dokumenten-1">Parameter in Quarto Dokumenten</h2>
 <ul>
 <li>inline code macht es möglich R code direkt in Text einzubetten</li>
 </ul>
-<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb23-1"><a></a>Lernende im Jahr `r params$jahr` ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>Lernende im Jahr `r params$jahr` ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>… wird zu: Lernende im Jahr 2022</p>
 </section>
-<section id="parameter-in-quarto-dokumenten-2" class="slide level2">
-<h2>Parameter in Quarto Dokumenten</h2>
+<section id="parameter-in-quarto-dokumenten-2" class="level2">
+<h2 class="anchored" data-anchor-id="parameter-in-quarto-dokumenten-2">Parameter in Quarto Dokumenten</h2>
 <ul>
 <li>Parameter werden folgendermassen im Code angegeben:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
-<span id="cb24-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> params<span class="sc">$</span>jahr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> params<span class="sc">$</span>jahr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 110 × 10
    stand      kanton  jahr stufe        schultyp geschlecht staatsangehoerigkeit
@@ -3227,16 +3359,16 @@ lernende_ktzh |&gt;
 </div>
 </div>
 </section>
-<section id="aufgabenstellung" class="slide level2">
-<h2>Aufgabenstellung</h2>
+<section id="aufgabenstellung" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabenstellung">Aufgabenstellung</h2>
 <ul>
 <li>Erstelle einen Bericht für die Daten zum Wohnungsbestand und der Leerwohnungen im Kanton Zürich.</li>
 <li>Der Bericht soll für alle Gemeinden erstellt werden. Ein PDF Bericht pro Gemeinde.</li>
 <li>In jedem Bericht wird mittels einer Daten-Visualisierung ein einzelnes Jahr hervorgehoben (z.B. 2018) und mittels einer Tabelle alle Jahre dargestellt.</li>
 </ul>
 </section>
-<section id="klone-das-repository-md-10-paramater-benutzername" class="slide level2 smaller">
-<h2>Klone das Repository md-10-paramater-BENUTZERNAME</h2>
+<section id="klone-das-repository-md-10-paramater-benutzername" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="klone-das-repository-md-10-paramater-benutzername">Klone das Repository md-10-paramater-BENUTZERNAME</h2>
 <ol type="1">
 <li>Öffne <a href="https://www.github.com" class="uri">https://www.github.com</a> in deinem Browser.</li>
 <li>Navigiere zur GitHub-Organisation für den Kurs: <a href="https://github.com/rstatszh-k010">github.com/rstatszh-k010</a></li>
@@ -3249,12 +3381,12 @@ lernende_ktzh |&gt;
 <li>Warte, bis das Projekt bereitgestellt wurde.</li>
 </ol>
 </section>
-<section id="pause-machen" class="slide level2">
-<h2>Pause machen</h2>
+<section id="pause-machen" class="level2">
+<h2 class="anchored" data-anchor-id="pause-machen">Pause machen</h2>
 <p><span class="highlight-yellow">Bitte steh auf und beweg dich.</span></p>
-
-<img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="img/md-04/pixel-art-tree.png" class="img-fluid" style="width:50.0%"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="countdown" id="timer_51cf1533" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
@@ -3266,18 +3398,18 @@ lernende_ktzh |&gt;
 <p>Bild erzeugt mit <a href="https://openai.com/blog/dall-e/">DALL-E 3 by OpenAI</a></p>
 </div>
 </section>
-<section id="md-10-paramater-benutzername" class="slide level2">
-<h2>md-10-paramater-BENUTZERNAME</h2>
+<section id="md-10-paramater-benutzername" class="level2">
+<h2 class="anchored" data-anchor-id="md-10-paramater-benutzername">md-10-paramater-BENUTZERNAME</h2>
 <ul>
 <li>Wir machen weiter mit Abschnitt 2 bis 5</li>
 </ul>
 </section>
-<section id="pause-machen-1" class="slide level2">
-<h2>Pause machen</h2>
+<section id="pause-machen-1" class="level2">
+<h2 class="anchored" data-anchor-id="pause-machen-1">Pause machen</h2>
 <p><span class="highlight-yellow">Bitte steh auf und beweg dich.</span></p>
-
-<img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="img/md-04/pixel-art-tree.png" class="img-fluid" style="width:50.0%"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="countdown" id="timer_9260c865" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
@@ -3288,14 +3420,12 @@ lernende_ktzh |&gt;
 <div class="footer">
 <p>Bild erzeugt mit <a href="https://openai.com/blog/dall-e/">DALL-E 3 by OpenAI</a></p>
 </div>
-</section></section>
-<section>
-<section id="webseiten-publizieren" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Webseiten publizieren</h1>
-
 </section>
-<section id="beispiel---vorrausetzungen" class="slide level2">
-<h2>Beispiel - Vorrausetzungen</h2>
+</section>
+<section id="webseiten-publizieren" class="level1" data-background-color="#4C326A">
+<h1 data-background-color="#4C326A">Webseiten publizieren</h1>
+<section id="beispiel---vorrausetzungen" class="level2">
+<h2 class="anchored" data-anchor-id="beispiel---vorrausetzungen">Beispiel - Vorrausetzungen</h2>
 <ul>
 <li>Hauptseite muss als <code>index.qmd</code> gespeichert sein.</li>
 <li>Die <code>index.qmd</code> muss im <code>docs</code> Ordner gespeichert sein.</li>
@@ -3303,15 +3433,23 @@ lernende_ktzh |&gt;
 <li>Quarto bietet ein Framework und Beispiele für komplexere Webseiten: https://quarto.org/docs/websites/</li>
 </ul>
 </section>
-<section id="github-pages" class="slide level2">
-<h2>GitHub Pages</h2>
+<section id="github-pages" class="level2">
+<h2 class="anchored" data-anchor-id="github-pages">GitHub Pages</h2>
 <ul>
 <li><a href="https://pages.github.com/">GitHub Pages</a> ist ein kostenloser Dienst für das Hosting statischer Websites. Dieser ist ideal für Blogs, Kurs- oder Projektwebseiten, Bücher, Präsentationen und persönliche Hobbyseiten.</li>
 </ul>
-
-<img data-src="img/md-10/screenshot-gh-pages.png" width="1137" class="r-stretch"></section>
-<section id="quartopub" class="slide level2">
-<h2>QuartoPub</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="img/md-10/screenshot-gh-pages.png" class="img-fluid figure-img" width="1137"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="quartopub" class="level2">
+<h2 class="anchored" data-anchor-id="quartopub">QuartoPub</h2>
 <ul>
 <li><p><a href="https://quartopub.com/">Quarto Pub</a> ist ein kostenloser Veröffentlichungsdienst für mit Quarto erstellte Inhalte. Dieser ist ideal für Blogs, Kurs- oder Projektwebseiten, Bücher, Präsentationen und persönliche Hobbyseiten.</p></li>
 <li><p>Publiziere mit <code>quarto publish</code>:</p></li>
@@ -3320,95 +3458,89 @@ lernende_ktzh |&gt;
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb28" data-filename="Terminal"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a></a><span class="ex">quarto</span> publish quarto-pub</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb28" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish quarto-pub</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Erhalte eine <code>_publish.yml</code>, die sicher in die Versionskontrolle geschickt werden kann.</li>
 </ul>
 </section>
-<section id="andere-dienste" class="slide level2">
-<h2>Andere Dienste</h2>
+<section id="andere-dienste" class="level2">
+<h2 class="anchored" data-anchor-id="andere-dienste">Andere Dienste</h2>
 <ul>
 <li>Posit Connect</li>
 <li>Netlify</li>
 <li>Confluence</li>
 <li><a href="https://quarto.org/docs/publishing/other.html">Noch mehr Dienste</a></li>
 </ul>
-</section></section>
-<section>
-<section id="wie-gehts-weiter" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Wie geht’s weiter?</h1>
-
 </section>
-<section id="abschlussprojekt" class="slide level2">
-<h2>Abschlussprojekt</h2>
+</section>
+<section id="wie-gehts-weiter" class="level1" data-background-color="#4C326A">
+<h1 data-background-color="#4C326A">Wie geht’s weiter?</h1>
+<section id="abschlussprojekt" class="level2">
+<h2 class="anchored" data-anchor-id="abschlussprojekt">Abschlussprojekt</h2>
 <div class="learn-more">
 <p><a href="https://rstatszh-k010.github.io/website/abschlussprojekt/">rstatszh-k010.github.io/website/abschlussprojekt/</a></p>
 <iframe src="https://rstatszh-k010.github.io/website/abschlussprojekt/" width="100%" height="500" style="border:2px solid #123233;" title="Abschlussprojekt Dokumentation"></iframe>
 </div>
 </section>
-<section id="abschlussveranstaltung" class="slide level2">
-<h2>Abschlussveranstaltung</h2>
+<section id="abschlussveranstaltung" class="level2">
+<h2 class="anchored" data-anchor-id="abschlussveranstaltung">Abschlussveranstaltung</h2>
 <ul>
 <li>2024-12-17</li>
 <li>15:00 bis 15:30 / 16:00 Uhr</li>
 <li>MS Teams</li>
 </ul>
 </section>
-<section id="raus-aus-posit-cloud" class="slide level2">
-<h2>Raus aus Posit Cloud</h2>
+<section id="raus-aus-posit-cloud" class="level2">
+<h2 class="anchored" data-anchor-id="raus-aus-posit-cloud">Raus aus Posit Cloud</h2>
 <ul>
 <li>Die Inhalte verschwinden nicht</li>
 <li>Ihr könnt vorerst die Cloud auch weiter nutzen</li>
 <li>Schritt für Schritt Software über den DAP selbst intallieren</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="co"># Einmalig in Console ausführen</span></span>
-<span id="cb29-2"><a></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
-<span id="cb29-3"><a></a></span>
-<span id="cb29-4"><a></a><span class="co"># In jedem Skript</span></span>
-<span id="cb29-5"><a></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Einmalig in Console ausführen</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="co"># In jedem Skript</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="rein-in-die-kantons-communities" class="slide level2">
-<h2>Rein in die Kantons-Communities</h2>
+<section id="rein-in-die-kantons-communities" class="level2">
+<h2 class="anchored" data-anchor-id="rein-in-die-kantons-communities">Rein in die Kantons-Communities</h2>
 <ul>
 <li><p><a href="https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI0NjQ2ODQ0MDA2NSJ9">Viva Engage Einstiegs Community “Data” im neuen Intranet &amp; Tool</a></p></li>
 <li><p><a href="https://teams.microsoft.com/l/team/19%3Ag5aGGUm_wpjMXL1muNuKioEcl0YI041XzI0r1s87K481%40thread.tacv2/conversations?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&amp;tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58">Kanton Zurich MS Teams Data Community of Practice</a></p></li>
 </ul>
 </section>
-<section id="besucht-die-meetups" class="slide level2">
-<h2>Besucht die Meetups</h2>
+<section id="besucht-die-meetups" class="level2">
+<h2 class="anchored" data-anchor-id="besucht-die-meetups">Besucht die Meetups</h2>
 <ul>
 <li><p>Open Data Beer: <a href="https://opendatabeer.ch/" class="uri">https://opendatabeer.ch/</a></p></li>
 <li><p>adminR meetup: <a href="https://www.meetup.com/adminr/" class="uri">https://www.meetup.com/adminr/</a></p></li>
 <li><p>Zurich R User Group: <a href="https://www.meetup.com/zurich-r-user-group/" class="uri">https://www.meetup.com/zurich-r-user-group/</a></p></li>
 </ul>
-</section></section>
-<section>
-<section id="rückblick" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Rückblick</h1>
-
 </section>
-<section id="lernziele-des-kurses" class="slide level2 scrollable">
-<h2>Lernziele des Kurses</h2>
+</section>
+<section id="rückblick" class="level1" data-background-color="#4C326A">
+<h1 data-background-color="#4C326A">Rückblick</h1>
+<section id="lernziele-des-kurses" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="lernziele-des-kurses">Lernziele des Kurses</h2>
 <p>Die folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:</p>
 <ol type="1">
 <li>Teilnehmer:innen werden in der Lage sein, eine Reihe gängiger datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von Datenanalyseprojekten zu veranschaulichen und öffentlich zu kommunizieren.</li>
 </ol>
-<div class="fragment">
+<p>. . .</p>
 <ol start="2" type="1">
 <li>Teilnehmer:innen können das Quarto-Dateiformat und den visuellen Bearbeitungsmodus der RStudio IDE zu verwenden, um technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten, Querverweisen, Abbildungen und Tabellen zu erstellen.</li>
 </ol>
-</div>
-<div class="fragment">
+<p>. . .</p>
 <ol start="3" type="1">
 <li>Teilnehmer:innen können Git Versionskontrolle verwerden um: (1) Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten.</li>
 </ol>
-</div>
 </section>
-<section id="ihr-seid-dran-5-min-nachdenken-notizen-machen" class="slide level2">
-<h2>Ihr seid dran: 5 min Nachdenken + Notizen machen</h2>
+<section id="ihr-seid-dran-5-min-nachdenken-notizen-machen" class="level2">
+<h2 class="anchored" data-anchor-id="ihr-seid-dran-5-min-nachdenken-notizen-machen">Ihr seid dran: 5 min Nachdenken + Notizen machen</h2>
 <ol type="1">
 <li>Was sind die drei nützlichsten Dinge die du gelernt hast?</li>
 <li>Welches Thema war besonders schwer zu folgen?</li>
@@ -3423,23 +3555,23 @@ lernende_ktzh |&gt;
 </div>
 </div>
 </section>
-<section id="bitte-ausfüllen" class="slide level2">
-<h2>Bitte ausfüllen</h2>
+<section id="bitte-ausfüllen" class="level2">
+<h2 class="anchored" data-anchor-id="bitte-ausfüllen">Bitte ausfüllen</h2>
 <ul>
 <li><a href="https://forms.gle/tKf16kWzhNmEogU16" class="uri">https://forms.gle/tKf16kWzhNmEogU16</a></li>
 </ul>
-
-<img data-src="img/md-10/feedback-form.png" class="r-stretch"></section>
-<section id="wie-es-für-mich-weiter-geht" class="slide level2">
-<h2>Wie es für mich weiter geht</h2>
+<p><img src="img/md-10/feedback-form.png" class="img-fluid"></p>
+</section>
+<section id="wie-es-für-mich-weiter-geht" class="level2">
+<h2 class="anchored" data-anchor-id="wie-es-für-mich-weiter-geht">Wie es für mich weiter geht</h2>
 <ol type="1">
 <li><strong>Beratung:</strong> Projektbezogener Support, Code Review, Coaching</li>
 <li><strong>rstatsZH Kursleitung:</strong> Info über den 10. Kurs verbreiten. Start: 25.02.2025</li>
 <li><strong>Kurse zu vertiefenden Themen:</strong> Entwicklung von 3-Stunden Workshops</li>
 </ol>
 </section>
-<section id="zeitpuffer-modul-10" class="slide level2 smaller">
-<h2>Zeitpuffer: Modul 10</h2>
+<section id="zeitpuffer-modul-10" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="zeitpuffer-modul-10">Zeitpuffer: Modul 10</h2>
 <div class="hand-purple-large" style="text-align: center;">
 <p>Kann ich noch etwas zum heutigen Modul erklären?</p>
 </div>
@@ -3451,461 +3583,516 @@ lernende_ktzh |&gt;
 </div>
 </div>
 </div>
-</section></section>
-<section>
-<section id="zusatzaufgaben-modul-10" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Zusatzaufgaben Modul 10</h1>
-
 </section>
-<section id="modul-10-dokumentation" class="slide level2">
-<h2>Modul 10 Dokumentation</h2>
+</section>
+<section id="zusatzaufgaben-modul-10" class="level1" data-background-color="#4C326A">
+<h1 data-background-color="#4C326A">Zusatzaufgaben Modul 10</h1>
+<section id="modul-10-dokumentation" class="level2">
+<h2 class="anchored" data-anchor-id="modul-10-dokumentation">Modul 10 Dokumentation</h2>
 <div class="learn-more">
 <p><a href="https://rstatszh-k010.github.io/website/module/md-10.html">rstatszh-k010.github.io/website/module/md-10.html</a></p>
 <iframe src="https://rstatszh-k010.github.io/website/module/md-10.html" width="100%" height="500" style="border:2px solid #123233;" title="Modul 10 Dokumentation"></iframe>
 </div>
 </section>
-<section id="zusatzaufgaben-abgabedatum" class="slide level2">
-<h2>Zusatzaufgaben Abgabedatum</h2>
+<section id="zusatzaufgaben-abgabedatum" class="level2">
+<h2 class="anchored" data-anchor-id="zusatzaufgaben-abgabedatum">Zusatzaufgaben Abgabedatum</h2>
 <ul>
 <li>Abgabedatum: <span class="highlight-yellow">Montag, 02. Dezember</span></li>
 <li>Korrektur- und Feedbackphase bis zu: Donnerstag, 05. Dezember</li>
 </ul>
-</section></section>
-<section>
-<section id="danke" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Danke</h1>
-
 </section>
-<section id="danke-1" class="slide level2">
-<h2>Danke! 🌻</h2>
+</section>
+<section id="danke" class="level1" data-background-color="#4C326A">
+<h1 data-background-color="#4C326A">Danke</h1>
+<section id="danke-1" class="level2">
+<h2 class="anchored" data-anchor-id="danke-1">Danke! 🌻</h2>
 <p>Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/</p>
 <p>Access slides als <a href="https://github.com/rstatszh-k010/website/raw/main/folien/md-10-funktionen.pdf">PDF auf GitHub</a></p>
 <p>Alle Materialien sind lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 
 
-</section></section>
-    </div>
-  <div class="quarto-auto-generated-content" style="display: none;">
-<div class="footer footer-default">
-<p><a href="https://rstatszh-k011.github.io/website/"><i class="fa-solid fa-link" aria-label="link"></i> rstatszh-k011.github.io/website/</a></p>
-</div>
-</div></div>
+</section>
+</section>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../site_libs/revealjs/dist/reveal.js"></script>
-  <!-- reveal.js plugins -->
-  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
-  
+</main> <!-- /main -->
 
-  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+<script>
+  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+  // slide changes (different for each slide format).
+  (function () {
+    // dispatch for htmlwidgets
+    function fireSlideEnter() {
+      const event = window.document.createEvent("Event");
+      event.initEvent("slideenter", true, true);
+      window.document.dispatchEvent(event);
+    }
 
-  <script>
+    function fireSlideChanged(previousSlide, currentSlide) {
+      fireSlideEnter();
 
-      // Full list of configuration options available at:
-      // https://revealjs.com/config/
-      Reveal.initialize({
-'controlsAuto': true,
-'previewLinksAuto': false,
-'pdfSeparateFragments': false,
-'autoAnimateEasing': "ease",
-'autoAnimateDuration': 1,
-'autoAnimateUnmatched': true,
-'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
-'smaller': false,
- 
-        // Display controls in the bottom right corner
-        controls: false,
+      // dispatch for shiny
+      if (window.jQuery) {
+        if (previousSlide) {
+          window.jQuery(previousSlide).trigger("hidden");
+        }
+        if (currentSlide) {
+          window.jQuery(currentSlide).trigger("shown");
+        }
+      }
+    }
 
-        // Help the user learn the controls by providing hints, for example by
-        // bouncing the down arrow when they first encounter a vertical slide
-        controlsTutorial: false,
-
-        // Determines where controls appear, "edges" or "bottom-right"
-        controlsLayout: 'edges',
-
-        // Visibility rule for backwards navigation arrows; "faded", "hidden"
-        // or "visible"
-        controlsBackArrows: 'faded',
-
-        // Display a presentation progress bar
-        progress: true,
-
-        // Display the page number of the current slide
-        slideNumber: 'c/t',
-
-        // 'all', 'print', or 'speaker'
-        showSlideNumber: 'all',
-
-        // Add the current slide number to the URL hash so that reloading the
-        // page/copying the URL will return you to the same slide
-        hash: true,
-
-        // Start with 1 for the hash rather than 0
-        hashOneBasedIndex: false,
-
-        // Flags if we should monitor the hash and change slides accordingly
-        respondToHashChanges: true,
-
-        // Push each slide change to the browser history
-        history: true,
-
-        // Enable keyboard shortcuts for navigation
-        keyboard: true,
-
-        // Enable the slide overview mode
-        overview: true,
-
-        // Disables the default reveal.js slide layout (scaling and centering)
-        // so that you can use custom CSS layout
-        disableLayout: false,
-
-        // Vertical centering of slides
-        center: false,
-
-        // Enables touch navigation on devices with touch input
-        touch: true,
-
-        // Loop the presentation
-        loop: false,
-
-        // Change the presentation direction to be RTL
-        rtl: false,
-
-        // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'linear',
-
-        // Randomizes the order of slides each time the presentation loads
-        shuffle: false,
-
-        // Turns fragments on and off globally
-        fragments: true,
-
-        // Flags whether to include the current fragment in the URL,
-        // so that reloading brings you to the same fragment position
-        fragmentInURL: false,
-
-        // Flags if the presentation is running in an embedded mode,
-        // i.e. contained within a limited portion of the screen
-        embedded: false,
-
-        // Flags if we should show a help overlay when the questionmark
-        // key is pressed
-        help: true,
-
-        // Flags if it should be possible to pause the presentation (blackout)
-        pause: true,
-
-        // Flags if speaker notes should be visible to all viewers
-        showNotes: false,
-
-        // Global override for autoplaying embedded media (null/true/false)
-        autoPlayMedia: null,
-
-        // Global override for preloading lazy-loaded iframes (null/true/false)
-        preloadIframes: null,
-
-        // Number of milliseconds between automatically proceeding to the
-        // next slide, disabled when set to 0, this value can be overwritten
-        // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
-
-        // Stop auto-sliding after user input
-        autoSlideStoppable: true,
-
-        // Use this method for navigation when auto-sliding
-        autoSlideMethod: null,
-
-        // Specify the average time in seconds that you think you will spend
-        // presenting each slide. This is used to show a pacing timer in the
-        // speaker view
-        defaultTiming: null,
-
-        // Enable slide navigation via mouse wheel
-        mouseWheel: false,
-
-        // The display mode that will be used to show slides
-        display: 'block',
-
-        // Hide cursor if inactive
-        hideInactiveCursor: true,
-
-        // Time before the cursor is hidden (in ms)
-        hideCursorTime: 5000,
-
-        // Opens links in an iframe preview overlay
-        previewLinks: false,
-
-        // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'fade',
-
-        // Transition speed (default/fast/slow)
-        transitionSpeed: 'default',
-
-        // Transition style for full page slide backgrounds
-        // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'none',
-
-        // Number of slides away from the current that are visible
-        viewDistance: 3,
-
-        // Number of slides away from the current that are visible on mobile
-        // devices. It is advisable to set this to a lower number than
-        // viewDistance in order to save resources.
-        mobileViewDistance: 2,
-
-        // The "normal" size of the presentation, aspect ratio will be preserved
-        // when the presentation is scaled to fit different resolutions. Can be
-        // specified using percentage units.
-        width: 1050,
-
-        height: 700,
-
-        // Factor of the display size that should remain empty around the content
-        margin: 0.1,
-
-        math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
-        // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
-
-          RevealMath,
-          RevealNotes,
-          RevealSearch,
-          RevealZoom
-        ]
+    // hookup for slidy
+    if (window.w3c_slidy) {
+      window.w3c_slidy.add_observer(function (slide_num) {
+        // slide_num starts at position 1
+        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
       });
-    </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
+    }
 
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
+  })();
+</script>
 
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/rstatszh-k011\.github\.io\/website");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
             }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
           }
         }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
-    <script id="quarto-html-after-body" type="application/javascript">
-      window.document.addEventListener("DOMContentLoaded", function (event) {
-        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-        tabsets.forEach(function(tabset) {
-          const tabby = new Tabby('#' + tabset.id);
-        });
-        const isCodeAnnotation = (el) => {
-          for (const clz of el.classList) {
-            if (clz.startsWith('code-annotation-')) {                     
-              return true;
-            }
-          }
-          return false;
-        }
-        const onCopySuccess = function(e) {
-          // button target
-          const button = e.trigger;
-          // don't keep focus
-          button.blur();
-          // flash "checked"
-          button.classList.add('code-copy-button-checked');
-          var currentTitle = button.getAttribute("title");
-          button.setAttribute("title", "Copied!");
-          let tooltip;
-          if (window.bootstrap) {
-            button.setAttribute("data-bs-toggle", "tooltip");
-            button.setAttribute("data-bs-placement", "left");
-            button.setAttribute("data-bs-title", "Copied!");
-            tooltip = new bootstrap.Tooltip(button, 
-              { trigger: "manual", 
-                customClass: "code-copy-button-tooltip",
-                offset: [0, -8]});
-            tooltip.show();    
-          }
-          setTimeout(function() {
-            if (tooltip) {
-              tooltip.hide();
-              button.removeAttribute("data-bs-title");
-              button.removeAttribute("data-bs-toggle");
-              button.removeAttribute("data-bs-placement");
-            }
-            button.setAttribute("title", currentTitle);
-            button.classList.remove('code-copy-button-checked');
-          }, 1000);
-          // clear code selection
-          e.clearSelection();
-        }
-        const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
-            }
-            return codeEl.innerText;
-        }
-        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-          text: getTextToCopy
-        });
-        clipboard.on('success', onCopySuccess);
-        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-            text: getTextToCopy,
-            container: window.document.getElementById('quarto-embedded-source-code-modal')
-          });
-          clipboardModal.on('success', onCopySuccess);
-        }
-          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-          var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/rstatszh-k011\.github\.io\/website");
-          var isInternal = (href) => {
-              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-          }
-          // Inspect non-navigation links and adorn them if external
-         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-          for (var i=0; i<links.length; i++) {
-            const link = links[i];
-            if (!isInternal(link.href)) {
-              // undo the damage that might have been done by quarto-nav.js in the case of
-              // links that we want to consider external
-              if (link.dataset.originalHref !== undefined) {
-                link.href = link.dataset.originalHref;
-              }
-            }
-          }
-        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-          const config = {
-            allowHTML: true,
-            maxWidth: 500,
-            delay: 100,
-            arrow: false,
-            appendTo: function(el) {
-                return el.closest('section.slide') || el.parentElement;
-            },
-            interactive: true,
-            interactiveBorder: 10,
-            theme: 'light-border',
-            placement: 'bottom-start',
-          };
-          if (contentFn) {
-            config.content = contentFn;
-          }
-          if (onTriggerFn) {
-            config.onTrigger = onTriggerFn;
-          }
-          if (onUntriggerFn) {
-            config.onUntrigger = onUntriggerFn;
-          }
-            config['offset'] = [0,0];
-            config['maxWidth'] = 700;
-          window.tippy(el, config); 
-        }
-        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-        for (var i=0; i<noterefs.length; i++) {
-          const ref = noterefs[i];
-          tippyHover(ref, function() {
-            // use id or data attribute instead here
-            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-            try { href = new URL(href).hash; } catch {}
-            const id = href.replace(/^#\/?/, "");
-            const note = window.document.getElementById(id);
-            if (note) {
-              return note.innerHTML;
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
             } else {
-              return "";
+              container.appendChild(child.cloneNode(true));
+              break;
             }
-          });
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
         }
-        const findCites = (el) => {
-          const parentEl = el.parentElement;
-          if (parentEl) {
-            const cites = parentEl.dataset.cites;
-            if (cites) {
-              return {
-                el,
-                cites: cites.split(' ')
-              };
-            } else {
-              return findCites(el.parentElement)
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
             }
           } else {
-            return undefined;
-          }
-        };
-        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-        for (var i=0; i<bibliorefs.length; i++) {
-          const ref = bibliorefs[i];
-          const citeInfo = findCites(ref);
-          if (citeInfo) {
-            tippyHover(citeInfo.el, function() {
-              var popup = window.document.createElement('div');
-              citeInfo.cites.forEach(function(cite) {
-                var citeDiv = window.document.createElement('div');
-                citeDiv.classList.add('hanging-indent');
-                citeDiv.classList.add('csl-entry');
-                var biblioDiv = window.document.getElementById('ref-' + cite);
-                if (biblioDiv) {
-                  citeDiv.innerHTML = biblioDiv.innerHTML;
-                }
-                popup.appendChild(citeDiv);
-              });
-              return popup.innerHTML;
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
             });
           }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
         }
+      }, function(instance) {
       });
-      </script>
-    
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Dieser Kurs wird vom <a href="https://www.zh.ch/de/politik-staat/statistik-daten.html">Statistischen Amt Kanton Zürich</a> angeboten</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../verhaltenskodex.html">
+<p>Verhaltenskodex</p>
+</a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:datashop@statistik.zh.ch">
+      <i class="bi bi-envelope-at" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rstatszh-k011/website">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
 
 </body></html>
