@@ -31,6 +31,18 @@ library(gapminder)
 library(dplyr)
 library(epoxy)
 library(palmerpenguins)
+
+# Read variables from _variables.yml
+vars <- yaml::read_yaml(here::here("_variables.yml"))
+
+# Extract dates for this module
+homework_due_date <- vars$`md-02`$`homework-due` |> as.Date()
+
+# Set locale for German date formatting
+Sys.setlocale("LC_TIME", "de_DE.UTF-8")
+
+# Format dates for display
+homework_due_formatted <- format(homework_due_date, "%A, %d. %B")
 ```
 
 ```{r}
@@ -476,7 +488,7 @@ Bild entnommen aus: <https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot>
 
 ::: task
 1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2.  Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
+2.  Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) für den Kurs.
 3.  Klicke auf [Start]{.highlight-yellow} neben [md-02-uebungen]{.highlight-yellow}.
 4.  Suche im Dateimanager im Fenster unten rechts die Datei [02-daten-visualisierung.qmd]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 :::
@@ -590,22 +602,17 @@ ggplot(data = gapminder_2007,
 ## Modul 2 Dokumentation
 
 ::: learn-more
-[rstatszh-k010.github.io/website/module/md-02.html](https://rstatszh-k010.github.io/website/module/md-02.html)
-
-```{=html}
-<iframe src="https://rstatszh-k010.github.io/website/module/md-02.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 2 documentation"></iframe>
-```
+[{{< var course.site-short >}}/module/md-02.html](https://{{< var course.site-short >}}/module/md-02.html)
 :::
 
 ## Zusatzaufgaben Abgabedatum
 
--   Abgabedatum: [{{< var md-02.homework-due >}}]{.highlight-yellow}
--   Korrektur- und Feedbackphase bis zu: Donnerstag, 10. Oktober
+-   Abgabedatum: [`r homework_due_formatted`]{.highlight-yellow}
 
 # Danke {background-color="#4C326A"}
 
 ## Danke! `r emo::ji("sunflower")`
 
-Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k010/website/raw/main/folien/md-02-datenvisualisierung.pdf)
+Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub]({{< var course.github-org >}}website/raw/main/folien/md-02-datenvisualisierung.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
