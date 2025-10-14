@@ -19,6 +19,11 @@ In dieser Zusatzaufgabe geht es darum einen Datensatz selbst zu identifizieren u
 
 4. Klicke auf einen Datensatz der dich interessiert um weitere Informationen zu erhalten. Stelle sicher, dass der Datensatz als CSV verfügbar ist.
 
+::: callout-note
+## Hinweis: Dateigrösse beachten
+Beachte, dass Dateien grösser als 50 MB nicht auf GitHub gepusht werden können. Wähle deshalb für diese Aufgabe einen kleineren Datensatz aus. In Modul 4 lernen wir dann, wie auch diese grossen Dateien direkt aus dem Internet gelesen werden können, ohne sie lokal zu speichern.
+:::
+
 ![](images/02-ogd-daten.png){width=80%}
 
 5. Lade die CSV Datei herunter und speicher diese an einem von dir gewählten Ort auf deinem Arbeitsgerät.
