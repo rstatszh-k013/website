@@ -212,8 +212,40 @@ Lars Schöbitz
 
   <p class="date">Oct 14, 2025</p>
 </section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>befragung <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(</span>
+<span id="cb1-2"><a></a>    here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"folien/daten/raw/KTZH_00001341_00002759_frage7a1.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 1213 Columns: 5
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (5): geschlecht, alter, gemeinde_groesse, bezirk_name, antwort
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+</div>
+</section>
 <section id="lernziele-für-diese-woche" class="slide level2">
 <h2>Lernziele (für diese Woche)</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>lernziele <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/tbl-01-rstatszh-lernziele.csv"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb3-2"><a></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(modul <span class="sc">==</span> params<span class="sc">$</span>modul) <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a></a>  dplyr<span class="sc">::</span><span class="fu">pull</span>(lernziele)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 36 Columns: 4
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr  (2): titel, lernziele
+dbl  (1): modul
+dttm (1): datum
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+</div>
 <div class="cell">
 <ol type="1">
 <li>Die Lernenden können Daten aus Dateien im CSV und XLSX-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses, und auf GitHub, befinden.</li>
@@ -334,12 +366,17 @@ Lars Schöbitz
 <li class="fragment">ordinal skalierte Daten sind kategoriale Daten, die eine logische Reihenfolge aufweisen</li>
 <li class="fragment">in R werden Text-Daten standardmässig als <code>character</code> gespeichert</li>
 <li class="fragment">Beurteilungen: sehr gut, gut, mittel, schlecht, sehr schlecht</li>
-<li class="fragment">die Reihenfolge von Text Daten ist aplhabetisch</li>
+<li class="fragment">die Reihenfolge von Text Daten ist alphabetisch</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>df <span class="sc">|&gt;</span> </span>
-<span id="cb1-2"><a></a>    <span class="fu">arrange</span>(beurteilung) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb5-2"><a></a>    <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"Alice"</span>, <span class="st">"Bob"</span>, <span class="st">"Charlie"</span>, <span class="st">"Diana"</span>, <span class="st">"Eve"</span>),</span>
+<span id="cb5-3"><a></a>    <span class="at">beurteilung =</span> <span class="fu">c</span>(<span class="st">"sehr gut"</span>, <span class="st">"gut"</span>, <span class="st">"mittel"</span>, <span class="st">"schlecht"</span>, <span class="st">"sehr schlecht"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>df <span class="sc">|&gt;</span> </span>
+<span id="cb6-2"><a></a>    <span class="fu">arrange</span>(beurteilung) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 2
   name    beurteilung  
@@ -361,14 +398,14 @@ Lars Schöbitz
 <li>die Umwandlung beeinflusst das Verhalten der Daten in Tabellen und Diagrammen</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3" data-code-line-numbers="2|6|8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="co"># Faktor Level werden in einem Vektor definiert</span></span>
-<span id="cb3-2"><a></a>beurteilung_level <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"sehr schlecht"</span>, <span class="st">"schlecht"</span>, <span class="st">"mittel"</span>, <span class="st">"gut"</span>, <span class="st">"sehr gut"</span>)</span>
-<span id="cb3-3"><a></a></span>
-<span id="cb3-4"><a></a>df <span class="sc">|&gt;</span> </span>
-<span id="cb3-5"><a></a>    <span class="co"># Die Spalte wird in einen Faktor umgewandelt</span></span>
-<span id="cb3-6"><a></a>    <span class="fu">mutate</span>(<span class="at">beurteilung =</span> <span class="fu">factor</span>(beurteilung, <span class="at">levels =</span> beurteilung_level)) <span class="sc">|&gt;</span></span>
-<span id="cb3-7"><a></a>    <span class="co"># Die Tabelle wird nach der Reihenfolge sortiert</span></span>
-<span id="cb3-8"><a></a>    <span class="fu">arrange</span>(beurteilung)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="2|6|8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="co"># Faktor Level werden in einem Vektor definiert</span></span>
+<span id="cb8-2"><a></a>beurteilung_level <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"sehr schlecht"</span>, <span class="st">"schlecht"</span>, <span class="st">"mittel"</span>, <span class="st">"gut"</span>, <span class="st">"sehr gut"</span>)</span>
+<span id="cb8-3"><a></a></span>
+<span id="cb8-4"><a></a>df <span class="sc">|&gt;</span> </span>
+<span id="cb8-5"><a></a>    <span class="co"># Die Spalte wird in einen Faktor umgewandelt</span></span>
+<span id="cb8-6"><a></a>    <span class="fu">mutate</span>(<span class="at">beurteilung =</span> <span class="fu">factor</span>(beurteilung, <span class="at">levels =</span> beurteilung_level)) <span class="sc">|&gt;</span></span>
+<span id="cb8-7"><a></a>    <span class="co"># Die Tabelle wird nach der Reihenfolge sortiert</span></span>
+<span id="cb8-8"><a></a>    <span class="fu">arrange</span>(beurteilung)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 2
   name    beurteilung  
@@ -393,8 +430,9 @@ Lars Schöbitz
 <p><span class="highlight-yellow">Bitte steh auf und beweg dich.</span></p>
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_3f206ac9" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_516653d1" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -409,15 +447,16 @@ Lars Schöbitz
 <div class="task">
 <ol type="1">
 <li>Öffne <a href="https://posit.cloud">posit.cloud</a> in deinem Browser (verwende dein Lesezeichen).</li>
-<li>Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.</li>
+<li>Öffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.</li>
 <li>Klicke auf <span class="highlight-yellow">Start</span> neben <span class="highlight-yellow">md-04-uebungen</span>.</li>
 <li>Suche im Dateimanager im Fenster unten rechts die Datei <span class="highlight-yellow"><code>02-faktoren-ihr.qmd</code></span> und klicke darauf, um sie im Fenster oben links zu öffnen.</li>
 <li>Folge den Anweisungen in der Datei.</li>
 </ol>
 </div>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">countdown</span>(<span class="dv">25</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_b4a6f07b" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_ba94cf42" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -478,11 +517,11 @@ Lars Schöbitz
 <li>Import von <span class="highlight-yellow">unbearbeiteten Rohdaten</span></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>befragung <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"raw/KTZH_00001341_00002759_frage7a1.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>befragung <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"raw/KTZH_00001341_00002759_frage7a1.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>befragung</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>befragung</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,213 × 5
    geschlecht alter     gemeinde_groesse bezirk_name antwort          
@@ -509,15 +548,15 @@ Lars Schöbitz
 <li>exportiere <span class="highlight-yellow">verarbeitete, analysereife Daten</span></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>antwort_levels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"viel zu hoch"</span>, <span class="st">"eher zu hoch"</span>, <span class="st">"gerade angemessen"</span>, </span>
-<span id="cb8-2"><a></a>                    <span class="st">"eher zu tief"</span>, <span class="st">"viel zu tief"</span>)</span>
-<span id="cb8-3"><a></a></span>
-<span id="cb8-4"><a></a>befragung_fct <span class="ot">&lt;-</span> befragung <span class="sc">|&gt;</span></span>
-<span id="cb8-5"><a></a>    <span class="fu">mutate</span>(<span class="at">antwort =</span> <span class="fu">factor</span>(antwort, <span class="at">levels =</span> antwort_levels)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>antwort_levels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"viel zu hoch"</span>, <span class="st">"eher zu hoch"</span>, <span class="st">"gerade angemessen"</span>, </span>
+<span id="cb15-2"><a></a>                    <span class="st">"eher zu tief"</span>, <span class="st">"viel zu tief"</span>)</span>
+<span id="cb15-3"><a></a></span>
+<span id="cb15-4"><a></a>befragung_fct <span class="ot">&lt;-</span> befragung <span class="sc">|&gt;</span></span>
+<span id="cb15-5"><a></a>    <span class="fu">mutate</span>(<span class="at">antwort =</span> <span class="fu">factor</span>(antwort, <span class="at">levels =</span> antwort_levels)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>befragung_fct</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>befragung_fct</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,213 × 5
    geschlecht alter     gemeinde_groesse bezirk_name antwort          
@@ -536,7 +575,7 @@ Lars Schöbitz
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">write_csv</span>(befragung_fct, <span class="st">"daten/processed/ktzh-befragung-zufriedenheit.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="fu">write_csv</span>(befragung_fct, <span class="st">"daten/processed/ktzh-befragung-zufriedenheit.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -546,10 +585,21 @@ Lars Schöbitz
 <li>Was ist aus unserem Faktor geworden?</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>befragung_fct <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"daten/processed/ktzh-befragung-zufriedenheit.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>befragung_fct <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"daten/processed/ktzh-befragung-zufriedenheit.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>befragung_fct</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 1213 Columns: 5
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (5): geschlecht, alter, gemeinde_groesse, bezirk_name, antwort
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>befragung_fct</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,213 × 5
    geschlecht alter     gemeinde_groesse bezirk_name antwort          
@@ -567,6 +617,10 @@ Lars Schöbitz
 # ℹ 1,203 more rows</code></pre>
 </div>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>befragung_fct <span class="ot">&lt;-</span> befragung_fct <span class="sc">|&gt;</span></span>
+<span id="cb23-2"><a></a>    <span class="fu">mutate</span>(<span class="at">antwort =</span> <span class="fu">factor</span>(antwort, <span class="at">levels =</span> antwort_levels)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="wo-ist-der-faktor" class="slide level2">
 <h2>Wo ist der Faktor?</h2>
@@ -574,7 +628,10 @@ Lars Schöbitz
 <li>Faktoren können in CSV Dateien nicht gespeichert werden</li>
 <li>Eine CSV Datei enthält lediglich Werte, getrennt durch ein Komma</li>
 </ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"img/md-04/raw-csv-github.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
+</div>
 <img data-src="img/md-04/raw-csv-github.png" width="731" class="r-stretch"></section>
 <section id="wie-speichern-wir-faktoren" class="slide level2 smaller">
 <h2>Wie speichern wir Faktoren?</h2>
@@ -584,14 +641,21 @@ Lars Schöbitz
 <li>Faktoren und andere Datenstrukturen bleiben erhalten</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">write_rds</span>(befragung_fct, <span class="st">"folien/daten/processed/ktzh-befragung-zufriedenheit.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="fu">write_rds</span>(befragung_fct, <span class="st">"folien/daten/processed/ktzh-befragung-zufriedenheit.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>befragung_rds <span class="ot">&lt;-</span> <span class="fu">read_rds</span>(<span class="st">"daten/processed/ktzh-befragung-zufriedenheit.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>befragung_rds <span class="ot">&lt;-</span> <span class="fu">read_rds</span>(<span class="st">"daten/processed/ktzh-befragung-zufriedenheit.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>befragung_rds</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="fu">write_rds</span>(befragung_fct, </span>
+<span id="cb27-2"><a></a>          here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"folien/daten/processed/ktzh-befragung-zufriedenheit.rds"</span>))</span>
+<span id="cb27-3"><a></a></span>
+<span id="cb27-4"><a></a>befragung_rds <span class="ot">&lt;-</span> <span class="fu">read_rds</span>(</span>
+<span id="cb27-5"><a></a>    here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"folien/daten/processed/ktzh-befragung-zufriedenheit.rds"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>befragung_rds</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,213 × 5
    geschlecht alter     gemeinde_groesse bezirk_name antwort          
@@ -617,13 +681,17 @@ Lars Schöbitz
 <li>für eine Visualisierung oder Tabelle in einer veröffentlichten Arbeit</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>befragung_sum_alter <span class="ot">&lt;-</span> befragung_rds <span class="sc">|&gt;</span> </span>
-<span id="cb19-2"><a></a>    <span class="fu">group_by</span>(alter, antwort) <span class="sc">|&gt;</span> </span>
-<span id="cb19-3"><a></a>    <span class="fu">summarise</span>(<span class="at">antwort_anzahl =</span> <span class="fu">n</span>()) <span class="sc">|&gt;</span> </span>
-<span id="cb19-4"><a></a>    <span class="fu">mutate</span>(<span class="at">antwort_prozent =</span> antwort_anzahl <span class="sc">/</span> <span class="fu">sum</span>(antwort_anzahl) <span class="sc">*</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a>befragung_sum_alter <span class="ot">&lt;-</span> befragung_rds <span class="sc">|&gt;</span> </span>
+<span id="cb30-2"><a></a>    <span class="fu">group_by</span>(alter, antwort) <span class="sc">|&gt;</span> </span>
+<span id="cb30-3"><a></a>    <span class="fu">summarise</span>(<span class="at">antwort_anzahl =</span> <span class="fu">n</span>()) <span class="sc">|&gt;</span> </span>
+<span id="cb30-4"><a></a>    <span class="fu">mutate</span>(<span class="at">antwort_prozent =</span> antwort_anzahl <span class="sc">/</span> <span class="fu">sum</span>(antwort_anzahl) <span class="sc">*</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'alter'. You can override using the
+`.groups` argument.</code></pre>
+</div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>befragung_sum_alter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a>befragung_sum_alter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 52 × 4
 # Groups:   alter [13]
@@ -649,17 +717,17 @@ Lars Schöbitz
 <li>in einer Veröffentlichung</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> befragung_sum_alter,</span>
-<span id="cb22-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> antwort_prozent, </span>
-<span id="cb22-3"><a></a>                     <span class="at">y =</span> alter, </span>
-<span id="cb22-4"><a></a>                     <span class="at">fill =</span> antwort)) <span class="sc">+</span></span>
-<span id="cb22-5"><a></a>    <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb22-6"><a></a>    <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">round</span>(antwort_prozent, <span class="dv">0</span>)),  </span>
-<span id="cb22-7"><a></a>              <span class="at">position =</span> <span class="fu">position_stack</span>(<span class="at">vjust =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
-<span id="cb22-8"><a></a>    <span class="fu">scale_fill_colorblind</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> befragung_sum_alter,</span>
+<span id="cb34-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> antwort_prozent, </span>
+<span id="cb34-3"><a></a>                     <span class="at">y =</span> alter, </span>
+<span id="cb34-4"><a></a>                     <span class="at">fill =</span> antwort)) <span class="sc">+</span></span>
+<span id="cb34-5"><a></a>    <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb34-6"><a></a>    <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">round</span>(antwort_prozent, <span class="dv">0</span>)),  </span>
+<span id="cb34-7"><a></a>              <span class="at">position =</span> <span class="fu">position_stack</span>(<span class="at">vjust =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
+<span id="cb34-8"><a></a>    <span class="fu">scale_fill_colorblind</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="md-04-daten-management_files/figure-revealjs/unnamed-chunk-27-1.png" width="576" class="r-stretch"></section>
+<img data-src="md-04-daten-management_files/figure-html/unnamed-chunk-27-1.png" width="576" class="r-stretch"></section>
 <section id="daten-exportieren" class="slide level2">
 <h2>Daten exportieren</h2>
 <ul>
@@ -668,8 +736,8 @@ Lars Schöbitz
 <li>erhöht die Wiederverwendbarkeit</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a><span class="fu">write_csv</span>(befragung_sum_alter, </span>
-<span id="cb23-2"><a></a>          <span class="st">"daten/final/ktzh-befragung-zufriedenheit-sum.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a><span class="fu">write_csv</span>(befragung_sum_alter, </span>
+<span id="cb35-2"><a></a>          <span class="st">"daten/final/ktzh-befragung-zufriedenheit-sum.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="daten-management" class="slide level2 smaller">
@@ -779,8 +847,9 @@ Lars Schöbitz
 <p><span class="highlight-yellow">Bitte steh auf und beweg dich.</span></p>
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_803e3245" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_fbc480d4" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -795,15 +864,16 @@ Lars Schöbitz
 <div class="task">
 <ol type="1">
 <li>Öffne <a href="https://posit.cloud">posit.cloud</a> in deinem Browser (verwende dein Lesezeichen).</li>
-<li>Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.</li>
+<li>Öffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.</li>
 <li>Klicke auf <span class="highlight-yellow">Continue</span> neben <span class="highlight-yellow">md-04-uebungen</span>.</li>
 <li>Suche im Dateimanager im Fenster unten rechts die Datei <code>03-daten-import-ihr.qmd</code> und klicke darauf, um sie im Fenster oben links zu öffnen.</li>
 <li>Folge den Anweisungen in der Datei.</li>
 </ol>
 </div>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a><span class="fu">countdown</span>(<span class="dv">25</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_6204e29f" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_1c179082" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -824,8 +894,9 @@ Lars Schöbitz
 <p>Welche Konzepte kann ich nochmals erklären?</p>
 </div>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a></a><span class="fu">countdown</span>(<span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_3324b9b7" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_cd24947c" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -840,16 +911,13 @@ Lars Schöbitz
 <section id="modul-4-dokumentation" class="slide level2">
 <h2>Modul 4 Dokumentation</h2>
 <div class="learn-more">
-<p><a href="https://rstatszh-k010.github.io/website/module/md-04.html">rstatszh-k010.github.io/website/module/md-04.html</a></p>
-<iframe src="https://rstatszh-k010.github.io/website/module/md-04.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 4 Dokumentation">
-</iframe>
+<p><a href="https://rstatszh-k011.github.io/website/module/md-04.html">rstatszh-k011.github.io/website/module/md-04.html</a></p>
 </div>
 </section>
 <section id="zusatzaufgaben-abgabedatum" class="slide level2">
 <h2>Zusatzaufgaben Abgabedatum</h2>
 <ul>
-<li>Abgabedatum: <span class="highlight-yellow">Montag, 24. März</span></li>
-<li>Korrektur- und Feedbackphase bis zu: Donnerstag, 27. März</li>
+<li>Abgabedatum: <span class="highlight-yellow">Dienstag, 21. Oktober</span></li>
 </ul>
 </section></section>
 <section>
@@ -860,7 +928,7 @@ Lars Schöbitz
 <section id="danke-1" class="slide level2">
 <h2>Danke! 🌻</h2>
 <p>Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/</p>
-<p>Access slides als <a href="https://github.com/rstatszh-k010/website/raw/main/folien/md-04-daten-management.pdf">PDF auf GitHub</a></p>
+<p>Access slides als <a href="https://github.com/rstatszh-k011/website/raw/main/folien/md-04-daten-management.pdf">PDF auf GitHub</a></p>
 <p>Alle Materialien sind lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 
 
@@ -1082,44 +1150,6 @@ Lars Schöbitz
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

@@ -42,7 +42,7 @@ In dieser Übungen arbeiten wir weiter mit dem Repository welches du in [Zusatza
 
 7. Gib deinen GitHub-Benutzernamen im Feld Username an. 
 
-8. Gib [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} im Feld ["Password"]{.highlight-yellow} ein.
+8. Gib [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} im Feld ["Personal access token for 'https://...'"]{.highlight-yellow} ein.
 
 9. Das Fenster kann geschlossen werden.
 

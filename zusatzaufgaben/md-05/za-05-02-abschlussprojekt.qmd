@@ -141,7 +141,7 @@ Wir empfehlen das R-Paket `here` zu verwenden, um auf Dateien in deinem Projekt 
 
 9. Gib deinen GitHub-Benutzernamen im Feld Username an. 
 
-10. Gib [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} im Feld ["Password"]{.highlight-yellow} ein.
+10. Gib [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} im Feld ["Personal access token for 'https://...'"]{.highlight-yellow} ein.
 
 11. Das Fenster kann geschlossen werden.
 

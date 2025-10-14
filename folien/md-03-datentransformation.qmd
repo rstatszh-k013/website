@@ -27,6 +27,18 @@ library(tidyverse)
 library(epoxy)
 library(gapminder)
 library(ggthemes)
+
+# Read variables from _variables.yml
+vars <- yaml::read_yaml(here::here("_variables.yml"))
+
+# Extract dates for this module
+homework_due_date <- vars$`md-03`$`homework-due` |> as.Date()
+
+# Set locale for German date formatting
+Sys.setlocale("LC_TIME", "de_DE.UTF-8")
+
+# Format dates for display
+homework_due_formatted <- format(homework_due_date, "%A, %d. %B")
 ```
 
 ## Lernziele (für diese Woche)
@@ -368,8 +380,7 @@ countdown(15)
 
 ## Zusatzaufgaben Abgabedatum
 
--   Abgabedatum: [Montag, 17. März]{.highlight-yellow}
--   Korrektur- und Feedbackphase bis zu: Donnerstag, 20. März 
+-   Abgabedatum: [`r homework_due_formatted`]{.highlight-yellow} 
 
 # Danke {background-color="#4C326A"}
 
