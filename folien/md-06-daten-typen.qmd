@@ -421,13 +421,13 @@ countdown(minutes = 10)
 Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-## Ihr seid dran: `02-vektor-typen-ihr.qmd`
+## Ihr seid dran: `02-iteration-ihr.qmd`
 
 ::: task
 1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
 2.  Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) für den Kurs.
 3.  Klicke auf [Start]{.highlight-yellow} neben [md-06-uebungen]{.highlight-yellow}.
-4.  Suche im Dateimanager im Fenster unten rechts die Datei [`02-vektor-typen-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`02-iteration-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 5.  Folge den Anweisungen in der Datei.
 :::
 
@@ -438,7 +438,7 @@ countdown(30)
 ## Zeitpuffer: Modul 6 Uebungen {.smaller}
 
 ::: {.hand-purple-large style="text-align: center;"}
-Kann ich noch etwas zu den Übungen in `02-vektor-typen-ihr.qmd` sagen?  
+Kann ich noch etwas zu den Übungen in `02-iteration-ihr.qmd` sagen?  
 :::
 ```{r}
 countdown(15)
@@ -504,7 +504,7 @@ read_csv(here::here("daten/umfrage_daten.csv"))
 
 ::: task
 1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2. Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
+2. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) für den Kurs.
 3. Klicke auf [Continue]{.highlight-yellow} neben [md-06-uebungen]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei [`03-gitignore-wir.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 :::

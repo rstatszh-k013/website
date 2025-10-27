@@ -60,8 +60,11 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |
 
 ## {{< fa book >}} Lesematerial
 
-- Lies: [R for Data Science - Section 9 - Layers](https://r4ds.hadley.nz/layers)
-- Lies: [What they forgot to teach you about R: Sektion 3 - Project-oriented workflow](https://rstats.wtf/projects) 
+- Lies: [R for Data Science - Chapter 12 - Logical vectors](https://r4ds.hadley.nz/logicals)
+- Lies: [R for Data Science - Chapter 13 - Numbers](https://r4ds.hadley.nz/numbers)
+- Lies: [R for Data Science - Chapter 26 - Iteration](https://r4ds.hadley.nz/iteration)
+- Lies: [R for Data Science - Chapter 27 - A field guide to base R](https://r4ds.hadley.nz/base-r)
+- Lies: [What they forgot to teach you about R: Sektion 3 - Project-oriented workflow](https://rstats.wtf/projects)
 - Lies: [What they forgot to teach you about R: Sektion 4 - Practice safe paths](https://rstats.wtf/practice-safe-paths) 
 
 ## {{< fa code >}} Zusatzaufgabe

@@ -7,7 +7,7 @@ execute:
     eval: false
 ---
 
-Steht das Repository für dein Proejtk? Hast du deine Daten ausgewählt und importiert? Falls nicht, dann gehe nochmals in die [Zusatzaufgabe 2 aus Modul 5](../md-05/za-05-02-abschlussprojekt.qmd). Falls ja, dann kannst du nun etwas Zeit damit verbringen die Daten zu bereinigen, erste Fragen an den Datensatz zu stellen und diese mittels Visualisierungen, und Tabellen mit zusammenfassenden Statistiken zu beantworten.
+Steht das Repository für dein Projekt? Hast du deine Daten ausgewählt und importiert? Falls nicht, dann gehe nochmals in die [Zusatzaufgabe 2 aus Modul 5](../md-05/za-05-02-abschlussprojekt.qmd). Falls ja, dann kannst du nun etwas Zeit damit verbringen die Daten zu bereinigen, erste Fragen an den Datensatz zu stellen und diese mittels Visualisierungen, und Tabellen mit zusammenfassenden Statistiken zu beantworten.
 
 ## Anforderungen
 

@@ -48,6 +48,6 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |
 
 ## {{< fa code >}} Zusatzaufgaben
 
-Arbeitet weiter an eurem Abschlussprojekt. Die Zusatzaufgabe bleibt die gleiche wie in Modul 7. Bitte erledige die folgende Aufgabe bis {{< var md-08.date >}}.
+Arbeitet weiter an eurem Abschlussprojekt. Die Zusatzaufgabe bleibt die gleiche wie in Modul 7. Bitte erledige die folgende Aufgabe bis {{< var md-08.homework-due >}}.
 
 - [Zusatzaufgabe 1](../zusatzaufgaben/md-07/za-07-01-abschlussprojekt.qmd): Abschlussprojekt - Dokumentation 
