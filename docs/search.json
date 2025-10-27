@@ -625,7 +625,7 @@
     "href": "folien/md-05-datumswerte.html#ihr-seid-dran-04-datumswerte-ihr.qmd",
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Ihr seid dran: 04-datumswerte-ihr.qmd",
-    "text": "Ihr seid dran: 04-datumswerte-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-05-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 04-datumswerte-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
+    "text": "Ihr seid dran: 04-datumswerte-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-05-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 04-datumswerte-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-05-datumswerte.html#pause-machen-1",
@@ -737,7 +737,7 @@
     "href": "folien/md-03-datentransformation.html#wir-sind-dran-md-03-uebungen",
     "title": "Daten Transformation mit dplyr",
     "section": "Wir sind dran: md-03-uebungen",
-    "text": "Wir sind dran: md-03-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+    "text": "Wir sind dran: md-03-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#pause-machen",
@@ -1325,7 +1325,7 @@
     "href": "folien/md-10-funktionen.html#ihr-seid-dran-01-funktionen.qmd",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Ihr seid dran: 01-funktionen.qmd",
-    "text": "Ihr seid dran: 01-funktionen.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-funktionen.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\ncountdown(15)\n\n\n−+\n15:00"
+    "text": "Ihr seid dran: 01-funktionen.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-10-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-funktionen.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\ncountdown(15)\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-10-funktionen.html#parameter-in-quarto-dokumenten",
@@ -2343,7 +2343,7 @@
     "href": "folien/md-07-daten-formen.html#ihr-seid-dran-02-joins-ihr.qmd",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Ihr seid dran: 02-joins-ihr.qmd",
-    "text": "Ihr seid dran: 02-joins-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-joins-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
+    "text": "Ihr seid dran: 02-joins-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-joins-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#pause-machen-1",
@@ -2357,7 +2357,7 @@
     "href": "folien/md-07-daten-formen.html#ihr-seid-dran-02-joins-ihr.qmd-1",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Ihr seid dran: 02-joins-ihr.qmd",
-    "text": "Ihr seid dran: 02-joins-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-joins-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
+    "text": "Ihr seid dran: 02-joins-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-joins-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#zeitpuffer-modul-7",
