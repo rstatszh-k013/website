@@ -68,5 +68,4 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |
 Bitte erledige die folgende Aufgabe bis **`r homework_due_formatted`**.
 
 - [Zusatzaufgabe 1](../zusatzaufgaben/md-10/za-10-01-communities.qmd): Kantons-Communities beitreten
-- [Zusatzaufgabe 2](../abschlussprojekt/): Abschlussprojekt bis 10.12.2024 abschliessen
-- Anbschlussprojekt fertigstellen
+- [Zusatzaufgabe 2](../abschlussprojekt/): Abschlussprojekt fertigstellen

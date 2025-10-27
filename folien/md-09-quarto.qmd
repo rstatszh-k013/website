@@ -821,7 +821,7 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 ::: task
 1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2. Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
+2. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) für den Kurs.
 3. Klicke auf [Continue]{.highlight-yellow} neben [md-09-uebungen]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei [`03-folien.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 :::

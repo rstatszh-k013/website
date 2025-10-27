@@ -1,0 +1,85 @@
+---
+title: "DAP Installation"
+subtitle: "R-Toolbox auf dem Digitalen Arbeitsplatz einrichten"
+execute:
+    message: false
+    warning: false
+    eval: false
+---
+
+## Überblick
+
+Um die komplette R-Toolbox auf dem Digitalen Arbeitsplatz (DAP) nutzen zu können, musst du im Serviceportal verschiedene Softwaremodule bestellen. Diese Aufgabe führt dich durch den Bestellprozess.
+
+## Schritt 1: Zugang zum Serviceportal
+
+1. Öffne das Serviceportal des Kantons Zürich (über deinen DAP oder Webbrowser).
+
+2. Navigiere zu: **Alle Kataloge** > **Applikationen** > **Standardapplikationen**
+
+![](../../folien/img/md-02/serviceportal_servicekatalog.PNG){width="30%"}
+
+## Schritt 2: R-Software bestellen
+
+Bestelle folgende drei Module für die R-Installation:
+
+### 2.1 R (Statistikprogramm)
+
+![](../../folien/img/md-02/serviceportal_R.PNG){width="70%"}
+
+### 2.2 RTools
+
+![](../../folien/img/md-02/serviceportal_RTools.PNG){width="70%"}
+
+### 2.3 tinytex (für PDF-Erstellung)
+
+![](../../folien/img/md-02/serviceportal_tinytex.PNG){width="70%"}
+
+::: callout-tip
+## Tipp
+Du kannst alle drei Module auf einmal in den "Warenkorb" legen und dann gemeinsam bestellen.
+:::
+
+## Schritt 3: Git for Windows bestellen
+
+Damit du auch auf dem DAP zwischen R/RStudio und GitHub kommunizieren kannst, benötigst du Git for Windows.
+
+1. Suche im Serviceportal unter **Standardapplikationen** nach "Git for Windows"
+
+2. Bestelle das Modul **Git for Windows**
+
+![](../../folien/img/md-02/git_for_windows_DAP.png){width="50%"}
+
+## Schritt 4: Konfiguration vorbereiten
+
+Nachdem die Software installiert wurde, findest du auf [zHub](https://ktzuerich.sharepoint.com/sites/zh-informatik/SitePages/Datenanalyse-mit-R---R-Studio.aspx) wichtige Hinweise zur Konfiguration deiner R-Installation auf dem DAP.
+
+::: callout-important
+## Best Practices beachten
+Lies dir besonders die Sektion **"Best practices"** auf der zHub-Seite durch. Diese Hinweise helfen dir, häufige Probleme zu vermeiden und deine R-Umgebung optimal einzurichten.
+:::
+
+## Schritt 5: Bestätigung via GitHub Issue
+
+Sobald du die Bestellungen aufgegeben hast:
+
+1. Öffne [github.com](https://github.com/) in deinem Browser.
+
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/{{< var course.code >}}]({{< var course.github-org >}})
+
+3. Finde das Repository [projekt-USERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
+
+4. Eröffne ein neues Issue mit dem Titel: **"DAP Software bestellt"**
+
+::: callout-note
+## Hinweis zur Installation
+Die Installation der Software kann einige Tage dauern. In Modul 7 werden wir die Installation testen, indem wir ein lokales Repository klonen und Änderungen committen. Bis dahin sollte die Software auf deinem DAP verfügbar sein.
+:::
+
+## Fragen? Braucht es Unterstützung?
+
+Falls du Fragen hast oder Unterstützung bei der Bestellung brauchst:
+
+- Stelle deine Frage im Issue auf GitHub
+- Kontaktiere die R-Fachgruppe über den Teams-Kanal (siehe Modul 2 Folien)
+- Frage bei Thomas oder Philipp nach (Support bei Installationsproblemen)

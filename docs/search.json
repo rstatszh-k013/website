@@ -168,7 +168,7 @@
     "href": "module/md-06.html#lesematerial",
     "title": "Modul 6",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nLies: R for Data Science - Section 9 - Layers\nLies: What they forgot to teach you about R: Sektion 3 - Project-oriented workflow\nLies: What they forgot to teach you about R: Sektion 4 - Practice safe paths",
+    "text": "Lesematerial\n\nLies: R for Data Science - Chapter 12 - Logical vectors\nLies: R for Data Science - Chapter 13 - Numbers\nLies: R for Data Science - Chapter 26 - Iteration\nLies: R for Data Science - Chapter 27 - A field guide to base R\nLies: What they forgot to teach you about R: Sektion 3 - Project-oriented workflow\nLies: What they forgot to teach you about R: Sektion 4 - Practice safe paths",
     "crumbs": [
       "Modul 06"
     ]
@@ -228,7 +228,7 @@
     "href": "module/md-10.html#zusatzaufgaben",
     "title": "Modul 10",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 02. Dezember 2025.\n\nZusatzaufgabe 1: Kantons-Communities beitreten\nZusatzaufgabe 2: Abschlussprojekt bis 10.12.2024 abschliessen\nAnbschlussprojekt fertigstellen",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 02. Dezember 2025.\n\nZusatzaufgabe 1: Kantons-Communities beitreten\nZusatzaufgabe 2: Abschlussprojekt fertigstellen",
     "crumbs": [
       "Modul 10"
     ]
@@ -338,7 +338,7 @@
     "href": "zusatzaufgaben/md-06/za-06-01-abschlussprojekt.html",
     "title": "Abschlussprojekt",
     "section": "",
-    "text": "Steht das Repository für dein Proejtk? Hast du deine Daten ausgewählt und importiert? Falls nicht, dann gehe nochmals in die Zusatzaufgabe 2 aus Modul 5. Falls ja, dann kannst du nun etwas Zeit damit verbringen die Daten zu bereinigen, erste Fragen an den Datensatz zu stellen und diese mittels Visualisierungen, und Tabellen mit zusammenfassenden Statistiken zu beantworten."
+    "text": "Steht das Repository für dein Projekt? Hast du deine Daten ausgewählt und importiert? Falls nicht, dann gehe nochmals in die Zusatzaufgabe 2 aus Modul 5. Falls ja, dann kannst du nun etwas Zeit damit verbringen die Daten zu bereinigen, erste Fragen an den Datensatz zu stellen und diese mittels Visualisierungen, und Tabellen mit zusammenfassenden Statistiken zu beantworten."
   },
   {
     "objectID": "zusatzaufgaben/md-06/za-06-01-abschlussprojekt.html#anforderungen",
@@ -625,7 +625,7 @@
     "href": "folien/md-05-datumswerte.html#ihr-seid-dran-04-datumswerte-ihr.qmd",
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Ihr seid dran: 04-datumswerte-ihr.qmd",
-    "text": "Ihr seid dran: 04-datumswerte-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-05-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 04-datumswerte-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
+    "text": "Ihr seid dran: 04-datumswerte-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-05-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 04-datumswerte-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-05-datumswerte.html#pause-machen-1",
@@ -737,7 +737,7 @@
     "href": "folien/md-03-datentransformation.html#wir-sind-dran-md-03-uebungen",
     "title": "Daten Transformation mit dplyr",
     "section": "Wir sind dran: md-03-uebungen",
-    "text": "Wir sind dran: md-03-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+    "text": "Wir sind dran: md-03-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#pause-machen",
@@ -1325,7 +1325,7 @@
     "href": "folien/md-10-funktionen.html#ihr-seid-dran-01-funktionen.qmd",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Ihr seid dran: 01-funktionen.qmd",
-    "text": "Ihr seid dran: 01-funktionen.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-funktionen.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\ncountdown(15)\n\n\n−+\n15:00"
+    "text": "Ihr seid dran: 01-funktionen.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-10-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-funktionen.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\ncountdown(15)\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-10-funktionen.html#parameter-in-quarto-dokumenten",
@@ -1608,18 +1608,18 @@
     "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
-    "objectID": "folien/md-06-daten-typen.html#ihr-seid-dran-02-vektor-typen-ihr.qmd",
-    "href": "folien/md-06-daten-typen.html#ihr-seid-dran-02-vektor-typen-ihr.qmd",
+    "objectID": "folien/md-06-daten-typen.html#ihr-seid-dran-02-iteration-ihr.qmd",
+    "href": "folien/md-06-daten-typen.html#ihr-seid-dran-02-iteration-ihr.qmd",
     "title": "Daten Typen & Vektoren & For Loops",
-    "section": "Ihr seid dran: 02-vektor-typen-ihr.qmd",
-    "text": "Ihr seid dran: 02-vektor-typen-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-06-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-vektor-typen-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n30:00"
+    "section": "Ihr seid dran: 02-iteration-ihr.qmd",
+    "text": "Ihr seid dran: 02-iteration-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-06-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-iteration-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#zeitpuffer-modul-6-uebungen",
     "href": "folien/md-06-daten-typen.html#zeitpuffer-modul-6-uebungen",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Zeitpuffer: Modul 6 Uebungen",
-    "text": "Zeitpuffer: Modul 6 Uebungen\n\nKann ich noch etwas zu den Übungen in 02-vektor-typen-ihr.qmd sagen?\n\n\n\n\n−+\n15:00"
+    "text": "Zeitpuffer: Modul 6 Uebungen\n\nKann ich noch etwas zu den Übungen in 02-iteration-ihr.qmd sagen?\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#pause-machen-1",
@@ -1654,7 +1654,7 @@
     "href": "folien/md-06-daten-typen.html#wir-sind-dran-03-gitignore-wir.qmd-docs04-dateipfade.qmd",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Wir sind dran: 03-gitignore-wir.qmd & docs/04-dateipfade.qmd",
-    "text": "Wir sind dran: 03-gitignore-wir.qmd & docs/04-dateipfade.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-06-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-gitignore-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+    "text": "Wir sind dran: 03-gitignore-wir.qmd & docs/04-dateipfade.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-06-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-gitignore-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#zeitpuffer-modul-6-uebungen-1",
@@ -2231,7 +2231,7 @@
     "href": "folien/md-07-daten-formen.html#wir-sind-dran-01-treibhausgase-ihr.qmd",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Wir sind dran: 01-treibhausgase-ihr.qmd",
-    "text": "Wir sind dran: 01-treibhausgase-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-treibhausgase-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n25:00"
+    "text": "Wir sind dran: 01-treibhausgase-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-treibhausgase-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n25:00"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#mit-mehreren-dataframes-arbeiten",
@@ -2343,7 +2343,7 @@
     "href": "folien/md-07-daten-formen.html#ihr-seid-dran-02-joins-ihr.qmd",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Ihr seid dran: 02-joins-ihr.qmd",
-    "text": "Ihr seid dran: 02-joins-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-joins-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
+    "text": "Ihr seid dran: 02-joins-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-joins-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#pause-machen-1",
@@ -2357,7 +2357,7 @@
     "href": "folien/md-07-daten-formen.html#ihr-seid-dran-02-joins-ihr.qmd-1",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Ihr seid dran: 02-joins-ihr.qmd",
-    "text": "Ihr seid dran: 02-joins-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-joins-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
+    "text": "Ihr seid dran: 02-joins-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-joins-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#zeitpuffer-modul-7",
@@ -2518,7 +2518,7 @@
     "href": "folien/md-08-text-daten.html#wir-sind-dran-02-statr-wir.qmd",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Wir sind dran: 02-statR-wir.qmd",
-    "text": "Wir sind dran: 02-statR-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-08-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-statR-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n30:00"
+    "text": "Wir sind dran: 02-statR-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-08-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-statR-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "folien/md-08-text-daten.html#pause-machen-1",
@@ -2910,7 +2910,7 @@
     "href": "folien/md-09-quarto.html#wir-sind-dran-03-folien.qmd",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Wir sind dran: 03-folien.qmd",
-    "text": "Wir sind dran: 03-folien.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-folien.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n30:00"
+    "text": "Wir sind dran: 03-folien.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-folien.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "folien/md-09-quarto.html#ihr-seid-dran-03-folien.qmd",
@@ -3472,7 +3472,7 @@
     "href": "module/md-08.html#zusatzaufgaben",
     "title": "Modul 8",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nArbeitet weiter an eurem Abschlussprojekt. Die Zusatzaufgabe bleibt die gleiche wie in Modul 7. Bitte erledige die folgende Aufgabe bis 2025-11-11.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
+    "text": "Zusatzaufgaben\nArbeitet weiter an eurem Abschlussprojekt. Die Zusatzaufgabe bleibt die gleiche wie in Modul 7. Bitte erledige die folgende Aufgabe bis 2025-11-18.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
     "crumbs": [
       "Modul 08"
     ]
@@ -3587,5 +3587,71 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html",
+    "title": "DAP Installation",
+    "section": "",
+    "text": "Um die komplette R-Toolbox auf dem Digitalen Arbeitsplatz (DAP) nutzen zu können, musst du im Serviceportal verschiedene Softwaremodule bestellen. Diese Aufgabe führt dich durch den Bestellprozess."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#überblick",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#überblick",
+    "title": "DAP Installation",
+    "section": "",
+    "text": "Um die komplette R-Toolbox auf dem Digitalen Arbeitsplatz (DAP) nutzen zu können, musst du im Serviceportal verschiedene Softwaremodule bestellen. Diese Aufgabe führt dich durch den Bestellprozess."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-1-zugang-zum-serviceportal",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-1-zugang-zum-serviceportal",
+    "title": "DAP Installation",
+    "section": "Schritt 1: Zugang zum Serviceportal",
+    "text": "Schritt 1: Zugang zum Serviceportal\n\nÖffne das Serviceportal des Kantons Zürich (über deinen DAP oder Webbrowser).\nNavigiere zu: Alle Kataloge &gt; Applikationen &gt; Standardapplikationen"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-2-r-software-bestellen",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-2-r-software-bestellen",
+    "title": "DAP Installation",
+    "section": "Schritt 2: R-Software bestellen",
+    "text": "Schritt 2: R-Software bestellen\nBestelle folgende drei Module für die R-Installation:\n\n2.1 R (Statistikprogramm)\n\n\n\n2.2 RTools\n\n\n\n2.3 tinytex (für PDF-Erstellung)\n\n\n\n\n\n\n\nTipp\n\n\n\nDu kannst alle drei Module auf einmal in den “Warenkorb” legen und dann gemeinsam bestellen."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-3-git-for-windows-bestellen",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-3-git-for-windows-bestellen",
+    "title": "DAP Installation",
+    "section": "Schritt 3: Git for Windows bestellen",
+    "text": "Schritt 3: Git for Windows bestellen\nDamit du auch auf dem DAP zwischen R/RStudio und GitHub kommunizieren kannst, benötigst du Git for Windows.\n\nSuche im Serviceportal unter Standardapplikationen nach “Git for Windows”\nBestelle das Modul Git for Windows"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-4-konfiguration-vorbereiten",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-4-konfiguration-vorbereiten",
+    "title": "DAP Installation",
+    "section": "Schritt 4: Konfiguration vorbereiten",
+    "text": "Schritt 4: Konfiguration vorbereiten\nNachdem die Software installiert wurde, findest du auf zHub wichtige Hinweise zur Konfiguration deiner R-Installation auf dem DAP.\n\n\n\n\n\n\nBest Practices beachten\n\n\n\nLies dir besonders die Sektion “Best practices” auf der zHub-Seite durch. Diese Hinweise helfen dir, häufige Probleme zu vermeiden und deine R-Umgebung optimal einzurichten."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-5-bestätigung-via-github-issue",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-5-bestätigung-via-github-issue",
+    "title": "DAP Installation",
+    "section": "Schritt 5: Bestätigung via GitHub Issue",
+    "text": "Schritt 5: Bestätigung via GitHub Issue\nSobald du die Bestellungen aufgegeben hast:\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nEröffne ein neues Issue mit dem Titel: “DAP Software bestellt”\n\n\n\n\n\n\n\nHinweis zur Installation\n\n\n\nDie Installation der Software kann einige Tage dauern. In Modul 7 werden wir die Installation testen, indem wir ein lokales Repository klonen und Änderungen committen. Bis dahin sollte die Software auf deinem DAP verfügbar sein."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#fragen-braucht-es-unterstützung",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#fragen-braucht-es-unterstützung",
+    "title": "DAP Installation",
+    "section": "Fragen? Braucht es Unterstützung?",
+    "text": "Fragen? Braucht es Unterstützung?\nFalls du Fragen hast oder Unterstützung bei der Bestellung brauchst:\n\nStelle deine Frage im Issue auf GitHub\nKontaktiere die R-Fachgruppe über den Teams-Kanal (siehe Modul 2 Folien)\nFrage bei Thomas oder Philipp nach (Support bei Installationsproblemen)"
+  },
+  {
+    "objectID": "module/md-06.html#zusatzaufgaben",
+    "href": "module/md-06.html#zusatzaufgaben",
+    "title": "Modul 6",
+    "section": " Zusatzaufgaben",
+    "text": "Zusatzaufgaben\nBitte erledige die folgenden Aufgaben bis 04. November 2025.\n\nZusatzaufgabe 1: Abschlussprojekt\nZusatzaufgabe 2: DAP Installation",
+    "crumbs": [
+      "Modul 06"
+    ]
   }
 ]
