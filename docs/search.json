@@ -3587,5 +3587,71 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html",
+    "title": "DAP Installation",
+    "section": "",
+    "text": "Um die komplette R-Toolbox auf dem Digitalen Arbeitsplatz (DAP) nutzen zu können, musst du im Serviceportal verschiedene Softwaremodule bestellen. Diese Aufgabe führt dich durch den Bestellprozess."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#überblick",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#überblick",
+    "title": "DAP Installation",
+    "section": "",
+    "text": "Um die komplette R-Toolbox auf dem Digitalen Arbeitsplatz (DAP) nutzen zu können, musst du im Serviceportal verschiedene Softwaremodule bestellen. Diese Aufgabe führt dich durch den Bestellprozess."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-1-zugang-zum-serviceportal",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-1-zugang-zum-serviceportal",
+    "title": "DAP Installation",
+    "section": "Schritt 1: Zugang zum Serviceportal",
+    "text": "Schritt 1: Zugang zum Serviceportal\n\nÖffne das Serviceportal des Kantons Zürich (über deinen DAP oder Webbrowser).\nNavigiere zu: Alle Kataloge &gt; Applikationen &gt; Standardapplikationen"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-2-r-software-bestellen",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-2-r-software-bestellen",
+    "title": "DAP Installation",
+    "section": "Schritt 2: R-Software bestellen",
+    "text": "Schritt 2: R-Software bestellen\nBestelle folgende drei Module für die R-Installation:\n\n2.1 R (Statistikprogramm)\n\n\n\n2.2 RTools\n\n\n\n2.3 tinytex (für PDF-Erstellung)\n\n\n\n\n\n\n\nTipp\n\n\n\nDu kannst alle drei Module auf einmal in den “Warenkorb” legen und dann gemeinsam bestellen."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-3-git-for-windows-bestellen",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-3-git-for-windows-bestellen",
+    "title": "DAP Installation",
+    "section": "Schritt 3: Git for Windows bestellen",
+    "text": "Schritt 3: Git for Windows bestellen\nDamit du auch auf dem DAP zwischen R/RStudio und GitHub kommunizieren kannst, benötigst du Git for Windows.\n\nSuche im Serviceportal unter Standardapplikationen nach “Git for Windows”\nBestelle das Modul Git for Windows"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-4-konfiguration-vorbereiten",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-4-konfiguration-vorbereiten",
+    "title": "DAP Installation",
+    "section": "Schritt 4: Konfiguration vorbereiten",
+    "text": "Schritt 4: Konfiguration vorbereiten\nNachdem die Software installiert wurde, findest du auf zHub wichtige Hinweise zur Konfiguration deiner R-Installation auf dem DAP.\n\n\n\n\n\n\nBest Practices beachten\n\n\n\nLies dir besonders die Sektion “Best practices” auf der zHub-Seite durch. Diese Hinweise helfen dir, häufige Probleme zu vermeiden und deine R-Umgebung optimal einzurichten."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-5-bestätigung-via-github-issue",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#schritt-5-bestätigung-via-github-issue",
+    "title": "DAP Installation",
+    "section": "Schritt 5: Bestätigung via GitHub Issue",
+    "text": "Schritt 5: Bestätigung via GitHub Issue\nSobald du die Bestellungen aufgegeben hast:\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nEröffne ein neues Issue mit dem Titel: “DAP Software bestellt”\n\n\n\n\n\n\n\nHinweis zur Installation\n\n\n\nDie Installation der Software kann einige Tage dauern. In Modul 7 werden wir die Installation testen, indem wir ein lokales Repository klonen und Änderungen committen. Bis dahin sollte die Software auf deinem DAP verfügbar sein."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#fragen-braucht-es-unterstützung",
+    "href": "zusatzaufgaben/md-06/za-06-02-dap-installation.html#fragen-braucht-es-unterstützung",
+    "title": "DAP Installation",
+    "section": "Fragen? Braucht es Unterstützung?",
+    "text": "Fragen? Braucht es Unterstützung?\nFalls du Fragen hast oder Unterstützung bei der Bestellung brauchst:\n\nStelle deine Frage im Issue auf GitHub\nKontaktiere die R-Fachgruppe über den Teams-Kanal (siehe Modul 2 Folien)\nFrage bei Thomas oder Philipp nach (Support bei Installationsproblemen)"
+  },
+  {
+    "objectID": "module/md-06.html#zusatzaufgaben",
+    "href": "module/md-06.html#zusatzaufgaben",
+    "title": "Modul 6",
+    "section": " Zusatzaufgaben",
+    "text": "Zusatzaufgaben\nBitte erledige die folgenden Aufgaben bis 04. November 2025.\n\nZusatzaufgabe 1: Abschlussprojekt\nZusatzaufgabe 2: DAP Installation",
+    "crumbs": [
+      "Modul 06"
+    ]
   }
 ]
