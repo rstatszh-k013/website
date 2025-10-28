@@ -404,7 +404,7 @@ Zurücklehnen und Fragen stellen!
 :::
 
 ```{r}
-countdown(minutes = 30)
+countdown(minutes = 40)
 ```
 
 ## Pause machen
@@ -432,7 +432,7 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
 ```{r}
-countdown(30)
+countdown(40)
 ```
 
 ## Zeitpuffer: Modul 6 Uebungen {.smaller}
@@ -441,7 +441,7 @@ countdown(30)
 Kann ich noch etwas zu den Übungen in `02-iteration-ihr.qmd` sagen?  
 :::
 ```{r}
-countdown(15)
+countdown(5)
 ```
 
 ## Pause machen
