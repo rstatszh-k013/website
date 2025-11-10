@@ -582,15 +582,15 @@
     "objectID": "folien/md-09-quarto.html#lernziele-für-diese-woche",
     "href": "folien/md-09-quarto.html#lernziele-für-diese-woche",
     "title": "Erstellung von Berichten und Folien mit Quarto",
-    "section": "",
-    "text": "lernziele &lt;- readr::read_csv(here::here(\"data/tbl-01-rstatszh-lernziele.csv\")) |&gt; \n  dplyr::filter(modul == params$modul) |&gt;\n  dplyr::pull(lernziele)\n\nRows: 36 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): titel, lernziele\ndbl  (1): modul\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nDie Lernenden können Querverweise zu Diagrammen und Tabellen in Quarto Dokumenten erstellen.\nDie Lernenden können Folien im Format revealjs HTML erstellen.\nDie Lernenden können Metadaten eines Quarto Dokuments anpassen."
+    "section": "Lernziele (für diese Woche)",
+    "text": "Lernziele (für diese Woche)\n\nlernziele &lt;- readr::read_csv(here::here(\"data/tbl-01-rstatszh-lernziele.csv\")) |&gt; \n  dplyr::filter(modul == params$modul) |&gt;\n  dplyr::pull(lernziele)\n\nRows: 36 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): titel, lernziele\ndbl  (1): modul\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nDie Lernenden können Querverweise zu Diagrammen und Tabellen in Quarto Dokumenten erstellen.\nDie Lernenden können Folien im Format revealjs HTML erstellen.\nDie Lernenden können Metadaten eines Quarto Dokuments anpassen."
   },
   {
     "objectID": "folien/md-09-quarto.html#quarto-1",
     "href": "folien/md-09-quarto.html#quarto-1",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Quarto …",
-    "text": "Quarto …\n\nist ein neues, open-source, wissenschaftliches und technisches Publikationssystem\nzielt darauf ab, den Prozess der Erstellung von Berichten und der Zusammenarbeit drastisch zu verbessern\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "text": "Quarto …\n\nist ein neues, open-source, wissenschaftliches und technisches Publikationssystem\nzielt darauf ab, den Prozess der Erstellung von Berichten und der Zusammenarbeit drastisch zu verbessern\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
     "objectID": "folien/md-09-quarto.html#artikel-berichte-html",
@@ -646,7 +646,7 @@
     "href": "folien/md-09-quarto.html#komponenten",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Komponenten",
-    "text": "Komponenten\n\nMetadaten: YAML\nText: Markdown\nCode: Ausgeführt via knitr (R) oder jupyter (python)\n\n. . .\nFüge alles zusammen und du erhältst anschauliche, schöne und nützliche Ergebnisse!"
+    "text": "Komponenten\n\nMetadaten: YAML\nText: Markdown\nCode: Ausgeführt via knitr (R) oder jupyter (python)\n\n\nFüge alles zusammen und du erhältst anschauliche, schöne und nützliche Ergebnisse!"
   },
   {
     "objectID": "folien/md-09-quarto.html#literate-programming",
@@ -667,7 +667,7 @@
     "href": "folien/md-09-quarto.html#output-ausgabe-optionen",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Output (Ausgabe) Optionen",
-    "text": "Output (Ausgabe) Optionen\n---\nformat: etwas\n---\n. . .\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
+    "text": "Output (Ausgabe) Optionen\n---\nformat: etwas\n---\n\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
   },
   {
     "objectID": "folien/md-09-quarto.html#output-ausgabe-optionen-argumente",
@@ -723,14 +723,14 @@
     "href": "folien/md-09-quarto.html#listen",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Listen",
-    "text": "Listen\nUngeordnete Liste:\n\n\nMarkdown:\n-   unordered list         \n    -   sub-item 1         \n    -   sub-item 1         \n        -   sub-sub-item 1 \n\nAusgabe\n\nunordered list\n\nsub-item 1\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\n\nGeordnete Liste:\n\n\nMarkdown:\n1. ordered list            \n2. item 2                  \n    i. sub-item 1          \n         A.  sub-sub-item 1\n\nAusgabe\n\nordered list\n\nitem 2\n\nsub-item 1\n\nsub-sub-item 1"
+    "text": "Listen\nUngeordnete Liste:\n\n\nMarkdown:\n-   unordered list         \n    -   sub-item 1         \n    -   sub-item 1         \n        -   sub-sub-item 1 \n\nAusgabe\n\nunordered list\n\nsub-item 1\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\nGeordnete Liste:\n\n\nMarkdown:\n1. ordered list            \n2. item 2                  \n    i. sub-item 1          \n         A.  sub-sub-item 1\n\nAusgabe\n\nordered list\n\nitem 2\n\nsub-item 1\n\nsub-sub-item 1"
   },
   {
     "objectID": "folien/md-09-quarto.html#zitate",
     "href": "folien/md-09-quarto.html#zitate",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Zitate",
-    "text": "Zitate\nMarkdown:\n&gt; Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. \n&gt; - Donald Knuth, Literate Programming\n. . .\nOutput:\n\nLet us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. - Donald Knuth, Literate Programming\n\n\n\n@knuth1984literate"
+    "text": "Zitate\nMarkdown:\n&gt; Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. \n&gt; - Donald Knuth, Literate Programming\n\nOutput:\n\nLet us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. - Donald Knuth, Literate Programming\n\n\n\n\n@knuth1984literate"
   },
   {
     "objectID": "folien/md-09-quarto.html#fussnoten",
@@ -744,7 +744,7 @@
     "href": "folien/md-09-quarto.html#inline-fussnoten",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Inline-Fussnoten",
-    "text": "Inline-Fussnoten\nHier ist eine Inline-Notiz.^[Inline-Notizen sind einfacher zu schreiben,\nda man nicht erst einen Bezeichner auswählen und nach unten gehen muss, um\num die Notiz zu schreiben.]\nHier ist eine Inline-Notiz.1\n\n\n\n\n\n\nVerwende den visuellen Editor-Modus (Visual editor)\n\n\n\nFür das Hinzufügen von Fussnoten wird der visuelle Editor-Modus empfohlen."
+    "text": "Inline-Fussnoten\nHier ist eine Inline-Notiz.^[Inline-Notizen sind einfacher zu schreiben,\nda man nicht erst einen Bezeichner auswählen und nach unten gehen muss, um\num die Notiz zu schreiben.]\nHier ist eine Inline-Notiz.1\n\n\n\n\n\n\nVerwende den visuellen Editor-Modus (Visual editor)\n\n\nFür das Hinzufügen von Fussnoten wird der visuelle Editor-Modus empfohlen.\n\n\n\nInline-Notizen sind einfacher zu schreiben, da man nicht erst einen Bezeichner auswählen und nach unten gehen muss, um die Notiz zu schreiben."
   },
   {
     "objectID": "folien/md-09-quarto.html#ihr-seid-dran-01-markdown-syntax.qmd",
@@ -772,7 +772,7 @@
     "href": "folien/md-09-quarto.html#code-für-wen-ist-es",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Code, für wen ist es?",
-    "text": "Code, für wen ist es?\n\n\nDie Art und Weise, wie du Code anzeigst, ist in verschiedenen Kontexten sehr unterschiedlich.\nIn einem Lehrszenario wie heute möchte ich wirklich Code anzeigen.\nIn einem Unternehmen möchtest du vielleicht eine datenwissenschaftliche Ausgabe haben, die den Quellcode anzeigt, UND eine Ausgabe, die sich an die Nutzer:innen richtet und den Code verbirgt."
+    "text": "Code, für wen ist es?\n\nDie Art und Weise, wie du Code anzeigst, ist in verschiedenen Kontexten sehr unterschiedlich.\nIn einem Lehrszenario wie heute möchte ich wirklich Code anzeigen.\nIn einem Unternehmen möchtest du vielleicht eine datenwissenschaftliche Ausgabe haben, die den Quellcode anzeigt, UND eine Ausgabe, die sich an die Nutzer:innen richtet und den Code verbirgt."
   },
   {
     "objectID": "folien/md-09-quarto.html#ein--und-ausblenden-von-code-mit-echo",
@@ -793,7 +793,7 @@
     "href": "folien/md-09-quarto.html#markdown-tabellen",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Markdown Tabellen",
-    "text": "Markdown Tabellen\nMarkdown:\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\n\n\n\n\n\n\nVerwende den visuellen Editor-Modus (Visual editor)\n\n\n\nFür das Hinzufügen von Markdown Tabellen wird der visuelle Editor-Modus empfohlen.\n\n\n. . .\nAusgabe:\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+    "text": "Markdown Tabellen\nMarkdown:\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\n\n\n\n\n\n\nVerwende den visuellen Editor-Modus (Visual editor)\n\n\nFür das Hinzufügen von Markdown Tabellen wird der visuelle Editor-Modus empfohlen.\n\n\n\n\nAusgabe:\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
   },
   {
     "objectID": "folien/md-09-quarto.html#tabellen-mit-code",
@@ -807,14 +807,14 @@
     "href": "folien/md-09-quarto.html#tabellen-mit-code-1",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Tabellen mit Code",
-    "text": "Tabellen mit Code\nWenn du umfangreichere Tabellen möchtest, probiere das gt-Paket und alles, was es bietet!\n\nlibrary(gt)\n\nhead(penguins) |&gt; \n  gt() |&gt;\n  tab_style(\n    style = list(\n      cell_fill(color = \"pink\"),\n      cell_text(style = \"italic\")\n      ),\n    locations = cells_body(\n      columns = bill_length_mm,\n      rows = bill_length_mm &gt; 40\n    )\n  )\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
+    "text": "Tabellen mit Code\nWenn du umfangreichere Tabellen möchtest, probiere das gt-Paket und alles, was es bietet!\n\n\nlibrary(gt)\n\nhead(penguins) |&gt; \n  gt() |&gt;\n  tab_style(\n    style = list(\n      cell_fill(color = \"pink\"),\n      cell_text(style = \"italic\")\n      ),\n    locations = cells_body(\n      columns = bill_length_mm,\n      rows = bill_length_mm &gt; 40\n    )\n  )\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
   },
   {
     "objectID": "folien/md-09-quarto.html#markdown-abbildungen",
     "href": "folien/md-09-quarto.html#markdown-abbildungen",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Markdown Abbildungen",
-    "text": "Markdown Abbildungen\n![Pinguine spielen mit einem Quarto-Ball](img/md-09/penguins-quarto-ball.png)\n\n\n\nPinguine spielen mit einem Quarto-Ball"
+    "text": "Markdown Abbildungen\n![Pinguine spielen mit einem Quarto-Ball](img/md-09/penguins-quarto-ball.png)\n\nPinguine spielen mit einem Quarto-Ball"
   },
   {
     "objectID": "folien/md-09-quarto.html#unterabbildungen",
@@ -835,7 +835,7 @@
     "href": "folien/md-09-quarto.html#suche-nach-den-abbildungen",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Suche nach den Abbildungen",
-    "text": "Suche nach den Abbildungen\nAn Orten wie Markdown, YAML oder beim Einlesen von Dateien musst du absolute oder relative Dateipfade verwenden:\n. . .\n\nAbsolut = Schlecht: \"/Users/lars/uebungen\" - Auf wessen Computer wird das funktionieren?\n\n. . .\n\nRelativ = Besser:\n\n\"../ = ein Verzeichnis nach oben, ../../ = zwei Verzeichnisse nach oben, etc.\n/.. oder / = beginnen im “root”-Verzeichnis deines aktuellen Computers"
+    "text": "Suche nach den Abbildungen\nAn Orten wie Markdown, YAML oder beim Einlesen von Dateien musst du absolute oder relative Dateipfade verwenden:\n\n\nAbsolut = Schlecht: \"/Users/lars/uebungen\" - Auf wessen Computer wird das funktionieren?\n\n\n\n\nRelativ = Besser:\n\n\"../ = ein Verzeichnis nach oben, ../../ = zwei Verzeichnisse nach oben, etc.\n/.. oder / = beginnen im “root”-Verzeichnis deines aktuellen Computers"
   },
   {
     "objectID": "folien/md-09-quarto.html#abbildungen-mit-code-diagramme",
@@ -919,7 +919,7 @@
     "href": "folien/md-09-quarto.html#komponenten-1",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Komponenten",
-    "text": "Komponenten\n\nMetadaten: YAML\nText: Markdown\nCode: Ausgeführt via knitr (R) oder jupyter (python)\n\n. . .\nFüge alles zusammen und du erhältst anschauliche, schöne und nützliche Folien!"
+    "text": "Komponenten\n\nMetadaten: YAML\nText: Markdown\nCode: Ausgeführt via knitr (R) oder jupyter (python)\n\n\nFüge alles zusammen und du erhältst anschauliche, schöne und nützliche Folien!"
   },
   {
     "objectID": "folien/md-09-quarto.html#wir-sind-dran-03-folien.qmd",
@@ -1010,7 +1010,7 @@
     "href": "folien/md-08-text-daten.html#vornamen-statistik",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\nDaten: Vornamen der Bevölkerung nach Jahrgang, Schweiz, 2023\n\n\n\njährlich aktualisierte Daten\nVornamen mit weniger als 3 Nennungen werden ausgeschlossen\nDatenquelle: Bundesamt für Statistik\n\n\n\nFrage: Wieviele einzigartige Vornamen gibt es in der Schweiz?\n\n\n200’000\n1’000\n1.0 mio\n50’000\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\nDaten: Vornamen der Bevölkerung nach Jahrgang, Schweiz, 2023\n\n\n\njährlich aktualisierte Daten\nVornamen mit weniger als 3 Nennungen werden ausgeschlossen\nDatenquelle: Bundesamt für Statistik\n\n\n\nFrage: Wieviele einzigartige Vornamen gibt es in der Schweiz?\n\n\n200’000\n1’000\n1.0 mio\n50’000\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-1",
@@ -1024,42 +1024,42 @@
     "href": "folien/md-08-text-daten.html#vornamen-statistik-2",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) \n\n# A tibble: 10 × 3\n   vorname   geschlecht     n\n   &lt;chr&gt;     &lt;chr&gt;      &lt;dbl&gt;\n 1 Maria     w          74840\n 2 Daniel    m          62884\n 3 Peter     m          54007\n 4 Thomas    m          52732\n 5 Hans      m          44073\n 6 Christian m          41702\n 7 Martin    m          40627\n 8 Anna      w          40387\n 9 Michael   m          39922\n10 Andreas   m          39583\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) \n\n\n# A tibble: 10 × 3\n   vorname   geschlecht     n\n   &lt;chr&gt;     &lt;chr&gt;      &lt;dbl&gt;\n 1 Maria     w          74840\n 2 Daniel    m          62884\n 3 Peter     m          54007\n 4 Thomas    m          52732\n 5 Hans      m          44073\n 6 Christian m          41702\n 7 Martin    m          40627\n 8 Anna      w          40387\n 9 Michael   m          39922\n10 Andreas   m          39583\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-3",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-3",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # aus dem knitr R-Paket\n    kable()\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # aus dem knitr R-Paket\n    kable()\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-4",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-4",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # aus dem gt R-Paket\n    gt()\n\n\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # aus dem gt R-Paket\n    gt()\n\n\n\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-5",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-5",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # nutze gt R-Package für die Darstellung\n    gt() |&gt; \n    tab_style(\n        style = cell_fill(color = \"#AFF0ED\"),\n        locations = cells_body(\n            columns = everything(),\n            rows = geschlecht == \"m\"\n        )\n    ) |&gt;\n    tab_style(\n        style = cell_fill(color = \"#FFD700\"),\n        locations = cells_body(\n            columns = everything(),\n            rows = geschlecht == \"w\"\n        )\n    )\n\n\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # nutze gt R-Package für die Darstellung\n    gt() |&gt; \n    tab_style(\n        style = cell_fill(color = \"#AFF0ED\"),\n        locations = cells_body(\n            columns = everything(),\n            rows = geschlecht == \"m\"\n        )\n    ) |&gt;\n    tab_style(\n        style = cell_fill(color = \"#FFD700\"),\n        locations = cells_body(\n            columns = everything(),\n            rows = geschlecht == \"w\"\n        )\n    )\n\n\n\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-6",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-6",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was ist die Verteilung der Vornamenlängen in der Schweiz?\n\n\nvornamen |&gt; \n    count(vorname, wt = wert) |&gt; \n    mutate(laenge = str_length(vorname)) |&gt; \n    count(laenge) |&gt; \n    print(n = 19)\n\n# A tibble: 19 × 2\n   laenge     n\n    &lt;int&gt; &lt;int&gt;\n 1      2   128\n 2      3  1094\n 3      4  5780\n 4      5 13793\n 5      6 16075\n 6      7 12114\n 7      8  7294\n 8      9  3719\n 9     10  2013\n10     11  1155\n11     12   811\n12     13   559\n13     14   384\n14     15   233\n15     16   131\n16     17    75\n17     18    30\n18     19     9\n19     20     4\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was ist die Verteilung der Vornamenlängen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, wt = wert) |&gt; \n    mutate(laenge = str_length(vorname)) |&gt; \n    count(laenge) |&gt; \n    print(n = 19)\n\n\n# A tibble: 19 × 2\n   laenge     n\n    &lt;int&gt; &lt;int&gt;\n 1      2   128\n 2      3  1094\n 3      4  5780\n 4      5 13793\n 5      6 16075\n 6      7 12114\n 7      8  7294\n 8      9  3719\n 9     10  2013\n10     11  1155\n11     12   811\n12     13   559\n13     14   384\n14     15   233\n15     16   131\n16     17    75\n17     18    30\n18     19     9\n19     20     4\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-7",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-7",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was ist die Verteilung der Vornamenlängen in der Schweiz?\n\n\nvornamen_laenge_sum &lt;- vornamen |&gt; \n    count(vorname, wt = wert) |&gt; \n    mutate(laenge = str_length(vorname)) |&gt; \n    count(laenge)\n\nggplot(data = vornamen_laenge_sum, \n       mapping = aes(x = laenge, y = n)) +\n    geom_col() +\n    theme_minimal(base_size = 12)\n\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was ist die Verteilung der Vornamenlängen in der Schweiz?\n\n\nvornamen_laenge_sum &lt;- vornamen |&gt; \n    count(vorname, wt = wert) |&gt; \n    mutate(laenge = str_length(vorname)) |&gt; \n    count(laenge)\n\nggplot(data = vornamen_laenge_sum, \n       mapping = aes(x = laenge, y = n)) +\n    geom_col() +\n    theme_minimal(base_size = 12)\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#ihr-seid-dran-vornamen-statistik",
@@ -1073,7 +1073,7 @@
     "href": "folien/md-08-text-daten.html#stringr-zeichenkettenmanipulation-in-r",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "stringr: Zeichenkettenmanipulation in R",
-    "text": "stringr: Zeichenkettenmanipulation in R\n\n\nHauptmerkmale:\n\nTeil der tidyverse R-Pakete\nKonsistente Syntax mit str_-Präfix\n\n\nFunktionen:\n\nstr_length(): Stringlänge ermitteln\nstr_c(): Strings verketten\nstr_sub(): Teilstrings extrahieren/ersetzen\nstr_detect(): Mustererkennung\nstr_count(): Anzahl Vorkommen eines Musters\n…\n\n\n\n\nstringr Dokumentation: https://stringr.tidyverse.org/"
+    "text": "stringr: Zeichenkettenmanipulation in R\n\n\nHauptmerkmale:\n\nTeil der tidyverse R-Pakete\nKonsistente Syntax mit str_-Präfix\n\n\nFunktionen:\n\nstr_length(): Stringlänge ermitteln\nstr_c(): Strings verketten\nstr_sub(): Teilstrings extrahieren/ersetzen\nstr_detect(): Mustererkennung\nstr_count(): Anzahl Vorkommen eines Musters\n…\n\n\n\nstringr Dokumentation: https://stringr.tidyverse.org/"
   },
   {
     "objectID": "folien/md-08-text-daten.html#ich-bin-dran-stringr-r-paket",
@@ -1094,7 +1094,7 @@
     "href": "folien/md-08-text-daten.html#vornamen-statistik-mit-statr-r-paket",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik mit statR R-Paket",
-    "text": "Vornamen Statistik mit statR R-Paket\n\nggplot(vornamen_laenge_sum, aes(x = factor(laenge), y = n)) +\n    geom_col(fill = zhpal$zhblue[1], width = 0.8) +\n    geom_text(aes(label = gt::vec_fmt_number(n,\n                                             sep_mark = \"'\",\n                                             suffixing = TRUE,\n                                             decimals = 0)),\n              size = 3, \n              vjust = -0.5) +\n    labs(x = \"Anzahl Buchstaben\",\n         y = NULL,\n         title = \"Anzahl Buchstaben in Vornamen, Schweiz\",\n         subtitle = \"Jahrgänge 1915 bis 2023\") +\n    theme_stat() +\n    theme(axis.text.y = element_blank(),\n          panel.grid.major.y = element_blank())\n\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik mit statR R-Paket\n\nggplot(vornamen_laenge_sum, aes(x = factor(laenge), y = n)) +\n    geom_col(fill = zhpal$zhblue[1], width = 0.8) +\n    geom_text(aes(label = gt::vec_fmt_number(n,\n                                             sep_mark = \"'\",\n                                             suffixing = TRUE,\n                                             decimals = 0)),\n              size = 3, \n              vjust = -0.5) +\n    labs(x = \"Anzahl Buchstaben\",\n         y = NULL,\n         title = \"Anzahl Buchstaben in Vornamen, Schweiz\",\n         subtitle = \"Jahrgänge 1915 bis 2023\") +\n    theme_stat() +\n    theme(axis.text.y = element_blank(),\n          panel.grid.major.y = element_blank())\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#statr-r-paket",
@@ -1860,7 +1860,7 @@
     "href": "folien/md-06-daten-typen.html#modul-5---zusatzaufgabe-3",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Modul 5 - Zusatzaufgabe 3",
-    "text": "Modul 5 - Zusatzaufgabe 3\n\nggplot(data = lernende_max_stufe_staat_sum,\n       mapping = aes(x = Stufe, \n                     y = Prozent, \n                     fill = Staatsangehoerigkeit)) +\n    coord_flip() +\n    geom_col() +\n    geom_text(aes(label = paste0(round(Prozent, 0), \"%\")),  \n              position = position_stack(vjust = 0.5)) +\n    labs(title = \"Lernende im Kanton Zürich \",\n         subtitle = \"nach Staatsangehörigkeit und Stufe im Jahr 2023\",\n         fill = \"Staatsangehörigkeit\",\n         caption = \"Daten: zh.ch/daten\",\n         y = NULL,\n         x = NULL) +\n    theme_minimal() +\n    theme(legend.position = \"bottom\", \n          panel.grid.major.y = element_blank())"
+    "text": "Modul 5 - Zusatzaufgabe 3\n\n\nggplot(data = lernende_max_stufe_staat_sum,\n       mapping = aes(x = Stufe, \n                     y = Prozent, \n                     fill = Staatsangehoerigkeit)) +\n    coord_flip() +\n    geom_col() +\n    geom_text(aes(label = paste0(round(Prozent, 0), \"%\")),  \n              position = position_stack(vjust = 0.5)) +\n    labs(title = \"Lernende im Kanton Zürich \",\n         subtitle = \"nach Staatsangehörigkeit und Stufe im Jahr 2023\",\n         fill = \"Staatsangehörigkeit\",\n         caption = \"Daten: zh.ch/daten\",\n         y = NULL,\n         x = NULL) +\n    theme_minimal() +\n    theme(legend.position = \"bottom\", \n          panel.grid.major.y = element_blank())"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#lernziele-für-diese-woche",
@@ -1993,7 +1993,7 @@
     "href": "folien/md-06-daten-typen.html#lösung-.gitignore",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Lösung: .gitignore",
-    "text": "Lösung: .gitignore\n\nDateien und Verzeichnisse in .gitignore eintragen\nwerden nicht auf GitHub hochgeladen\n\n\n\n\n\n\n\nDaten teilen\n\n\n\nDamit eine Analyse reproduzierbar ist, müssen die Daten für andere zugänglich sein. Die Dateien können auf anderen Wegen geteilt werden, z.B. per E-Mail, USB-Stick, Cloud-Dienst, etc."
+    "text": "Lösung: .gitignore\n\nDateien und Verzeichnisse in .gitignore eintragen\nwerden nicht auf GitHub hochgeladen\n\n\n\n\n\n\n\nDaten teilen\n\n\nDamit eine Analyse reproduzierbar ist, müssen die Daten für andere zugänglich sein. Die Dateien können auf anderen Wegen geteilt werden, z.B. per E-Mail, USB-Stick, Cloud-Dienst, etc."
   },
   {
     "objectID": "folien/md-06-daten-typen.html#informationssicherheit",
@@ -2238,7 +2238,7 @@
     "href": "folien/md-10-funktionen.html#lernziele-des-kurses",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Lernziele des Kurses",
-    "text": "Lernziele des Kurses\nDie folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:\n\nTeilnehmer:innen werden in der Lage sein, eine Reihe gängiger datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von Datenanalyseprojekten zu veranschaulichen und öffentlich zu kommunizieren.\n\n. . .\n\nTeilnehmer:innen können das Quarto-Dateiformat und den visuellen Bearbeitungsmodus der RStudio IDE zu verwenden, um technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten, Querverweisen, Abbildungen und Tabellen zu erstellen.\n\n. . .\n\nTeilnehmer:innen können Git Versionskontrolle verwerden um: (1) Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten."
+    "text": "Lernziele des Kurses\nDie folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:\n\nTeilnehmer:innen werden in der Lage sein, eine Reihe gängiger datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von Datenanalyseprojekten zu veranschaulichen und öffentlich zu kommunizieren.\n\n\n\nTeilnehmer:innen können das Quarto-Dateiformat und den visuellen Bearbeitungsmodus der RStudio IDE zu verwenden, um technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten, Querverweisen, Abbildungen und Tabellen zu erstellen.\n\n\n\n\nTeilnehmer:innen können Git Versionskontrolle verwerden um: (1) Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten."
   },
   {
     "objectID": "folien/md-10-funktionen.html#ihr-seid-dran-5-min-nachdenken-notizen-machen",
@@ -3528,7 +3528,7 @@
     "href": "module/md-08.html#zusatzaufgaben",
     "title": "Modul 8",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nArbeitet weiter an eurem Abschlussprojekt. Die Zusatzaufgabe bleibt die gleiche wie in Modul 7. Bitte erledige die folgende Aufgabe bis 2025-11-18.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
+    "text": "Zusatzaufgaben\nArbeitet weiter an eurem Abschlussprojekt. Die Zusatzaufgabe bleibt die gleiche wie in Modul 7. Bitte erledige die folgende Aufgabe bis 2025-11-25.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
     "crumbs": [
       "Modul 08"
     ]
@@ -3643,40 +3643,5 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
-  },
-  {
-    "objectID": "folien/md-09-quarto.html",
-    "href": "folien/md-09-quarto.html",
-    "title": "Erstellung von Berichten und Folien mit Quarto",
-    "section": "",
-    "text": "lernziele &lt;- readr::read_csv(here::here(\"data/tbl-01-rstatszh-lernziele.csv\")) |&gt; \n  dplyr::filter(modul == params$modul) |&gt;\n  dplyr::pull(lernziele)\n\nRows: 36 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): titel, lernziele\ndbl  (1): modul\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nDie Lernenden können Querverweise zu Diagrammen und Tabellen in Quarto Dokumenten erstellen.\nDie Lernenden können Folien im Format revealjs HTML erstellen.\nDie Lernenden können Metadaten eines Quarto Dokuments anpassen."
-  },
-  {
-    "objectID": "folien/md-09-quarto.html#footnotes",
-    "href": "folien/md-09-quarto.html#footnotes",
-    "title": "Erstellung von Berichten und Folien mit Quarto",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nInline-Notizen sind einfacher zu schreiben, da man nicht erst einen Bezeichner auswählen und nach unten gehen muss, um die Notiz zu schreiben.↩︎"
-  },
-  {
-    "objectID": "folien/md-10-funktionen.html",
-    "href": "folien/md-10-funktionen.html",
-    "title": "Funktionen schreiben & Parameterisierung von Berichten",
-    "section": "",
-    "text": "Rows: 2972 Columns: 10\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (7): Kanton, Stufe, Schultyp, Geschlecht, Staatsangehoerigkeit, Traeger...\ndbl  (2): Jahr, Anzahl\ndate (1): Stand\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
-  },
-  {
-    "objectID": "folien/md-06-daten-typen.html",
-    "href": "folien/md-06-daten-typen.html",
-    "title": "Daten Typen & Vektoren & For Loops",
-    "section": "",
-    "text": "# Die Daten werden hier direkt von der URL gelesen. Bei einem Update der Daten\n# wird hier immer auf die aktuellste Version zugegriffen.\nlink &lt;- \"https://www.web.statistik.zh.ch/ogd/data/bista/ZH_Uebersicht_alle_Lernende.csv\"\n\n# Hier wird nun das Objekt \"link\" genutzt um die CSV zu lesen\nlernende_in &lt;- read_csv(file = link)\n\nRows: 2972 Columns: 10\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (7): Kanton, Stufe, Schultyp, Geschlecht, Staatsangehoerigkeit, Traeger...\ndbl  (2): Jahr, Anzahl\ndate (1): Stand\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\nlernende &lt;- lernende_in |&gt; \n    filter(Geschlecht != 2) |&gt; \n    mutate(Geschlecht = case_when(\n        Geschlecht %in% c(\"m\", \"M\") ~ \"männlich\",\n        Geschlecht %in% c(\"f\", \"F\") ~ \"weiblich\"\n    )) |&gt; \n    mutate(Traegerschaft = case_when(\n        Traegerschaft == \"oef\" ~ \"öffentlich\",\n        Traegerschaft == \"priv\" ~ \"privat\"\n    )) |&gt;\n    mutate(Finanzierung = case_when(\n        Finanzierung == \"oef\" ~ \"öffentlich\",\n        Finanzierung == \"priv\" ~ \"privat\"))\n\nlernende_max &lt;- lernende |&gt; \n    filter(Jahr == max(Jahr))\n\nlernende_max_stufe_staat_sum &lt;- lernende_max |&gt; \n    group_by(Stufe, Staatsangehoerigkeit)  |&gt; \n    summarise(\n        Total = sum(Anzahl)\n    ) |&gt; \n    mutate(Prozent = Total / sum(Total) * 100) \n\n`summarise()` has grouped output by 'Stufe'. You can override using the\n`.groups` argument."
-  },
-  {
-    "objectID": "folien/md-08-text-daten.html",
-    "href": "folien/md-08-text-daten.html",
-    "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
-    "section": "",
-    "text": "vornamen &lt;- read_csv(here::here(\"folien/daten/bfs-vornamen-schweiz.csv\"))\n\nRows: 976068 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): vorname, geschlecht\ndbl (2): geburtsjahr, wert\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
   }
 ]
