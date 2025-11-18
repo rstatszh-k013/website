@@ -982,7 +982,7 @@
     "href": "folien/md-08-text-daten.html#lernziele-für-diese-woche",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\nlernziele &lt;- readr::read_csv(here::here(\"data/tbl-01-rstatszh-lernziele.csv\")) |&gt; \n    dplyr::filter(modul == params$modul) |&gt;\n    dplyr::pull(lernziele)\n\nRows: 36 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): titel, lernziele\ndbl  (1): modul\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nDie Lernenden können die Funktion str_detect() aus dem R-Paket stringr verwenden um das Auftreten oder Fehlen bestimmter Muster in Zeichenvektoren (character Vektor) zu ermitteln.\nDue Lernenden können str_detect() mit dplyr Funktionen wie filter() oder mutate() nutzen, um Daten über das Auftreten von Mustern in Teilmengen zu unterteilen oder darauf basierend neue Variablen zu erstellen.\nDie Lernenden können das statR R-Paket nutzen um eine Visualisierung im Corporate Design des Kanton Zürich zu erstellen."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können die Funktion str_detect() aus dem R-Paket stringr verwenden um das Auftreten oder Fehlen bestimmter Muster in Zeichenvektoren (character Vektor) zu ermitteln.\nDue Lernenden können str_detect() mit dplyr Funktionen wie filter() oder mutate() nutzen, um Daten über das Auftreten von Mustern in Teilmengen zu unterteilen oder darauf basierend neue Variablen zu erstellen.\nDie Lernenden können das statR R-Paket nutzen um eine Visualisierung im Corporate Design des Kanton Zürich zu erstellen."
   },
   {
     "objectID": "folien/md-08-text-daten.html#arbeiten-mit-strings-in-r",
@@ -1017,46 +1017,53 @@
     "href": "folien/md-08-text-daten.html#vornamen-statistik-1",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Wieviele einzigartige Vornamen gibt es in der Schweiz?\n\n\n\n\nvornamen\n\n# A tibble: 976,068 × 4\n   vorname  geburtsjahr  wert geschlecht\n   &lt;chr&gt;          &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;     \n 1 Olivier         1915     1 m         \n 2 Florian         1917     1 m         \n 3 Max             1917     1 m         \n 4 Albert          1918     1 m         \n 5 Co              1918     1 m         \n 6 Julian          1918     1 m         \n 7 Victor          1918     1 m         \n 8 Alfred          1919     1 m         \n 9 Valentin        1919     1 m         \n10 Walter          1919     1 m         \n# ℹ 976,058 more rows\n\n\n\n\n\nvornamen |&gt; \n    distinct(vorname)\n\n# A tibble: 65,401 × 1\n   vorname \n   &lt;chr&gt;   \n 1 Olivier \n 2 Florian \n 3 Max     \n 4 Albert  \n 5 Co      \n 6 Julian  \n 7 Victor  \n 8 Alfred  \n 9 Valentin\n10 Walter  \n# ℹ 65,391 more rows"
+    "text": "Vornamen Statistik\n\nFrage: Wieviele einzigartige Vornamen gibt es in der Schweiz?\n\n\n\n\nvornamen\n\n# A tibble: 997,548 × 4\n   vorname   geburtsjahr  wert geschlecht\n   &lt;chr&gt;           &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;     \n 1 Albert           1918     1 m         \n 2 Julian           1918     1 m         \n 3 Alfred           1919     1 m         \n 4 Walter           1919     1 m         \n 5 Arthur           1920     1 m         \n 6 Bronislaw        1920     1 m         \n 7 Gerhart          1920     1 m         \n 8 Helmut           1920     1 m         \n 9 Joseph           1920     1 m         \n10 Louis            1920     1 m         \n# ℹ 997,538 more rows\n\n\n\n\n\nvornamen |&gt; \n    distinct(vorname) \n\n# A tibble: 66,911 × 1\n   vorname  \n   &lt;chr&gt;    \n 1 Albert   \n 2 Julian   \n 3 Alfred   \n 4 Walter   \n 5 Arthur   \n 6 Bronislaw\n 7 Gerhart  \n 8 Helmut   \n 9 Joseph   \n10 Louis    \n# ℹ 66,901 more rows"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-2",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-2",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) \n\n\n# A tibble: 10 × 3\n   vorname   geschlecht     n\n   &lt;chr&gt;     &lt;chr&gt;      &lt;dbl&gt;\n 1 Maria     w          74840\n 2 Daniel    m          62884\n 3 Peter     m          54007\n 4 Thomas    m          52732\n 5 Hans      m          44073\n 6 Christian m          41702\n 7 Martin    m          40627\n 8 Anna      w          40387\n 9 Michael   m          39922\n10 Andreas   m          39583\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Wieviele einzigartige Vornamen gibt es in der Schweiz?\n\n\n\n\nvornamen\n\n# A tibble: 997,548 × 4\n   vorname   geburtsjahr  wert geschlecht\n   &lt;chr&gt;           &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;     \n 1 Albert           1918     1 m         \n 2 Julian           1918     1 m         \n 3 Alfred           1919     1 m         \n 4 Walter           1919     1 m         \n 5 Arthur           1920     1 m         \n 6 Bronislaw        1920     1 m         \n 7 Gerhart          1920     1 m         \n 8 Helmut           1920     1 m         \n 9 Joseph           1920     1 m         \n10 Louis            1920     1 m         \n# ℹ 997,538 more rows\n\n\n\n\n\nvornamen |&gt; \n    count(vorname, wt = wert)\n\n# A tibble: 66,911 × 2\n   vorname      n\n   &lt;chr&gt;    &lt;dbl&gt;\n 1 A'isha       3\n 2 Aada        14\n 3 Aadam        7\n 4 Aadan        8\n 5 Aadarsh      3\n 6 Aaden        5\n 7 Aadesh       5\n 8 Aadhav       5\n 9 Aadhavan     5\n10 Aadhi        5\n# ℹ 66,901 more rows"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-3",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-3",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # aus dem knitr R-Paket\n    kable()\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) \n\n\n# A tibble: 10 × 3\n   vorname   geschlecht     n\n   &lt;chr&gt;     &lt;chr&gt;      &lt;dbl&gt;\n 1 Maria     w          73412\n 2 Daniel    m          63008\n 3 Peter     m          52935\n 4 Thomas    m          52780\n 5 Hans      m          42601\n 6 Christian m          41618\n 7 Martin    m          40523\n 8 Anna      w          40099\n 9 Michael   m          39961\n10 Andreas   m          39388\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-4",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-4",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # aus dem gt R-Paket\n    gt()\n\n\n\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # aus dem knitr R-Paket\n    kable()\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n73412\n\n\nDaniel\nm\n63008\n\n\nPeter\nm\n52935\n\n\nThomas\nm\n52780\n\n\nHans\nm\n42601\n\n\nChristian\nm\n41618\n\n\nMartin\nm\n40523\n\n\nAnna\nw\n40099\n\n\nMichael\nm\n39961\n\n\nAndreas\nm\n39388\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-5",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-5",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # nutze gt R-Package für die Darstellung\n    gt() |&gt; \n    tab_style(\n        style = cell_fill(color = \"#AFF0ED\"),\n        locations = cells_body(\n            columns = everything(),\n            rows = geschlecht == \"m\"\n        )\n    ) |&gt;\n    tab_style(\n        style = cell_fill(color = \"#FFD700\"),\n        locations = cells_body(\n            columns = everything(),\n            rows = geschlecht == \"w\"\n        )\n    )\n\n\n\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # aus dem gt R-Paket\n    gt()\n\n\n\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n73412\n\n\nDaniel\nm\n63008\n\n\nPeter\nm\n52935\n\n\nThomas\nm\n52780\n\n\nHans\nm\n42601\n\n\nChristian\nm\n41618\n\n\nMartin\nm\n40523\n\n\nAnna\nw\n40099\n\n\nMichael\nm\n39961\n\n\nAndreas\nm\n39388\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-6",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-6",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was ist die Verteilung der Vornamenlängen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, wt = wert) |&gt; \n    mutate(laenge = str_length(vorname)) |&gt; \n    count(laenge) |&gt; \n    print(n = 19)\n\n\n# A tibble: 19 × 2\n   laenge     n\n    &lt;int&gt; &lt;int&gt;\n 1      2   128\n 2      3  1094\n 3      4  5780\n 4      5 13793\n 5      6 16075\n 6      7 12114\n 7      8  7294\n 8      9  3719\n 9     10  2013\n10     11  1155\n11     12   811\n12     13   559\n13     14   384\n14     15   233\n15     16   131\n16     17    75\n17     18    30\n18     19     9\n19     20     4\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # nutze gt R-Package für die Darstellung\n    gt() |&gt; \n    tab_style(\n        style = cell_fill(color = \"#AFF0ED\"),\n        locations = cells_body(\n            columns = everything(),\n            rows = geschlecht == \"m\"\n        )\n    ) |&gt;\n    tab_style(\n        style = cell_fill(color = \"#FFD700\"),\n        locations = cells_body(\n            columns = everything(),\n            rows = geschlecht == \"w\"\n        )\n    )\n\n\n\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n73412\n\n\nDaniel\nm\n63008\n\n\nPeter\nm\n52935\n\n\nThomas\nm\n52780\n\n\nHans\nm\n42601\n\n\nChristian\nm\n41618\n\n\nMartin\nm\n40523\n\n\nAnna\nw\n40099\n\n\nMichael\nm\n39961\n\n\nAndreas\nm\n39388\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-7",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-7",
+    "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
+    "section": "Vornamen Statistik",
+    "text": "Vornamen Statistik\n\nFrage: Was ist die Verteilung der Vornamenlängen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, wt = wert) |&gt; \n    mutate(laenge = str_length(vorname)) |&gt; \n    count(laenge) |&gt; \n    print(n = 19)\n\n\n# A tibble: 19 × 2\n   laenge     n\n    &lt;int&gt; &lt;int&gt;\n 1      2   128\n 2      3  1118\n 3      4  5894\n 4      5 14119\n 5      6 16437\n 6      7 12379\n 7      8  7420\n 8      9  3787\n 9     10  2048\n10     11  1185\n11     12   848\n12     13   597\n13     14   421\n14     15   251\n15     16   149\n16     17    83\n17     18    31\n18     19    11\n19     20     5\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+  },
+  {
+    "objectID": "folien/md-08-text-daten.html#vornamen-statistik-8",
+    "href": "folien/md-08-text-daten.html#vornamen-statistik-8",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
     "text": "Vornamen Statistik\n\nFrage: Was ist die Verteilung der Vornamenlängen in der Schweiz?\n\n\nvornamen_laenge_sum &lt;- vornamen |&gt; \n    count(vorname, wt = wert) |&gt; \n    mutate(laenge = str_length(vorname)) |&gt; \n    count(laenge)\n\nggplot(data = vornamen_laenge_sum, \n       mapping = aes(x = laenge, y = n)) +\n    geom_col() +\n    theme_minimal(base_size = 12)\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
@@ -1066,7 +1073,7 @@
     "href": "folien/md-08-text-daten.html#ihr-seid-dran-vornamen-statistik",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Ihr seid dran: Vornamen Statistik",
-    "text": "Ihr seid dran: Vornamen Statistik\n\nFrage: Welche Fragen könnten wir noch zu den Vornamen in der Schweiz stellen?\n\n\nMacht ein paar Notizen.\nTeilt sie im Chat.\n\n\ncountdown(2)\n\n\n−+\n02:00"
+    "text": "Ihr seid dran: Vornamen Statistik\n\nFrage: Welche Fragen könnten wir noch zu den Vornamen in der Schweiz stellen?\n\n\nMacht ein paar Notizen.\nTeilt sie im Chat.\n\n\n\n\n−+\n02:00"
   },
   {
     "objectID": "folien/md-08-text-daten.html#stringr-zeichenkettenmanipulation-in-r",
@@ -1080,21 +1087,21 @@
     "href": "folien/md-08-text-daten.html#ich-bin-dran-stringr-r-paket",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Ich bin dran: stringr R-Paket",
-    "text": "Ich bin dran: stringr R-Paket\n\n\nZurücklehnen und Fragen stellen!\n\n\ncountdown(minutes = 30)\n\n\n−+\n30:00"
+    "text": "Ich bin dran: stringr R-Paket\n\n\nZurücklehnen und Fragen stellen!\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "folien/md-08-text-daten.html#pause-machen",
     "href": "folien/md-08-text-daten.html#pause-machen",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-mit-statr-r-paket",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-mit-statr-r-paket",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik mit statR R-Paket",
-    "text": "Vornamen Statistik mit statR R-Paket\n\nggplot(vornamen_laenge_sum, aes(x = factor(laenge), y = n)) +\n    geom_col(fill = zhpal$zhblue[1], width = 0.8) +\n    geom_text(aes(label = gt::vec_fmt_number(n,\n                                             sep_mark = \"'\",\n                                             suffixing = TRUE,\n                                             decimals = 0)),\n              size = 3, \n              vjust = -0.5) +\n    labs(x = \"Anzahl Buchstaben\",\n         y = NULL,\n         title = \"Anzahl Buchstaben in Vornamen, Schweiz\",\n         subtitle = \"Jahrgänge 1915 bis 2023\") +\n    theme_stat() +\n    theme(axis.text.y = element_blank(),\n          panel.grid.major.y = element_blank())\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik mit statR R-Paket\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#statr-r-paket",
@@ -1108,28 +1115,28 @@
     "href": "folien/md-08-text-daten.html#wir-sind-dran-02-statr-wir.qmd",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Wir sind dran: 02-statR-wir.qmd",
-    "text": "Wir sind dran: 02-statR-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-08-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-statR-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\ncountdown(30)\n\n\n−+\n30:00"
+    "text": "Wir sind dran: 02-statR-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-08-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-statR-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "folien/md-08-text-daten.html#pause-machen-1",
     "href": "folien/md-08-text-daten.html#pause-machen-1",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-08-text-daten.html#ihr-seid-dran-03-vornamen-ihr.qmd",
     "href": "folien/md-08-text-daten.html#ihr-seid-dran-03-vornamen-ihr.qmd",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Ihr seid dran: 03-vornamen-ihr.qmd",
-    "text": "Ihr seid dran: 03-vornamen-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-08-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-vornamen-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\ncountdown(30)\n\n\n−+\n30:00"
+    "text": "Ihr seid dran: 03-vornamen-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-08-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-vornamen-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "folien/md-08-text-daten.html#zeitpuffer-modul-8",
     "href": "folien/md-08-text-daten.html#zeitpuffer-modul-8",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Zeitpuffer: Modul 8",
-    "text": "Zeitpuffer: Modul 8\n\nKann ich noch etwas zum heutigen Modul erklären?\n\n\ncountdown(10)\n\n\n−+\n10:00"
+    "text": "Zeitpuffer: Modul 8\n\nKann ich noch etwas zum heutigen Modul erklären?\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "folien/md-08-text-daten.html#modul-8-dokumentation",

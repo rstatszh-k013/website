@@ -196,7 +196,37 @@ vornamen
 ```{r}
 #| echo: true
 vornamen |> 
-    distinct(vorname)
+    distinct(vorname) 
+```
+
+::: 
+
+::: 
+:::
+
+## Vornamen Statistik {.smaller}
+
+::: {.hand-purple style="text-align: left;"}
+Frage: Wieviele einzigartige Vornamen gibt es in der Schweiz?
+:::
+
+::: columns
+::: {.column width="50%"}
+```{r}
+#| echo: true
+vornamen
+```
+:::
+
+
+::: {.column width="50%"}
+
+::: fragment
+
+```{r}
+#| echo: true
+vornamen |> 
+    count(vorname, wt = wert)
 ```
 
 ::: 
