@@ -210,7 +210,7 @@ Lars Schöbitz
 </div>
 </div>
 
-  <p class="date">Nov 11, 2025</p>
+  <p class="date">Nov 18, 2025</p>
 </section>
 <section id="lernziele-für-diese-woche" class="slide level2">
 <h2>Lernziele (für diese Woche)</h2>
@@ -333,42 +333,42 @@ Lars Schöbitz
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>vornamen</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 976,068 × 4
-   vorname  geburtsjahr  wert geschlecht
-   &lt;chr&gt;          &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;     
- 1 Olivier         1915     1 m         
- 2 Florian         1917     1 m         
- 3 Max             1917     1 m         
- 4 Albert          1918     1 m         
- 5 Co              1918     1 m         
- 6 Julian          1918     1 m         
- 7 Victor          1918     1 m         
- 8 Alfred          1919     1 m         
- 9 Valentin        1919     1 m         
-10 Walter          1919     1 m         
-# ℹ 976,058 more rows</code></pre>
+<pre><code># A tibble: 997,548 × 4
+   vorname   geburtsjahr  wert geschlecht
+   &lt;chr&gt;           &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;     
+ 1 Albert           1918     1 m         
+ 2 Julian           1918     1 m         
+ 3 Alfred           1919     1 m         
+ 4 Walter           1919     1 m         
+ 5 Arthur           1920     1 m         
+ 6 Bronislaw        1920     1 m         
+ 7 Gerhart          1920     1 m         
+ 8 Helmut           1920     1 m         
+ 9 Joseph           1920     1 m         
+10 Louis            1920     1 m         
+# ℹ 997,538 more rows</code></pre>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="fragment">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb10-2"><a></a>    <span class="fu">distinct</span>(vorname)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-2"><a></a>    <span class="fu">distinct</span>(vorname) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 65,401 × 1
-   vorname 
-   &lt;chr&gt;   
- 1 Olivier 
- 2 Florian 
- 3 Max     
- 4 Albert  
- 5 Co      
- 6 Julian  
- 7 Victor  
- 8 Alfred  
- 9 Valentin
-10 Walter  
-# ℹ 65,391 more rows</code></pre>
+<pre><code># A tibble: 66,911 × 1
+   vorname  
+   &lt;chr&gt;    
+ 1 Albert   
+ 2 Julian   
+ 3 Alfred   
+ 4 Walter   
+ 5 Arthur   
+ 6 Bronislaw
+ 7 Gerhart  
+ 8 Helmut   
+ 9 Joseph   
+10 Louis    
+# ℹ 66,901 more rows</code></pre>
 </div>
 </div>
 </div>
@@ -377,34 +377,53 @@ Lars Schöbitz
 <section id="vornamen-statistik-2" class="slide level2 smaller">
 <h2>Vornamen Statistik</h2>
 <div class="hand-purple" style="text-align: left;">
-<p>Frage: Was sind die häufigsten 10 Vornamen in der Schweiz?</p>
+<p>Frage: Wieviele einzigartige Vornamen gibt es in der Schweiz?</p>
 </div>
-<div class="cell columns column-output-location">
-<div class="column">
-<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="1-3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb12-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
-<span id="cb12-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb12-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>vornamen</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 10 × 3
-   vorname   geschlecht     n
-   &lt;chr&gt;     &lt;chr&gt;      &lt;dbl&gt;
- 1 Maria     w          74840
- 2 Daniel    m          62884
- 3 Peter     m          54007
- 4 Thomas    m          52732
- 5 Hans      m          44073
- 6 Christian m          41702
- 7 Martin    m          40627
- 8 Anna      w          40387
- 9 Michael   m          39922
-10 Andreas   m          39583</code></pre>
+<pre><code># A tibble: 997,548 × 4
+   vorname   geburtsjahr  wert geschlecht
+   &lt;chr&gt;           &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;     
+ 1 Albert           1918     1 m         
+ 2 Julian           1918     1 m         
+ 3 Alfred           1919     1 m         
+ 4 Walter           1919     1 m         
+ 5 Arthur           1920     1 m         
+ 6 Bronislaw        1920     1 m         
+ 7 Gerhart          1920     1 m         
+ 8 Helmut           1920     1 m         
+ 9 Joseph           1920     1 m         
+10 Louis            1920     1 m         
+# ℹ 997,538 more rows</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb14-2"><a></a>    <span class="fu">count</span>(vorname, <span class="at">wt =</span> wert)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 66,911 × 2
+   vorname      n
+   &lt;chr&gt;    &lt;dbl&gt;
+ 1 A'isha       3
+ 2 Aada        14
+ 3 Aadam        7
+ 4 Aadan        8
+ 5 Aadarsh      3
+ 6 Aaden        5
+ 7 Aadesh       5
+ 8 Aadhav       5
+ 9 Aadhavan     5
+10 Aadhi        5
+# ℹ 66,901 more rows</code></pre>
+</div>
+</div>
 </div>
 </div></div>
-<div class="footer">
-<p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
-</div>
 </section>
 <section id="vornamen-statistik-3" class="slide level2 smaller">
 <h2>Vornamen Statistik</h2>
@@ -413,12 +432,44 @@ Lars Schöbitz
 </div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb14-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
-<span id="cb14-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb14-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
-<span id="cb14-5"><a></a>    <span class="co"># aus dem knitr R-Paket</span></span>
-<span id="cb14-6"><a></a>    <span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16" data-code-line-numbers="1-3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb16-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
+<span id="cb16-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 3
+   vorname   geschlecht     n
+   &lt;chr&gt;     &lt;chr&gt;      &lt;dbl&gt;
+ 1 Maria     w          73412
+ 2 Daniel    m          63008
+ 3 Peter     m          52935
+ 4 Thomas    m          52780
+ 5 Hans      m          42601
+ 6 Christian m          41618
+ 7 Martin    m          40523
+ 8 Anna      w          40099
+ 9 Michael   m          39961
+10 Andreas   m          39388</code></pre>
+</div>
+</div></div>
+<div class="footer">
+<p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
+</div>
+</section>
+<section id="vornamen-statistik-4" class="slide level2 smaller">
+<h2>Vornamen Statistik</h2>
+<div class="hand-purple" style="text-align: left;">
+<p>Frage: Was sind die häufigsten 10 Vornamen in der Schweiz?</p>
+</div>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb18" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb18-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
+<span id="cb18-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb18-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
+<span id="cb18-5"><a></a>    <span class="co"># aus dem knitr R-Paket</span></span>
+<span id="cb18-6"><a></a>    <span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <table class="caption-top">
@@ -433,52 +484,52 @@ Lars Schöbitz
 <tr class="odd">
 <td style="text-align: left;">Maria</td>
 <td style="text-align: left;">w</td>
-<td style="text-align: right;">74840</td>
+<td style="text-align: right;">73412</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Daniel</td>
 <td style="text-align: left;">m</td>
-<td style="text-align: right;">62884</td>
+<td style="text-align: right;">63008</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Peter</td>
 <td style="text-align: left;">m</td>
-<td style="text-align: right;">54007</td>
+<td style="text-align: right;">52935</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Thomas</td>
 <td style="text-align: left;">m</td>
-<td style="text-align: right;">52732</td>
+<td style="text-align: right;">52780</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Hans</td>
 <td style="text-align: left;">m</td>
-<td style="text-align: right;">44073</td>
+<td style="text-align: right;">42601</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Christian</td>
 <td style="text-align: left;">m</td>
-<td style="text-align: right;">41702</td>
+<td style="text-align: right;">41618</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Martin</td>
 <td style="text-align: left;">m</td>
-<td style="text-align: right;">40627</td>
+<td style="text-align: right;">40523</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Anna</td>
 <td style="text-align: left;">w</td>
-<td style="text-align: right;">40387</td>
+<td style="text-align: right;">40099</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Michael</td>
 <td style="text-align: left;">m</td>
-<td style="text-align: right;">39922</td>
+<td style="text-align: right;">39961</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Andreas</td>
 <td style="text-align: left;">m</td>
-<td style="text-align: right;">39583</td>
+<td style="text-align: right;">39388</td>
 </tr>
 </tbody>
 </table>
@@ -488,38 +539,38 @@ Lars Schöbitz
 <p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
 </div>
 </section>
-<section id="vornamen-statistik-4" class="slide level2 smaller">
+<section id="vornamen-statistik-5" class="slide level2 smaller">
 <h2>Vornamen Statistik</h2>
 <div class="hand-purple" style="text-align: left;">
 <p>Frage: Was sind die häufigsten 10 Vornamen in der Schweiz?</p>
 </div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb15-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
-<span id="cb15-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb15-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
-<span id="cb15-5"><a></a>    <span class="co"># aus dem gt R-Paket</span></span>
-<span id="cb15-6"><a></a>    <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb19-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
+<span id="cb19-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-5"><a></a>    <span class="co"># aus dem gt R-Paket</span></span>
+<span id="cb19-6"><a></a>    <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
-<div id="zgzerbwxbf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#zgzerbwxbf table {
+<div id="aatohdhcan" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#aatohdhcan table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#zgzerbwxbf thead, #zgzerbwxbf tbody, #zgzerbwxbf tfoot, #zgzerbwxbf tr, #zgzerbwxbf td, #zgzerbwxbf th {
+#aatohdhcan thead, #aatohdhcan tbody, #aatohdhcan tfoot, #aatohdhcan tr, #aatohdhcan td, #aatohdhcan th {
   border-style: none;
 }
 
-#zgzerbwxbf p {
+#aatohdhcan p {
   margin: 0;
   padding: 0;
 }
 
-#zgzerbwxbf .gt_table {
+#aatohdhcan .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -545,12 +596,12 @@ Lars Schöbitz
   border-left-color: #D3D3D3;
 }
 
-#zgzerbwxbf .gt_caption {
+#aatohdhcan .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#zgzerbwxbf .gt_title {
+#aatohdhcan .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -562,7 +613,7 @@ Lars Schöbitz
   border-bottom-width: 0;
 }
 
-#zgzerbwxbf .gt_subtitle {
+#aatohdhcan .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -574,7 +625,7 @@ Lars Schöbitz
   border-top-width: 0;
 }
 
-#zgzerbwxbf .gt_heading {
+#aatohdhcan .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -586,13 +637,13 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#zgzerbwxbf .gt_bottom_border {
+#aatohdhcan .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zgzerbwxbf .gt_col_headings {
+#aatohdhcan .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -607,7 +658,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#zgzerbwxbf .gt_col_heading {
+#aatohdhcan .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -627,7 +678,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#zgzerbwxbf .gt_column_spanner_outer {
+#aatohdhcan .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -639,15 +690,15 @@ Lars Schöbitz
   padding-right: 4px;
 }
 
-#zgzerbwxbf .gt_column_spanner_outer:first-child {
+#aatohdhcan .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zgzerbwxbf .gt_column_spanner_outer:last-child {
+#aatohdhcan .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zgzerbwxbf .gt_column_spanner {
+#aatohdhcan .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -659,11 +710,11 @@ Lars Schöbitz
   width: 100%;
 }
 
-#zgzerbwxbf .gt_spanner_row {
+#aatohdhcan .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#zgzerbwxbf .gt_group_heading {
+#aatohdhcan .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -689,7 +740,7 @@ Lars Schöbitz
   text-align: left;
 }
 
-#zgzerbwxbf .gt_empty_group_heading {
+#aatohdhcan .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -704,15 +755,15 @@ Lars Schöbitz
   vertical-align: middle;
 }
 
-#zgzerbwxbf .gt_from_md > :first-child {
+#aatohdhcan .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zgzerbwxbf .gt_from_md > :last-child {
+#aatohdhcan .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zgzerbwxbf .gt_row {
+#aatohdhcan .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -731,7 +782,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#zgzerbwxbf .gt_stub {
+#aatohdhcan .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -744,7 +795,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zgzerbwxbf .gt_stub_row_group {
+#aatohdhcan .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -758,15 +809,15 @@ Lars Schöbitz
   vertical-align: top;
 }
 
-#zgzerbwxbf .gt_row_group_first td {
+#aatohdhcan .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#zgzerbwxbf .gt_row_group_first th {
+#aatohdhcan .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#zgzerbwxbf .gt_summary_row {
+#aatohdhcan .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -776,16 +827,16 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zgzerbwxbf .gt_first_summary_row {
+#aatohdhcan .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#zgzerbwxbf .gt_first_summary_row.thick {
+#aatohdhcan .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#zgzerbwxbf .gt_last_summary_row {
+#aatohdhcan .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -795,7 +846,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#zgzerbwxbf .gt_grand_summary_row {
+#aatohdhcan .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -805,7 +856,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zgzerbwxbf .gt_first_grand_summary_row {
+#aatohdhcan .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -815,7 +866,7 @@ Lars Schöbitz
   border-top-color: #D3D3D3;
 }
 
-#zgzerbwxbf .gt_last_grand_summary_row_top {
+#aatohdhcan .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -825,11 +876,11 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#zgzerbwxbf .gt_striped {
+#aatohdhcan .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zgzerbwxbf .gt_table_body {
+#aatohdhcan .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -838,7 +889,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#zgzerbwxbf .gt_footnotes {
+#aatohdhcan .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -852,7 +903,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#zgzerbwxbf .gt_footnote {
+#aatohdhcan .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -861,7 +912,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zgzerbwxbf .gt_sourcenotes {
+#aatohdhcan .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -875,7 +926,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#zgzerbwxbf .gt_sourcenote {
+#aatohdhcan .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -883,72 +934,72 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zgzerbwxbf .gt_left {
+#aatohdhcan .gt_left {
   text-align: left;
 }
 
-#zgzerbwxbf .gt_center {
+#aatohdhcan .gt_center {
   text-align: center;
 }
 
-#zgzerbwxbf .gt_right {
+#aatohdhcan .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zgzerbwxbf .gt_font_normal {
+#aatohdhcan .gt_font_normal {
   font-weight: normal;
 }
 
-#zgzerbwxbf .gt_font_bold {
+#aatohdhcan .gt_font_bold {
   font-weight: bold;
 }
 
-#zgzerbwxbf .gt_font_italic {
+#aatohdhcan .gt_font_italic {
   font-style: italic;
 }
 
-#zgzerbwxbf .gt_super {
+#aatohdhcan .gt_super {
   font-size: 65%;
 }
 
-#zgzerbwxbf .gt_footnote_marks {
+#aatohdhcan .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#zgzerbwxbf .gt_asterisk {
+#aatohdhcan .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#zgzerbwxbf .gt_indent_1 {
+#aatohdhcan .gt_indent_1 {
   text-indent: 5px;
 }
 
-#zgzerbwxbf .gt_indent_2 {
+#aatohdhcan .gt_indent_2 {
   text-indent: 10px;
 }
 
-#zgzerbwxbf .gt_indent_3 {
+#aatohdhcan .gt_indent_3 {
   text-indent: 15px;
 }
 
-#zgzerbwxbf .gt_indent_4 {
+#aatohdhcan .gt_indent_4 {
   text-indent: 20px;
 }
 
-#zgzerbwxbf .gt_indent_5 {
+#aatohdhcan .gt_indent_5 {
   text-indent: 25px;
 }
 
-#zgzerbwxbf .katex-display {
+#aatohdhcan .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#zgzerbwxbf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#aatohdhcan div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -965,52 +1016,52 @@ Lars Schöbitz
 <tr class="odd">
 <td class="gt_row gt_left" headers="vorname">Maria</td>
 <td class="gt_row gt_left" headers="geschlecht">w</td>
-<td class="gt_row gt_right" headers="n">74840</td>
+<td class="gt_row gt_right" headers="n">73412</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="vorname">Daniel</td>
 <td class="gt_row gt_left" headers="geschlecht">m</td>
-<td class="gt_row gt_right" headers="n">62884</td>
+<td class="gt_row gt_right" headers="n">63008</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="vorname">Peter</td>
 <td class="gt_row gt_left" headers="geschlecht">m</td>
-<td class="gt_row gt_right" headers="n">54007</td>
+<td class="gt_row gt_right" headers="n">52935</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="vorname">Thomas</td>
 <td class="gt_row gt_left" headers="geschlecht">m</td>
-<td class="gt_row gt_right" headers="n">52732</td>
+<td class="gt_row gt_right" headers="n">52780</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="vorname">Hans</td>
 <td class="gt_row gt_left" headers="geschlecht">m</td>
-<td class="gt_row gt_right" headers="n">44073</td>
+<td class="gt_row gt_right" headers="n">42601</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="vorname">Christian</td>
 <td class="gt_row gt_left" headers="geschlecht">m</td>
-<td class="gt_row gt_right" headers="n">41702</td>
+<td class="gt_row gt_right" headers="n">41618</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="vorname">Martin</td>
 <td class="gt_row gt_left" headers="geschlecht">m</td>
-<td class="gt_row gt_right" headers="n">40627</td>
+<td class="gt_row gt_right" headers="n">40523</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="vorname">Anna</td>
 <td class="gt_row gt_left" headers="geschlecht">w</td>
-<td class="gt_row gt_right" headers="n">40387</td>
+<td class="gt_row gt_right" headers="n">40099</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="vorname">Michael</td>
 <td class="gt_row gt_left" headers="geschlecht">m</td>
-<td class="gt_row gt_right" headers="n">39922</td>
+<td class="gt_row gt_right" headers="n">39961</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="vorname">Andreas</td>
 <td class="gt_row gt_left" headers="geschlecht">m</td>
-<td class="gt_row gt_right" headers="n">39583</td>
+<td class="gt_row gt_right" headers="n">39388</td>
 </tr>
 </tbody>
 </table>
@@ -1022,52 +1073,52 @@ Lars Schöbitz
 <p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
 </div>
 </section>
-<section id="vornamen-statistik-5" class="slide level2 smaller">
+<section id="vornamen-statistik-6" class="slide level2 smaller">
 <h2>Vornamen Statistik</h2>
 <div class="hand-purple" style="text-align: left;">
 <p>Frage: Was sind die häufigsten 10 Vornamen in der Schweiz?</p>
 </div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb16" data-code-line-numbers="7-13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb16-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
-<span id="cb16-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb16-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
-<span id="cb16-5"><a></a>    <span class="co"># nutze gt R-Package für die Darstellung</span></span>
-<span id="cb16-6"><a></a>    <span class="fu">gt</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb16-7"><a></a>    <span class="fu">tab_style</span>(</span>
-<span id="cb16-8"><a></a>        <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"#AFF0ED"</span>),</span>
-<span id="cb16-9"><a></a>        <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
-<span id="cb16-10"><a></a>            <span class="at">columns =</span> <span class="fu">everything</span>(),</span>
-<span id="cb16-11"><a></a>            <span class="at">rows =</span> geschlecht <span class="sc">==</span> <span class="st">"m"</span></span>
-<span id="cb16-12"><a></a>        )</span>
-<span id="cb16-13"><a></a>    ) <span class="sc">|&gt;</span></span>
-<span id="cb16-14"><a></a>    <span class="fu">tab_style</span>(</span>
-<span id="cb16-15"><a></a>        <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"#FFD700"</span>),</span>
-<span id="cb16-16"><a></a>        <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
-<span id="cb16-17"><a></a>            <span class="at">columns =</span> <span class="fu">everything</span>(),</span>
-<span id="cb16-18"><a></a>            <span class="at">rows =</span> geschlecht <span class="sc">==</span> <span class="st">"w"</span></span>
-<span id="cb16-19"><a></a>        )</span>
-<span id="cb16-20"><a></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20" data-code-line-numbers="7-13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb20-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
+<span id="cb20-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb20-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
+<span id="cb20-5"><a></a>    <span class="co"># nutze gt R-Package für die Darstellung</span></span>
+<span id="cb20-6"><a></a>    <span class="fu">gt</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb20-7"><a></a>    <span class="fu">tab_style</span>(</span>
+<span id="cb20-8"><a></a>        <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"#AFF0ED"</span>),</span>
+<span id="cb20-9"><a></a>        <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
+<span id="cb20-10"><a></a>            <span class="at">columns =</span> <span class="fu">everything</span>(),</span>
+<span id="cb20-11"><a></a>            <span class="at">rows =</span> geschlecht <span class="sc">==</span> <span class="st">"m"</span></span>
+<span id="cb20-12"><a></a>        )</span>
+<span id="cb20-13"><a></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb20-14"><a></a>    <span class="fu">tab_style</span>(</span>
+<span id="cb20-15"><a></a>        <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"#FFD700"</span>),</span>
+<span id="cb20-16"><a></a>        <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
+<span id="cb20-17"><a></a>            <span class="at">columns =</span> <span class="fu">everything</span>(),</span>
+<span id="cb20-18"><a></a>            <span class="at">rows =</span> geschlecht <span class="sc">==</span> <span class="st">"w"</span></span>
+<span id="cb20-19"><a></a>        )</span>
+<span id="cb20-20"><a></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
-<div id="zuqmeyijpd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#zuqmeyijpd table {
+<div id="qyjembzpiz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qyjembzpiz table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#zuqmeyijpd thead, #zuqmeyijpd tbody, #zuqmeyijpd tfoot, #zuqmeyijpd tr, #zuqmeyijpd td, #zuqmeyijpd th {
+#qyjembzpiz thead, #qyjembzpiz tbody, #qyjembzpiz tfoot, #qyjembzpiz tr, #qyjembzpiz td, #qyjembzpiz th {
   border-style: none;
 }
 
-#zuqmeyijpd p {
+#qyjembzpiz p {
   margin: 0;
   padding: 0;
 }
 
-#zuqmeyijpd .gt_table {
+#qyjembzpiz .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1093,12 +1144,12 @@ Lars Schöbitz
   border-left-color: #D3D3D3;
 }
 
-#zuqmeyijpd .gt_caption {
+#qyjembzpiz .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#zuqmeyijpd .gt_title {
+#qyjembzpiz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1110,7 +1161,7 @@ Lars Schöbitz
   border-bottom-width: 0;
 }
 
-#zuqmeyijpd .gt_subtitle {
+#qyjembzpiz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1122,7 +1173,7 @@ Lars Schöbitz
   border-top-width: 0;
 }
 
-#zuqmeyijpd .gt_heading {
+#qyjembzpiz .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1134,13 +1185,13 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#zuqmeyijpd .gt_bottom_border {
+#qyjembzpiz .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zuqmeyijpd .gt_col_headings {
+#qyjembzpiz .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1155,7 +1206,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#zuqmeyijpd .gt_col_heading {
+#qyjembzpiz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1175,7 +1226,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#zuqmeyijpd .gt_column_spanner_outer {
+#qyjembzpiz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1187,15 +1238,15 @@ Lars Schöbitz
   padding-right: 4px;
 }
 
-#zuqmeyijpd .gt_column_spanner_outer:first-child {
+#qyjembzpiz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zuqmeyijpd .gt_column_spanner_outer:last-child {
+#qyjembzpiz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zuqmeyijpd .gt_column_spanner {
+#qyjembzpiz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1207,11 +1258,11 @@ Lars Schöbitz
   width: 100%;
 }
 
-#zuqmeyijpd .gt_spanner_row {
+#qyjembzpiz .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#zuqmeyijpd .gt_group_heading {
+#qyjembzpiz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1237,7 +1288,7 @@ Lars Schöbitz
   text-align: left;
 }
 
-#zuqmeyijpd .gt_empty_group_heading {
+#qyjembzpiz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1252,15 +1303,15 @@ Lars Schöbitz
   vertical-align: middle;
 }
 
-#zuqmeyijpd .gt_from_md > :first-child {
+#qyjembzpiz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zuqmeyijpd .gt_from_md > :last-child {
+#qyjembzpiz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zuqmeyijpd .gt_row {
+#qyjembzpiz .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1279,7 +1330,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#zuqmeyijpd .gt_stub {
+#qyjembzpiz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1292,7 +1343,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zuqmeyijpd .gt_stub_row_group {
+#qyjembzpiz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1306,15 +1357,15 @@ Lars Schöbitz
   vertical-align: top;
 }
 
-#zuqmeyijpd .gt_row_group_first td {
+#qyjembzpiz .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#zuqmeyijpd .gt_row_group_first th {
+#qyjembzpiz .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#zuqmeyijpd .gt_summary_row {
+#qyjembzpiz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1324,16 +1375,16 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zuqmeyijpd .gt_first_summary_row {
+#qyjembzpiz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#zuqmeyijpd .gt_first_summary_row.thick {
+#qyjembzpiz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#zuqmeyijpd .gt_last_summary_row {
+#qyjembzpiz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1343,7 +1394,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#zuqmeyijpd .gt_grand_summary_row {
+#qyjembzpiz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1353,7 +1404,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zuqmeyijpd .gt_first_grand_summary_row {
+#qyjembzpiz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1363,7 +1414,7 @@ Lars Schöbitz
   border-top-color: #D3D3D3;
 }
 
-#zuqmeyijpd .gt_last_grand_summary_row_top {
+#qyjembzpiz .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1373,11 +1424,11 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#zuqmeyijpd .gt_striped {
+#qyjembzpiz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zuqmeyijpd .gt_table_body {
+#qyjembzpiz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1386,7 +1437,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#zuqmeyijpd .gt_footnotes {
+#qyjembzpiz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1400,7 +1451,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#zuqmeyijpd .gt_footnote {
+#qyjembzpiz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1409,7 +1460,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zuqmeyijpd .gt_sourcenotes {
+#qyjembzpiz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1423,7 +1474,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#zuqmeyijpd .gt_sourcenote {
+#qyjembzpiz .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1431,72 +1482,72 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zuqmeyijpd .gt_left {
+#qyjembzpiz .gt_left {
   text-align: left;
 }
 
-#zuqmeyijpd .gt_center {
+#qyjembzpiz .gt_center {
   text-align: center;
 }
 
-#zuqmeyijpd .gt_right {
+#qyjembzpiz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zuqmeyijpd .gt_font_normal {
+#qyjembzpiz .gt_font_normal {
   font-weight: normal;
 }
 
-#zuqmeyijpd .gt_font_bold {
+#qyjembzpiz .gt_font_bold {
   font-weight: bold;
 }
 
-#zuqmeyijpd .gt_font_italic {
+#qyjembzpiz .gt_font_italic {
   font-style: italic;
 }
 
-#zuqmeyijpd .gt_super {
+#qyjembzpiz .gt_super {
   font-size: 65%;
 }
 
-#zuqmeyijpd .gt_footnote_marks {
+#qyjembzpiz .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#zuqmeyijpd .gt_asterisk {
+#qyjembzpiz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#zuqmeyijpd .gt_indent_1 {
+#qyjembzpiz .gt_indent_1 {
   text-indent: 5px;
 }
 
-#zuqmeyijpd .gt_indent_2 {
+#qyjembzpiz .gt_indent_2 {
   text-indent: 10px;
 }
 
-#zuqmeyijpd .gt_indent_3 {
+#qyjembzpiz .gt_indent_3 {
   text-indent: 15px;
 }
 
-#zuqmeyijpd .gt_indent_4 {
+#qyjembzpiz .gt_indent_4 {
   text-indent: 20px;
 }
 
-#zuqmeyijpd .gt_indent_5 {
+#qyjembzpiz .gt_indent_5 {
   text-indent: 25px;
 }
 
-#zuqmeyijpd .katex-display {
+#qyjembzpiz .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#zuqmeyijpd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#qyjembzpiz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1513,52 +1564,52 @@ Lars Schöbitz
 <tr class="odd">
 <td class="gt_row gt_left" headers="vorname" style="background-color: #FFD700">Maria</td>
 <td class="gt_row gt_left" headers="geschlecht" style="background-color: #FFD700">w</td>
-<td class="gt_row gt_right" headers="n" style="background-color: #FFD700">74840</td>
+<td class="gt_row gt_right" headers="n" style="background-color: #FFD700">73412</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="vorname" style="background-color: #AFF0ED">Daniel</td>
 <td class="gt_row gt_left" headers="geschlecht" style="background-color: #AFF0ED">m</td>
-<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">62884</td>
+<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">63008</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="vorname" style="background-color: #AFF0ED">Peter</td>
 <td class="gt_row gt_left" headers="geschlecht" style="background-color: #AFF0ED">m</td>
-<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">54007</td>
+<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">52935</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="vorname" style="background-color: #AFF0ED">Thomas</td>
 <td class="gt_row gt_left" headers="geschlecht" style="background-color: #AFF0ED">m</td>
-<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">52732</td>
+<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">52780</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="vorname" style="background-color: #AFF0ED">Hans</td>
 <td class="gt_row gt_left" headers="geschlecht" style="background-color: #AFF0ED">m</td>
-<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">44073</td>
+<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">42601</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="vorname" style="background-color: #AFF0ED">Christian</td>
 <td class="gt_row gt_left" headers="geschlecht" style="background-color: #AFF0ED">m</td>
-<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">41702</td>
+<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">41618</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="vorname" style="background-color: #AFF0ED">Martin</td>
 <td class="gt_row gt_left" headers="geschlecht" style="background-color: #AFF0ED">m</td>
-<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">40627</td>
+<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">40523</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="vorname" style="background-color: #FFD700">Anna</td>
 <td class="gt_row gt_left" headers="geschlecht" style="background-color: #FFD700">w</td>
-<td class="gt_row gt_right" headers="n" style="background-color: #FFD700">40387</td>
+<td class="gt_row gt_right" headers="n" style="background-color: #FFD700">40099</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="vorname" style="background-color: #AFF0ED">Michael</td>
 <td class="gt_row gt_left" headers="geschlecht" style="background-color: #AFF0ED">m</td>
-<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">39922</td>
+<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">39961</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="vorname" style="background-color: #AFF0ED">Andreas</td>
 <td class="gt_row gt_left" headers="geschlecht" style="background-color: #AFF0ED">m</td>
-<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">39583</td>
+<td class="gt_row gt_right" headers="n" style="background-color: #AFF0ED">39388</td>
 </tr>
 </tbody>
 </table>
@@ -1570,66 +1621,66 @@ Lars Schöbitz
 <p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
 </div>
 </section>
-<section id="vornamen-statistik-6" class="slide level2 smaller">
+<section id="vornamen-statistik-7" class="slide level2 smaller">
 <h2>Vornamen Statistik</h2>
 <div class="hand-purple" style="text-align: left;">
 <p>Frage: Was ist die Verteilung der Vornamenlängen in der Schweiz?</p>
 </div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb17-2"><a></a>    <span class="fu">count</span>(vorname, <span class="at">wt =</span> wert) <span class="sc">|&gt;</span> </span>
-<span id="cb17-3"><a></a>    <span class="fu">mutate</span>(<span class="at">laenge =</span> <span class="fu">str_length</span>(vorname)) <span class="sc">|&gt;</span> </span>
-<span id="cb17-4"><a></a>    <span class="fu">count</span>(laenge) <span class="sc">|&gt;</span> </span>
-<span id="cb17-5"><a></a>    <span class="fu">print</span>(<span class="at">n =</span> <span class="dv">19</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb21-2"><a></a>    <span class="fu">count</span>(vorname, <span class="at">wt =</span> wert) <span class="sc">|&gt;</span> </span>
+<span id="cb21-3"><a></a>    <span class="fu">mutate</span>(<span class="at">laenge =</span> <span class="fu">str_length</span>(vorname)) <span class="sc">|&gt;</span> </span>
+<span id="cb21-4"><a></a>    <span class="fu">count</span>(laenge) <span class="sc">|&gt;</span> </span>
+<span id="cb21-5"><a></a>    <span class="fu">print</span>(<span class="at">n =</span> <span class="dv">19</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 19 × 2
    laenge     n
     &lt;int&gt; &lt;int&gt;
  1      2   128
- 2      3  1094
- 3      4  5780
- 4      5 13793
- 5      6 16075
- 6      7 12114
- 7      8  7294
- 8      9  3719
- 9     10  2013
-10     11  1155
-11     12   811
-12     13   559
-13     14   384
-14     15   233
-15     16   131
-16     17    75
-17     18    30
-18     19     9
-19     20     4</code></pre>
+ 2      3  1118
+ 3      4  5894
+ 4      5 14119
+ 5      6 16437
+ 6      7 12379
+ 7      8  7420
+ 8      9  3787
+ 9     10  2048
+10     11  1185
+11     12   848
+12     13   597
+13     14   421
+14     15   251
+15     16   149
+16     17    83
+17     18    31
+18     19    11
+19     20     5</code></pre>
 </div>
 </div></div>
 <div class="footer">
 <p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
 </div>
 </section>
-<section id="vornamen-statistik-7" class="slide level2 smaller">
+<section id="vornamen-statistik-8" class="slide level2 smaller">
 <h2>Vornamen Statistik</h2>
 <div class="hand-purple" style="text-align: left;">
 <p>Frage: Was ist die Verteilung der Vornamenlängen in der Schweiz?</p>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>vornamen_laenge_sum <span class="ot">&lt;-</span> vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb19-2"><a></a>    <span class="fu">count</span>(vorname, <span class="at">wt =</span> wert) <span class="sc">|&gt;</span> </span>
-<span id="cb19-3"><a></a>    <span class="fu">mutate</span>(<span class="at">laenge =</span> <span class="fu">str_length</span>(vorname)) <span class="sc">|&gt;</span> </span>
-<span id="cb19-4"><a></a>    <span class="fu">count</span>(laenge)</span>
-<span id="cb19-5"><a></a></span>
-<span id="cb19-6"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> vornamen_laenge_sum, </span>
-<span id="cb19-7"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> laenge, <span class="at">y =</span> n)) <span class="sc">+</span></span>
-<span id="cb19-8"><a></a>    <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb19-9"><a></a>    <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>vornamen_laenge_sum <span class="ot">&lt;-</span> vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb23-2"><a></a>    <span class="fu">count</span>(vorname, <span class="at">wt =</span> wert) <span class="sc">|&gt;</span> </span>
+<span id="cb23-3"><a></a>    <span class="fu">mutate</span>(<span class="at">laenge =</span> <span class="fu">str_length</span>(vorname)) <span class="sc">|&gt;</span> </span>
+<span id="cb23-4"><a></a>    <span class="fu">count</span>(laenge)</span>
+<span id="cb23-5"><a></a></span>
+<span id="cb23-6"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> vornamen_laenge_sum, </span>
+<span id="cb23-7"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> laenge, <span class="at">y =</span> n)) <span class="sc">+</span></span>
+<span id="cb23-8"><a></a>    <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb23-9"><a></a>    <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="md-08-text-daten_files/figure-revealjs/unnamed-chunk-16-1.png" width="576" class="r-stretch"><div class="footer">
+<img data-src="md-08-text-daten_files/figure-revealjs/unnamed-chunk-18-1.png" width="576" class="r-stretch"><div class="footer">
 <p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
 </div>
 </section>
@@ -1644,7 +1695,7 @@ Lars Schöbitz
 </ol>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_f0d18737" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_ec51186a" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1683,7 +1734,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_50c4afa5" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_4349391e" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">30</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1696,7 +1747,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_133ad52d" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_2740f2fd" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1714,7 +1765,7 @@ Lars Schöbitz
 <section id="vornamen-statistik-mit-statr-r-paket" class="slide level2 smaller">
 <h2>Vornamen Statistik mit statR R-Paket</h2>
 
-<img data-src="md-08-text-daten_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"><div class="footer">
+<img data-src="md-08-text-daten_files/figure-revealjs/unnamed-chunk-22-1.png" width="960" class="r-stretch"><div class="footer">
 <p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
 </div>
 </section>
@@ -1744,7 +1795,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_4c2f7565" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_b3c0d36c" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">30</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1757,7 +1808,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_d8b47fe8" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_bfc8f2c4" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1780,7 +1831,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_7286dfb6" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_accf6992" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">30</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1794,7 +1845,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_b0d1c53f" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_d0057028" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1815,7 +1866,7 @@ Lars Schöbitz
 <section id="zusatzaufgaben-abgabedatum" class="slide level2">
 <h2>Zusatzaufgaben Abgabedatum</h2>
 <ul>
-<li>Abgabedatum: <span class="highlight-yellow">Dienstag, 18. November</span></li>
+<li>Abgabedatum: <span class="highlight-yellow">Dienstag, 25. November</span></li>
 </ul>
 </section></section>
 <section>
