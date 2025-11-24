@@ -128,7 +128,7 @@
     "href": "module/md-09.html#zusatzaufgabe",
     "title": "Modul 9",
     "section": " Zusatzaufgabe",
-    "text": "Zusatzaufgabe\nBitte erledige die folgende Aufgabe bis 25. November 2025.\n\nZusatzaufgabe 1: Abschlussprojekt - Querverweise",
+    "text": "Zusatzaufgabe\nBitte erledige die folgende Aufgabe bis 02. Dezember 2025.\n\nZusatzaufgabe 1: Abschlussprojekt - Querverweise",
     "crumbs": [
       "Modul 09"
     ]
@@ -583,7 +583,7 @@
     "href": "folien/md-09-quarto.html#lernziele-für-diese-woche",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\nlernziele &lt;- readr::read_csv(here::here(\"data/tbl-01-rstatszh-lernziele.csv\")) |&gt; \n  dplyr::filter(modul == params$modul) |&gt;\n  dplyr::pull(lernziele)\n\nRows: 36 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): titel, lernziele\ndbl  (1): modul\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nDie Lernenden können Querverweise zu Diagrammen und Tabellen in Quarto Dokumenten erstellen.\nDie Lernenden können Folien im Format revealjs HTML erstellen.\nDie Lernenden können Metadaten eines Quarto Dokuments anpassen."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Querverweise zu Diagrammen und Tabellen in Quarto Dokumenten erstellen.\nDie Lernenden können Folien im Format revealjs HTML erstellen.\nDie Lernenden können Metadaten eines Quarto Dokuments anpassen."
   },
   {
     "objectID": "folien/md-09-quarto.html#quarto-1",
@@ -751,14 +751,14 @@
     "href": "folien/md-09-quarto.html#ihr-seid-dran-01-markdown-syntax.qmd",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Ihr seid dran: 01-markdown-syntax.qmd",
-    "text": "Ihr seid dran: 01-markdown-syntax.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-markdown-syntax.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\ncountdown(20)\n\n\n−+\n20:00"
+    "text": "Ihr seid dran: 01-markdown-syntax.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-markdown-syntax.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-09-quarto.html#pause-machen",
     "href": "folien/md-09-quarto.html#pause-machen",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-09-quarto.html#anatomie-eines-code-block",
@@ -800,14 +800,14 @@
     "href": "folien/md-09-quarto.html#tabellen-mit-code",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Tabellen mit Code",
-    "text": "Tabellen mit Code\nDas Paket knitr kann Datenrahmen in Tabellen umwandeln mit knitr::kable():\n\nlibrary(knitr)\n\npenguins |&gt; \n  count(species, island) |&gt; \n  kable()\n\n\n\n\nspecies\nisland\nn\n\n\n\n\nAdelie\nBiscoe\n44\n\n\nAdelie\nDream\n56\n\n\nAdelie\nTorgersen\n52\n\n\nChinstrap\nDream\n68\n\n\nGentoo\nBiscoe\n124"
+    "text": "Tabellen mit Code\nDas Paket knitr kann Datenrahmen in Tabellen umwandeln mit knitr::kable():\n\n\n\n\n\nspecies\nisland\nn\n\n\n\n\nAdelie\nBiscoe\n44\n\n\nAdelie\nDream\n56\n\n\nAdelie\nTorgersen\n52\n\n\nChinstrap\nDream\n68\n\n\nGentoo\nBiscoe\n124"
   },
   {
     "objectID": "folien/md-09-quarto.html#tabellen-mit-code-1",
     "href": "folien/md-09-quarto.html#tabellen-mit-code-1",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Tabellen mit Code",
-    "text": "Tabellen mit Code\nWenn du umfangreichere Tabellen möchtest, probiere das gt-Paket und alles, was es bietet!\n\n\nlibrary(gt)\n\nhead(penguins) |&gt; \n  gt() |&gt;\n  tab_style(\n    style = list(\n      cell_fill(color = \"pink\"),\n      cell_text(style = \"italic\")\n      ),\n    locations = cells_body(\n      columns = bill_length_mm,\n      rows = bill_length_mm &gt; 40\n    )\n  )\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
+    "text": "Tabellen mit Code\nWenn du umfangreichere Tabellen möchtest, probiere das gt-Paket und alles, was es bietet!\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
   },
   {
     "objectID": "folien/md-09-quarto.html#markdown-abbildungen",
@@ -849,7 +849,7 @@
     "href": "folien/md-09-quarto.html#pfade-in-r-code-referenzieren",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Pfade in R-Code referenzieren",
-    "text": "Pfade in R-Code referenzieren\nVerwende das here-Paket, um auf das Projektverzeichnis zu verweisen, da here::here() immer im obersten Verzeichnis einer .Rproj beginnt:\n\nhere::here()\n\n[1] \"/Users/lschoebitz/Documents/gitrepos/gh-org-rstatszh-k011/website\""
+    "text": "Pfade in R-Code referenzieren\nVerwende das here-Paket, um auf das Projektverzeichnis zu verweisen, da here::here() immer im obersten Verzeichnis einer .Rproj beginnt:\n\n\n[1] \"/Users/lschoebitz/Documents/gitrepos/gh-org-rstatszh-k011/website\""
   },
   {
     "objectID": "folien/md-09-quarto.html#abbildungen-mit-code-diagramme-1",
@@ -870,21 +870,21 @@
     "href": "folien/md-09-quarto.html#abbildung-querverweise",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Abbildung Querverweise",
-    "text": "Abbildung Querverweise\n\nMit Code\nTODO"
+    "text": "Abbildung Querverweise\nDas Vorhandensein der Beschriftung (Pinguin Schnabel Dimensionen) und der Bezeichnung (#fig-bill-dimensions) machen diese Abbildung referenzierbar:\n\n\nMarkdown:\nSiehe @fig-bill-dimensions für die Verteilung der Schnabellänge nach Art.\n\n```{r}\n#| label: fig-bill-dimensions\n#| fig-cap: Pinguin Schnabel Dimensionen\n\nggplot(penguins,\n       aes(x = bill_length_mm,\n           fill = species)) +\n  geom_histogram(bins = 20) +\n  labs(x = \"Schnabellänge (mm)\",\n       y = \"Anzahl\")\n```\n\nAusgabe:\nSiehe Figure 2 für die Verteilung der Schnabellänge nach Art.\n\n\n\n\n\n\n\n\nFigure 2: Pinguin Schnabel Dimensionen"
   },
   {
     "objectID": "folien/md-09-quarto.html#abbildung-querverweise-1",
     "href": "folien/md-09-quarto.html#abbildung-querverweise-1",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Abbildung Querverweise",
-    "text": "Abbildung Querverweise\nDas Vorhandensein der Beschriftung (Blauer Pinguin) und der Bezeichnung (#fig-blue-penguin) machen diese Abbildung referenzierbar:\n\n\nMarkdown:\nSiehe @fig-blue-penguin für einen süssen blauen Pinguin.\n![Blauer Pinguin](img/md-09/blue-penguin.png){#fig-blue-penguin}\n\nAusgabe:\nSiehe Figure 2 für einen süssen blauen Pinguin.\n\n\n\n\n\n\nFigure 2: Blauer Pinguin"
+    "text": "Abbildung Querverweise\nDas Vorhandensein der Beschriftung (Blauer Pinguin) und der Bezeichnung (#fig-blue-penguin) machen diese Abbildung referenzierbar:\n\n\nMarkdown:\nSiehe @fig-blue-penguin für einen süssen blauen Pinguin.\n![Blauer Pinguin](img/md-09/blue-penguin.png){#fig-blue-penguin}\n\nAusgabe:\nSiehe Figure 3 für einen süssen blauen Pinguin.\n\n\n\n\n\n\nFigure 3: Blauer Pinguin"
   },
   {
     "objectID": "folien/md-09-quarto.html#tabelle-querverweise",
     "href": "folien/md-09-quarto.html#tabelle-querverweise",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Tabelle Querverweise",
-    "text": "Tabelle Querverweise\nDas Vorhandensein der Überschrift (Ein paar Pinguine) und der Bezeichnung (#tbl-pinguine) machen diese Tabelle referenzierbar:\n\n\nMarkdown:\nSiehe @tbl-penguins für Daten über einige Pinguine.\n\n```{r}\n#| label: tbl-pinguine\n#| tbl-cap: Ein paar Pinguine\n\nhead(penguins) |&gt; \n  gt()\n```\n\nAusgabe:\nSiehe Table 1 für Daten über einige Pinguine.\n\nhead(penguins) |&gt; \n  gt()\n\n\n\nTable 1: Ein paar Pinguine\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
+    "text": "Tabelle Querverweise\nDas Vorhandensein der Überschrift (Ein paar Pinguine) und der Bezeichnung (#tbl-pinguine) machen diese Tabelle referenzierbar:\n\n\nMarkdown:\nSiehe @tbl-penguins für Daten über einige Pinguine.\n\n```{r}\n#| label: tbl-pinguine\n#| tbl-cap: Ein paar Pinguine\n\nhead(penguins) |&gt; \n  gt()\n```\n\nAusgabe:\nSiehe Table 1 für Daten über einige Pinguine.\n\n\n\n\nTable 1: Ein paar Pinguine\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
   },
   {
     "objectID": "folien/md-09-quarto.html#querverweise-schritte",
@@ -898,7 +898,7 @@
     "href": "folien/md-09-quarto.html#ihr-seid-dran-02-querverweise.qmd",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Ihr seid dran: 02-querverweise.qmd",
-    "text": "Ihr seid dran: 02-querverweise.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-querverweise.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\ncountdown(20)\n\n\n−+\n20:00"
+    "text": "Ihr seid dran: 02-querverweise.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-querverweise.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-09-quarto.html#gehts-auch-auf-deutsch",
@@ -912,7 +912,7 @@
     "href": "folien/md-09-quarto.html#pause-machen-1",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-09-quarto.html#komponenten-1",
@@ -926,7 +926,7 @@
     "href": "folien/md-09-quarto.html#wir-sind-dran-03-folien.qmd",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Wir sind dran: 03-folien.qmd",
-    "text": "Wir sind dran: 03-folien.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-folien.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\ncountdown(30)\n\n\n−+\n30:00"
+    "text": "Wir sind dran: 03-folien.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-folien.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "folien/md-09-quarto.html#ihr-seid-dran-03-folien.qmd",
@@ -954,7 +954,7 @@
     "href": "folien/md-09-quarto.html#zeitpuffer-modul-9",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Zeitpuffer: Modul 9",
-    "text": "Zeitpuffer: Modul 9\n\nKann ich noch etwas zum heutigen Modul erklären?\n\n\ncountdown(5)\n\n\n−+\n05:00"
+    "text": "Zeitpuffer: Modul 9\n\nKann ich noch etwas zum heutigen Modul erklären?\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "folien/md-09-quarto.html#modul-9-dokumentation",
@@ -1857,7 +1857,7 @@
     "href": "abschlussprojekt/index.html#bericht-auf-github-pages-veröffentlichen-und-einreichen",
     "title": "Abschlussprojekt",
     "section": "Bericht auf GitHub Pages veröffentlichen und einreichen",
-    "text": "Bericht auf GitHub Pages veröffentlichen und einreichen\nDein Bericht wird durch die Veröffentlichung auf GitHub Pages und die Übermittlung des Links über ein GitHub Issue in deinem Abschlussnericht-Repository abgeschlossen. Bitte tagge die Kursleitung in dem GitHub Issue: @larnsce. Wir werden den Bericht prüfen und Feedback geben.\n\nNavigiere zu deinem Repository\n\nÖffne github.com in deinem Browser und navigiere zur GitHub-Organisation für den Kurs: https://github.com/rstatszh-k010.\n\n\n\n\n\n\n\n\n\n\n\nVerwende das Suchfeld unter “Repositories”, um das Repository für dein Abschlussprojekt zu finden.\n\n\n\n\n\n\n\n\n\n\n\nÖffne dein Repository für das Abschlussprojekt.\n\n\n\n\n\n\n\n\n\n\n\n\nRepository öffentlich machen\nWenn die Sichtbarkeit deines Repositorys auf “privat” eingestellt ist (erkennbar an einem kleinen Vorhängeschloss neben dem Namen des Repositorys), musst du es zunächst auf “public” (öffentlich) umstellen, indem du die folgenden Schritte ausführst:\n\nKlick aus “Settings”.\n\n\n\n\n\n\n\n\n\n\n\nBleibe auf “General” und scrolle bis zum Ende der Seite zu “Danger Zone”.\n\n\n\n\n\n\n\n\n\n\n\nNeben dem ersten Unterkapitel “Change repository visibility”, klicke auf “Change visibility”, dann “Change to public”.\n\n\n\n\n\n\n\n\n\n\n\nKlick “I want to make this repository public”.\n\n\n\n\n\n\n\n\n\n\n\nKlick “I have read and understand these effects”.\nKlick “Make this repository public”.\nGebe die notwendigen Details an.\nFertig.\n\n\n\nVeröffentlichen mit GitHub Pages\n\nÖffne dein Repository für das Abschlussprojekt und klick auf “Settings”.\n\n\n\n\n\n\n\n\n\n\n\nKlicke im linken Navigationsbereich auf “Pages” unter “Code and automation”.\n\n\n\n\n\n\n\n\n\n\n\nUnter “Build and deployment”, dann unter Branch, klick auf das Dropbown mit dem Titel “None”.\n\n\n\n\n\n\n\n\n\n\n\nIm Dropdown, selektiere “master” (bei einigen von euch vielleicht “main”).\n\n\n\n\n\n\n\n\n\n\n\nKlick auf das Dropdown mit dem Titel “/ (root)”. Im Dropdown, selektiere “/docs”.\n\n\n\n\n\n\n\n\n\n\n\nKlick “Save”.\n\n\n\n\n\n\n\n\n\n\n\n\nBearbeite “About” des Repositorys\n\nÖffne dein Repository für das Abschlussprojekt.\n\n\n\n\n\n\n\n\n\n\n\nKlicke auf der rechten Seite neben “About” auf das Zahnradsymbol.\n\n\n\n\n\n\n\n\n\n\n\nUnter “Description” kannst du folgenden, oder einen von dir gewählten, Text schreiben: ‘Dieser Bericht wurde für den Kurs “rstatsZH - Data Science mit R’ erstellt.\n\n\n\n\n\n\n\n\n\n\n\nUnter “Website”, klick “Use your GitHub Pages website” and under “Include in the home page” kannst du die angekreuzten Kästchen entfernen.\n\n\n\n\n\n\n\n\n\n\n\nClick “Save changes”.\nDie öffentliche URL deines Repositorys wird nun unter “About” auf der rechten Seite angezeigt.\n\n\n\n\n\n\n\n\n\n\n\nÖffne deine veröffentlichte Website und sei stolz auf dein Ergebnis.\nReiche den Link zu deinem Bericht in einem GitHub-Issue in deinem Abschlussbericht Repository ein. Tagge die Kursleitung: @larnsce",
+    "text": "Bericht auf GitHub Pages veröffentlichen und einreichen\nDein Bericht wird durch die Veröffentlichung auf GitHub Pages und die Übermittlung des Links über ein GitHub Issue in deinem Abschlussnericht-Repository abgeschlossen. Bitte tagge die Kursleitung in dem GitHub Issue: @larnsce. Wir werden den Bericht prüfen und Feedback geben.\n\nNavigiere zu deinem Repository\n\nÖffne github.com in deinem Browser und navigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k011.\n\n\n\n\n\n\n\n\n\n\n\nVerwende das Suchfeld unter “Repositories”, um das Repository für dein Abschlussprojekt zu finden.\n\n\n\n\n\n\n\n\n\n\n\nÖffne dein Repository für das Abschlussprojekt.\n\n\n\n\n\n\n\n\n\n\n\n\nRepository öffentlich machen\nWenn die Sichtbarkeit deines Repositorys auf “privat” eingestellt ist (erkennbar an einem kleinen Vorhängeschloss neben dem Namen des Repositorys), musst du es zunächst auf “public” (öffentlich) umstellen, indem du die folgenden Schritte ausführst:\n\nKlick aus “Settings”.\n\n\n\n\n\n\n\n\n\n\n\nBleibe auf “General” und scrolle bis zum Ende der Seite zu “Danger Zone”.\n\n\n\n\n\n\n\n\n\n\n\nNeben dem ersten Unterkapitel “Change repository visibility”, klicke auf “Change visibility”, dann “Change to public”.\n\n\n\n\n\n\n\n\n\n\n\nKlick “I want to make this repository public”.\n\n\n\n\n\n\n\n\n\n\n\nKlick “I have read and understand these effects”.\nKlick “Make this repository public”.\nGebe die notwendigen Details an.\nFertig.\n\n\n\nVeröffentlichen mit GitHub Pages\n\nÖffne dein Repository für das Abschlussprojekt und klick auf “Settings”.\n\n\n\n\n\n\n\n\n\n\n\nKlicke im linken Navigationsbereich auf “Pages” unter “Code and automation”.\n\n\n\n\n\n\n\n\n\n\n\nUnter “Build and deployment”, dann unter Branch, klick auf das Dropbown mit dem Titel “None”.\n\n\n\n\n\n\n\n\n\n\n\nIm Dropdown, selektiere “master” (bei einigen von euch vielleicht “main”).\n\n\n\n\n\n\n\n\n\n\n\nKlick auf das Dropdown mit dem Titel “/ (root)”. Im Dropdown, selektiere “/docs”.\n\n\n\n\n\n\n\n\n\n\n\nKlick “Save”.\n\n\n\n\n\n\n\n\n\n\n\n\nBearbeite “About” des Repositorys\n\nÖffne dein Repository für das Abschlussprojekt.\n\n\n\n\n\n\n\n\n\n\n\nKlicke auf der rechten Seite neben “About” auf das Zahnradsymbol.\n\n\n\n\n\n\n\n\n\n\n\nUnter “Description” kannst du folgenden, oder einen von dir gewählten, Text schreiben: ‘Dieser Bericht wurde für den Kurs “rstatsZH - Data Science mit R’ erstellt.\n\n\n\n\n\n\n\n\n\n\n\nUnter “Website”, klick “Use your GitHub Pages website” and under “Include in the home page” kannst du die angekreuzten Kästchen entfernen.\n\n\n\n\n\n\n\n\n\n\n\nClick “Save changes”.\nDie öffentliche URL deines Repositorys wird nun unter “About” auf der rechten Seite angezeigt.\n\n\n\n\n\n\n\n\n\n\n\nÖffne deine veröffentlichte Website und sei stolz auf dein Ergebnis.\nReiche den Link zu deinem Bericht in einem GitHub-Issue in deinem Abschlussbericht Repository ein. Tagge die Kursleitung: @larnsce",
     "crumbs": [
       "Abschlussprojekt"
     ]

@@ -53,7 +53,7 @@ Der GitHub Issue Tracker des Abschlussbericht Repositories jede:r Teilnehmer:in 
 
 ## Abgabedatum
 
-Der Termin für die Einreichung des Berichts ist Donnerstag, 11. Dezember 2025.
+Der Termin für die Einreichung des Berichts ist {{< var abschlussprojekt.due-date-long >}}.
 
 ## Erforderliche Elemente
 
@@ -103,9 +103,9 @@ Für die `README.md`-Datei habe ich eine Vorlage vorbereitet. Diese kannst du hi
 
 Dein Bericht wird durch die Veröffentlichung auf GitHub Pages und die Übermittlung des Links über ein GitHub Issue in deinem Abschlussnericht-Repository abgeschlossen. Bitte tagge die Kursleitung in dem GitHub Issue: `@larnsce`. Wir werden den Bericht prüfen und Feedback geben.
 
-### Navigiere zu deinem Repository 
+### Navigiere zu deinem Repository
 
-1.  Öffne github.com in deinem Browser und navigiere zur GitHub-Organisation für den Kurs: <https://github.com/rstatszh-k010>.
+1.  Öffne github.com in deinem Browser und navigiere zur GitHub-Organisation für den Kurs: [github.com/{{< var course.code >}}]({{< var course.github-org >}}).
 
 ```{r}
 knitr::include_graphics("images/gh-pages-01-gh-org.png")

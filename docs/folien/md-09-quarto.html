@@ -215,22 +215,6 @@ Lars Schöbitz
 <section id="lernziele-für-diese-woche" class="slide level2">
 <h2>Lernziele (für diese Woche)</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>lernziele <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/tbl-01-rstatszh-lernziele.csv"</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb1-2"><a></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(modul <span class="sc">==</span> params<span class="sc">$</span>modul) <span class="sc">|&gt;</span></span>
-<span id="cb1-3"><a></a>  dplyr<span class="sc">::</span><span class="fu">pull</span>(lernziele)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 36 Columns: 4
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr  (2): titel, lernziele
-dbl  (1): modul
-dttm (1): datum
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-</div>
-<div class="cell">
 <ol type="1">
 <li>Die Lernenden können Querverweise zu Diagrammen und Tabellen in Quarto Dokumenten erstellen.</li>
 <li>Die Lernenden können Folien im Format revealjs HTML erstellen.</li>
@@ -323,25 +307,25 @@ dttm (1): datum
 <h2>Literate programming</h2>
 <p>DE: wortgetreue Progammierung</p>
 <p>Bei der wortgetreuen Programmierung wird die Programmlogik in einer menschlichen Sprache mit eingeschlossenen Codeschnipseln geschrieben.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="co">---</span></span>
-<span id="cb3-2"><a></a><span class="an">title:</span><span class="co"> "ggplot2 demo"</span></span>
-<span id="cb3-3"><a></a><span class="an">date:</span><span class="co"> "19/11/2024"</span></span>
-<span id="cb3-4"><a></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb3-5"><a></a><span class="co">---</span></span>
-<span id="cb3-6"><a></a></span>
-<span id="cb3-7"><a></a><span class="fu">## Pinguine</span></span>
-<span id="cb3-8"><a></a></span>
-<span id="cb3-9"><a></a>Es gibt einen linearen Zusammenhang zwischen Länge und Tiefe des Schnabels, abhängig von der Art.</span>
-<span id="cb3-10"><a></a></span>
-<span id="cb3-11"><a></a><span class="in">```{r}</span></span>
-<span id="cb3-12"><a></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb3-13"><a></a><span class="fu">library</span>(palmerpenguins)</span>
-<span id="cb3-14"><a></a></span>
-<span id="cb3-15"><a></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, </span>
-<span id="cb3-16"><a></a>                     <span class="at">y =</span> bill_depth_mm,</span>
-<span id="cb3-17"><a></a>                     <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb3-18"><a></a>  <span class="fu">geom_point</span>()</span>
-<span id="cb3-19"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="co">---</span></span>
+<span id="cb1-2"><a></a><span class="an">title:</span><span class="co"> "ggplot2 demo"</span></span>
+<span id="cb1-3"><a></a><span class="an">date:</span><span class="co"> "19/11/2024"</span></span>
+<span id="cb1-4"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb1-5"><a></a><span class="co">---</span></span>
+<span id="cb1-6"><a></a></span>
+<span id="cb1-7"><a></a><span class="fu">## Pinguine</span></span>
+<span id="cb1-8"><a></a></span>
+<span id="cb1-9"><a></a>Es gibt einen linearen Zusammenhang zwischen Länge und Tiefe des Schnabels, abhängig von der Art.</span>
+<span id="cb1-10"><a></a></span>
+<span id="cb1-11"><a></a><span class="in">```{r}</span></span>
+<span id="cb1-12"><a></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-13"><a></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb1-14"><a></a></span>
+<span id="cb1-15"><a></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, </span>
+<span id="cb1-16"><a></a>                     <span class="at">y =</span> bill_depth_mm,</span>
+<span id="cb1-17"><a></a>                     <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb1-18"><a></a>  <span class="fu">geom_point</span>()</span>
+<span id="cb1-19"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <aside><div>
 <p>Source: <a href="https://en.wikipedia.org/wiki/Literate_programming" class="uri">https://en.wikipedia.org/wiki/Literate_programming</a></p>
@@ -354,53 +338,53 @@ dttm (1): datum
 <section id="yaml" class="slide level2">
 <h2>YAML</h2>
 <p>“Yet Another Markup Language” oder “YAML Ain’t Markup Language” wird verwendet, um Metadaten auf Dokumentebene bereitzustellen.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a></a><span class="pp">---</span></span>
-<span id="cb4-2"><a></a><span class="fu">key</span><span class="kw">:</span><span class="at"> value</span></span>
-<span id="cb4-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a></a><span class="pp">---</span></span>
+<span id="cb2-2"><a></a><span class="fu">key</span><span class="kw">:</span><span class="at"> value</span></span>
+<span id="cb2-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="output-ausgabe-optionen" class="slide level2">
 <h2>Output (Ausgabe) Optionen</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a></a><span class="pp">---</span></span>
-<span id="cb5-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> etwas</span></span>
-<span id="cb5-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a></a><span class="pp">---</span></span>
+<span id="cb3-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> etwas</span></span>
+<span id="cb3-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
 <p><br></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a></a><span class="pp">---</span></span>
+<span id="cb4-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb4-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a></a><span class="pp">---</span></span>
+<span id="cb5-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> pdf</span></span>
+<span id="cb5-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="sourceCode" id="cb6"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a></a><span class="pp">---</span></span>
-<span id="cb6-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb6-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
 <span id="cb6-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a></a><span class="pp">---</span></span>
-<span id="cb7-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> pdf</span></span>
-<span id="cb7-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a></a><span class="pp">---</span></span>
-<span id="cb8-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
-<span id="cb8-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="output-ausgabe-optionen-argumente" class="slide level2">
 <h2>Output (Ausgabe) Optionen Argumente</h2>
 <p>Einrückung ist wichtig!</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a></a><span class="pp">---</span></span>
-<span id="cb9-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb9-3"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb9-4"><a></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb9-5"><a></a><span class="at">    </span><span class="fu">code-fold</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb9-6"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a></a><span class="pp">---</span></span>
+<span id="cb7-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb7-3"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb7-4"><a></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb7-5"><a></a><span class="at">    </span><span class="fu">code-fold</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb7-6"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="yaml-validierung" class="slide level2 smaller">
 <h2>YAML Validierung</h2>
 <ul>
 <li>Ungültig: Kein Leerzeichen nach <code>:</code></li>
 </ul>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a></a><span class="pp">---</span></span>
-<span id="cb10-2"><a></a><span class="at">format:html</span></span>
-<span id="cb10-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a></a><span class="pp">---</span></span>
+<span id="cb8-2"><a></a><span class="at">format:html</span></span>
+<span id="cb8-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>Ungültig: Als fehlend gelesen</li>
 </ul>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a></a><span class="pp">---</span></span>
-<span id="cb11-2"><a></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb11-3"><a></a><span class="at">html</span></span>
-<span id="cb11-4"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a></a><span class="pp">---</span></span>
+<span id="cb9-2"><a></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb9-3"><a></a><span class="at">html</span></span>
+<span id="cb9-4"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="yaml-validierung-1" class="slide level2 smaller">
 <h2>YAML Validierung</h2>
@@ -408,13 +392,13 @@ dttm (1): datum
 <ul>
 <li>Gültig: Es gibt ein Leerzeichen nach <code>:</code></li>
 </ul>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>Gültig: <code>format: html</code> mit Auswahlen, die mit korrekter Einrückung erfolgen</li>
 </ul>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb13-1"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb13-2"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb13-3"><a></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb11-2"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb11-3"><a></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="liste-der-gültigen-yaml-felder" class="slide level2">
 <h2>Liste der gültigen YAML-Felder</h2>
@@ -523,11 +507,11 @@ dttm (1): datum
 <div class="columns">
 <div class="column" style="width:70%;">
 <p><strong>Markdown</strong></p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a></a>Du kannst <span class="co">[</span><span class="ot">benannte Hyperlinks</span><span class="co">](https://quarto.org/)</span>,</span>
-<span id="cb24-2"><a></a>direkte URLs wie <span class="ot">&lt;https://quarto.org/&gt;</span> und Links zu </span>
-<span id="cb24-3"><a></a><span class="co">[</span><span class="ot">anderen Orten</span><span class="co">](#quarto-anatomy)</span> in </span>
-<span id="cb24-4"><a></a>das Dokument einbetten. Die Syntax für das Einbetten eines</span>
-<span id="cb24-5"><a></a>Inline-Bildes ist ähnlich: <span class="al">![Pinguine spielen mit Ball](img/md-09/penguins-quarto-ball.png)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a></a>Du kannst <span class="co">[</span><span class="ot">benannte Hyperlinks</span><span class="co">](https://quarto.org/)</span>,</span>
+<span id="cb22-2"><a></a>direkte URLs wie <span class="ot">&lt;https://quarto.org/&gt;</span> und Links zu </span>
+<span id="cb22-3"><a></a><span class="co">[</span><span class="ot">anderen Orten</span><span class="co">](#quarto-anatomy)</span> in </span>
+<span id="cb22-4"><a></a>das Dokument einbetten. Die Syntax für das Einbetten eines</span>
+<span id="cb22-5"><a></a>Inline-Bildes ist ähnlich: <span class="al">![Pinguine spielen mit Ball](img/md-09/penguins-quarto-ball.png)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:30%;">
 <p><strong>Ausgabe</strong></p>
 <p>Du kannst [benannte Hyperlinks] (https://quarto.org/), direkte URLs wie <a href="https://quarto.org/" class="uri">https://quarto.org/</a> und Links zu <a href="#/quarto-anatomie">anderen Orten</a> in das Dokument einbetten. Die Syntax für das Einbetten eines Inline-Bildes ist ähnlich: <img data-src="img/md-09/penguins-quarto-ball.png" style="width:250px;" alt="Pinguine spielen mit Ball">.</p>
@@ -539,10 +523,10 @@ dttm (1): datum
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Markdown:</strong></p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a></a><span class="ss">-   </span>unordered list         </span>
-<span id="cb25-2"><a></a><span class="ss">    -   </span>sub-item 1         </span>
-<span id="cb25-3"><a></a><span class="ss">    -   </span>sub-item 1         </span>
-<span id="cb25-4"><a></a><span class="ss">        -   </span>sub-sub-item 1 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a></a><span class="ss">-   </span>unordered list         </span>
+<span id="cb23-2"><a></a><span class="ss">    -   </span>sub-item 1         </span>
+<span id="cb23-3"><a></a><span class="ss">    -   </span>sub-item 1         </span>
+<span id="cb23-4"><a></a><span class="ss">        -   </span>sub-sub-item 1 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" data-fragment-index="1" style="width:50%;">
 <p><strong>Ausgabe</strong></p>
 <ul>
@@ -561,10 +545,10 @@ dttm (1): datum
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Markdown:</strong></p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a></a><span class="ss">1. </span>ordered list            </span>
-<span id="cb26-2"><a></a><span class="ss">2. </span>item 2                  </span>
-<span id="cb26-3"><a></a>    i. sub-item 1          </span>
-<span id="cb26-4"><a></a>         A.  sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a></a><span class="ss">1. </span>ordered list            </span>
+<span id="cb24-2"><a></a><span class="ss">2. </span>item 2                  </span>
+<span id="cb24-3"><a></a>    i. sub-item 1          </span>
+<span id="cb24-4"><a></a>         A.  sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" data-fragment-index="2" style="width:50%;">
 <p><strong>Ausgabe</strong></p>
 <ol type="1">
@@ -583,8 +567,8 @@ dttm (1): datum
 <section id="zitate" class="slide level2">
 <h2>Zitate</h2>
 <p><strong>Markdown:</strong></p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a></a><span class="at">&gt; Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. </span></span>
-<span id="cb27-2"><a></a><span class="at">&gt; - Donald Knuth, Literate Programming</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a></a><span class="at">&gt; Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. </span></span>
+<span id="cb25-2"><a></a><span class="at">&gt; - Donald Knuth, Literate Programming</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
 <p><strong>Output:</strong></p>
 <blockquote>
@@ -632,9 +616,8 @@ um die Notiz zu schreiben.]</code></pre>
 </ol>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="fu">countdown</span>(<span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_641c5df3" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_1cd30a4b" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -646,9 +629,8 @@ um die Notiz zu schreiben.]</code></pre>
 <p><span class="highlight-yellow">Bitte steh auf und beweg dich.</span></p>
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_a8e28258" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_76eaae57" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -668,18 +650,18 @@ um die Notiz zu schreiben.]</code></pre>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb31-2"><a></a><span class="co">#| label: penguins</span></span>
-<span id="cb31-3"><a></a><span class="co">#| message: false</span></span>
-<span id="cb31-4"><a></a></span>
-<span id="cb31-5"><a></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb31-6"><a></a><span class="fu">library</span>(palmerpenguins)</span>
-<span id="cb31-7"><a></a><span class="fu">library</span>(knitr)</span>
-<span id="cb31-8"><a></a></span>
-<span id="cb31-9"><a></a>penguins <span class="sc">|&gt;</span> </span>
-<span id="cb31-10"><a></a>  <span class="fu">count</span>(species) <span class="sc">|&gt;</span> </span>
-<span id="cb31-11"><a></a>  <span class="fu">kable</span>()</span>
-<span id="cb31-12"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb27-2"><a></a><span class="co">#| label: penguins</span></span>
+<span id="cb27-3"><a></a><span class="co">#| message: false</span></span>
+<span id="cb27-4"><a></a></span>
+<span id="cb27-5"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb27-6"><a></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb27-7"><a></a><span class="fu">library</span>(knitr)</span>
+<span id="cb27-8"><a></a></span>
+<span id="cb27-9"><a></a>penguins <span class="sc">|&gt;</span> </span>
+<span id="cb27-10"><a></a>  <span class="fu">count</span>(species) <span class="sc">|&gt;</span> </span>
+<span id="cb27-11"><a></a>  <span class="fu">kable</span>()</span>
+<span id="cb27-12"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="caption-top">
 <thead>
@@ -741,11 +723,11 @@ um die Notiz zu schreiben.]</code></pre>
 <section id="markdown-tabellen" class="slide level2 small">
 <h2>Markdown Tabellen</h2>
 <p><strong>Markdown:</strong></p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a></a><span class="pp">|</span> Right <span class="pp">|</span> Left <span class="pp">|</span> Default <span class="pp">|</span> Center <span class="pp">|</span></span>
-<span id="cb32-2"><a></a><span class="pp">|------:|:-----|---------|:------:|</span></span>
-<span id="cb32-3"><a></a><span class="pp">|</span>   12  <span class="pp">|</span>  12  <span class="pp">|</span>    12   <span class="pp">|</span>    12  <span class="pp">|</span></span>
-<span id="cb32-4"><a></a><span class="pp">|</span>  123  <span class="pp">|</span>  123 <span class="pp">|</span>   123   <span class="pp">|</span>   123  <span class="pp">|</span></span>
-<span id="cb32-5"><a></a><span class="pp">|</span>    1  <span class="pp">|</span>    1 <span class="pp">|</span>     1   <span class="pp">|</span>     1  <span class="pp">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a></a><span class="pp">|</span> Right <span class="pp">|</span> Left <span class="pp">|</span> Default <span class="pp">|</span> Center <span class="pp">|</span></span>
+<span id="cb28-2"><a></a><span class="pp">|------:|:-----|---------|:------:|</span></span>
+<span id="cb28-3"><a></a><span class="pp">|</span>   12  <span class="pp">|</span>  12  <span class="pp">|</span>    12   <span class="pp">|</span>    12  <span class="pp">|</span></span>
+<span id="cb28-4"><a></a><span class="pp">|</span>  123  <span class="pp">|</span>  123 <span class="pp">|</span>   123   <span class="pp">|</span>   123  <span class="pp">|</span></span>
+<span id="cb28-5"><a></a><span class="pp">|</span>    1  <span class="pp">|</span>    1 <span class="pp">|</span>     1   <span class="pp">|</span>     1  <span class="pp">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -797,11 +779,6 @@ um die Notiz zu schreiben.]</code></pre>
 <h2>Tabellen mit Code</h2>
 <p>Das Paket <strong>knitr</strong> kann Datenrahmen in Tabellen umwandeln mit <code>knitr::kable()</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="fu">library</span>(knitr)</span>
-<span id="cb33-2"><a></a></span>
-<span id="cb33-3"><a></a>penguins <span class="sc">|&gt;</span> </span>
-<span id="cb33-4"><a></a>  <span class="fu">count</span>(species, island) <span class="sc">|&gt;</span> </span>
-<span id="cb33-5"><a></a>  <span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="caption-top">
 <thead>
@@ -845,41 +822,25 @@ um die Notiz zu schreiben.]</code></pre>
 <section id="tabellen-mit-code-1" class="slide level2 smaller">
 <h2>Tabellen mit Code</h2>
 <p>Wenn du umfangreichere Tabellen möchtest, probiere das <strong>gt</strong>-Paket und <a href="https://gt.rstudio.com/">alles, was es bietet</a>!</p>
-<div class="cell columns column-output-location">
-<div class="column">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a><span class="fu">library</span>(gt)</span>
-<span id="cb34-2"><a></a></span>
-<span id="cb34-3"><a></a><span class="fu">head</span>(penguins) <span class="sc">|&gt;</span> </span>
-<span id="cb34-4"><a></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
-<span id="cb34-5"><a></a>  <span class="fu">tab_style</span>(</span>
-<span id="cb34-6"><a></a>    <span class="at">style =</span> <span class="fu">list</span>(</span>
-<span id="cb34-7"><a></a>      <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"pink"</span>),</span>
-<span id="cb34-8"><a></a>      <span class="fu">cell_text</span>(<span class="at">style =</span> <span class="st">"italic"</span>)</span>
-<span id="cb34-9"><a></a>      ),</span>
-<span id="cb34-10"><a></a>    <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
-<span id="cb34-11"><a></a>      <span class="at">columns =</span> bill_length_mm,</span>
-<span id="cb34-12"><a></a>      <span class="at">rows =</span> bill_length_mm <span class="sc">&gt;</span> <span class="dv">40</span></span>
-<span id="cb34-13"><a></a>    )</span>
-<span id="cb34-14"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column fragment">
+<div class="cell">
 <div class="cell-output-display">
-<div id="brntsgdcqz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#brntsgdcqz table {
+<div id="abajnrzrio" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#abajnrzrio table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#brntsgdcqz thead, #brntsgdcqz tbody, #brntsgdcqz tfoot, #brntsgdcqz tr, #brntsgdcqz td, #brntsgdcqz th {
+#abajnrzrio thead, #abajnrzrio tbody, #abajnrzrio tfoot, #abajnrzrio tr, #abajnrzrio td, #abajnrzrio th {
   border-style: none;
 }
 
-#brntsgdcqz p {
+#abajnrzrio p {
   margin: 0;
   padding: 0;
 }
 
-#brntsgdcqz .gt_table {
+#abajnrzrio .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -905,12 +866,12 @@ um die Notiz zu schreiben.]</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#brntsgdcqz .gt_caption {
+#abajnrzrio .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#brntsgdcqz .gt_title {
+#abajnrzrio .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -922,7 +883,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-bottom-width: 0;
 }
 
-#brntsgdcqz .gt_subtitle {
+#abajnrzrio .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -934,7 +895,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-top-width: 0;
 }
 
-#brntsgdcqz .gt_heading {
+#abajnrzrio .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -946,13 +907,13 @@ um die Notiz zu schreiben.]</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#brntsgdcqz .gt_bottom_border {
+#abajnrzrio .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#brntsgdcqz .gt_col_headings {
+#abajnrzrio .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -967,7 +928,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#brntsgdcqz .gt_col_heading {
+#abajnrzrio .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -987,7 +948,7 @@ um die Notiz zu schreiben.]</code></pre>
   overflow-x: hidden;
 }
 
-#brntsgdcqz .gt_column_spanner_outer {
+#abajnrzrio .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -999,15 +960,15 @@ um die Notiz zu schreiben.]</code></pre>
   padding-right: 4px;
 }
 
-#brntsgdcqz .gt_column_spanner_outer:first-child {
+#abajnrzrio .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#brntsgdcqz .gt_column_spanner_outer:last-child {
+#abajnrzrio .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#brntsgdcqz .gt_column_spanner {
+#abajnrzrio .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1019,11 +980,11 @@ um die Notiz zu schreiben.]</code></pre>
   width: 100%;
 }
 
-#brntsgdcqz .gt_spanner_row {
+#abajnrzrio .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#brntsgdcqz .gt_group_heading {
+#abajnrzrio .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1049,7 +1010,7 @@ um die Notiz zu schreiben.]</code></pre>
   text-align: left;
 }
 
-#brntsgdcqz .gt_empty_group_heading {
+#abajnrzrio .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1064,15 +1025,15 @@ um die Notiz zu schreiben.]</code></pre>
   vertical-align: middle;
 }
 
-#brntsgdcqz .gt_from_md > :first-child {
+#abajnrzrio .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#brntsgdcqz .gt_from_md > :last-child {
+#abajnrzrio .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#brntsgdcqz .gt_row {
+#abajnrzrio .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1091,7 +1052,7 @@ um die Notiz zu schreiben.]</code></pre>
   overflow-x: hidden;
 }
 
-#brntsgdcqz .gt_stub {
+#abajnrzrio .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1104,7 +1065,7 @@ um die Notiz zu schreiben.]</code></pre>
   padding-right: 5px;
 }
 
-#brntsgdcqz .gt_stub_row_group {
+#abajnrzrio .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1118,15 +1079,15 @@ um die Notiz zu schreiben.]</code></pre>
   vertical-align: top;
 }
 
-#brntsgdcqz .gt_row_group_first td {
+#abajnrzrio .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#brntsgdcqz .gt_row_group_first th {
+#abajnrzrio .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#brntsgdcqz .gt_summary_row {
+#abajnrzrio .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1136,16 +1097,16 @@ um die Notiz zu schreiben.]</code></pre>
   padding-right: 5px;
 }
 
-#brntsgdcqz .gt_first_summary_row {
+#abajnrzrio .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#brntsgdcqz .gt_first_summary_row.thick {
+#abajnrzrio .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#brntsgdcqz .gt_last_summary_row {
+#abajnrzrio .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1155,7 +1116,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#brntsgdcqz .gt_grand_summary_row {
+#abajnrzrio .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1165,7 +1126,7 @@ um die Notiz zu schreiben.]</code></pre>
   padding-right: 5px;
 }
 
-#brntsgdcqz .gt_first_grand_summary_row {
+#abajnrzrio .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1175,7 +1136,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#brntsgdcqz .gt_last_grand_summary_row_top {
+#abajnrzrio .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1185,11 +1146,11 @@ um die Notiz zu schreiben.]</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#brntsgdcqz .gt_striped {
+#abajnrzrio .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#brntsgdcqz .gt_table_body {
+#abajnrzrio .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1198,7 +1159,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#brntsgdcqz .gt_footnotes {
+#abajnrzrio .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1212,7 +1173,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#brntsgdcqz .gt_footnote {
+#abajnrzrio .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1221,7 +1182,7 @@ um die Notiz zu schreiben.]</code></pre>
   padding-right: 5px;
 }
 
-#brntsgdcqz .gt_sourcenotes {
+#abajnrzrio .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1235,7 +1196,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#brntsgdcqz .gt_sourcenote {
+#abajnrzrio .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1243,72 +1204,72 @@ um die Notiz zu schreiben.]</code></pre>
   padding-right: 5px;
 }
 
-#brntsgdcqz .gt_left {
+#abajnrzrio .gt_left {
   text-align: left;
 }
 
-#brntsgdcqz .gt_center {
+#abajnrzrio .gt_center {
   text-align: center;
 }
 
-#brntsgdcqz .gt_right {
+#abajnrzrio .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#brntsgdcqz .gt_font_normal {
+#abajnrzrio .gt_font_normal {
   font-weight: normal;
 }
 
-#brntsgdcqz .gt_font_bold {
+#abajnrzrio .gt_font_bold {
   font-weight: bold;
 }
 
-#brntsgdcqz .gt_font_italic {
+#abajnrzrio .gt_font_italic {
   font-style: italic;
 }
 
-#brntsgdcqz .gt_super {
+#abajnrzrio .gt_super {
   font-size: 65%;
 }
 
-#brntsgdcqz .gt_footnote_marks {
+#abajnrzrio .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#brntsgdcqz .gt_asterisk {
+#abajnrzrio .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#brntsgdcqz .gt_indent_1 {
+#abajnrzrio .gt_indent_1 {
   text-indent: 5px;
 }
 
-#brntsgdcqz .gt_indent_2 {
+#abajnrzrio .gt_indent_2 {
   text-indent: 10px;
 }
 
-#brntsgdcqz .gt_indent_3 {
+#abajnrzrio .gt_indent_3 {
   text-indent: 15px;
 }
 
-#brntsgdcqz .gt_indent_4 {
+#abajnrzrio .gt_indent_4 {
   text-indent: 20px;
 }
 
-#brntsgdcqz .gt_indent_5 {
+#abajnrzrio .gt_indent_5 {
   text-indent: 25px;
 }
 
-#brntsgdcqz .katex-display {
+#abajnrzrio .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#brntsgdcqz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#abajnrzrio div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1392,7 +1353,7 @@ um die Notiz zu schreiben.]</code></pre>
 
 </div>
 </div>
-</div></div>
+</div>
 </section></section>
 <section>
 <section id="abbildungen-diagramme" class="title-slide slide level1 center" data-background-color="#4C326A">
@@ -1477,12 +1438,12 @@ Figure&nbsp;1: Zwei Pinguine
 <section id="abbildungen-mit-code-diagramme" class="slide level2">
 <h2>Abbildungen mit Code (Diagramme)</h2>
 <div class="cell" data-layout-align="right">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb37-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb37-2"><a></a><span class="co">#| fig-width: 4</span></span>
-<span id="cb37-3"><a></a><span class="co">#| fig-align: right</span></span>
-<span id="cb37-4"><a></a></span>
-<span id="cb37-5"><a></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"img/md-09/penguins-quarto-ball.png"</span>)</span>
-<span id="cb37-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb31-2"><a></a><span class="co">#| fig-width: 4</span></span>
+<span id="cb31-3"><a></a><span class="co">#| fig-align: right</span></span>
+<span id="cb31-4"><a></a></span>
+<span id="cb31-5"><a></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"img/md-09/penguins-quarto-ball.png"</span>)</span>
+<span id="cb31-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="img/md-09/penguins-quarto-ball.png" class="quarto-figure quarto-figure-right r-stretch" width="1920"></section>
@@ -1490,7 +1451,6 @@ Figure&nbsp;1: Zwei Pinguine
 <h2>Pfade in R-Code referenzieren</h2>
 <p>Verwende das <strong>here</strong>-Paket, um auf das Projektverzeichnis zu verweisen, da <code>here::here()</code> immer im obersten Verzeichnis einer <code>.Rproj</code> beginnt:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a></a>here<span class="sc">::</span><span class="fu">here</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "/Users/lschoebitz/Documents/gitrepos/gh-org-rstatszh-k011/website"</code></pre>
 </div>
@@ -1499,13 +1459,13 @@ Figure&nbsp;1: Zwei Pinguine
 <section id="abbildungen-mit-code-diagramme-1" class="slide level2">
 <h2>Abbildungen mit Code (Diagramme)</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb40-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb40-2"><a></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> species, <span class="at">fill =</span> species)) <span class="sc">+</span></span>
-<span id="cb40-3"><a></a>  <span class="fu">geom_bar</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb40-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb33-2"><a></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> species, <span class="at">fill =</span> species)) <span class="sc">+</span></span>
+<span id="cb33-3"><a></a>  <span class="fu">geom_bar</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb33-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="md-09-quarto_files/figure-html/unnamed-chunk-9-1.png" width="672" class="r-stretch"></section></section>
+<img data-src="md-09-quarto_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="querverweise-cross-references" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>Querverweise (cross references)</h1>
@@ -1525,10 +1485,41 @@ Figure&nbsp;1: Zwei Pinguine
 </section>
 <section id="abbildung-querverweise" class="slide level2 smaller">
 <h2>Abbildung Querverweise</h2>
-<ul>
-<li>Mit Code</li>
-<li>TODO</li>
-</ul>
+<p>Das Vorhandensein der Beschriftung (<code>Pinguin Schnabel Dimensionen</code>) und der Bezeichnung (<code>#fig-bill-dimensions</code>) machen diese Abbildung referenzierbar:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Markdown:</strong></p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a></a>Siehe @fig-bill-dimensions für die Verteilung der Schnabellänge nach Art.</span>
+<span id="cb34-2"><a></a></span>
+<span id="cb34-3"><a></a><span class="in">```{r}</span></span>
+<span id="cb34-4"><a></a><span class="co">#| label: fig-bill-dimensions</span></span>
+<span id="cb34-5"><a></a><span class="co">#| fig-cap: Pinguin Schnabel Dimensionen</span></span>
+<span id="cb34-6"><a></a></span>
+<span id="cb34-7"><a></a><span class="fu">ggplot</span>(penguins,</span>
+<span id="cb34-8"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm,</span>
+<span id="cb34-9"><a></a>           <span class="at">fill =</span> species)) <span class="sc">+</span></span>
+<span id="cb34-10"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">20</span>) <span class="sc">+</span></span>
+<span id="cb34-11"><a></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Schnabellänge (mm)"</span>,</span>
+<span id="cb34-12"><a></a>       <span class="at">y =</span> <span class="st">"Anzahl"</span>)</span>
+<span id="cb34-13"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<p><strong>Ausgabe:</strong></p>
+<p>Siehe <a href="#/fig-bill-dimensions" class="quarto-xref">Figure&nbsp;2</a> für die Verteilung der Schnabellänge nach Art.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-bill-dimensions" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-bill-dimensions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="md-09-quarto_files/figure-revealjs/fig-bill-dimensions-1.png" width="960">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bill-dimensions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Pinguin Schnabel Dimensionen
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
 </section>
 <section id="abbildung-querverweise-1" class="slide level2 smaller">
 <h2>Abbildung Querverweise</h2>
@@ -1536,18 +1527,18 @@ Figure&nbsp;1: Zwei Pinguine
 <div class="columns">
 <div class="column" style="width:75%;">
 <p><strong>Markdown:</strong></p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb41-1"><a></a>Siehe @fig-blue-penguin für einen süssen blauen Pinguin.</span>
-<span id="cb41-2"><a></a><span class="al">![Blauer Pinguin](img/md-09/blue-penguin.png)</span>{#fig-blue-penguin}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a></a>Siehe @fig-blue-penguin für einen süssen blauen Pinguin.</span>
+<span id="cb35-2"><a></a><span class="al">![Blauer Pinguin](img/md-09/blue-penguin.png)</span>{#fig-blue-penguin}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:25%;">
 <p><strong>Ausgabe:</strong></p>
-<p>Siehe <a href="#/fig-blue-penguin" class="quarto-xref">Figure&nbsp;2</a> für einen süssen blauen Pinguin.</p>
+<p>Siehe <a href="#/fig-blue-penguin" class="quarto-xref">Figure&nbsp;3</a> für einen süssen blauen Pinguin.</p>
 <div id="fig-blue-penguin" class="quarto-float quarto-figure quarto-figure-center" alt="Ein blauer Pinguin">
 <figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-blue-penguin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img data-src="img/md-09/blue-penguin.png" alt="Ein blauer Pinguin" width="150">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-blue-penguin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Blauer Pinguin
+Figure&nbsp;3: Blauer Pinguin
 </figcaption>
 </figure>
 </div>
@@ -1559,21 +1550,19 @@ Figure&nbsp;2: Blauer Pinguin
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Markdown:</strong></p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb42-1"><a></a>Siehe @tbl-penguins für Daten über einige Pinguine.</span>
-<span id="cb42-2"><a></a></span>
-<span id="cb42-3"><a></a><span class="in">```{r}</span></span>
-<span id="cb42-4"><a></a><span class="co">#| label: tbl-pinguine</span></span>
-<span id="cb42-5"><a></a><span class="co">#| tbl-cap: Ein paar Pinguine</span></span>
-<span id="cb42-6"><a></a></span>
-<span id="cb42-7"><a></a><span class="fu">head</span>(penguins) <span class="sc">|&gt;</span> </span>
-<span id="cb42-8"><a></a>  <span class="fu">gt</span>()</span>
-<span id="cb42-9"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb36-1"><a></a>Siehe @tbl-penguins für Daten über einige Pinguine.</span>
+<span id="cb36-2"><a></a></span>
+<span id="cb36-3"><a></a><span class="in">```{r}</span></span>
+<span id="cb36-4"><a></a><span class="co">#| label: tbl-pinguine</span></span>
+<span id="cb36-5"><a></a><span class="co">#| tbl-cap: Ein paar Pinguine</span></span>
+<span id="cb36-6"><a></a></span>
+<span id="cb36-7"><a></a><span class="fu">head</span>(penguins) <span class="sc">|&gt;</span> </span>
+<span id="cb36-8"><a></a>  <span class="fu">gt</span>()</span>
+<span id="cb36-9"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <p><strong>Ausgabe:</strong></p>
 <p>Siehe <a href="#/tbl-penguins" class="quarto-xref">Table&nbsp;1</a> für Daten über einige Pinguine.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a></a><span class="fu">head</span>(penguins) <span class="sc">|&gt;</span> </span>
-<span id="cb43-2"><a></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="tbl-penguins" class="cell quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-penguins-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1581,23 +1570,23 @@ Table&nbsp;1: Ein paar Pinguine
 </figcaption>
 <div aria-describedby="tbl-penguins-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="dhtepynkog" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#dhtepynkog table {
+<div id="bkqsbvnuex" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#bkqsbvnuex table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#dhtepynkog thead, #dhtepynkog tbody, #dhtepynkog tfoot, #dhtepynkog tr, #dhtepynkog td, #dhtepynkog th {
+#bkqsbvnuex thead, #bkqsbvnuex tbody, #bkqsbvnuex tfoot, #bkqsbvnuex tr, #bkqsbvnuex td, #bkqsbvnuex th {
   border-style: none;
 }
 
-#dhtepynkog p {
+#bkqsbvnuex p {
   margin: 0;
   padding: 0;
 }
 
-#dhtepynkog .gt_table {
+#bkqsbvnuex .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1623,12 +1612,12 @@ Table&nbsp;1: Ein paar Pinguine
   border-left-color: #D3D3D3;
 }
 
-#dhtepynkog .gt_caption {
+#bkqsbvnuex .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#dhtepynkog .gt_title {
+#bkqsbvnuex .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1640,7 +1629,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-bottom-width: 0;
 }
 
-#dhtepynkog .gt_subtitle {
+#bkqsbvnuex .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1652,7 +1641,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-top-width: 0;
 }
 
-#dhtepynkog .gt_heading {
+#bkqsbvnuex .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1664,13 +1653,13 @@ Table&nbsp;1: Ein paar Pinguine
   border-right-color: #D3D3D3;
 }
 
-#dhtepynkog .gt_bottom_border {
+#bkqsbvnuex .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#dhtepynkog .gt_col_headings {
+#bkqsbvnuex .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1685,7 +1674,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-right-color: #D3D3D3;
 }
 
-#dhtepynkog .gt_col_heading {
+#bkqsbvnuex .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1705,7 +1694,7 @@ Table&nbsp;1: Ein paar Pinguine
   overflow-x: hidden;
 }
 
-#dhtepynkog .gt_column_spanner_outer {
+#bkqsbvnuex .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1717,15 +1706,15 @@ Table&nbsp;1: Ein paar Pinguine
   padding-right: 4px;
 }
 
-#dhtepynkog .gt_column_spanner_outer:first-child {
+#bkqsbvnuex .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#dhtepynkog .gt_column_spanner_outer:last-child {
+#bkqsbvnuex .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#dhtepynkog .gt_column_spanner {
+#bkqsbvnuex .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1737,11 +1726,11 @@ Table&nbsp;1: Ein paar Pinguine
   width: 100%;
 }
 
-#dhtepynkog .gt_spanner_row {
+#bkqsbvnuex .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#dhtepynkog .gt_group_heading {
+#bkqsbvnuex .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1767,7 +1756,7 @@ Table&nbsp;1: Ein paar Pinguine
   text-align: left;
 }
 
-#dhtepynkog .gt_empty_group_heading {
+#bkqsbvnuex .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1782,15 +1771,15 @@ Table&nbsp;1: Ein paar Pinguine
   vertical-align: middle;
 }
 
-#dhtepynkog .gt_from_md > :first-child {
+#bkqsbvnuex .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#dhtepynkog .gt_from_md > :last-child {
+#bkqsbvnuex .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#dhtepynkog .gt_row {
+#bkqsbvnuex .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1809,7 +1798,7 @@ Table&nbsp;1: Ein paar Pinguine
   overflow-x: hidden;
 }
 
-#dhtepynkog .gt_stub {
+#bkqsbvnuex .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1822,7 +1811,7 @@ Table&nbsp;1: Ein paar Pinguine
   padding-right: 5px;
 }
 
-#dhtepynkog .gt_stub_row_group {
+#bkqsbvnuex .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1836,15 +1825,15 @@ Table&nbsp;1: Ein paar Pinguine
   vertical-align: top;
 }
 
-#dhtepynkog .gt_row_group_first td {
+#bkqsbvnuex .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#dhtepynkog .gt_row_group_first th {
+#bkqsbvnuex .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#dhtepynkog .gt_summary_row {
+#bkqsbvnuex .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1854,16 +1843,16 @@ Table&nbsp;1: Ein paar Pinguine
   padding-right: 5px;
 }
 
-#dhtepynkog .gt_first_summary_row {
+#bkqsbvnuex .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#dhtepynkog .gt_first_summary_row.thick {
+#bkqsbvnuex .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#dhtepynkog .gt_last_summary_row {
+#bkqsbvnuex .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1873,7 +1862,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-bottom-color: #D3D3D3;
 }
 
-#dhtepynkog .gt_grand_summary_row {
+#bkqsbvnuex .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1883,7 +1872,7 @@ Table&nbsp;1: Ein paar Pinguine
   padding-right: 5px;
 }
 
-#dhtepynkog .gt_first_grand_summary_row {
+#bkqsbvnuex .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1893,7 +1882,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-top-color: #D3D3D3;
 }
 
-#dhtepynkog .gt_last_grand_summary_row_top {
+#bkqsbvnuex .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1903,11 +1892,11 @@ Table&nbsp;1: Ein paar Pinguine
   border-bottom-color: #D3D3D3;
 }
 
-#dhtepynkog .gt_striped {
+#bkqsbvnuex .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#dhtepynkog .gt_table_body {
+#bkqsbvnuex .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1916,7 +1905,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-bottom-color: #D3D3D3;
 }
 
-#dhtepynkog .gt_footnotes {
+#bkqsbvnuex .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1930,7 +1919,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-right-color: #D3D3D3;
 }
 
-#dhtepynkog .gt_footnote {
+#bkqsbvnuex .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1939,7 +1928,7 @@ Table&nbsp;1: Ein paar Pinguine
   padding-right: 5px;
 }
 
-#dhtepynkog .gt_sourcenotes {
+#bkqsbvnuex .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1953,7 +1942,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-right-color: #D3D3D3;
 }
 
-#dhtepynkog .gt_sourcenote {
+#bkqsbvnuex .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1961,72 +1950,72 @@ Table&nbsp;1: Ein paar Pinguine
   padding-right: 5px;
 }
 
-#dhtepynkog .gt_left {
+#bkqsbvnuex .gt_left {
   text-align: left;
 }
 
-#dhtepynkog .gt_center {
+#bkqsbvnuex .gt_center {
   text-align: center;
 }
 
-#dhtepynkog .gt_right {
+#bkqsbvnuex .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#dhtepynkog .gt_font_normal {
+#bkqsbvnuex .gt_font_normal {
   font-weight: normal;
 }
 
-#dhtepynkog .gt_font_bold {
+#bkqsbvnuex .gt_font_bold {
   font-weight: bold;
 }
 
-#dhtepynkog .gt_font_italic {
+#bkqsbvnuex .gt_font_italic {
   font-style: italic;
 }
 
-#dhtepynkog .gt_super {
+#bkqsbvnuex .gt_super {
   font-size: 65%;
 }
 
-#dhtepynkog .gt_footnote_marks {
+#bkqsbvnuex .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#dhtepynkog .gt_asterisk {
+#bkqsbvnuex .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#dhtepynkog .gt_indent_1 {
+#bkqsbvnuex .gt_indent_1 {
   text-indent: 5px;
 }
 
-#dhtepynkog .gt_indent_2 {
+#bkqsbvnuex .gt_indent_2 {
   text-indent: 10px;
 }
 
-#dhtepynkog .gt_indent_3 {
+#bkqsbvnuex .gt_indent_3 {
   text-indent: 15px;
 }
 
-#dhtepynkog .gt_indent_4 {
+#bkqsbvnuex .gt_indent_4 {
   text-indent: 20px;
 }
 
-#dhtepynkog .gt_indent_5 {
+#bkqsbvnuex .gt_indent_5 {
   text-indent: 25px;
 }
 
-#dhtepynkog .katex-display {
+#bkqsbvnuex .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#dhtepynkog div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#bkqsbvnuex div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2146,9 +2135,8 @@ Table&nbsp;1: Ein paar Pinguine
 </ol>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a></a><span class="fu">countdown</span>(<span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_0446db22" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_00207b1b" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -2158,18 +2146,17 @@ Table&nbsp;1: Ein paar Pinguine
 <section id="gehts-auch-auf-deutsch" class="slide level2">
 <h2>Geht’s auch auf Deutsch?</h2>
 <p>Ja!</p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb45-1"><a></a><span class="pp">---</span></span>
-<span id="cb45-2"><a></a><span class="fu">lang</span><span class="kw">:</span><span class="at"> de</span></span>
-<span id="cb45-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb37-1"><a></a><span class="pp">---</span></span>
+<span id="cb37-2"><a></a><span class="fu">lang</span><span class="kw">:</span><span class="at"> de</span></span>
+<span id="cb37-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="pause-machen-1" class="slide level2">
 <h2>Pause machen</h2>
 <p><span class="highlight-yellow">Bitte steh auf und beweg dich.</span></p>
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_b7082670" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_6b7bb2fc" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -2206,9 +2193,8 @@ Table&nbsp;1: Ein paar Pinguine
 </ol>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a></a><span class="fu">countdown</span>(<span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_df5f996c" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_f07e4988" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">30</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -2226,7 +2212,7 @@ Table&nbsp;1: Ein paar Pinguine
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_dc28724f" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_ae16dc87" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -2262,9 +2248,8 @@ Table&nbsp;1: Ein paar Pinguine
 <p>Kann ich noch etwas zum heutigen Modul erklären?</p>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a></a><span class="fu">countdown</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_4291b87a" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_2b91c9fa" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -2519,6 +2504,44 @@ Table&nbsp;1: Ein paar Pinguine
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

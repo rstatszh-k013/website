@@ -691,8 +691,50 @@ ggplot(penguins, aes(x = species, fill = species)) +
     
 ## Abbildung Querverweise {.smaller}
 
-- Mit Code
-- TODO
+Das Vorhandensein der Beschriftung (`Pinguin Schnabel Dimensionen`) und der Bezeichnung (`#fig-bill-dimensions`) machen diese Abbildung referenzierbar:
+
+::: columns
+::: {.column width="50%"}
+**Markdown:**
+
+````markdown
+Siehe @fig-bill-dimensions für die Verteilung der Schnabellänge nach Art.
+
+```{{r}}
+#| label: fig-bill-dimensions
+#| fig-cap: Pinguin Schnabel Dimensionen
+
+ggplot(penguins,
+       aes(x = bill_length_mm,
+           fill = species)) +
+  geom_histogram(bins = 20) +
+  labs(x = "Schnabellänge (mm)",
+       y = "Anzahl")
+```
+
+````
+
+:::
+
+::: {.column width="50%"}
+**Ausgabe:**
+
+Siehe @fig-bill-dimensions für die Verteilung der Schnabellänge nach Art.
+
+```{r}
+#| label: fig-bill-dimensions
+#| fig-cap: Pinguin Schnabel Dimensionen
+#| echo: false
+
+ggplot(penguins,
+       aes(x = bill_length_mm,
+           fill = species)) +
+  geom_histogram(bins = 20) +
+  labs(x = "Schnabellänge (mm)",
+       y = "Anzahl")
+```
+:::
+:::
 
 ## Abbildung Querverweise {.smaller}
 
