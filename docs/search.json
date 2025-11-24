@@ -1827,7 +1827,7 @@
     "href": "abschlussprojekt/index.html#abgabedatum",
     "title": "Abschlussprojekt",
     "section": "Abgabedatum",
-    "text": "Abgabedatum\nDer Termin für die Einreichung des Berichts ist Dienstag, 13. Mai 2025.",
+    "text": "Abgabedatum\nDer Termin für die Einreichung des Berichts ist Donnerstag, 11. Dezember 2025.",
     "crumbs": [
       "Abschlussprojekt"
     ]
@@ -2049,7 +2049,7 @@
     "href": "folien/md-10-funktionen.html#lernziele-für-diese-woche",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nRows: 36 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): titel, lernziele\ndbl  (1): modul\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nDie Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\nDie Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\nDie Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\nDie Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\nDie Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen."
   },
   {
     "objectID": "folien/md-10-funktionen.html#lernende-kanton-zürich",
@@ -2119,7 +2119,7 @@
     "href": "folien/md-10-funktionen.html#ihr-seid-dran-01-funktionen.qmd",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Ihr seid dran: 01-funktionen.qmd",
-    "text": "Ihr seid dran: 01-funktionen.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-10-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-funktionen.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\ncountdown(15)\n\n\n−+\n15:00"
+    "text": "Ihr seid dran: 01-funktionen.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-10-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-funktionen.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-10-funktionen.html#parameter-in-quarto-dokumenten",
@@ -2161,7 +2161,7 @@
     "href": "folien/md-10-funktionen.html#pause-machen",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-10-funktionen.html#md-10-paramater-benutzername",
@@ -2175,7 +2175,7 @@
     "href": "folien/md-10-funktionen.html#pause-machen-1",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\ncountdown(minutes = 5)\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+    "text": "Pause machen\nBitte steh auf und beweg dich.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-10-funktionen.html#beispiel---vorrausetzungen",
@@ -2217,7 +2217,7 @@
     "href": "folien/md-10-funktionen.html#abschlussveranstaltung",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Abschlussveranstaltung",
-    "text": "Abschlussveranstaltung\n\n2024-12-17\n15:00 bis 15:30 / 16:00 Uhr\nMS Teams"
+    "text": "Abschlussveranstaltung\n\n2025-12-15\n13:00 bis 15:00\nMS Teams"
   },
   {
     "objectID": "folien/md-10-funktionen.html#raus-aus-posit-cloud",
@@ -2266,7 +2266,7 @@
     "href": "folien/md-10-funktionen.html#wie-es-für-mich-weiter-geht",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Wie es für mich weiter geht",
-    "text": "Wie es für mich weiter geht\n\nBeratung: Projektbezogener Support, Code Review, Coaching\nrstatsZH Kursleitung: Info über den 10. Kurs verbreiten. Start: 25.02.2025\nKurse zu vertiefenden Themen: Entwicklung von 3-Stunden Workshops"
+    "text": "Wie es für mich weiter geht\n\nBeratung: Projektbezogener Support, Code Review, Coaching\nrstatsZH Kursleitung: Info über den 12. Kurs verbreiten. Start: 12.05.2026\nKurse zu vertiefenden Themen: Entwicklung von 3-Stunden Workshops"
   },
   {
     "objectID": "folien/md-10-funktionen.html#zeitpuffer-modul-10",

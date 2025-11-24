@@ -249,6 +249,7 @@ lernende_ktzh |>
 :::
 
 ```{r}
+#| echo: false
 countdown(15)
 ```
 
@@ -308,6 +309,7 @@ lernende_ktzh |>
 ![](img/md-04/pixel-art-tree.png){width="50%"}
 
 ```{r}
+#| echo: false
 countdown(minutes = 10)
 ```
 
@@ -326,6 +328,7 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 ![](img/md-04/pixel-art-tree.png){width="50%"}
 
 ```{r}
+#| echo: false
 countdown(minutes = 5)
 ```
 
@@ -381,8 +384,8 @@ quarto publish quarto-pub
 
 ## Abschlussveranstaltung
 
-- 2024-12-17
-- 15:00 bis 15:30 / 16:00 Uhr
+- 2025-12-15
+- 13:00 bis 15:00
 - MS Teams
 
 ## Raus aus Posit Cloud
@@ -462,7 +465,7 @@ countdown(minutes = 5)
 ## Wie es für mich weiter geht
 
 1. **Beratung:** Projektbezogener Support, Code Review, Coaching
-2. **rstatsZH Kursleitung:** Info über den 10. Kurs verbreiten. Start: 25.02.2025
+2. **rstatsZH Kursleitung:** Info über den 12. Kurs verbreiten. Start: 12.05.2026
 3. **Kurse zu vertiefenden Themen:** Entwicklung von 3-Stunden Workshops 
 
 ## Zeitpuffer: Modul 10 {.smaller}

@@ -212,37 +212,8 @@ Lars Schöbitz
 
   <p class="date">Dec 2, 2025</p>
 </section>
-<section class="slide level2">
-
-<div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 2972 Columns: 10
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr  (7): Kanton, Stufe, Schultyp, Geschlecht, Staatsangehoerigkeit, Traeger...
-dbl  (2): Jahr, Anzahl
-date (1): Stand
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-</div>
-</section>
 <section id="lernziele-für-diese-woche" class="slide level2">
 <h2>Lernziele (für diese Woche)</h2>
-<div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 36 Columns: 4
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr  (2): titel, lernziele
-dbl  (1): modul
-dttm (1): datum
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-</div>
 <div class="cell">
 <ol type="1">
 <li>Die Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko</li>
@@ -259,27 +230,27 @@ dttm (1): datum
 <section id="lernende-kanton-zürich" class="slide level2">
 <h2>Lernende Kanton Zürich</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
-<span id="cb3-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
-<span id="cb3-3"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
+<span id="cb1-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
+<span id="cb1-3"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="eojxyadhpn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#eojxyadhpn table {
+<div id="acfrzdrziw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#acfrzdrziw table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#eojxyadhpn thead, #eojxyadhpn tbody, #eojxyadhpn tfoot, #eojxyadhpn tr, #eojxyadhpn td, #eojxyadhpn th {
+#acfrzdrziw thead, #acfrzdrziw tbody, #acfrzdrziw tfoot, #acfrzdrziw tr, #acfrzdrziw td, #acfrzdrziw th {
   border-style: none;
 }
 
-#eojxyadhpn p {
+#acfrzdrziw p {
   margin: 0;
   padding: 0;
 }
 
-#eojxyadhpn .gt_table {
+#acfrzdrziw .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -305,12 +276,12 @@ dttm (1): datum
   border-left-color: #D3D3D3;
 }
 
-#eojxyadhpn .gt_caption {
+#acfrzdrziw .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#eojxyadhpn .gt_title {
+#acfrzdrziw .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -322,7 +293,7 @@ dttm (1): datum
   border-bottom-width: 0;
 }
 
-#eojxyadhpn .gt_subtitle {
+#acfrzdrziw .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -334,7 +305,7 @@ dttm (1): datum
   border-top-width: 0;
 }
 
-#eojxyadhpn .gt_heading {
+#acfrzdrziw .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -346,13 +317,13 @@ dttm (1): datum
   border-right-color: #D3D3D3;
 }
 
-#eojxyadhpn .gt_bottom_border {
+#acfrzdrziw .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#eojxyadhpn .gt_col_headings {
+#acfrzdrziw .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -367,7 +338,7 @@ dttm (1): datum
   border-right-color: #D3D3D3;
 }
 
-#eojxyadhpn .gt_col_heading {
+#acfrzdrziw .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -387,7 +358,7 @@ dttm (1): datum
   overflow-x: hidden;
 }
 
-#eojxyadhpn .gt_column_spanner_outer {
+#acfrzdrziw .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -399,15 +370,15 @@ dttm (1): datum
   padding-right: 4px;
 }
 
-#eojxyadhpn .gt_column_spanner_outer:first-child {
+#acfrzdrziw .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#eojxyadhpn .gt_column_spanner_outer:last-child {
+#acfrzdrziw .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#eojxyadhpn .gt_column_spanner {
+#acfrzdrziw .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -419,11 +390,11 @@ dttm (1): datum
   width: 100%;
 }
 
-#eojxyadhpn .gt_spanner_row {
+#acfrzdrziw .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#eojxyadhpn .gt_group_heading {
+#acfrzdrziw .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -449,7 +420,7 @@ dttm (1): datum
   text-align: left;
 }
 
-#eojxyadhpn .gt_empty_group_heading {
+#acfrzdrziw .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -464,15 +435,15 @@ dttm (1): datum
   vertical-align: middle;
 }
 
-#eojxyadhpn .gt_from_md > :first-child {
+#acfrzdrziw .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#eojxyadhpn .gt_from_md > :last-child {
+#acfrzdrziw .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#eojxyadhpn .gt_row {
+#acfrzdrziw .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -491,7 +462,7 @@ dttm (1): datum
   overflow-x: hidden;
 }
 
-#eojxyadhpn .gt_stub {
+#acfrzdrziw .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -504,7 +475,7 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#eojxyadhpn .gt_stub_row_group {
+#acfrzdrziw .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -518,15 +489,15 @@ dttm (1): datum
   vertical-align: top;
 }
 
-#eojxyadhpn .gt_row_group_first td {
+#acfrzdrziw .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#eojxyadhpn .gt_row_group_first th {
+#acfrzdrziw .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#eojxyadhpn .gt_summary_row {
+#acfrzdrziw .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -536,16 +507,16 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#eojxyadhpn .gt_first_summary_row {
+#acfrzdrziw .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#eojxyadhpn .gt_first_summary_row.thick {
+#acfrzdrziw .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#eojxyadhpn .gt_last_summary_row {
+#acfrzdrziw .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -555,7 +526,7 @@ dttm (1): datum
   border-bottom-color: #D3D3D3;
 }
 
-#eojxyadhpn .gt_grand_summary_row {
+#acfrzdrziw .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -565,7 +536,7 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#eojxyadhpn .gt_first_grand_summary_row {
+#acfrzdrziw .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -575,7 +546,7 @@ dttm (1): datum
   border-top-color: #D3D3D3;
 }
 
-#eojxyadhpn .gt_last_grand_summary_row_top {
+#acfrzdrziw .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -585,11 +556,11 @@ dttm (1): datum
   border-bottom-color: #D3D3D3;
 }
 
-#eojxyadhpn .gt_striped {
+#acfrzdrziw .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#eojxyadhpn .gt_table_body {
+#acfrzdrziw .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -598,7 +569,7 @@ dttm (1): datum
   border-bottom-color: #D3D3D3;
 }
 
-#eojxyadhpn .gt_footnotes {
+#acfrzdrziw .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -612,7 +583,7 @@ dttm (1): datum
   border-right-color: #D3D3D3;
 }
 
-#eojxyadhpn .gt_footnote {
+#acfrzdrziw .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -621,7 +592,7 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#eojxyadhpn .gt_sourcenotes {
+#acfrzdrziw .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -635,7 +606,7 @@ dttm (1): datum
   border-right-color: #D3D3D3;
 }
 
-#eojxyadhpn .gt_sourcenote {
+#acfrzdrziw .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -643,72 +614,72 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#eojxyadhpn .gt_left {
+#acfrzdrziw .gt_left {
   text-align: left;
 }
 
-#eojxyadhpn .gt_center {
+#acfrzdrziw .gt_center {
   text-align: center;
 }
 
-#eojxyadhpn .gt_right {
+#acfrzdrziw .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#eojxyadhpn .gt_font_normal {
+#acfrzdrziw .gt_font_normal {
   font-weight: normal;
 }
 
-#eojxyadhpn .gt_font_bold {
+#acfrzdrziw .gt_font_bold {
   font-weight: bold;
 }
 
-#eojxyadhpn .gt_font_italic {
+#acfrzdrziw .gt_font_italic {
   font-style: italic;
 }
 
-#eojxyadhpn .gt_super {
+#acfrzdrziw .gt_super {
   font-size: 65%;
 }
 
-#eojxyadhpn .gt_footnote_marks {
+#acfrzdrziw .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#eojxyadhpn .gt_asterisk {
+#acfrzdrziw .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#eojxyadhpn .gt_indent_1 {
+#acfrzdrziw .gt_indent_1 {
   text-indent: 5px;
 }
 
-#eojxyadhpn .gt_indent_2 {
+#acfrzdrziw .gt_indent_2 {
   text-indent: 10px;
 }
 
-#eojxyadhpn .gt_indent_3 {
+#acfrzdrziw .gt_indent_3 {
   text-indent: 15px;
 }
 
-#eojxyadhpn .gt_indent_4 {
+#acfrzdrziw .gt_indent_4 {
   text-indent: 20px;
 }
 
-#eojxyadhpn .gt_indent_5 {
+#acfrzdrziw .gt_indent_5 {
   text-indent: 25px;
 }
 
-#eojxyadhpn .katex-display {
+#acfrzdrziw .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#eojxyadhpn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#acfrzdrziw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2059,32 +2030,32 @@ dttm (1): datum
 <section id="prozentrechnung" class="slide level2">
 <h2>Prozentrechnung</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4" data-code-line-numbers="7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
-<span id="cb4-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
-<span id="cb4-3"><a></a>    <span class="fu">group_by</span>(stufe) <span class="sc">|&gt;</span> </span>
-<span id="cb4-4"><a></a>    <span class="fu">summarise</span>(</span>
-<span id="cb4-5"><a></a>        <span class="at">total =</span> <span class="fu">sum</span>(anzahl)</span>
-<span id="cb4-6"><a></a>    ) <span class="sc">|&gt;</span> </span>
-<span id="cb4-7"><a></a>    <span class="fu">mutate</span>(<span class="at">prozent =</span> total <span class="sc">/</span> <span class="fu">sum</span>(total) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb4-8"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2" data-code-line-numbers="7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
+<span id="cb2-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
+<span id="cb2-3"><a></a>    <span class="fu">group_by</span>(stufe) <span class="sc">|&gt;</span> </span>
+<span id="cb2-4"><a></a>    <span class="fu">summarise</span>(</span>
+<span id="cb2-5"><a></a>        <span class="at">total =</span> <span class="fu">sum</span>(anzahl)</span>
+<span id="cb2-6"><a></a>    ) <span class="sc">|&gt;</span> </span>
+<span id="cb2-7"><a></a>    <span class="fu">mutate</span>(<span class="at">prozent =</span> total <span class="sc">/</span> <span class="fu">sum</span>(total) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb2-8"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="eefgszvznc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#eefgszvznc table {
+<div id="zxgsvijevd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zxgsvijevd table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#eefgszvznc thead, #eefgszvznc tbody, #eefgszvznc tfoot, #eefgszvznc tr, #eefgszvznc td, #eefgszvznc th {
+#zxgsvijevd thead, #zxgsvijevd tbody, #zxgsvijevd tfoot, #zxgsvijevd tr, #zxgsvijevd td, #zxgsvijevd th {
   border-style: none;
 }
 
-#eefgszvznc p {
+#zxgsvijevd p {
   margin: 0;
   padding: 0;
 }
 
-#eefgszvznc .gt_table {
+#zxgsvijevd .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2110,12 +2081,12 @@ dttm (1): datum
   border-left-color: #D3D3D3;
 }
 
-#eefgszvznc .gt_caption {
+#zxgsvijevd .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#eefgszvznc .gt_title {
+#zxgsvijevd .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2127,7 +2098,7 @@ dttm (1): datum
   border-bottom-width: 0;
 }
 
-#eefgszvznc .gt_subtitle {
+#zxgsvijevd .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2139,7 +2110,7 @@ dttm (1): datum
   border-top-width: 0;
 }
 
-#eefgszvznc .gt_heading {
+#zxgsvijevd .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2151,13 +2122,13 @@ dttm (1): datum
   border-right-color: #D3D3D3;
 }
 
-#eefgszvznc .gt_bottom_border {
+#zxgsvijevd .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#eefgszvznc .gt_col_headings {
+#zxgsvijevd .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2172,7 +2143,7 @@ dttm (1): datum
   border-right-color: #D3D3D3;
 }
 
-#eefgszvznc .gt_col_heading {
+#zxgsvijevd .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2192,7 +2163,7 @@ dttm (1): datum
   overflow-x: hidden;
 }
 
-#eefgszvznc .gt_column_spanner_outer {
+#zxgsvijevd .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2204,15 +2175,15 @@ dttm (1): datum
   padding-right: 4px;
 }
 
-#eefgszvznc .gt_column_spanner_outer:first-child {
+#zxgsvijevd .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#eefgszvznc .gt_column_spanner_outer:last-child {
+#zxgsvijevd .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#eefgszvznc .gt_column_spanner {
+#zxgsvijevd .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2224,11 +2195,11 @@ dttm (1): datum
   width: 100%;
 }
 
-#eefgszvznc .gt_spanner_row {
+#zxgsvijevd .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#eefgszvznc .gt_group_heading {
+#zxgsvijevd .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2254,7 +2225,7 @@ dttm (1): datum
   text-align: left;
 }
 
-#eefgszvznc .gt_empty_group_heading {
+#zxgsvijevd .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2269,15 +2240,15 @@ dttm (1): datum
   vertical-align: middle;
 }
 
-#eefgszvznc .gt_from_md > :first-child {
+#zxgsvijevd .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#eefgszvznc .gt_from_md > :last-child {
+#zxgsvijevd .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#eefgszvznc .gt_row {
+#zxgsvijevd .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2296,7 +2267,7 @@ dttm (1): datum
   overflow-x: hidden;
 }
 
-#eefgszvznc .gt_stub {
+#zxgsvijevd .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2309,7 +2280,7 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#eefgszvznc .gt_stub_row_group {
+#zxgsvijevd .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2323,15 +2294,15 @@ dttm (1): datum
   vertical-align: top;
 }
 
-#eefgszvznc .gt_row_group_first td {
+#zxgsvijevd .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#eefgszvznc .gt_row_group_first th {
+#zxgsvijevd .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#eefgszvznc .gt_summary_row {
+#zxgsvijevd .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2341,16 +2312,16 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#eefgszvznc .gt_first_summary_row {
+#zxgsvijevd .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#eefgszvznc .gt_first_summary_row.thick {
+#zxgsvijevd .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#eefgszvznc .gt_last_summary_row {
+#zxgsvijevd .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2360,7 +2331,7 @@ dttm (1): datum
   border-bottom-color: #D3D3D3;
 }
 
-#eefgszvznc .gt_grand_summary_row {
+#zxgsvijevd .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2370,7 +2341,7 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#eefgszvznc .gt_first_grand_summary_row {
+#zxgsvijevd .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2380,7 +2351,7 @@ dttm (1): datum
   border-top-color: #D3D3D3;
 }
 
-#eefgszvznc .gt_last_grand_summary_row_top {
+#zxgsvijevd .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2390,11 +2361,11 @@ dttm (1): datum
   border-bottom-color: #D3D3D3;
 }
 
-#eefgszvznc .gt_striped {
+#zxgsvijevd .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#eefgszvznc .gt_table_body {
+#zxgsvijevd .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2403,7 +2374,7 @@ dttm (1): datum
   border-bottom-color: #D3D3D3;
 }
 
-#eefgszvznc .gt_footnotes {
+#zxgsvijevd .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2417,7 +2388,7 @@ dttm (1): datum
   border-right-color: #D3D3D3;
 }
 
-#eefgszvznc .gt_footnote {
+#zxgsvijevd .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2426,7 +2397,7 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#eefgszvznc .gt_sourcenotes {
+#zxgsvijevd .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2440,7 +2411,7 @@ dttm (1): datum
   border-right-color: #D3D3D3;
 }
 
-#eefgszvznc .gt_sourcenote {
+#zxgsvijevd .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2448,72 +2419,72 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#eefgszvznc .gt_left {
+#zxgsvijevd .gt_left {
   text-align: left;
 }
 
-#eefgszvznc .gt_center {
+#zxgsvijevd .gt_center {
   text-align: center;
 }
 
-#eefgszvznc .gt_right {
+#zxgsvijevd .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#eefgszvznc .gt_font_normal {
+#zxgsvijevd .gt_font_normal {
   font-weight: normal;
 }
 
-#eefgszvznc .gt_font_bold {
+#zxgsvijevd .gt_font_bold {
   font-weight: bold;
 }
 
-#eefgszvznc .gt_font_italic {
+#zxgsvijevd .gt_font_italic {
   font-style: italic;
 }
 
-#eefgszvznc .gt_super {
+#zxgsvijevd .gt_super {
   font-size: 65%;
 }
 
-#eefgszvznc .gt_footnote_marks {
+#zxgsvijevd .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#eefgszvznc .gt_asterisk {
+#zxgsvijevd .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#eefgszvznc .gt_indent_1 {
+#zxgsvijevd .gt_indent_1 {
   text-indent: 5px;
 }
 
-#eefgszvznc .gt_indent_2 {
+#zxgsvijevd .gt_indent_2 {
   text-indent: 10px;
 }
 
-#eefgszvznc .gt_indent_3 {
+#zxgsvijevd .gt_indent_3 {
   text-indent: 15px;
 }
 
-#eefgszvznc .gt_indent_4 {
+#zxgsvijevd .gt_indent_4 {
   text-indent: 20px;
 }
 
-#eefgszvznc .gt_indent_5 {
+#zxgsvijevd .gt_indent_5 {
   text-indent: 25px;
 }
 
-#eefgszvznc .katex-display {
+#zxgsvijevd .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#eefgszvznc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#zxgsvijevd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2563,9 +2534,9 @@ dttm (1): datum
 <h2>Prozentrechnung: Formel</h2>
 <p>Für die Prozentrechnung, gilt immer folgende Formel:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>total <span class="sc">/</span> <span class="fu">sum</span>(total) <span class="sc">*</span> <span class="dv">100</span></span>
-<span id="cb5-2"><a></a></span>
-<span id="cb5-3"><a></a>x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>total <span class="sc">/</span> <span class="fu">sum</span>(total) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb3-2"><a></a></span>
+<span id="cb3-3"><a></a>x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="prozentrechnung-funktion" class="slide level2 smaller">
@@ -2577,15 +2548,15 @@ dttm (1): datum
 <li><p>Den <strong>Körper</strong>: Der Körper <span class="highlight-yellow"><code>x / sum(x) * 100</code></span> ist der Code, der in allen Aufrufen wiederholt wird.</p></li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb6-2"><a></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span>
-<span id="cb6-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb4-2"><a></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb4-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="prozentrechnung-funktion-anwenden" class="slide level2">
 <h2>Prozentrechnung: Funktion anwenden</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 100</code></pre>
 </div>
@@ -2593,7 +2564,7 @@ dttm (1): datum
 <p><br></p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 11.53846 19.23077 69.23077</code></pre>
 </div>
@@ -2602,7 +2573,7 @@ dttm (1): datum
 <p><br></p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] NA NA NA NA</code></pre>
 </div>
@@ -2615,13 +2586,13 @@ dttm (1): datum
 <li>die Funktion <span class="highlight-yellow"><code>berechne_prozent</code></span> funktioniert nicht, wenn es fehlende Werte gibt.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb13-2"><a></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span>
-<span id="cb13-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb11-2"><a></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb11-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] NA NA NA NA</code></pre>
 </div>
@@ -2633,14 +2604,14 @@ dttm (1): datum
 <li><span class="highlight-yellow"><code>na.rm = TRUE</code></span> entfernt fehlende Werte von der Berechnung (ignoriert die Werte)</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb16-2"><a></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="dv">100</span></span>
-<span id="cb16-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb14-2"><a></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb14-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 11.53846 19.23077 69.23077       NA</code></pre>
 </div>
@@ -2653,14 +2624,14 @@ dttm (1): datum
 <li><span class="highlight-yellow"><code>round</code></span> rundet die Ergebnisse auf eine Dezimalstelle</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb19-2"><a></a>    <span class="fu">round</span>(x <span class="sc">/</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>)</span>
-<span id="cb19-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb17-2"><a></a>    <span class="fu">round</span>(x <span class="sc">/</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>)</span>
+<span id="cb17-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 11.5 19.2 69.2   NA</code></pre>
 </div>
@@ -2670,32 +2641,32 @@ dttm (1): datum
 <section id="prozentrechnung-funktion-anwenden-2" class="slide level2">
 <h2>Prozentrechnung: Funktion anwenden</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22" data-code-line-numbers="7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
-<span id="cb22-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
-<span id="cb22-3"><a></a>    <span class="fu">group_by</span>(stufe) <span class="sc">|&gt;</span> </span>
-<span id="cb22-4"><a></a>    <span class="fu">summarise</span>(</span>
-<span id="cb22-5"><a></a>        <span class="at">total =</span> <span class="fu">sum</span>(anzahl)</span>
-<span id="cb22-6"><a></a>    ) <span class="sc">|&gt;</span> </span>
-<span id="cb22-7"><a></a>    <span class="fu">mutate</span>(<span class="at">prozent =</span> <span class="fu">berechne_prozent</span>(total)) <span class="sc">|&gt;</span> </span>
-<span id="cb22-8"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20" data-code-line-numbers="7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
+<span id="cb20-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
+<span id="cb20-3"><a></a>    <span class="fu">group_by</span>(stufe) <span class="sc">|&gt;</span> </span>
+<span id="cb20-4"><a></a>    <span class="fu">summarise</span>(</span>
+<span id="cb20-5"><a></a>        <span class="at">total =</span> <span class="fu">sum</span>(anzahl)</span>
+<span id="cb20-6"><a></a>    ) <span class="sc">|&gt;</span> </span>
+<span id="cb20-7"><a></a>    <span class="fu">mutate</span>(<span class="at">prozent =</span> <span class="fu">berechne_prozent</span>(total)) <span class="sc">|&gt;</span> </span>
+<span id="cb20-8"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="spewkxvyrt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#spewkxvyrt table {
+<div id="jwnoxzhkny" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jwnoxzhkny table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#spewkxvyrt thead, #spewkxvyrt tbody, #spewkxvyrt tfoot, #spewkxvyrt tr, #spewkxvyrt td, #spewkxvyrt th {
+#jwnoxzhkny thead, #jwnoxzhkny tbody, #jwnoxzhkny tfoot, #jwnoxzhkny tr, #jwnoxzhkny td, #jwnoxzhkny th {
   border-style: none;
 }
 
-#spewkxvyrt p {
+#jwnoxzhkny p {
   margin: 0;
   padding: 0;
 }
 
-#spewkxvyrt .gt_table {
+#jwnoxzhkny .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2721,12 +2692,12 @@ dttm (1): datum
   border-left-color: #D3D3D3;
 }
 
-#spewkxvyrt .gt_caption {
+#jwnoxzhkny .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#spewkxvyrt .gt_title {
+#jwnoxzhkny .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2738,7 +2709,7 @@ dttm (1): datum
   border-bottom-width: 0;
 }
 
-#spewkxvyrt .gt_subtitle {
+#jwnoxzhkny .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2750,7 +2721,7 @@ dttm (1): datum
   border-top-width: 0;
 }
 
-#spewkxvyrt .gt_heading {
+#jwnoxzhkny .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2762,13 +2733,13 @@ dttm (1): datum
   border-right-color: #D3D3D3;
 }
 
-#spewkxvyrt .gt_bottom_border {
+#jwnoxzhkny .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#spewkxvyrt .gt_col_headings {
+#jwnoxzhkny .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2783,7 +2754,7 @@ dttm (1): datum
   border-right-color: #D3D3D3;
 }
 
-#spewkxvyrt .gt_col_heading {
+#jwnoxzhkny .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2803,7 +2774,7 @@ dttm (1): datum
   overflow-x: hidden;
 }
 
-#spewkxvyrt .gt_column_spanner_outer {
+#jwnoxzhkny .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2815,15 +2786,15 @@ dttm (1): datum
   padding-right: 4px;
 }
 
-#spewkxvyrt .gt_column_spanner_outer:first-child {
+#jwnoxzhkny .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#spewkxvyrt .gt_column_spanner_outer:last-child {
+#jwnoxzhkny .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#spewkxvyrt .gt_column_spanner {
+#jwnoxzhkny .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2835,11 +2806,11 @@ dttm (1): datum
   width: 100%;
 }
 
-#spewkxvyrt .gt_spanner_row {
+#jwnoxzhkny .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#spewkxvyrt .gt_group_heading {
+#jwnoxzhkny .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2865,7 +2836,7 @@ dttm (1): datum
   text-align: left;
 }
 
-#spewkxvyrt .gt_empty_group_heading {
+#jwnoxzhkny .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2880,15 +2851,15 @@ dttm (1): datum
   vertical-align: middle;
 }
 
-#spewkxvyrt .gt_from_md > :first-child {
+#jwnoxzhkny .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#spewkxvyrt .gt_from_md > :last-child {
+#jwnoxzhkny .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#spewkxvyrt .gt_row {
+#jwnoxzhkny .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2907,7 +2878,7 @@ dttm (1): datum
   overflow-x: hidden;
 }
 
-#spewkxvyrt .gt_stub {
+#jwnoxzhkny .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2920,7 +2891,7 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#spewkxvyrt .gt_stub_row_group {
+#jwnoxzhkny .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2934,15 +2905,15 @@ dttm (1): datum
   vertical-align: top;
 }
 
-#spewkxvyrt .gt_row_group_first td {
+#jwnoxzhkny .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#spewkxvyrt .gt_row_group_first th {
+#jwnoxzhkny .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#spewkxvyrt .gt_summary_row {
+#jwnoxzhkny .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2952,16 +2923,16 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#spewkxvyrt .gt_first_summary_row {
+#jwnoxzhkny .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#spewkxvyrt .gt_first_summary_row.thick {
+#jwnoxzhkny .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#spewkxvyrt .gt_last_summary_row {
+#jwnoxzhkny .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2971,7 +2942,7 @@ dttm (1): datum
   border-bottom-color: #D3D3D3;
 }
 
-#spewkxvyrt .gt_grand_summary_row {
+#jwnoxzhkny .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2981,7 +2952,7 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#spewkxvyrt .gt_first_grand_summary_row {
+#jwnoxzhkny .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2991,7 +2962,7 @@ dttm (1): datum
   border-top-color: #D3D3D3;
 }
 
-#spewkxvyrt .gt_last_grand_summary_row_top {
+#jwnoxzhkny .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3001,11 +2972,11 @@ dttm (1): datum
   border-bottom-color: #D3D3D3;
 }
 
-#spewkxvyrt .gt_striped {
+#jwnoxzhkny .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#spewkxvyrt .gt_table_body {
+#jwnoxzhkny .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3014,7 +2985,7 @@ dttm (1): datum
   border-bottom-color: #D3D3D3;
 }
 
-#spewkxvyrt .gt_footnotes {
+#jwnoxzhkny .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3028,7 +2999,7 @@ dttm (1): datum
   border-right-color: #D3D3D3;
 }
 
-#spewkxvyrt .gt_footnote {
+#jwnoxzhkny .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3037,7 +3008,7 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#spewkxvyrt .gt_sourcenotes {
+#jwnoxzhkny .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3051,7 +3022,7 @@ dttm (1): datum
   border-right-color: #D3D3D3;
 }
 
-#spewkxvyrt .gt_sourcenote {
+#jwnoxzhkny .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3059,72 +3030,72 @@ dttm (1): datum
   padding-right: 5px;
 }
 
-#spewkxvyrt .gt_left {
+#jwnoxzhkny .gt_left {
   text-align: left;
 }
 
-#spewkxvyrt .gt_center {
+#jwnoxzhkny .gt_center {
   text-align: center;
 }
 
-#spewkxvyrt .gt_right {
+#jwnoxzhkny .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#spewkxvyrt .gt_font_normal {
+#jwnoxzhkny .gt_font_normal {
   font-weight: normal;
 }
 
-#spewkxvyrt .gt_font_bold {
+#jwnoxzhkny .gt_font_bold {
   font-weight: bold;
 }
 
-#spewkxvyrt .gt_font_italic {
+#jwnoxzhkny .gt_font_italic {
   font-style: italic;
 }
 
-#spewkxvyrt .gt_super {
+#jwnoxzhkny .gt_super {
   font-size: 65%;
 }
 
-#spewkxvyrt .gt_footnote_marks {
+#jwnoxzhkny .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#spewkxvyrt .gt_asterisk {
+#jwnoxzhkny .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#spewkxvyrt .gt_indent_1 {
+#jwnoxzhkny .gt_indent_1 {
   text-indent: 5px;
 }
 
-#spewkxvyrt .gt_indent_2 {
+#jwnoxzhkny .gt_indent_2 {
   text-indent: 10px;
 }
 
-#spewkxvyrt .gt_indent_3 {
+#jwnoxzhkny .gt_indent_3 {
   text-indent: 15px;
 }
 
-#spewkxvyrt .gt_indent_4 {
+#jwnoxzhkny .gt_indent_4 {
   text-indent: 20px;
 }
 
-#spewkxvyrt .gt_indent_5 {
+#jwnoxzhkny .gt_indent_5 {
   text-indent: 25px;
 }
 
-#spewkxvyrt .katex-display {
+#jwnoxzhkny .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#spewkxvyrt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jwnoxzhkny div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3183,9 +3154,8 @@ dttm (1): datum
 </ol>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a><span class="fu">countdown</span>(<span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_95cfddd6" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_64d5b819" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -3226,7 +3196,7 @@ lernende_ktzh |&gt;
 <ul>
 <li>inline code macht es möglich R code direkt in Text einzubetten</li>
 </ul>
-<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb25-1"><a></a>Lernende im Jahr `r params$jahr` ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb22-1"><a></a>Lernende im Jahr `r params$jahr` ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>… wird zu: Lernende im Jahr 2022</p>
 </section>
 <section id="parameter-in-quarto-dokumenten-2" class="slide level2">
@@ -3235,8 +3205,8 @@ lernende_ktzh |&gt;
 <li>Parameter werden folgendermassen im Code angegeben:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
-<span id="cb26-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> params<span class="sc">$</span>jahr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
+<span id="cb23-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> params<span class="sc">$</span>jahr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 110 × 10
    stand      kanton  jahr stufe        schultyp geschlecht staatsangehoerigkeit
@@ -3283,9 +3253,8 @@ lernende_ktzh |&gt;
 <p><span class="highlight-yellow">Bitte steh auf und beweg dich.</span></p>
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_30b5d1f7" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_96835baf" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -3306,9 +3275,8 @@ lernende_ktzh |&gt;
 <p><span class="highlight-yellow">Bitte steh auf und beweg dich.</span></p>
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_28bef461" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_c29bf64f" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -3349,7 +3317,7 @@ lernende_ktzh |&gt;
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb30" data-filename="Terminal"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a></a><span class="ex">quarto</span> publish quarto-pub</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb25" data-filename="Terminal"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a></a><span class="ex">quarto</span> publish quarto-pub</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Erhalte eine <code>_publish.yml</code>, die sicher in die Versionskontrolle geschickt werden kann.</li>
@@ -3378,8 +3346,8 @@ lernende_ktzh |&gt;
 <section id="abschlussveranstaltung" class="slide level2">
 <h2>Abschlussveranstaltung</h2>
 <ul>
-<li>2024-12-17</li>
-<li>15:00 bis 15:30 / 16:00 Uhr</li>
+<li>2025-12-15</li>
+<li>13:00 bis 15:00</li>
 <li>MS Teams</li>
 </ul>
 </section>
@@ -3391,11 +3359,11 @@ lernende_ktzh |&gt;
 <li>Schritt für Schritt Software über den DAP selbst intallieren</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="co"># Einmalig in Console ausführen</span></span>
-<span id="cb31-2"><a></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
-<span id="cb31-3"><a></a></span>
-<span id="cb31-4"><a></a><span class="co"># In jedem Skript</span></span>
-<span id="cb31-5"><a></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a><span class="co"># Einmalig in Console ausführen</span></span>
+<span id="cb26-2"><a></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb26-3"><a></a></span>
+<span id="cb26-4"><a></a><span class="co"># In jedem Skript</span></span>
+<span id="cb26-5"><a></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="rein-in-die-kantons-communities" class="slide level2">
@@ -3444,7 +3412,7 @@ lernende_ktzh |&gt;
 </ol>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_72bc775b" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_a9d721a1" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -3462,7 +3430,7 @@ lernende_ktzh |&gt;
 <h2>Wie es für mich weiter geht</h2>
 <ol type="1">
 <li><strong>Beratung:</strong> Projektbezogener Support, Code Review, Coaching</li>
-<li><strong>rstatsZH Kursleitung:</strong> Info über den 10. Kurs verbreiten. Start: 25.02.2025</li>
+<li><strong>rstatsZH Kursleitung:</strong> Info über den 12. Kurs verbreiten. Start: 12.05.2026</li>
 <li><strong>Kurse zu vertiefenden Themen:</strong> Entwicklung von 3-Stunden Workshops</li>
 </ol>
 </section>
@@ -3473,7 +3441,7 @@ lernende_ktzh |&gt;
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_61216932" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_785a362a" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -3727,6 +3695,44 @@ lernende_ktzh |&gt;
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
