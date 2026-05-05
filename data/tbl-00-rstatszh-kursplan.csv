@@ -1,13 +1,13 @@
 datum,woche,titel,modul,link
-2025-09-23T00:00:00Z,1,[Willkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I](https://rstatszh-k011.github.io/website/module/md-01.html),Modul 01,https://rstatszh-k011.github.io/website/module/md-01.html
-2025-09-30T00:00:00Z,2,[Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community](https://rstatszh-k011.github.io/website/module/md-02.html),Modul 02,https://rstatszh-k011.github.io/website/module/md-02.html
-2025-10-07T00:00:00Z,3,[Daten Transformation mit `dplyr`](https://rstatszh-k011.github.io/website/module/md-03.html),Modul 03,https://rstatszh-k011.github.io/website/module/md-03.html
-2025-10-14T00:00:00Z,4,[Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II](https://rstatszh-k011.github.io/website/module/md-04.html),Modul 04,https://rstatszh-k011.github.io/website/module/md-04.html
-2025-10-21T00:00:00Z,5,[Bedingte Anweisungen & Datumswerte & OGD Ressourcen](https://rstatszh-k011.github.io/website/module/md-05.html),Modul 05,https://rstatszh-k011.github.io/website/module/md-05.html
-2025-10-28T00:00:00Z,6,[Daten Typen & Vektoren & Iteration I (for loops)](https://rstatszh-k011.github.io/website/module/md-06.html),Modul 06,https://rstatszh-k011.github.io/website/module/md-06.html
-2025-11-11T00:00:00Z,7,[Datenformen lang und breit & Daten zusammenfügen](https://rstatszh-k011.github.io/website/module/md-07.html),Modul 07,https://rstatszh-k011.github.io/website/module/md-07.html
-2025-11-18T00:00:00Z,8,[Mit Text Daten arbeiten & KTZH Corporate Design mit statR](https://rstatszh-k011.github.io/website/module/md-08.html),Modul 08,https://rstatszh-k011.github.io/website/module/md-08.html
-2025-11-25T00:00:00Z,9,[Erstellung von Berichten und Folien mit Quarto](https://rstatszh-k011.github.io/website/module/md-09.html),Modul 09,https://rstatszh-k011.github.io/website/module/md-09.html
-2025-12-02T00:00:00Z,10,[Funktionen schreiben & Parameterisierung von Berichten](https://rstatszh-k011.github.io/website/module/md-10.html),Modul 10,https://rstatszh-k011.github.io/website/module/md-10.html
-2025-12-11T00:00:00Z,12,Abgabe Abschlussprojekt,Abschlussprojekt,NA
-2025-12-15T00:00:00Z,13,Abschlussveranstaltung,Abschlussveranstaltung,NA
+2026-05-21T00:00:00Z,1,[Willkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I](https://rstatszh-k012.github.io/website/module/md-01.html),Modul 01,https://rstatszh-k012.github.io/website/module/md-01.html
+2026-05-28T00:00:00Z,2,[Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community](https://rstatszh-k012.github.io/website/module/md-02.html),Modul 02,https://rstatszh-k012.github.io/website/module/md-02.html
+2026-06-04T00:00:00Z,3,[Daten Transformation mit `dplyr`](https://rstatszh-k012.github.io/website/module/md-03.html),Modul 03,https://rstatszh-k012.github.io/website/module/md-03.html
+2026-06-11T00:00:00Z,4,[Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II](https://rstatszh-k012.github.io/website/module/md-04.html),Modul 04,https://rstatszh-k012.github.io/website/module/md-04.html
+2026-06-18T00:00:00Z,5,[Bedingte Anweisungen & Datumswerte & OGD Ressourcen](https://rstatszh-k012.github.io/website/module/md-05.html),Modul 05,https://rstatszh-k012.github.io/website/module/md-05.html
+2026-06-25T00:00:00Z,6,[Daten Typen & Vektoren & Iteration I (for loops)](https://rstatszh-k012.github.io/website/module/md-06.html),Modul 06,https://rstatszh-k012.github.io/website/module/md-06.html
+2026-07-02T00:00:00Z,7,[Datenformen lang und breit & Daten zusammenfügen](https://rstatszh-k012.github.io/website/module/md-07.html),Modul 07,https://rstatszh-k012.github.io/website/module/md-07.html
+2026-07-09T00:00:00Z,8,[Mit Text Daten arbeiten & KTZH Corporate Design mit statR](https://rstatszh-k012.github.io/website/module/md-08.html),Modul 08,https://rstatszh-k012.github.io/website/module/md-08.html
+2026-07-16T00:00:00Z,9,[Erstellung von Berichten und Folien mit Quarto](https://rstatszh-k012.github.io/website/module/md-09.html),Modul 09,https://rstatszh-k012.github.io/website/module/md-09.html
+2026-07-23T00:00:00Z,10,[Funktionen schreiben & Parameterisierung von Berichten](https://rstatszh-k012.github.io/website/module/md-10.html),Modul 10,https://rstatszh-k012.github.io/website/module/md-10.html
+2026-07-30T00:00:00Z,12,Abgabe Abschlussprojekt,Abschlussprojekt,NA
+2026-08-06T00:00:00Z,13,Abschlussveranstaltung,Abschlussveranstaltung,NA
