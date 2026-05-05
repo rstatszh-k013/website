@@ -14,7 +14,7 @@ library(dplyr)
 
 ## course schedule  --------------------------------------------------
 
-kursplan <- "https://docs.google.com/spreadsheets/d/1G8Mq_I39ikD-bgli9ytcombrN2Bj0XsEqE_jsB7ZExA/edit?gid=0#gid=0"
+kursplan <- "https://docs.google.com/spreadsheets/d/1rDDyRpUsBo0JIy3PWotdQtDwml0P9mASy-GGr5iKbPU/edit?gid=0#gid=0"
 
 read_sheet(ss = kursplan) |> 
     mutate(titel = case_when(
@@ -25,7 +25,7 @@ read_sheet(ss = kursplan) |>
 
 ## learning objectives  ------------------------------
 
-lernziele <- "https://docs.google.com/spreadsheets/d/1V1EFBkpIyAK5p9DGUeZ43pdRj4831CHBzPbiYizNB9A/edit?gid=0#gid=0"
+lernziele <- "https://docs.google.com/spreadsheets/d/1lOoaUvQWignPAp1v5tkwRzsnv16RyAUjsZMbzodIuPY/edit?gid=0#gid=0"
 
 read_sheet(ss = lernziele,  n_max = 37) |> 
     write_csv(here::here("data/tbl-01-rstatszh-lernziele.csv"))
