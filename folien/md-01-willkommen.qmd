@@ -1,7 +1,7 @@
 ---
 title: "{{< var md-01.titel >}}"
 subtitle: "{{< var course.long-titel >}}"
-author: "{{< var author >}}"
+author: "Lars Schöbitz"
 date: "2026-05-21"
 date-format: "MMM D, YYYY"
 format: 
