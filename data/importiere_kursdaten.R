@@ -10,7 +10,9 @@ library(googlesheets4)
 library(readr)
 library(dplyr)
 
-# script ------------------------------------------------------------------
+# authentication -----------------------------------------------------------
+
+gs4_auth(cache = ".secrets", email = Sys.getenv("GOOGLE_EMAIL"))
 
 ## course schedule  --------------------------------------------------
 
