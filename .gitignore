@@ -8,3 +8,5 @@
 _extensions
 .positai
 .secrets
+
+**/*.quarto_ipynb

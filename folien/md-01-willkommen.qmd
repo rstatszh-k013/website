@@ -2,7 +2,7 @@
 title: "{{< var md-01.titel >}}"
 subtitle: "{{< var course.long-titel >}}"
 author: "{{< var author >}}"
-date: "2025-09-23"
+date: "2026-05-21"
 date-format: "MMM D, YYYY"
 format: 
   revealjs: 
@@ -27,7 +27,7 @@ library(magrittr)
 library(epoxy)
 ```
 
-# Willkommen! `r emo::ji("wave")` {background-color="#4C326A"}
+# Willkommen! {{< fa hand >}} {background-color="#4C326A"}
 
 ## Triff die Kursleitung {.smaller}
 
@@ -41,8 +41,8 @@ library(epoxy)
 :::
 ::: {.column width="50%"}
 
--   Umweltingenieur `r emo::ji("hammer")`
--   Forscher im Ruhestand `r emo::ji("bed")`
+-   Umweltingenieur {{< fa hammer >}}
+-   Forscher im Ruhestand {{< fa bed >}}
 -   [RStudio zertifizierte Lehrkraft](https://education.rstudio.com/trainers/)
 -   [Data Steward an der ETH Zurich](https://ghe.ethz.ch/ghe-blog-news/2024/02/blog-attention-prof-you-need-a-data-steward-for-your-team.html)
 
@@ -465,7 +465,7 @@ countdown(minutes = 15)
 
 # Danke! {background-color="#4C326A"}
 
-## Danke! `r emo::ji("sunflower")` 
+## Danke! {{< fa sun >}}
 
 Folien erstellt mit revealjs und Quarto: <https://quarto.org/docs/presentations/revealjs/>
 

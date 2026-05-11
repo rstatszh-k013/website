@@ -20,4 +20,4 @@ Beachte, dass du ein GitHub-Konto benötigst, um diese Anmeldemethode nutzen zu 
 
 ## Tritt dem Kursarbeitsbereich auf Posit Cloud bei
 
-Öffne diesen Link: <https://posit.cloud/spaces/643775/join?access_code=eL0-40x1bhGDpNIppCKmOk6PF2VoPzcW3-I7fdbe>
+Öffne diesen Link: [{{< var course.posit-cloud-signup >}}]({{< var course.posit-cloud-signup >}})

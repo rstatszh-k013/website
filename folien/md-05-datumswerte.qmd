@@ -2,7 +2,7 @@
 title: "{{< var md-05.titel >}}"
 subtitle: "{{< var course.long-titel >}}"
 author: "Lars Schöbitz"
-date: "2025-10-21"
+date: "2026-06-18"
 date-format: "MMM D, YYYY"
 format: 
   revealjs: 
@@ -199,7 +199,7 @@ countdown(15)
 
 # Danke {background-color="#4C326A"}
 
-## Danke! `r emo::ji("sunflower")` 
+## Danke! {{< fa sun >}} 
 
 Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ 
 

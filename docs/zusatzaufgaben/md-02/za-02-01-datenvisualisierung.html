@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>Daten Visualisierung mit ggplot2 – rstatsZH - Data Science mit R</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -67,10 +70,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-4b8b535605d27086117a1b1ae3a37b34.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-5bff2ba0731e695f8f21b1268c83896f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-4b8b535605d27086117a1b1ae3a37b34.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-881edc3defd80494a56e07c4f7fe3ff6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-b562a3b7312bc69596eacc1109b8d683.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b562a3b7312bc69596eacc1109b8d683.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-b562a3b7312bc69596eacc1109b8d683.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -86,7 +93,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script defer="" data-domain="rstatszh-k011.github.io/website" src="https://plausible.io/js/script.js"></script>
+<script defer="" data-domain="rstatszh-k012.github.io/website" src="https://plausible.io/js/script.js"></script>
 
 
 </head>
@@ -119,7 +126,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="sidebar-title mb-0 py-0">
       <a href="../../">rstatsZH - Data Science mit R</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/rstatszh-k011/" title="GitHub Organisation" class="quarto-navigation-tool px-1" aria-label="GitHub Organisation"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/rstatszh-k012/" title="GitHub Organisation" class="quarto-navigation-tool px-1" aria-label="GitHub Organisation"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
@@ -288,11 +295,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="schritt-1-klone-das-repository-für-modul-2">Schritt 1: Klone das Repository für Modul 2</h2>
 <ol type="1">
 <li><p>Öffne github.com in deinem Browser.</p></li>
-<li><p>Navigiere zur GitHub-Organisation für den Kurs: <a href="https://github.com/rstatszh-k011/">github.com/rstatszh-k011</a></p></li>
+<li><p>Navigiere zur GitHub-Organisation für den Kurs: <a href="https://github.com/rstatszh-k012/">github.com/rstatszh-k012</a></p></li>
 <li><p>Finde das Repository <span class="highlight-yellow">md-02-zusatzaufgaben-BENUTZERNAME</span>, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.</p></li>
 <li><p>Klicke auf die grüne Schaltfläche “Code”.</p></li>
 <li><p>Kopiere die HTTPS-URL in deine Zwischenablage.</p></li>
-<li><p>Öffne den rstatszh-k011 Arbeitsbereich (Workspace) auf <a href="https://posit.cloud/spaces/643775">posit.cloud/spaces/643775</a></p></li>
+<li><p>Öffne den rstatszh-k012 Arbeitsbereich (Workspace) auf <a href="https://posit.cloud/spaces/784141">posit.cloud/spaces/784141</a></p></li>
 <li><p>Klicke auf “New Project” &gt; “New Project from Git Repository”</p></li>
 <li><p>Füge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. <span class="highlight-yellow"><strong>Beachte:</strong></span> Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.</p></li>
 <li><p>Warte, bis das Projekt bereitgestellt wurde.</p></li>
@@ -321,14 +328,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Hinweis: Git configuration aus Zusatzaufgabe von Modul 1
+<span class="screen-reader-only">Note</span>Hinweis: Git configuration aus Zusatzaufgabe von Modul 1
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>Es ist möglich, dass Git dich erneut darauf hinweist, dass es nicht weiss, wer du bist. Diese Einstellung haben wir in Modul 1 zwar gemacht, jedoch habe ich in der Vergangenheit beobachtet, dass es bei einigen Teilnehmer:innen erneut zu dieser Meldung kommt. In diesem Fall musst du erneut folgenden Schritt ausführen, um deinen Namen und deine E-Mail-Adresse zu konfigurieren.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(usethis)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"Dein Name"</span>, <span class="at">user.email =</span> <span class="st">"Deine Email"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(usethis)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"Dein Name"</span>, <span class="at">user.email =</span> <span class="st">"Deine Email"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
@@ -344,7 +351,7 @@ Hinweis: Git configuration aus Zusatzaufgabe von Modul 1
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Verwende nicht dein GitHub-Passwort
+<span class="screen-reader-only">Important</span>Verwende nicht dein GitHub-Passwort
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -356,7 +363,7 @@ Verwende nicht dein GitHub-Passwort
 <h2 class="anchored" data-anchor-id="schritt-3-eröffne-ein-issue-auf-github">Schritt 3: Eröffne ein Issue auf GitHub</h2>
 <ol type="1">
 <li><p>Öffne <a href="https://github.com/">github.com</a> in deinem Browser.</p></li>
-<li><p>Navigiere zur GitHub-Organisation für den Kurs: <a href="https://github.com/rstatszh-k011/">github.com/rstatszh-k011</a></p></li>
+<li><p>Navigiere zur GitHub-Organisation für den Kurs: <a href="https://github.com/rstatszh-k012/">github.com/rstatszh-k012</a></p></li>
 <li><p>Finde das Repository <span class="highlight-yellow">md-02-zusatzaufgaben-BENUTZERNAME</span>, das mit deinem GitHub-Benutzernamen endet.</p></li>
 <li><p>Klicke auf die Schaltfläche “Issues”.</p></li>
 <li><p>Klicke auf die grüne Schaltfläche “New issue”.</p></li>
@@ -419,13 +426,14 @@ Verwende nicht dein GitHub-Passwort
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -440,7 +448,7 @@ Verwende nicht dein GitHub-Passwort
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/rstatszh-k011\.github\.io\/website");
+        var filterRegex = new RegExp("https:\/\/rstatszh-k012\.github\.io\/website");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -797,7 +805,7 @@ Verwende nicht dein GitHub-Passwort
     </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/rstatszh-k011/website">
+    <a class="nav-link" href="https://github.com/rstatszh-k012/website">
       <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
     </a>

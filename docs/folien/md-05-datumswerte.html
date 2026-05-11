@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Lars Schöbitz">
   <title>rstatsZH - Data Science mit R – Bedingte Anweisungen &amp; Datumswerte &amp; OGD Ressourcen</title>
@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -31,7 +34,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-e50d29e4b01d135ac64d43589b43f1d2.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2073ee48c61ac7691ed0cfc3c8b58a25.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -125,8 +128,8 @@
       margin-right: 0; 
     }
   </style>
-  <link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
-  <script src="../site_libs/countdown-0.4.0/countdown.js"></script>
+  <link href="../site_libs/countdown-0.6.0/countdown.css" rel="stylesheet">
+  <script src="../site_libs/countdown-0.6.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -134,7 +137,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Bedingte Anweisungen &amp; Datumswerte &amp; OGD Ressourcen</h1>
-  <p class="subtitle">rstatsZH - Data Science mitR</p>
+  <p class="subtitle">rstatsZH - Data Science mit R</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -144,7 +147,7 @@ Lars Schöbitz
 </div>
 </div>
 
-  <p class="date">Oct 21, 2025</p>
+  <p class="date">Jun 18, 2026</p>
 </section>
 <section id="lernziele-für-diese-woche" class="slide level2">
 <h2>Lernziele (für diese Woche)</h2>
@@ -177,10 +180,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_4aa19aef" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
+<countdown-timer class="countdown" id="timer_529689c0" minutes="25" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -189,7 +189,7 @@ Lars Schöbitz
 <div class="task">
 <ol type="1">
 <li>Öffne <a href="https://posit.cloud">posit.cloud</a> in deinem Browser (verwende dein Lesezeichen).</li>
-<li>Öffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.</li>
+<li>Öffne den rstatszh-k012 Arbeitsbereich (Workspace) für den Kurs.</li>
 <li>Klicke auf <span class="highlight-yellow">Start</span> neben <span class="highlight-yellow">md-05-uebungen</span>.</li>
 <li>Suche im Dateimanager im Fenster unten rechts die Datei <span class="highlight-yellow"><code>02-bedingungen-ihr.qmd</code></span> und klicke darauf, um sie im Fenster oben links zu öffnen.</li>
 <li>Folge den Anweisungen in der Datei.</li>
@@ -197,10 +197,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_5be511c9" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
+<countdown-timer class="countdown" id="timer_126cc477" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -210,10 +207,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_c3735ca2" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
+<countdown-timer class="countdown" id="timer_ca1c6a04" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -246,10 +240,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_57c324de" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
+<countdown-timer class="countdown" id="timer_9bed90ff" minutes="25" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -258,7 +249,7 @@ Lars Schöbitz
 <div class="task">
 <ol type="1">
 <li>Öffne <a href="https://posit.cloud">posit.cloud</a> in deinem Browser (verwende dein Lesezeichen).</li>
-<li>Öffne den rstatszh-k011 Arbeitsbereich (Workspace) für den Kurs.</li>
+<li>Öffne den rstatszh-k012 Arbeitsbereich (Workspace) für den Kurs.</li>
 <li>Klicke auf <span class="highlight-yellow">Continue</span> neben <span class="highlight-yellow">md-05-uebungen</span>.</li>
 <li>Suche im Dateimanager im Fenster unten rechts die Datei <span class="highlight-yellow"><code>04-datumswerte-ihr.qmd</code></span> und klicke darauf, um sie im Fenster oben links zu öffnen.</li>
 <li>Folge den Anweisungen in der Datei.</li>
@@ -266,10 +257,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_c82b8ff5" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
+<countdown-timer class="countdown" id="timer_841a091e" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -279,10 +267,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_67ac69f6" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
+<countdown-timer class="countdown" id="timer_0d568343" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -293,18 +278,15 @@ Lars Schöbitz
 <h2>Du bist dran: Abschlussprojekt</h2>
 <div class="task">
 <ol type="1">
-<li><p>Öffne die Kurswebseite: <a href="https://rstatszh-k011.github.io/website//">rstatszh-k011.github.io/website//</a></p></li>
-<li><p>Navigiere zu den Zusatzaufgaben für Modul 5 und öffne <a href="https://rstatszh-k011.github.io/website//zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html">“Zusatzaufgabe 2 - Abschlussprojekt - Daten auswählen”</a>.</p></li>
+<li><p>Öffne die Kurswebseite: <a href="https://rstatszh-k012.github.io/website//">rstatszh-k012.github.io/website//</a></p></li>
+<li><p>Navigiere zu den Zusatzaufgaben für Modul 5 und öffne <a href="https://rstatszh-k012.github.io/website//zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html">“Zusatzaufgabe 2 - Abschlussprojekt - Daten auswählen”</a>.</p></li>
 <li><p>Lies die Anweisungen bis “Arbeitsschritte” und mache dir Notizen.</p></li>
-<li><p>Hinterlasse Fragen und Kommentare hier: <a href="https://github.com/rstatszh-k011/abschlussprojekte/issues/1">github.com/rstatszh-k011/abschlussprojekte/issues/1</a></p></li>
+<li><p>Hinterlasse Fragen und Kommentare hier: <a href="https://github.com/rstatszh-k012/abschlussprojekte/issues/1">github.com/rstatszh-k012/abschlussprojekte/issues/1</a></p></li>
 </ol>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_30fb8b4d" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
+<countdown-timer class="countdown" id="timer_80d54c09" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -315,10 +297,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_a1f254a4" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
+<countdown-timer class="countdown" id="timer_36618b48" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -330,13 +309,13 @@ Lars Schöbitz
 <section id="modul-5-dokumentation" class="slide level2">
 <h2>Modul 5 Dokumentation</h2>
 <div class="learn-more">
-<p><a href="https://rstatszh-k011.github.io/website//module/md-05.html">rstatszh-k011.github.io/website//module/md-05.html</a></p>
+<p><a href="https://rstatszh-k012.github.io/website//module/md-05.html">rstatszh-k012.github.io/website//module/md-05.html</a></p>
 </div>
 </section>
 <section id="zusatzaufgaben-abgabedatum" class="slide level2">
 <h2>Zusatzaufgaben Abgabedatum</h2>
 <ul>
-<li>Abgabedatum: <span class="highlight-yellow">Dienstag, 28. Oktober</span></li>
+<li>Abgabedatum: <span class="highlight-yellow">Donnerstag, 25. Juni</span></li>
 </ul>
 </section></section>
 <section>
@@ -344,10 +323,10 @@ Lars Schöbitz
 <h1>Danke</h1>
 
 </section>
-<section id="danke-1" class="slide level2">
-<h2>Danke! 🌻</h2>
+<section id="danke-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d" class="slide level2">
+<h2>Danke! <i class="fa-solid fa-sun" aria-label="sun"></i></h2>
 <p>Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/</p>
-<p>Access slides als <a href="https://github.com/rstatszh-k011/website/raw/main/folien/md-05-datumswerte.pdf">PDF auf GitHub</a></p>
+<p>Access slides als <a href="https://github.com/rstatszh-k012/website/raw/main/folien/md-05-datumswerte.pdf">PDF auf GitHub</a></p>
 <p>Alle Materialien sind lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 
 
@@ -355,7 +334,7 @@ Lars Schöbitz
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p><a href="https://rstatszh-k011.github.io/website/"><i class="fa-solid fa-link" aria-label="link"></i> rstatszh-k011.github.io/website/</a></p>
+<p><a href="https://rstatszh-k012.github.io/website/"><i class="fa-solid fa-link" aria-label="link"></i> rstatszh-k012.github.io/website/</a></p>
 </div>
 </div></div>
 
@@ -543,7 +522,7 @@ Lars Schöbitz
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -655,13 +634,14 @@ Lars Schöbitz
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
@@ -676,7 +656,7 @@ Lars Schöbitz
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/rstatszh-k011\.github\.io\/website");
+            var filterRegex = new RegExp("https:\/\/rstatszh-k012\.github\.io\/website");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
