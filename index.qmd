@@ -1,5 +1,5 @@
 ---
-title: "Vorbereitung - rstatsZH Kurs 011"
+title: "Vorbereitung - rstatsZH Kurs 012"
 editor: source
 execute: 
   echo: false
@@ -14,7 +14,7 @@ Bist du zufällig auf diese Seite geraten? Mehr Informationen zum Konzept, Kursi
 
 ## {{< fa calendar >}} Wann findet dieser Kurs statt?
 
-Wir treffen uns ab 23. September 2025 jeweils von 12:30 bis 15:00 Uhr auf MS Teams. Der Link wird über eine Kalendareinladung verschickt. 
+Wir treffen uns ab 21. Mai 2026 jeweils von 12:30 bis 15:00 Uhr auf MS Teams. Der Link wird über eine Kalendareinladung verschickt. 
 
 Vor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Diese Vorarbeiten stellen sicher, dass wir unsere gemeinsame Zeit auf das Lernen konzentrieren können, anstatt die Infrastruktur einzurichten.
 
@@ -25,4 +25,4 @@ Arbeite durch die folgenden Schritte:
 - [Schritt 1](vorbereitung/01-github.qmd): Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.
 - [Schritt 2](vorbereitung/02-posit-cloud.qmd): Melde dich bei Posit Cloud an und trete dem Arbeitsbereich für den Kurs bei.
 - [Schritt 3](vorbereitung/03-r4ds-intro.qmd): Lies die Einführung des Kursbuches: R for Data Science.
-- [Schritt 4](vorbereitung/04-umfrage.qmd): Fülle den Fragebogen bis Freitag, den 19. September 2025 aus.
+- [Schritt 4](vorbereitung/04-umfrage.qmd): Fülle den Fragebogen bis Freitag, den 15. Mai 2026 aus.

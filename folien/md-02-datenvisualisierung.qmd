@@ -2,7 +2,7 @@
 title: "{{< var md-02.titel >}}"
 subtitle: "{{< var course.long-titel >}}"
 author: "Lars Schöbitz"
-date: "2025-09-30"
+date: "2026-05-28"
 date-format: "MMM D, YYYY"
 format: 
   revealjs: 
@@ -611,7 +611,7 @@ ggplot(data = gapminder_2007,
 
 # Danke {background-color="#4C326A"}
 
-## Danke! `r emo::ji("sunflower")`
+## Danke! {{< fa sun >}}
 
 Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub]({{< var course.github-org >}}website/raw/main/folien/md-02-datenvisualisierung.pdf)
 

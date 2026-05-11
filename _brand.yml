@@ -1,0 +1,58 @@
+meta:
+  name: rstatsZH - Data Science mit R
+  link: https://rstatszh-k012.github.io/website/
+
+color:
+  palette:
+    purple-dark: "#4C326A"
+    purple-deep: "#461a52"
+    purple: "#5536A7"
+    purple-mid: "#714B8F"
+    purple-light: "#9F74C6"
+    purple-pale: "#C8CEF3"
+    purple-paler: "#ECEEF8"
+    orange: "#FF6100"
+    orange-mid: "#FF8935"
+    orange-warm: "#ED7A00"
+    yellow: "#F59E02"
+    peach: "#FEBC94"
+    highlight-yellow: "#FAE3B4"
+    pink: "#FFC0CB"
+    link-blue: "#272bd1"
+    ink: "#1e1e1e"
+    paper: "#f4f4f4"
+  foreground: ink
+  background: paper
+  primary: purple-dark
+  secondary: purple-light
+  success: purple
+  info: purple-pale
+  warning: yellow
+  danger: orange
+  light: paper
+  dark: ink
+  link: link-blue
+
+typography:
+  fonts:
+    - family: Atkinson Hyperlegible
+      source: google
+      weight: [400, 700]
+      style: [normal, italic]
+    - family: Source Code Pro
+      source: google
+      weight: [400, 500]
+    - family: Gochi Hand
+      source: google
+      weight: 400
+  base:
+    family: Atkinson Hyperlegible
+    size: 16px
+    line-height: 1.5
+  headings:
+    family: Atkinson Hyperlegible
+    weight: 700
+    color: purple-dark
+  monospace: Source Code Pro
+  link:
+    color: link-blue
