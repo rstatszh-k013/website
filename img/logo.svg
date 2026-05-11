@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" role="img" aria-label="rstatsZH — Data Science mit R">
+  <title>rstatsZH</title>
+  <style>
+    .wm-text {
+      font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+      font-weight: 900;
+      font-size: 36px;
+      letter-spacing: -1px;
+    }
+    .wm-ink { fill: #000000; }
+    .wm-zh  { fill: #0070B4; }
+  </style>
+  <text x="6" y="44" class="wm-text">
+    <tspan class="wm-ink">rstats</tspan><tspan class="wm-zh">ZH</tspan>
+  </text>
+</svg>

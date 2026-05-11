@@ -26,16 +26,13 @@ website:
         aria-label: GitHub
   
   sidebar:
-    background: "#C8CEF3"
+    logo: img/rstatszh-hex.svg
+    background: "#E5F1F8"
     pinned: true
     align: center
     style: "docked"
     search: true
     collapse-level: 1
-    tools:
-      - icon: github
-        href: https://github.com/rstatszh-k012/
-        text: "GitHub Organisation"
     contents:
       - section: "Vorbereitung"
         href: index.qmd
