@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 760" role="img" aria-label="rstatsZH hex logo">
+  <title>rstatsZH hex logo</title>
+  <desc>Hex sticker for rstatsZH using the official wordmark: rstats in black, ZH in blue #0070B4, on a periwinkle background.</desc>
+
+  <defs>
+    <style>
+      .wm-text {
+        font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: -1px;
+      }
+      .wm-ink { fill: #000000; }
+      .wm-zh  { fill: #0070B4; }
+    </style>
+  </defs>
+
+  <g transform="translate(340,385)">
+    <!-- White border -->
+    <polygon
+      points="0,-305 264.1,-152.5 264.1,152.5 0,305 -264.1,152.5 -264.1,-152.5"
+      fill="#FFFFFF"/>
+
+    <!-- Main hex fill -->
+    <polygon
+      points="0,-288 249.4,-144 249.4,144 0,288 -249.4,144 -249.4,-144"
+      fill="#A8B4C8"/>
+
+    <!-- Wordmark -->
+    <text text-anchor="middle" y="22" class="wm-text" font-size="112">
+      <tspan class="wm-ink">rstats</tspan><tspan class="wm-zh">ZH</tspan>
+    </text>
+  </g>
+</svg>

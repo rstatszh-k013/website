@@ -4,6 +4,7 @@ meta:
 
 color:
   palette:
+    # Course identity — purple family
     purple-dark: "#4C326A"
     purple-deep: "#461a52"
     purple: "#5536A7"
@@ -11,24 +12,42 @@ color:
     purple-light: "#9F74C6"
     purple-pale: "#C8CEF3"
     purple-paler: "#ECEEF8"
+    # Course identity — orange/warm family
     orange: "#FF6100"
+    orange-accessible: "#C24A00"
     orange-mid: "#FF8935"
     orange-warm: "#ED7A00"
+    # Course identity — supporting
     yellow: "#F59E02"
+    warning-amber: "#B57400"
     peach: "#FEBC94"
     highlight-yellow: "#FAE3B4"
     pink: "#FFC0CB"
+    # Standard semantic helpers
+    success-green: "#2E7D32"
     link-blue: "#272bd1"
     ink: "#1e1e1e"
     paper: "#f4f4f4"
+    # KTZH reference palette (from biplaRquarto) — for Modul 08 and chart use,
+    # not assigned to semantic roles
+    ktzh-blue: "#0070B4"
+    ktzh-cyan: "#009EE0"
+    ktzh-indigo: "#54268E"
+    ktzh-purple: "#7F3DA7"
+    ktzh-pink: "#D40053"
+    ktzh-red: "#D93C1A"
+    ktzh-orange: "#DC7700"
+    ktzh-yellow: "#FFCC00"
+    ktzh-green: "#8A8C00"
+    ktzh-teal: "#0FA693"
   foreground: ink
   background: paper
   primary: purple-dark
   secondary: purple-light
-  success: purple
-  info: purple-pale
-  warning: yellow
-  danger: orange
+  success: success-green
+  info: purple-mid
+  warning: warning-amber
+  danger: orange-accessible
   light: paper
   dark: ink
   link: link-blue
@@ -41,7 +60,7 @@ typography:
       style: [normal, italic]
     - family: Source Code Pro
       source: google
-      weight: [400, 500]
+      weight: [400]
     - family: Gochi Hand
       source: google
       weight: 400
