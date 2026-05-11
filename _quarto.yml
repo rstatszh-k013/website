@@ -92,7 +92,7 @@ format:
       margin-width: 300px
     include-in-header: 
         - text: |
-            <script defer data-domain="rstatszh-k011.github.io/website" src="https://plausible.io/js/script.js"></script>
+            <script defer data-domain="rstatszh-k012.github.io/website" src="https://plausible.io/js/script.js"></script>
 
 execute: 
   freeze: auto
