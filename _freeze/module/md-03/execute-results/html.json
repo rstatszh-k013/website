@@ -1,0 +1,15 @@
+{
+  "hash": "1759bef99af39f1478789a0aa1dddfb6",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Modul 3\"\nsubtitle: \"{{< var md-03.titel >}}\"\neditor: source\nparams:\n    modul: 3\nexecute: \n  echo: false\n  warning: false\nbibliography: referenzen.bib\neditor_options: \n  chunk_output_type: console\n---\n\n## Lernziele\n\n\n\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n1. Die Lernenden können fünf Funktionen aus dem R-Paket `dplyr` anwenden, um eine Teilmenge von Daten zur Verwendung in einer Tabelle oder einem Diagramm zu erzeugen.\n2. Die Lernenden können Funktionen aus dem R-Paket `dplyr` anwenden, um Daten mittels deskriptiver Statistik zusammenzufassen.\n:::\n\n\n## {{< fa display >}} Folien\n\n[Zeige Folien im Vollbildmodus an](../folien/md-03-datentransformation.html) | [Download slides as PDF]({{< var course.github-org >}}website/raw/main/folien/md-03-datentransformation.pdf)\n\n```{=html}\n<iframe class=\"slide-deck\" src=\"../folien/md-03-datentransformation.html\" height=\"420\" width=\"747\" style=\"border: 1px solid #123233;\"></iframe>\n```\n\n## {{< fa book >}} Lesematerial\n\n1. Lies: [R for Data Science - Section 3 - Data transformation](https://r4ds.hadley.nz/data-transform)\n\n## {{< fa code >}} Zusatzaufgaben\n\nBitte erledige die folgende Aufgabe bis **11. Juni 2026**.\n\n-   [Zusatzaufgabe 1](../zusatzaufgaben/md-03/za-03-01-daten-transformation.qmd): Daten Transformation mit `dplyr`\n-   [Zusatzaufgabe 2](../zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.qmd): Mit OGD Daten arbeiten\n\nVielen Dank für die Bearbeitung der Aufgaben.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

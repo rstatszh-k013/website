@@ -34,7 +34,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-was-muss-ich-vor-tag-1-vorbereiten",
     "title": "Vorbereitung - rstatsZH Kurs 012",
     "section": " Was muss ich vor Tag 1 vorbereiten?",
-    "text": "Was muss ich vor Tag 1 vorbereiten?\nArbeite durch die folgenden Schritte:\n\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und trete dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R for Data Science.\nSchritt 4: Fülle den Fragebogen bis Freitag, den 15. Mai 2026 aus.",
+    "text": "Was muss ich vor Tag 1 vorbereiten?\nBitte erledige alle folgenden Schritte bis Montag, 18. Mai 2026:\n\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und trete dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R for Data Science.\nSchritt 4: Fülle den Fragebogen aus.",
     "crumbs": [
       "Vorbereitung"
     ]
@@ -77,7 +77,7 @@
     "href": "vorbereitung/04-umfrage.html",
     "title": "Fragebogen",
     "section": "",
-    "text": "Fragebogen\nVielen Dank für die Teilnahme am Kurs “rstatsZH - Data Science mit R”. Der folgende Fragebogen beinhaltet Fragen welche für die Kursverwaltung und für Berichtszwecke genutzt werden. Danke für das Ausfüllen.\nFragebogen: https://forms.gle/oRKgrm68UV17vUZ6A",
+    "text": "Fragebogen\nVielen Dank für die Teilnahme am Kurs “rstatsZH - Data Science mit R”. Der folgende Fragebogen beinhaltet Fragen welche für die Kursverwaltung und für Berichtszwecke genutzt werden. Danke für das Ausfüllen.\nBitte fülle den Fragebogen bis Montag, 18. Mai 2026 aus.\nFragebogen: https://forms.gle/oRKgrm68UV17vUZ6A",
     "crumbs": [
       "Vorbereitung",
       "Schritt 4: Umfrage"
@@ -3578,7 +3578,7 @@
     "href": "vorbereitung/03-r4ds-intro.html",
     "title": "Kursbuch: R for Data Science",
     "section": "",
-    "text": "“R for Data Science” von Hadley Wickham und Garrett Grolemund ist ein unverzichtbarer Leitfaden für Anfänger:innen, die in die Welt der Datenwissenschaft mit R eintauchen möchten. Dieses Buch führt die Leser:innen in R, RStudio und den Tidyverse ein, eine Sammlung von R-Paketen, die entwickelt wurde, um datenwissenschaftliche Aufgaben zu optimieren und intuitiv zu gestalten.\nEs behandelt den gesamten datenwissenschaftlichen Prozess, einschließlich des Imports, Aufräumens (Cleaning), Transformierens, Visualisierens und Modellierens von Daten, wobei bewährte Verfahren und effiziente Arbeitsabläufe im Vordergrund stehen. Das Buch ist so aufgebaut, dass es Anfänger:innen dabei hilft, eine solide Grundlage in der Datenmanipulation und -analyse zu entwickeln, und bietet praktische Übungen zur Festigung des Gelernten.\nDieses Buch stellt das Kursbuch für diesen Kurs da. Der Zeitrahmen für den Kurs lässt es nicht zu durch sämtliche Kapitel zu arbeiten, jedoch werden die Kursteilnehmer:innen am Ende des Kurses mit den Fähigkeiten ausgestattet sein mittels des Buches selbstständig weiterzulernen.\n\n\n\n\n\n\n\n\nWarningNichts installieren!\n\n\n\nDu brauchst keinerlei zusätzliche Software auf deinem Arbeitsgerät installieren. Wir arbeiten mit Posit Cloud, einer Online-Plattform, die dir eine R-Umgebung zur Verfügung stellt. Als Teil des Kurses wirst du lernen wie du die nötige Software auch auf deinem eigenen Computer installieren kannst.\n\n\n\nLese das Kapitel “Introduction” von “R for Data Science” bis “Prerequisites” (du brauchst keinerlei Software auf deinem Arbeitsgerät installieren): https://r4ds.hadley.nz/intro",
+    "text": "“R for Data Science” von Hadley Wickham und Garrett Grolemund ist das Kursbuch für diesen Kurs. Es führt in R, RStudio und das Tidyverse ein und deckt den gesamten datenwissenschaftlichen Prozess ab: Daten importieren, aufräumen, transformieren, visualisieren und modellieren.\nIm Kurs arbeiten wir nicht alle Kapitel durch. Du wirst aber die nötigen Grundlagen erlernen, um danach selbstständig weiterzulernen.\n\n\n\n\n\n\nNoteEnglische und deutsche Version\n\n\n\n\nEnglische Version (immer aktuell): https://r4ds.hadley.nz/\nDeutsche Version: Das Buch kann als deutsche Übersetzung online bestellt werden. Beachte: Die Übersetzung ist eine Momentaufnahme und wird nicht laufend aktualisiert — massgebend ist immer die englische Originalversion.\n\n\n\n\n\n\n\n\n\n\n\nWarningNichts installieren!\n\n\n\nBei Lese-Kapiteln musst du nichts auf deinem Gerät installieren. Wir arbeiten mit Posit Cloud, einer Online-Plattform, die dir eine fertige R-Umgebung bereitstellt. Wie du R und RStudio später lokal installierst, lernst du im Kurs.\n\n\n\nLese das Kapitel “Introduction” von “R for Data Science” bis zum Abschnitt “Prerequisites”: https://r4ds.hadley.nz/intro",
     "crumbs": [
       "Vorbereitung",
       "Schritt 3: Kursbuch"
@@ -3589,7 +3589,7 @@
     "href": "vorbereitung/03-r4ds-intro.html#aufgabe",
     "title": "Kursbuch: R for Data Science",
     "section": "",
-    "text": "WarningNichts installieren!\n\n\n\nDu brauchst keinerlei zusätzliche Software auf deinem Arbeitsgerät installieren. Wir arbeiten mit Posit Cloud, einer Online-Plattform, die dir eine R-Umgebung zur Verfügung stellt. Als Teil des Kurses wirst du lernen wie du die nötige Software auch auf deinem eigenen Computer installieren kannst.\n\n\n\nLese das Kapitel “Introduction” von “R for Data Science” bis “Prerequisites” (du brauchst keinerlei Software auf deinem Arbeitsgerät installieren): https://r4ds.hadley.nz/intro",
+    "text": "WarningNichts installieren!\n\n\n\nBei Lese-Kapiteln musst du nichts auf deinem Gerät installieren. Wir arbeiten mit Posit Cloud, einer Online-Plattform, die dir eine fertige R-Umgebung bereitstellt. Wie du R und RStudio später lokal installierst, lernst du im Kurs.\n\n\n\nLese das Kapitel “Introduction” von “R for Data Science” bis zum Abschnitt “Prerequisites”: https://r4ds.hadley.nz/intro",
     "crumbs": [
       "Vorbereitung",
       "Schritt 3: Kursbuch"

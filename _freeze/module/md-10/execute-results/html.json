@@ -1,0 +1,15 @@
+{
+  "hash": "7cfc4390f200d91e1686e4666243694d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Modul 10\"\nsubtitle: \"{{< var md-10.titel >}}\"\neditor: source\nparams:\n    modul: 10\nexecute: \n  echo: false\n  warning: false\nbibliography: referenzen.bib\neditor_options: \n  chunk_output_type: console\n---\n\n## Lernziele\n\n\n\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n1. Die Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\n2. Die Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\n3. Die Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen.\n:::\n\n\n## {{< fa display >}} Folien\n\n[Zeige Folien im Vollbildmodus an](../folien/md-10-funktionen.html) | [Download slides as PDF]({{< var course.github-org >}}website/raw/main/folien/md-10-funktionen.pdf)\n\n```{=html}\n<iframe class=\"slide-deck\" src=\"../folien/md-10-funktionen.html\" height=\"420\" width=\"747\" style=\"border: 1px solid #123233;\"></iframe>\n```\n\n## {{< fa book >}} Lesematerial\n\n- Lies: [R for Data Science - Section 25 - Functions](https://r4ds.hadley.nz/functions)\n- Lies: [R for Data Science - Section 26 - Iteration](https://r4ds.hadley.nz/iteration)\n\n## {{< fa code >}} Zusatzaufgaben\n\nBitte erledige die folgende Aufgabe bis **30. Juli 2026**.\n\n- [Zusatzaufgabe 1](../zusatzaufgaben/md-10/za-10-01-communities.qmd): Kantons-Communities beitreten\n- [Zusatzaufgabe 2](../abschlussprojekt/): Abschlussprojekt fertigstellen",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

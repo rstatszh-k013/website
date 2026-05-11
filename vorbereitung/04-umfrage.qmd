@@ -1,5 +1,7 @@
-# Fragebogen 
+# Fragebogen
 
 Vielen Dank für die Teilnahme am Kurs "rstatsZH - Data Science mit R". Der folgende Fragebogen beinhaltet Fragen welche für die Kursverwaltung und für Berichtszwecke genutzt werden. Danke für das Ausfüllen.
+
+Bitte fülle den Fragebogen bis **Montag, 18. Mai 2026** aus.
 
 Fragebogen: <https://forms.gle/oRKgrm68UV17vUZ6A>

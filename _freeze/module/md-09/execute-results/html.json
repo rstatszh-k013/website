@@ -1,0 +1,15 @@
+{
+  "hash": "a9c9dd762c8fcaff0c3bd6ba5959d458",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Modul 9\"\nsubtitle: \"{{< var md-09.titel >}}\"\neditor: source\nparams:\n    modul: 9\nexecute: \n  echo: false\n  warning: false\nbibliography: referenzen.bib\neditor_options: \n  chunk_output_type: console\n---\n\n## Lernziele\n\n\n\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n1. Die Lernenden können Querverweise zu Diagrammen und Tabellen in Quarto Dokumenten erstellen.\n2. Die Lernenden können Folien im Format revealjs HTML erstellen.\n3. Die Lernenden können Metadaten eines Quarto Dokuments anpassen.\n:::\n\n\n## {{< fa display >}} Folien\n\n[Zeige Folien im Vollbildmodus an](../folien/md-09-quarto.html) | [Download slides as PDF]({{< var course.github-org >}}website/raw/main/folien/md-09-quarto.pdf)\n\n```{=html}\n<iframe class=\"slide-deck\" src=\"../folien/md-09-quarto.html\" height=\"420\" width=\"747\" style=\"border: 1px solid #123233;\"></iframe>\n```\n\n## {{< fa book >}} Lesematerial\n\n- Lies: [R for Data Science - Section 28 - Quarto](https://r4ds.hadley.nz/quarto)\n- Lies: [R for Data Science - Section 29 - Quarto formats](https://r4ds.hadley.nz/quarto-formats)\n\n## {{< fa code >}} Zusatzaufgabe\n\nBitte erledige die folgende Aufgabe bis **23. Juli 2026**.\n\n- [Zusatzaufgabe 1](../zusatzaufgaben/md-09/za-09-01-abschlussprojekt.qmd): Abschlussprojekt - Querverweise ",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

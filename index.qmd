@@ -20,9 +20,9 @@ Vor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Di
 
 ## {{< fa circle-question >}} Was muss ich vor Tag 1 vorbereiten?
 
-Arbeite durch die folgenden Schritte: 
+Bitte erledige alle folgenden Schritte bis **Montag, 18. Mai 2026**:
 
 - [Schritt 1](vorbereitung/01-github.qmd): Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.
 - [Schritt 2](vorbereitung/02-posit-cloud.qmd): Melde dich bei Posit Cloud an und trete dem Arbeitsbereich für den Kurs bei.
 - [Schritt 3](vorbereitung/03-r4ds-intro.qmd): Lies die Einführung des Kursbuches: R for Data Science.
-- [Schritt 4](vorbereitung/04-umfrage.qmd): Fülle den Fragebogen bis Freitag, den 15. Mai 2026 aus.
+- [Schritt 4](vorbereitung/04-umfrage.qmd): Fülle den Fragebogen aus.

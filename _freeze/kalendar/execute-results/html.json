@@ -1,0 +1,15 @@
+{
+  "hash": "29dcdf214e9300f77f1e83f3f190dd9c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Kurskalendar\"\neditor: source\nexecute: \n  echo: false\n  warning: false\ntoc: false\neditor_options: \n  chunk_output_type: console\n---\n\n\n\n\n::: {.cell tbl-colwidths='[15,30,55]'}\n::: {.cell-output-display}\n\n\n|modul                  |datum          |titel                                                                                      |\n|:----------------------|:--------------|:------------------------------------------------------------------------------------------|\n|Modul 01               |21 Mai 2026    |[Willkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I](https://rstatszh-k012.github.io/website/module/md-01.html)|\n|Modul 02               |28 Mai 2026    |[Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community](https://rstatszh-k012.github.io/website/module/md-02.html)|\n|Modul 03               |04 Juni 2026   |[Daten Transformation mit `dplyr`](https://rstatszh-k012.github.io/website/module/md-03.html)|\n|Modul 04               |11 Juni 2026   |[Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II](https://rstatszh-k012.github.io/website/module/md-04.html)|\n|Modul 05               |18 Juni 2026   |[Bedingte Anweisungen & Datumswerte & OGD Ressourcen](https://rstatszh-k012.github.io/website/module/md-05.html)|\n|Modul 06               |25 Juni 2026   |[Daten Typen & Vektoren & Iteration I (for loops)](https://rstatszh-k012.github.io/website/module/md-06.html)|\n|Modul 07               |02 Juli 2026   |[Datenformen lang und breit & Daten zusammenfügen](https://rstatszh-k012.github.io/website/module/md-07.html)|\n|Modul 08               |09 Juli 2026   |[Mit Text Daten arbeiten & KTZH Corporate Design mit statR](https://rstatszh-k012.github.io/website/module/md-08.html)|\n|Modul 09               |16 Juli 2026   |[Erstellung von Berichten und Folien mit Quarto](https://rstatszh-k012.github.io/website/module/md-09.html)|\n|Modul 10               |23 Juli 2026   |[Funktionen schreiben & Parameterisierung von Berichten](https://rstatszh-k012.github.io/website/module/md-10.html)|\n|Abschlussprojekt       |30 Juli 2026   |Abgabe Abschlussprojekt                                                                    |\n|Abschlussveranstaltung |06 August 2026 |Abschlussveranstaltung                                                                     |\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

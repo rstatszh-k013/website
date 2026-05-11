@@ -91,4 +91,7 @@ format:
         - text: |
             <script defer data-domain="rstatszh-k012.github.io/website" src="https://plausible.io/js/script.js"></script>
 
+execute:
+  freeze: auto
+
 
