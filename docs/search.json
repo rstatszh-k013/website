@@ -66,7 +66,7 @@
     "href": "vorbereitung/01-github.html#einrichten-eines-persönlichen-github-zugriffstokens-pat",
     "title": "rstatsZH - Data Science mit R",
     "section": "Einrichten eines persönlichen GitHub-Zugriffstokens (PAT)",
-    "text": "Einrichten eines persönlichen GitHub-Zugriffstokens (PAT)\nHier sind die schrittweisen Anweisungen zum Einrichten eines persönlichen GitHub-Zugriffstokens:\n\n\n\n\n\n\nWarning\n\n\n\n\n\nBehandle deine Zugriffstoken wie Passwörter und bewahre sie sicher auf (z.B. in einer Passwortverwaltungssoftware).\n\n\n\n\nMelde dich bei deinem GitHub-Konto an.\nKlicke oben rechts auf der Seite auf dein Profilbild.\nWähle im Dropdown-Menü “Settings” aus.\nKlicke in der linken Seitenleiste auf “Developer settings”.\nKlicke auf “Personal access tokens”.\nKlicke auf “Tokens (classic)”.\nKlicke auf “Generate new token” und wähle im Dropdown-Menü “Generate new token (classic)”. aus.\nGib deinem Token im Feld “Note” den Namen: GITHUB_PAT\nWähle unter “Expiration” die Option “No expiration” aus.\nWähle unter “Select scopes” Folgendes aus: repo, workflow, user.\nKlicke auf “Generate”.\nDein Zugriffstoken wird auf dem Bildschirm angezeigt. Kopiere es und bewahre es an einem sicheren Ort auf.",
+    "text": "Einrichten eines persönlichen GitHub-Zugriffstokens (PAT)\nHier sind die schrittweisen Anweisungen zum Einrichten eines persönlichen GitHub-Zugriffstokens:\n\n\n\n\n\n\nWarning\n\n\n\n\n\nBehandle deine Zugriffstoken wie Passwörter und bewahre sie sicher auf (z.B. in einer Passwortverwaltungssoftware).\n\n\n\n\nMelde dich bei deinem GitHub-Konto an.\nKlicke oben rechts auf der Seite auf dein Profilbild, um das Benutzermenü zu öffnen.\nWähle im Dropdown-Menü “Settings” (Einstellungen) aus. Du gelangst auf deine persönliche Einstellungsseite.\nScrolle in der linken Seitenleiste ganz nach unten und klicke auf “Developer settings” (Entwicklereinstellungen). Dies ist der letzte Eintrag in der Liste der Einstellungen.\nKlicke in der linken Seitenleiste auf “Personal access tokens”, um den Bereich aufzuklappen.\nKlicke auf den Untermenüpunkt “Tokens (classic)”.\nKlicke oben rechts auf die Schaltfläche “Generate new token” und wähle im Dropdown-Menü “Generate new token (classic)” aus. Möglicherweise wirst du aufgefordert, dein Passwort erneut einzugeben, um deine Identität zu bestätigen.\nGib deinem Token im Feld “Note” einen aussagekräftigen Namen, z.B.: GITHUB_PAT. Dieser Name hilft dir später, den Token zu identifizieren.\nWähle unter “Expiration” (Ablaufdatum) die Option “90 days” aus.\nSetze unter “Select scopes” (Berechtigungen auswählen) die Häkchen bei den folgenden drei Optionen: repo, workflow und user. Diese Berechtigungen erlauben dir den Zugriff auf Repositories, GitHub Actions und deine Benutzerdaten.\nScrolle ganz nach unten auf der Seite und klicke auf die grüne Schaltfläche “Generate token”.\nDein Zugriffstoken wird nur einmal auf dem Bildschirm angezeigt. Kopiere ihn sofort und bewahre ihn an einem sicheren Ort auf (z.B. in einer Passwortverwaltungssoftware). Wenn du den Token verlierst, musst du einen neuen erstellen.",
     "crumbs": [
       "Vorbereitung",
       "Schritt 1: GitHub"
@@ -278,7 +278,7 @@
     "href": "module/md-01.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6465203e7d7d-zusatzaufgaben",
     "title": "Modul 1",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 30. September 2025.\n\nZusatzaufgabe 1: Git configuration\n\nVielen Dank für die Bearbeitung der Aufgabe.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 28. Mai 2026.\n\nZusatzaufgabe 1: Git configuration\n\nVielen Dank für die Bearbeitung der Aufgabe.",
     "crumbs": [
       "Modul 01"
     ]
@@ -3335,7 +3335,7 @@
     "href": "module/md-02.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6465203e7d7d-zusatzaufgaben",
     "title": "Modul 2",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 07. Oktober 2025.\n\nZusatzaufgabe 1: Daten Visualisierung mit ggplot2\n\nVielen Dank für die Bearbeitung der Aufgaben.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 04. Juni 2026.\n\nZusatzaufgabe 1: Daten Visualisierung mit ggplot2\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 02"
     ]
