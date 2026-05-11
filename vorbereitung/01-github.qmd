@@ -8,7 +8,7 @@ Um einen Account auf GitHub einzurichten, befolge diese allgemeinen Schritte:
 
 1. Gehe auf die GitHub Website unter <https://github.com/>.
 
-2. Klicke auf die Schaltfläche "Sign up" oben rechts auf der Seite.
+2. Klicke auf die Schaltfläche ["Sign up"]{.highlight-yellow} oben rechts auf der Seite.
 
 3. Gib deinen gewünschten Benutzernamen, deine E-Mail-Adresse und dein Passwort in die dafür vorgesehenen Felder ein.
 
@@ -44,24 +44,24 @@ Behandle deine Zugriffstoken wie Passwörter und bewahre sie sicher auf (z.B. in
 
 1. Melde dich bei deinem GitHub-Konto an.
 
-2. Klicke oben rechts auf der Seite auf dein Profilbild.
+2. Klicke oben rechts auf der Seite auf dein Profilbild, um das Benutzermenü zu öffnen.
 
-3. Wähle im Dropdown-Menü "Settings" aus.
+3. Wähle im Dropdown-Menü ["Settings"]{.highlight-yellow} (Einstellungen) aus. Du gelangst auf deine persönliche Einstellungsseite.
 
-4. Klicke in der linken Seitenleiste auf "Developer settings".
+4. Scrolle in der linken Seitenleiste ganz nach unten und klicke auf ["Developer settings"]{.highlight-yellow} (Entwicklereinstellungen). Dies ist der **letzte Eintrag** in der Liste der Einstellungen.
 
-5. Klicke auf "Personal access tokens".
+5. Klicke in der linken Seitenleiste auf ["Personal access tokens"]{.highlight-yellow}, um den Bereich aufzuklappen.
 
-6. Klicke auf **"Tokens (classic)"**.
+6. Klicke auf den Untermenüpunkt ["Tokens (classic)"]{.highlight-yellow}.
 
-7. Klicke auf "Generate new token" und wähle im Dropdown-Menü **"Generate new token (classic)".** aus.
+7. Klicke oben rechts auf die Schaltfläche ["Generate new token"]{.highlight-yellow} und wähle im Dropdown-Menü ["Generate new token (classic)"]{.highlight-yellow} aus. Möglicherweise wirst du aufgefordert, dein Passwort erneut einzugeben, um deine Identität zu bestätigen.
 
-8. Gib deinem Token im Feld "Note" den Namen: GITHUB_PAT
+8. Gib deinem Token im Feld ["Note"]{.highlight-yellow} einen aussagekräftigen Namen, z.B.: `GITHUB_PAT`. Dieser Name hilft dir später, den Token zu identifizieren.
 
-9. Wähle unter "Expiration" die Option "No expiration" aus.
+9. Wähle unter ["Expiration"]{.highlight-yellow} (Ablaufdatum) die Option ["90 days"]{.highlight-yellow} aus.
 
-10. Wähle unter "Select scopes" Folgendes aus: **repo, workflow, user**.
+10. Setze unter ["Select scopes"]{.highlight-yellow} (Berechtigungen auswählen) die Häkchen bei den folgenden drei Optionen: `repo`, `workflow` und `user`. Diese Berechtigungen erlauben dir den Zugriff auf Repositories, GitHub Actions und deine Benutzerdaten.
 
-11. Klicke auf "Generate".
+11. Scrolle ganz nach unten auf der Seite und klicke auf die grüne Schaltfläche ["Generate token"]{.highlight-yellow}.
 
-12. Dein Zugriffstoken wird auf dem Bildschirm angezeigt. Kopiere es und bewahre es an einem sicheren Ort auf.
+12. Dein Zugriffstoken wird **nur einmal** auf dem Bildschirm angezeigt. Kopiere ihn sofort und bewahre ihn an einem sicheren Ort auf (z.B. in einer Passwortverwaltungssoftware). Wenn du den Token verlierst, musst du einen neuen erstellen.

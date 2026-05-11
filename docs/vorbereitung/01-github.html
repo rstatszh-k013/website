@@ -41,9 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-4b8b535605d27086117a1b1ae3a37b34.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-43c28299517c1913402aa89f1652c9ae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-43c28299517c1913402aa89f1652c9ae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-43c28299517c1913402aa89f1652c9ae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-43ec62738471e44cc97073cb64c44a9b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-43ec62738471e44cc97073cb64c44a9b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-43ec62738471e44cc97073cb64c44a9b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -235,7 +235,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Um einen Account auf GitHub einzurichten, befolge diese allgemeinen Schritte:</p>
 <ol type="1">
 <li><p>Gehe auf die GitHub Website unter <a href="https://github.com/" class="uri">https://github.com/</a>.</p></li>
-<li><p>Klicke auf die Schaltfläche “Sign up” oben rechts auf der Seite.</p></li>
+<li><p>Klicke auf die Schaltfläche <span class="highlight-yellow">“Sign up”</span> oben rechts auf der Seite.</p></li>
 <li><p>Gib deinen gewünschten Benutzernamen, deine E-Mail-Adresse und dein Passwort in die dafür vorgesehenen Felder ein.</p></li>
 <li><p>Wähle aus, ob du Updates und Ankündigungen per E-Mail erhalten möchtest.</p></li>
 <li><p>Schließe den Verifizierungsprozess ab, indem du ein Puzzle löst und einen Verifizierungscode eingibst, der an deine E-Mail-Adresse gesendet wird.</p></li>
@@ -291,17 +291,17 @@ Warning
 </div>
 <ol type="1">
 <li><p>Melde dich bei deinem GitHub-Konto an.</p></li>
-<li><p>Klicke oben rechts auf der Seite auf dein Profilbild.</p></li>
-<li><p>Wähle im Dropdown-Menü “Settings” aus.</p></li>
-<li><p>Klicke in der linken Seitenleiste auf “Developer settings”.</p></li>
-<li><p>Klicke auf “Personal access tokens”.</p></li>
-<li><p>Klicke auf <strong>“Tokens (classic)”</strong>.</p></li>
-<li><p>Klicke auf “Generate new token” und wähle im Dropdown-Menü <strong>“Generate new token (classic)”.</strong> aus.</p></li>
-<li><p>Gib deinem Token im Feld “Note” den Namen: GITHUB_PAT</p></li>
-<li><p>Wähle unter “Expiration” die Option “No expiration” aus.</p></li>
-<li><p>Wähle unter “Select scopes” Folgendes aus: <strong>repo, workflow, user</strong>.</p></li>
-<li><p>Klicke auf “Generate”.</p></li>
-<li><p>Dein Zugriffstoken wird auf dem Bildschirm angezeigt. Kopiere es und bewahre es an einem sicheren Ort auf.</p></li>
+<li><p>Klicke oben rechts auf der Seite auf dein Profilbild, um das Benutzermenü zu öffnen.</p></li>
+<li><p>Wähle im Dropdown-Menü <span class="highlight-yellow">“Settings”</span> (Einstellungen) aus. Du gelangst auf deine persönliche Einstellungsseite.</p></li>
+<li><p>Scrolle in der linken Seitenleiste ganz nach unten und klicke auf <span class="highlight-yellow">“Developer settings”</span> (Entwicklereinstellungen). Dies ist der <strong>letzte Eintrag</strong> in der Liste der Einstellungen.</p></li>
+<li><p>Klicke in der linken Seitenleiste auf <span class="highlight-yellow">“Personal access tokens”</span>, um den Bereich aufzuklappen.</p></li>
+<li><p>Klicke auf den Untermenüpunkt <span class="highlight-yellow">“Tokens (classic)”</span>.</p></li>
+<li><p>Klicke oben rechts auf die Schaltfläche <span class="highlight-yellow">“Generate new token”</span> und wähle im Dropdown-Menü <span class="highlight-yellow">“Generate new token (classic)”</span> aus. Möglicherweise wirst du aufgefordert, dein Passwort erneut einzugeben, um deine Identität zu bestätigen.</p></li>
+<li><p>Gib deinem Token im Feld <span class="highlight-yellow">“Note”</span> einen aussagekräftigen Namen, z.B.: <code>GITHUB_PAT</code>. Dieser Name hilft dir später, den Token zu identifizieren.</p></li>
+<li><p>Wähle unter <span class="highlight-yellow">“Expiration”</span> (Ablaufdatum) die Option <span class="highlight-yellow">“90 days”</span> aus.</p></li>
+<li><p>Setze unter <span class="highlight-yellow">“Select scopes”</span> (Berechtigungen auswählen) die Häkchen bei den folgenden drei Optionen: <code>repo</code>, <code>workflow</code> und <code>user</code>. Diese Berechtigungen erlauben dir den Zugriff auf Repositories, GitHub Actions und deine Benutzerdaten.</p></li>
+<li><p>Scrolle ganz nach unten auf der Seite und klicke auf die grüne Schaltfläche <span class="highlight-yellow">“Generate token”</span>.</p></li>
+<li><p>Dein Zugriffstoken wird <strong>nur einmal</strong> auf dem Bildschirm angezeigt. Kopiere ihn sofort und bewahre ihn an einem sicheren Ort auf (z.B. in einer Passwortverwaltungssoftware). Wenn du den Token verlierst, musst du einen neuen erstellen.</p></li>
 </ol>
 
 

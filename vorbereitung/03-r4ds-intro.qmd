@@ -1,19 +1,22 @@
 # Kursbuch: R for Data Science
 
-"R for Data Science" von Hadley Wickham und Garrett Grolemund ist ein unverzichtbarer Leitfaden für Anfänger:innen, die in die Welt der Datenwissenschaft mit R eintauchen möchten. Dieses Buch führt die Leser:innen in R, RStudio und den Tidyverse ein, eine Sammlung von R-Paketen, die entwickelt wurde, um datenwissenschaftliche Aufgaben zu optimieren und intuitiv zu gestalten. 
+"R for Data Science" von Hadley Wickham und Garrett Grolemund ist das Kursbuch für diesen Kurs. Es führt in R, RStudio und das Tidyverse ein und deckt den gesamten datenwissenschaftlichen Prozess ab: Daten importieren, aufräumen, transformieren, visualisieren und modellieren.
 
-Es behandelt den gesamten datenwissenschaftlichen Prozess, einschließlich des Imports, Aufräumens (Cleaning), Transformierens, Visualisierens und Modellierens von Daten, wobei bewährte Verfahren und effiziente Arbeitsabläufe im Vordergrund stehen. Das Buch ist so aufgebaut, dass es Anfänger:innen dabei hilft, eine solide Grundlage in der Datenmanipulation und -analyse zu entwickeln, und bietet praktische Übungen zur Festigung des Gelernten. 
+Im Kurs arbeiten wir nicht alle Kapitel durch. Du wirst aber die nötigen Grundlagen erlernen, um danach selbstständig weiterzulernen.
 
-Dieses Buch stellt das Kursbuch für diesen Kurs da. Der Zeitrahmen für den Kurs lässt es nicht zu durch sämtliche Kapitel zu arbeiten, jedoch werden die Kursteilnehmer:innen am Ende des Kurses mit den Fähigkeiten ausgestattet sein mittels des Buches selbstständig weiterzulernen.
+::: {.callout-note}
+## Englische und deutsche Version
+
+- **Englische Version (immer aktuell):** <https://r4ds.hadley.nz/>
+- **Deutsche Version:** Das Buch kann als deutsche Übersetzung online bestellt werden. Beachte: Die Übersetzung ist eine Momentaufnahme und wird nicht laufend aktualisiert — massgebend ist immer die englische Originalversion.
+:::
 
 ## Aufgabe
 
 ::: {.callout-warning}
 ## Nichts installieren!
 
-Du brauchst keinerlei zusätzliche Software auf deinem Arbeitsgerät installieren. Wir arbeiten mit Posit Cloud, einer Online-Plattform, die dir eine R-Umgebung zur Verfügung stellt. Als Teil des Kurses wirst du lernen wie du die nötige Software auch auf deinem eigenen Computer installieren kannst.
-
+Bei Lese-Kapiteln musst du **nichts** auf deinem Gerät installieren. Wir arbeiten mit Posit Cloud, einer Online-Plattform, die dir eine fertige R-Umgebung bereitstellt. Wie du R und RStudio später lokal installierst, lernst du im Kurs.
 :::
 
-1. Lese das Kapitel "Introduction" von "R for Data Science" bis "Prerequisites" (du brauchst keinerlei Software auf deinem Arbeitsgerät installieren): <https://r4ds.hadley.nz/intro>
-
+1. Lese das Kapitel "Introduction" von "R for Data Science" bis zum Abschnitt "Prerequisites": <https://r4ds.hadley.nz/intro>
