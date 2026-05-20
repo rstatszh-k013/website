@@ -271,11 +271,11 @@ countdown(minutes = 10)
 Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 :::
 
-## Ihr seid dran: md-01-uebungen
+## Ihr seid dran: md-01-uebungen {.smaller}
 
 ::: task
 1. Öffne [posit.cloud/spaces/{{< var course.posit-cloud-space-id >}}]({{< var course.posit-cloud-space >}}) in deinem Browser.
-2. Falls du dich nicht im rstatsZH-K011 Arbeitsbereich befindest, öffne diesen.
+2. Falls du dich nicht im {{< var course.code >}} Arbeitsbereich befindest, öffne diesen.
 3. Klicke auf [Start]{.highlight-yellow} neben [md-01-exercises]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei `hello-quarto.qmd` und [klicke darauf]{.highlight-yellow}.
 5. Klicke auf den [Render-Button]{.highlight-yellow} um das Dokument zu rendern. Möglicherweise musst du [Pop-ups erlauben]{.highlight-yellow} in deinem Browser.
@@ -302,7 +302,7 @@ countdown(minutes = 15)
 
 # Quarto formate {background-color="#4C326A"}
 
-## Mit einer Installation ist alles enthalten
+## Mit einer Installation ist alles enthalten {.smaller}
 
 -   RMarkdown entwickelte sich zu einem großen Ökosystem mit **unterschiedlicher Syntax**.
 
@@ -405,15 +405,15 @@ knitr::include_graphics("img/md-01/git-logo.png")
 knitr::include_graphics("img/md-01/github-logo.png")
 ```
 
--   GitHub is a hosting platform for version control using Git
+-   GitHub ist eine Hosting-Plattform für Versionskontrolle mit Git
 
--   Launched in 2008, aquired by Microsoft in in 2018, Microsoft for US\$ 7.5 billion
+-   2008 gestartet, 2018 von Microsoft für US\$ 7.5 Milliarden übernommen
 
--   
+-
 
-    > 100 million Users (20.5 in 2022 alone) ([October, 2023](https://octoverse.github.com/2022/global-tech-talent))
+    > 180 Millionen Nutzer:innen (2025) ([Octoverse, 2025](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/))
 
--   Social media for software developers
+-   Social Media für Softwareentwickler:innen
 :::
 :::
 
