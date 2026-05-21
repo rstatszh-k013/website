@@ -16,7 +16,7 @@ gs4_auth(cache = ".secrets", email = Sys.getenv("GOOGLE_EMAIL"))
 
 ## course schedule  --------------------------------------------------
 
-kursplan <- "https://docs.google.com/spreadsheets/d/1rDDyRpUsBo0JIy3PWotdQtDwml0P9mASy-GGr5iKbPU/edit?gid=0#gid=0"
+kursplan <- "https://docs.google.com/spreadsheets/d/1fXnhz1MO-C019BDQfoxqSDAc76YXJi-3AqjnLVCDmp8/edit?gid=0#gid=0"
 
 read_sheet(ss = kursplan) |> 
     mutate(titel = case_when(
@@ -27,14 +27,14 @@ read_sheet(ss = kursplan) |>
 
 ## learning objectives  ------------------------------
 
-lernziele <- "https://docs.google.com/spreadsheets/d/1lOoaUvQWignPAp1v5tkwRzsnv16RyAUjsZMbzodIuPY/edit?gid=0#gid=0"
+lernziele <- "https://docs.google.com/spreadsheets/d/1a2zE0VmyakXmfQTLuMf7AzPxMZBc_Pexr6Bin0GoSZg/edit?gid=0#gid=0"
 
 read_sheet(ss = lernziele,  n_max = 37) |> 
     write_csv(here::here("data/tbl-01-rstatszh-lernziele.csv"))
 
 ## abschlussprojekt
 
-abschlussprojekt <- "https://docs.google.com/spreadsheets/d/1rUfwhHVWzkGWQTW-VKxEhHRGgtRg893ijbkHHqiJ4YY/edit?gid=0#gid=0"
+abschlussprojekt <- "https://docs.google.com/spreadsheets/d/1xmyR6yJjE8Mxzhc9JMyXrxRbs0I8vbZjFBFZ7i9mrSc/edit?gid=0#gid=0"
 
 read_sheet(ss = abschlussprojekt) |> 
     write_csv(here::here("data/tbl-02-rstatszh-abschlussprojekt.csv"))

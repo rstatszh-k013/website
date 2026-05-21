@@ -1,63 +1,63 @@
 course:
-  code: "rstatszh-k012"
+  code: "rstatszh-k013"
   long-titel: "rstatsZH - Data Science mit R"
-  site: "https://rstatszh-k012.github.io/website/"
-  site-short: "rstatszh-k012.github.io/website/"
-  github-org: "https://github.com/rstatszh-k012/"
+  site: "https://rstatszh-k013.github.io/website/"
+  site-short: "rstatszh-k013.github.io/website/"
+  github-org: "https://github.com/rstatszh-k013/"
   posit-cloud-space-id: "784141"
   posit-cloud-space: "https://posit.cloud/spaces/784141"
   posit-cloud-signup: "https://posit.cloud/spaces/784141/join?access_code=y6qdOjQWU0zfUwyP6rWLSzTbMTrixhwauiLI2aRi"
 
 md-01:
   titel: "Willkommen zum Kurs & Werkzeugkiste"
-  date: "2026-05-21"
-  homework-due: "2026-05-28"
+  date: "2026-09-10"
+  homework-due: "2026-09-17"
 
 md-02:
   titel: "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)"
-  date: "2026-05-28"
-  homework-due: "2026-06-04"
+  date: "2026-09-17"
+  homework-due: "2026-09-24"
 
 md-03:
   titel: "Daten Transformation mit `dplyr`"
-  date: "2026-06-04"
-  homework-due: "2026-06-11"
+  date: "2026-09-24"
+  homework-due: "2026-10-01"
 
 md-04:
   titel: "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II"
-  date: "2026-06-11"
-  homework-due: "2026-06-18"
+  date: "2026-10-01"
+  homework-due: "2026-10-15"
 
 md-05:
   titel: "Bedingte Anweisungen & Datumswerte & OGD Ressourcen"
-  date: "2026-06-18"
-  homework-due: "2026-06-25"
+  date: "2026-10-15"
+  homework-due: "2026-10-22"
 
 md-06:
   titel: "Daten Typen & Vektoren & For Loops"
-  date: "2026-06-25"
-  homework-due: "2026-07-02"
+  date: "2026-10-22"
+  homework-due: "2026-10-29"
 
 md-07:
   titel: "Datenformen lang und breit & Daten zusammenfügen"
-  date: "2026-07-02"
-  homework-due: "2026-07-09"
+  date: "2026-10-29"
+  homework-due: "2026-11-05"
 
 md-08:
   titel: "Mit Text Daten arbeiten & KTZH Corporate Design mit statR"
-  date: "2026-07-09"
-  homework-due: "2026-07-16"
+  date: "2026-11-05"
+  homework-due: "2026-11-12"
 
 md-09:
   titel: "Erstellung von Berichten und Folien mit Quarto"
-  date: "2026-07-16"
-  homework-due: "2026-07-23"
+  date: "2026-11-12"
+  homework-due: "2026-11-19"
 
 md-10:
   titel: "Funktionen schreiben & Parameterisierung von Berichten"
-  date: "2026-07-23"
-  homework-due: "2026-07-30"
+  date: "2026-11-19"
+  homework-due: "2026-11-26"
 
 abschlussprojekt:
-  due-date: "2026-07-30"
-  due-date-long: "Donnerstag, 30. Juli 2026"
+  due-date: "2026-11-26"
+  due-date-long: "Donnerstag, 26. November 2026"

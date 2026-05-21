@@ -2,7 +2,7 @@
 title: "{{< var md-10.titel >}}"
 subtitle: "{{< var course.long-titel >}}"
 author: "Lars Schöbitz"
-date: "2026-07-23"
+date: "2026-11-19"
 date-format: "MMM D, YYYY"
 format: 
   revealjs: 
@@ -384,7 +384,7 @@ quarto publish quarto-pub
 
 ## Abschlussveranstaltung
 
-- 2026-08-06
+- 2026-12-03
 - 13:00 bis 15:00
 - MS Teams
 
