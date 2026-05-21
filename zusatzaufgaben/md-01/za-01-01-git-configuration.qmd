@@ -5,6 +5,17 @@ execute:
     echo: false
 ---
 
+::: callout-note
+## Repository oder Projekt?
+
+In dieser Zusatzaufgabe begegnen dir beide Begriffe — sie meinen *fast* dasselbe, aber an unterschiedlichen Orten:
+
+- **Repository** ist der Begriff auf **GitHub**. Dort liegen deine Dateien versioniert in einem Repository.
+- **Projekt** ist der Begriff auf **Posit Cloud**. Wenn du ein Repository von GitHub nach Posit Cloud klonst, wird es dort in der Projektliste als "Project" angezeigt.
+
+Es ist also derselbe Ordner mit denselben Dateien — nur an zwei verschiedenen Orten und mit der jeweils dort üblichen Bezeichnung.
+:::
+
 ## Schritt 0: Einladung zur GitHub-Organisation annehmen
 
 1. Nehme die Einladung zum Beitritt der GitHub Organisation für den Kurs an.
@@ -55,10 +66,14 @@ execute:
 
 ## Schritt 2: Stelle dich Git vor
 
-::: callout-tip
-## Pause gemacht?
+::: {.callout-tip collapse="true"}
+## Pause eingelegt? So findest du dein Projekt wieder
 
-Falls du das Projekt aus Schritt 1 geschlossen hast, öffne in Posit Cloud erneut das Projekt `md-01-zusatzaufgaben-BENUTZERNAME`, das mit deinem GitHub-Benutzernamen endet.
+Falls du den Browser-Tab mit Posit Cloud aus Schritt 1 geschlossen hast oder das Projekt nicht mehr offen ist, gehe wie folgt vor:
+
+1. Öffne den {{< var course.code >}} Arbeitsbereich (Workspace) auf [{{< var course.posit-cloud-space >}}]({{< var course.posit-cloud-space >}}) erneut.
+2. Klicke in der Projektliste auf das Projekt `md-01-zusatzaufgaben-BENUTZERNAME`, das mit deinem GitHub-Benutzernamen endet, um es wieder zu öffnen.
+3. Warte, bis das Projekt geladen ist, und fahre dann mit Schritt 1 unten fort.
 :::
 
 1. Öffne die Datei git-configuration.qmd, welche du im Datei Manager ("Files") im Fenster unten rechts findest, indem du darauf klickst. Die Datei öffnet sich im Fenster oben rechts.
