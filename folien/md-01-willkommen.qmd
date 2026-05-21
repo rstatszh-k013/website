@@ -281,8 +281,10 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 5. Klicke auf den [Render-Button]{.highlight-yellow} um das Dokument zu rendern. Möglicherweise musst du [Pop-ups erlauben]{.highlight-yellow} in deinem Browser.
 6. Im YAML-Header, ersetze beim Schlüssel `author:` den Text `Your Name` mit deinem Namen.
 7. [Rendere]{.highlight-yellow} das Dokument erneut.
-8. Untersuche die Komponenten des Dokuments und führe eine weitere Aktualisierung durch und rendere erneut.
-9. Besprich deine Notizen über die vorgenommenen Aktualisierungen mit deinen Raumpartner:innen.
+8. Führe einen einzelnen Code-Chunk aus, indem du auf den [grünen Pfeil]{.highlight-yellow} (▶) oben rechts im Chunk klickst. Was passiert? Wo erscheint die Ausgabe?
+9. Vergleiche die drei `filter(year == 2007)` Code-Chunks und beobachte: (1) Ausgabe in der Konsole, (2) Ausgabe als formatierte Tabelle mit `knitr::kable()`, (3) Zuweisung an ein Objekt (keine sichtbare Ausgabe, aber neues Objekt im Environment).
+10. Untersuche die weiteren Komponenten des Dokuments und führe eine eigene Aktualisierung durch und rendere erneut.
+11. Besprich deine Notizen über die vorgenommenen Aktualisierungen und Beobachtungen mit deinen Raumpartner:innen.
 :::
 
 ```{r}
