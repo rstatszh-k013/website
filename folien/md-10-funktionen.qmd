@@ -465,8 +465,8 @@ countdown(minutes = 5)
 ## Wie es für mich weiter geht
 
 1. **Beratung:** Projektbezogener Support, Code Review, Coaching
-2. **rstatsZH Kursleitung:** Info über den 12. Kurs verbreiten. Start: 12.05.2026
-3. **Kurse zu vertiefenden Themen:** Entwicklung von 3-Stunden Workshops 
+2. **rstatsZH Kursleitung:** Info über den XX. Kurs verbreiten. Start: TT.MM.JJJJ <!-- TODO: nächste Iteration eintragen -->
+3. **Kurse zu vertiefenden Themen:** Entwicklung von 3-Stunden Workshops
 
 ## Zeitpuffer: Modul 10 {.smaller}
 
