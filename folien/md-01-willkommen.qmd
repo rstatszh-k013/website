@@ -276,7 +276,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 ::: task
 1. Öffne [posit.cloud/spaces/{{< var course.posit-cloud-space-id >}}]({{< var course.posit-cloud-space >}}) in deinem Browser.
 2. Falls du dich nicht im {{< var course.code >}} Arbeitsbereich befindest, öffne diesen.
-3. Klicke auf [Start]{.highlight-yellow} neben [md-01-exercises]{.highlight-yellow}.
+3. Klicke auf [Start]{.highlight-yellow} neben [md-01-uebungen]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei `hello-quarto.qmd` und [klicke darauf]{.highlight-yellow}.
 5. Klicke auf den [Render-Button]{.highlight-yellow} um das Dokument zu rendern. Möglicherweise musst du [Pop-ups erlauben]{.highlight-yellow} in deinem Browser.
 6. Im YAML-Header, ersetze beim Schlüssel `author:` den Text `Your Name` mit deinem Namen.
@@ -469,7 +469,7 @@ countdown(minutes = 15)
 
 Folien erstellt mit revealjs und Quarto: <https://quarto.org/docs/presentations/revealjs/>
 
-Access slides als [PDF auf GitHub]({{< var course.github-org >}}website/raw/main/folien/md-01-willkommen.pdf)
+Folien als [PDF auf GitHub]({{< var course.github-org >}}website/raw/main/folien/md-01-willkommen.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 
