@@ -47,25 +47,33 @@ execute:
 
 ![](images/gh-clone-07.png){width=50%}
 
-10. Fahre mit dem nächsten Schritt 2 fort.
+10. Aktiviere den privaten Zugriff auf das Repository (Private Access to Repository).
+
+<!-- TODO: Screenshots für Schritt 1.10 ergänzen (siehe Issue) -->
+
+11. Fahre mit dem nächsten Schritt 2 fort.
 
 ## Schritt 2: Stelle dich Git vor
 
-1. Falls das Projekt aus Schritt 1 geschlossen wurde, öffne das Projekt md-01-zusatzaufgaben-BENUTZERNAME in Posit Cloud, das mit deinem GitHub-Benutzernamen endet.
+::: callout-tip
+## Pause gemacht?
 
-2. Öffne die Datei git-configuration.qmd, welche du im Datei Manager ("Files") im Fenster unten rechts findest, indem du darauf klickst. Die Datei öffnet sich im Fenster oben rechts.
+Falls du das Projekt aus Schritt 1 geschlossen hast, öffne in Posit Cloud erneut das Projekt `md-01-zusatzaufgaben-BENUTZERNAME`, das mit deinem GitHub-Benutzernamen endet.
+:::
+
+1. Öffne die Datei git-configuration.qmd, welche du im Datei Manager ("Files") im Fenster unten rechts findest, indem du darauf klickst. Die Datei öffnet sich im Fenster oben rechts.
 
 ![](images/gh-clone-07.png){width=50%}
 
-3. Bearbeite den Code-Abschnitt unter "Git configuration details" und ersetze die Platzhalter durch deinen Namen und deine E-Mail-Adresse (anhand dieser Daten wird Git dich identifizieren, wenn du Änderungen vornimmst und diese gespeichert werden). **Beachte:** Die Anführungszeichen müssen beibehalten werden.
+2. Bearbeite den Code-Abschnitt unter "Git configuration details" und ersetze die Platzhalter durch deinen Namen und deine E-Mail-Adresse (anhand dieser Daten wird Git dich identifizieren, wenn du Änderungen vornimmst und diese gespeichert werden). **Beachte:** Die Anführungszeichen müssen beibehalten werden.
 
 ![](images/gh-clone-08-01.png){width=50%}
 
-4. Render das Dokument indem du auf den [Render]{.highlight-yellow}-Button (kleiner blauer Pfeil, der nach rechts zeigt) klickst.
+3. Render das Dokument indem du auf den [Render]{.highlight-yellow}-Button (kleiner blauer Pfeil, der nach rechts zeigt) klickst.
 
 ![](images/gh-clone-08-02.png){width=50%}
 
-5. Behalte das Projekt md-01-zusatzaufgaben-BENUTZERNAME in RStudio geöffnet. Fahre mit Schritt 3 fort.
+4. Behalte das Projekt md-01-zusatzaufgaben-BENUTZERNAME in RStudio geöffnet. Fahre mit Schritt 3 fort.
 
 ## Schritt 3: Übertrage deine Änderungen und speichere sie
 
