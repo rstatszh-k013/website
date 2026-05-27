@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.36">
+  <meta name="generator" content="quarto-1.9.37">
 
   <meta name="author" content="Lars Schöbitz">
   <title>rstatsZH - Data Science mit R – Funktionen schreiben &amp; Parameterisierung von Berichten</title>
@@ -213,7 +213,7 @@ Lars Schöbitz
 </div>
 </div>
 
-  <p class="date">Jul 23, 2026</p>
+  <p class="date">Nov 19, 2026</p>
 </section>
 <section id="lernziele-für-diese-woche" class="slide level2">
 <h2>Lernziele (für diese Woche)</h2>
@@ -237,23 +237,23 @@ Lars Schöbitz
 <span id="cb1-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
 <span id="cb1-3"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="zrtkfgtiby" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#zrtkfgtiby table {
+<div id="ekotltfocx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ekotltfocx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#zrtkfgtiby thead, #zrtkfgtiby tbody, #zrtkfgtiby tfoot, #zrtkfgtiby tr, #zrtkfgtiby td, #zrtkfgtiby th {
+#ekotltfocx thead, #ekotltfocx tbody, #ekotltfocx tfoot, #ekotltfocx tr, #ekotltfocx td, #ekotltfocx th {
   border-style: none;
 }
 
-#zrtkfgtiby p {
+#ekotltfocx p {
   margin: 0;
   padding: 0;
 }
 
-#zrtkfgtiby .gt_table {
+#ekotltfocx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -279,12 +279,12 @@ Lars Schöbitz
   border-left-color: #D3D3D3;
 }
 
-#zrtkfgtiby .gt_caption {
+#ekotltfocx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#zrtkfgtiby .gt_title {
+#ekotltfocx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -296,7 +296,7 @@ Lars Schöbitz
   border-bottom-width: 0;
 }
 
-#zrtkfgtiby .gt_subtitle {
+#ekotltfocx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -308,7 +308,7 @@ Lars Schöbitz
   border-top-width: 0;
 }
 
-#zrtkfgtiby .gt_heading {
+#ekotltfocx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -320,13 +320,13 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#zrtkfgtiby .gt_bottom_border {
+#ekotltfocx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zrtkfgtiby .gt_col_headings {
+#ekotltfocx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -341,7 +341,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#zrtkfgtiby .gt_col_heading {
+#ekotltfocx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -361,7 +361,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#zrtkfgtiby .gt_column_spanner_outer {
+#ekotltfocx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -373,15 +373,15 @@ Lars Schöbitz
   padding-right: 4px;
 }
 
-#zrtkfgtiby .gt_column_spanner_outer:first-child {
+#ekotltfocx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zrtkfgtiby .gt_column_spanner_outer:last-child {
+#ekotltfocx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zrtkfgtiby .gt_column_spanner {
+#ekotltfocx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -393,11 +393,11 @@ Lars Schöbitz
   width: 100%;
 }
 
-#zrtkfgtiby .gt_spanner_row {
+#ekotltfocx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#zrtkfgtiby .gt_group_heading {
+#ekotltfocx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -423,7 +423,7 @@ Lars Schöbitz
   text-align: left;
 }
 
-#zrtkfgtiby .gt_empty_group_heading {
+#ekotltfocx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -438,15 +438,15 @@ Lars Schöbitz
   vertical-align: middle;
 }
 
-#zrtkfgtiby .gt_from_md > :first-child {
+#ekotltfocx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zrtkfgtiby .gt_from_md > :last-child {
+#ekotltfocx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zrtkfgtiby .gt_row {
+#ekotltfocx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -465,7 +465,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#zrtkfgtiby .gt_stub {
+#ekotltfocx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -478,7 +478,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zrtkfgtiby .gt_stub_row_group {
+#ekotltfocx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -492,15 +492,15 @@ Lars Schöbitz
   vertical-align: top;
 }
 
-#zrtkfgtiby .gt_row_group_first td {
+#ekotltfocx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#zrtkfgtiby .gt_row_group_first th {
+#ekotltfocx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#zrtkfgtiby .gt_summary_row {
+#ekotltfocx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -510,16 +510,16 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zrtkfgtiby .gt_first_summary_row {
+#ekotltfocx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#zrtkfgtiby .gt_first_summary_row.thick {
+#ekotltfocx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#zrtkfgtiby .gt_last_summary_row {
+#ekotltfocx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -529,7 +529,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#zrtkfgtiby .gt_grand_summary_row {
+#ekotltfocx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -539,7 +539,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zrtkfgtiby .gt_first_grand_summary_row {
+#ekotltfocx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -549,7 +549,7 @@ Lars Schöbitz
   border-top-color: #D3D3D3;
 }
 
-#zrtkfgtiby .gt_last_grand_summary_row_top {
+#ekotltfocx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -559,11 +559,11 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#zrtkfgtiby .gt_striped {
+#ekotltfocx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zrtkfgtiby .gt_table_body {
+#ekotltfocx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -572,7 +572,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#zrtkfgtiby .gt_footnotes {
+#ekotltfocx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -586,7 +586,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#zrtkfgtiby .gt_footnote {
+#ekotltfocx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -595,7 +595,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zrtkfgtiby .gt_sourcenotes {
+#ekotltfocx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -609,7 +609,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#zrtkfgtiby .gt_sourcenote {
+#ekotltfocx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -617,72 +617,72 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#zrtkfgtiby .gt_left {
+#ekotltfocx .gt_left {
   text-align: left;
 }
 
-#zrtkfgtiby .gt_center {
+#ekotltfocx .gt_center {
   text-align: center;
 }
 
-#zrtkfgtiby .gt_right {
+#ekotltfocx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zrtkfgtiby .gt_font_normal {
+#ekotltfocx .gt_font_normal {
   font-weight: normal;
 }
 
-#zrtkfgtiby .gt_font_bold {
+#ekotltfocx .gt_font_bold {
   font-weight: bold;
 }
 
-#zrtkfgtiby .gt_font_italic {
+#ekotltfocx .gt_font_italic {
   font-style: italic;
 }
 
-#zrtkfgtiby .gt_super {
+#ekotltfocx .gt_super {
   font-size: 65%;
 }
 
-#zrtkfgtiby .gt_footnote_marks {
+#ekotltfocx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#zrtkfgtiby .gt_asterisk {
+#ekotltfocx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#zrtkfgtiby .gt_indent_1 {
+#ekotltfocx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#zrtkfgtiby .gt_indent_2 {
+#ekotltfocx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#zrtkfgtiby .gt_indent_3 {
+#ekotltfocx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#zrtkfgtiby .gt_indent_4 {
+#ekotltfocx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#zrtkfgtiby .gt_indent_5 {
+#ekotltfocx .gt_indent_5 {
   text-indent: 25px;
 }
 
-#zrtkfgtiby .katex-display {
+#ekotltfocx .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#zrtkfgtiby div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ekotltfocx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2042,23 +2042,23 @@ Lars Schöbitz
 <span id="cb2-7"><a></a>    <span class="fu">mutate</span>(<span class="at">prozent =</span> total <span class="sc">/</span> <span class="fu">sum</span>(total) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb2-8"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="sthejsqmqc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#sthejsqmqc table {
+<div id="sejplqcnzc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#sejplqcnzc table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#sthejsqmqc thead, #sthejsqmqc tbody, #sthejsqmqc tfoot, #sthejsqmqc tr, #sthejsqmqc td, #sthejsqmqc th {
+#sejplqcnzc thead, #sejplqcnzc tbody, #sejplqcnzc tfoot, #sejplqcnzc tr, #sejplqcnzc td, #sejplqcnzc th {
   border-style: none;
 }
 
-#sthejsqmqc p {
+#sejplqcnzc p {
   margin: 0;
   padding: 0;
 }
 
-#sthejsqmqc .gt_table {
+#sejplqcnzc .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2084,12 +2084,12 @@ Lars Schöbitz
   border-left-color: #D3D3D3;
 }
 
-#sthejsqmqc .gt_caption {
+#sejplqcnzc .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#sthejsqmqc .gt_title {
+#sejplqcnzc .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2101,7 +2101,7 @@ Lars Schöbitz
   border-bottom-width: 0;
 }
 
-#sthejsqmqc .gt_subtitle {
+#sejplqcnzc .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2113,7 +2113,7 @@ Lars Schöbitz
   border-top-width: 0;
 }
 
-#sthejsqmqc .gt_heading {
+#sejplqcnzc .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2125,13 +2125,13 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#sthejsqmqc .gt_bottom_border {
+#sejplqcnzc .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#sthejsqmqc .gt_col_headings {
+#sejplqcnzc .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2146,7 +2146,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#sthejsqmqc .gt_col_heading {
+#sejplqcnzc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2166,7 +2166,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#sthejsqmqc .gt_column_spanner_outer {
+#sejplqcnzc .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2178,15 +2178,15 @@ Lars Schöbitz
   padding-right: 4px;
 }
 
-#sthejsqmqc .gt_column_spanner_outer:first-child {
+#sejplqcnzc .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#sthejsqmqc .gt_column_spanner_outer:last-child {
+#sejplqcnzc .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#sthejsqmqc .gt_column_spanner {
+#sejplqcnzc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2198,11 +2198,11 @@ Lars Schöbitz
   width: 100%;
 }
 
-#sthejsqmqc .gt_spanner_row {
+#sejplqcnzc .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#sthejsqmqc .gt_group_heading {
+#sejplqcnzc .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2228,7 +2228,7 @@ Lars Schöbitz
   text-align: left;
 }
 
-#sthejsqmqc .gt_empty_group_heading {
+#sejplqcnzc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2243,15 +2243,15 @@ Lars Schöbitz
   vertical-align: middle;
 }
 
-#sthejsqmqc .gt_from_md > :first-child {
+#sejplqcnzc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#sthejsqmqc .gt_from_md > :last-child {
+#sejplqcnzc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#sthejsqmqc .gt_row {
+#sejplqcnzc .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2270,7 +2270,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#sthejsqmqc .gt_stub {
+#sejplqcnzc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2283,7 +2283,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#sthejsqmqc .gt_stub_row_group {
+#sejplqcnzc .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2297,15 +2297,15 @@ Lars Schöbitz
   vertical-align: top;
 }
 
-#sthejsqmqc .gt_row_group_first td {
+#sejplqcnzc .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#sthejsqmqc .gt_row_group_first th {
+#sejplqcnzc .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#sthejsqmqc .gt_summary_row {
+#sejplqcnzc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2315,16 +2315,16 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#sthejsqmqc .gt_first_summary_row {
+#sejplqcnzc .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#sthejsqmqc .gt_first_summary_row.thick {
+#sejplqcnzc .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#sthejsqmqc .gt_last_summary_row {
+#sejplqcnzc .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2334,7 +2334,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#sthejsqmqc .gt_grand_summary_row {
+#sejplqcnzc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2344,7 +2344,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#sthejsqmqc .gt_first_grand_summary_row {
+#sejplqcnzc .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2354,7 +2354,7 @@ Lars Schöbitz
   border-top-color: #D3D3D3;
 }
 
-#sthejsqmqc .gt_last_grand_summary_row_top {
+#sejplqcnzc .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2364,11 +2364,11 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#sthejsqmqc .gt_striped {
+#sejplqcnzc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#sthejsqmqc .gt_table_body {
+#sejplqcnzc .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2377,7 +2377,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#sthejsqmqc .gt_footnotes {
+#sejplqcnzc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2391,7 +2391,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#sthejsqmqc .gt_footnote {
+#sejplqcnzc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2400,7 +2400,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#sthejsqmqc .gt_sourcenotes {
+#sejplqcnzc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2414,7 +2414,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#sthejsqmqc .gt_sourcenote {
+#sejplqcnzc .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2422,72 +2422,72 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#sthejsqmqc .gt_left {
+#sejplqcnzc .gt_left {
   text-align: left;
 }
 
-#sthejsqmqc .gt_center {
+#sejplqcnzc .gt_center {
   text-align: center;
 }
 
-#sthejsqmqc .gt_right {
+#sejplqcnzc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#sthejsqmqc .gt_font_normal {
+#sejplqcnzc .gt_font_normal {
   font-weight: normal;
 }
 
-#sthejsqmqc .gt_font_bold {
+#sejplqcnzc .gt_font_bold {
   font-weight: bold;
 }
 
-#sthejsqmqc .gt_font_italic {
+#sejplqcnzc .gt_font_italic {
   font-style: italic;
 }
 
-#sthejsqmqc .gt_super {
+#sejplqcnzc .gt_super {
   font-size: 65%;
 }
 
-#sthejsqmqc .gt_footnote_marks {
+#sejplqcnzc .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#sthejsqmqc .gt_asterisk {
+#sejplqcnzc .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#sthejsqmqc .gt_indent_1 {
+#sejplqcnzc .gt_indent_1 {
   text-indent: 5px;
 }
 
-#sthejsqmqc .gt_indent_2 {
+#sejplqcnzc .gt_indent_2 {
   text-indent: 10px;
 }
 
-#sthejsqmqc .gt_indent_3 {
+#sejplqcnzc .gt_indent_3 {
   text-indent: 15px;
 }
 
-#sthejsqmqc .gt_indent_4 {
+#sejplqcnzc .gt_indent_4 {
   text-indent: 20px;
 }
 
-#sthejsqmqc .gt_indent_5 {
+#sejplqcnzc .gt_indent_5 {
   text-indent: 25px;
 }
 
-#sthejsqmqc .katex-display {
+#sejplqcnzc .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#sthejsqmqc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#sejplqcnzc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2653,23 +2653,23 @@ Lars Schöbitz
 <span id="cb20-7"><a></a>    <span class="fu">mutate</span>(<span class="at">prozent =</span> <span class="fu">berechne_prozent</span>(total)) <span class="sc">|&gt;</span> </span>
 <span id="cb20-8"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="rnrjpibmxw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rnrjpibmxw table {
+<div id="biwnhmwcwv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#biwnhmwcwv table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rnrjpibmxw thead, #rnrjpibmxw tbody, #rnrjpibmxw tfoot, #rnrjpibmxw tr, #rnrjpibmxw td, #rnrjpibmxw th {
+#biwnhmwcwv thead, #biwnhmwcwv tbody, #biwnhmwcwv tfoot, #biwnhmwcwv tr, #biwnhmwcwv td, #biwnhmwcwv th {
   border-style: none;
 }
 
-#rnrjpibmxw p {
+#biwnhmwcwv p {
   margin: 0;
   padding: 0;
 }
 
-#rnrjpibmxw .gt_table {
+#biwnhmwcwv .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2695,12 +2695,12 @@ Lars Schöbitz
   border-left-color: #D3D3D3;
 }
 
-#rnrjpibmxw .gt_caption {
+#biwnhmwcwv .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rnrjpibmxw .gt_title {
+#biwnhmwcwv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2712,7 +2712,7 @@ Lars Schöbitz
   border-bottom-width: 0;
 }
 
-#rnrjpibmxw .gt_subtitle {
+#biwnhmwcwv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2724,7 +2724,7 @@ Lars Schöbitz
   border-top-width: 0;
 }
 
-#rnrjpibmxw .gt_heading {
+#biwnhmwcwv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2736,13 +2736,13 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#rnrjpibmxw .gt_bottom_border {
+#biwnhmwcwv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rnrjpibmxw .gt_col_headings {
+#biwnhmwcwv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2757,7 +2757,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#rnrjpibmxw .gt_col_heading {
+#biwnhmwcwv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2777,7 +2777,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#rnrjpibmxw .gt_column_spanner_outer {
+#biwnhmwcwv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2789,15 +2789,15 @@ Lars Schöbitz
   padding-right: 4px;
 }
 
-#rnrjpibmxw .gt_column_spanner_outer:first-child {
+#biwnhmwcwv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rnrjpibmxw .gt_column_spanner_outer:last-child {
+#biwnhmwcwv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rnrjpibmxw .gt_column_spanner {
+#biwnhmwcwv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2809,11 +2809,11 @@ Lars Schöbitz
   width: 100%;
 }
 
-#rnrjpibmxw .gt_spanner_row {
+#biwnhmwcwv .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rnrjpibmxw .gt_group_heading {
+#biwnhmwcwv .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2839,7 +2839,7 @@ Lars Schöbitz
   text-align: left;
 }
 
-#rnrjpibmxw .gt_empty_group_heading {
+#biwnhmwcwv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2854,15 +2854,15 @@ Lars Schöbitz
   vertical-align: middle;
 }
 
-#rnrjpibmxw .gt_from_md > :first-child {
+#biwnhmwcwv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rnrjpibmxw .gt_from_md > :last-child {
+#biwnhmwcwv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rnrjpibmxw .gt_row {
+#biwnhmwcwv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2881,7 +2881,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#rnrjpibmxw .gt_stub {
+#biwnhmwcwv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2894,7 +2894,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#rnrjpibmxw .gt_stub_row_group {
+#biwnhmwcwv .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2908,15 +2908,15 @@ Lars Schöbitz
   vertical-align: top;
 }
 
-#rnrjpibmxw .gt_row_group_first td {
+#biwnhmwcwv .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rnrjpibmxw .gt_row_group_first th {
+#biwnhmwcwv .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rnrjpibmxw .gt_summary_row {
+#biwnhmwcwv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2926,16 +2926,16 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#rnrjpibmxw .gt_first_summary_row {
+#biwnhmwcwv .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rnrjpibmxw .gt_first_summary_row.thick {
+#biwnhmwcwv .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rnrjpibmxw .gt_last_summary_row {
+#biwnhmwcwv .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2945,7 +2945,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#rnrjpibmxw .gt_grand_summary_row {
+#biwnhmwcwv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2955,7 +2955,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#rnrjpibmxw .gt_first_grand_summary_row {
+#biwnhmwcwv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2965,7 +2965,7 @@ Lars Schöbitz
   border-top-color: #D3D3D3;
 }
 
-#rnrjpibmxw .gt_last_grand_summary_row_top {
+#biwnhmwcwv .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2975,11 +2975,11 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#rnrjpibmxw .gt_striped {
+#biwnhmwcwv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rnrjpibmxw .gt_table_body {
+#biwnhmwcwv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2988,7 +2988,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#rnrjpibmxw .gt_footnotes {
+#biwnhmwcwv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3002,7 +3002,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#rnrjpibmxw .gt_footnote {
+#biwnhmwcwv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3011,7 +3011,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#rnrjpibmxw .gt_sourcenotes {
+#biwnhmwcwv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3025,7 +3025,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#rnrjpibmxw .gt_sourcenote {
+#biwnhmwcwv .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3033,72 +3033,72 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#rnrjpibmxw .gt_left {
+#biwnhmwcwv .gt_left {
   text-align: left;
 }
 
-#rnrjpibmxw .gt_center {
+#biwnhmwcwv .gt_center {
   text-align: center;
 }
 
-#rnrjpibmxw .gt_right {
+#biwnhmwcwv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rnrjpibmxw .gt_font_normal {
+#biwnhmwcwv .gt_font_normal {
   font-weight: normal;
 }
 
-#rnrjpibmxw .gt_font_bold {
+#biwnhmwcwv .gt_font_bold {
   font-weight: bold;
 }
 
-#rnrjpibmxw .gt_font_italic {
+#biwnhmwcwv .gt_font_italic {
   font-style: italic;
 }
 
-#rnrjpibmxw .gt_super {
+#biwnhmwcwv .gt_super {
   font-size: 65%;
 }
 
-#rnrjpibmxw .gt_footnote_marks {
+#biwnhmwcwv .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rnrjpibmxw .gt_asterisk {
+#biwnhmwcwv .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rnrjpibmxw .gt_indent_1 {
+#biwnhmwcwv .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rnrjpibmxw .gt_indent_2 {
+#biwnhmwcwv .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rnrjpibmxw .gt_indent_3 {
+#biwnhmwcwv .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rnrjpibmxw .gt_indent_4 {
+#biwnhmwcwv .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rnrjpibmxw .gt_indent_5 {
+#biwnhmwcwv .gt_indent_5 {
   text-indent: 25px;
 }
 
-#rnrjpibmxw .katex-display {
+#biwnhmwcwv .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#rnrjpibmxw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#biwnhmwcwv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3149,7 +3149,7 @@ Lars Schöbitz
 <div class="task">
 <ol type="1">
 <li>Öffne <a href="https://posit.cloud">posit.cloud</a> in deinem Browser (verwende dein Lesezeichen).</li>
-<li>Öffne den rstatszh-k012 Arbeitsbereich (Workspace) für den Kurs.</li>
+<li>Öffne den rstatszh-k013 Arbeitsbereich (Workspace) für den Kurs.</li>
 <li>Klicke auf <span class="highlight-yellow">Start</span> neben <span class="highlight-yellow">md-10-uebungen</span>.</li>
 <li>Suche im Dateimanager im Fenster unten rechts die Datei <span class="highlight-yellow"><code>01-funktionen.qmd</code></span> und klicke darauf, um sie im Fenster oben links zu öffnen.</li>
 <li>Verwende den <span class="highlight-yellow">Quelltexteditor (Source editor)</span> Modus</li>
@@ -3158,7 +3158,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_95a46b74" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_1a8b1ef3" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -3238,11 +3238,11 @@ lernende_ktzh |&gt;
 <h2>Klone das Repository md-10-paramater-BENUTZERNAME</h2>
 <ol type="1">
 <li>Öffne <a href="https://www.github.com" class="uri">https://www.github.com</a> in deinem Browser.</li>
-<li>Navigiere zur GitHub-Organisation für den Kurs: <a href="https://github.com/rstatszh-k012/">github.com/rstatszh-k012</a></li>
+<li>Navigiere zur GitHub-Organisation für den Kurs: <a href="https://github.com/rstatszh-k013/">github.com/rstatszh-k013</a></li>
 <li>Finde das Repository <span class="highlight-yellow">md-10-parameter-BENUTZERNAME</span>, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.</li>
 <li>Klicke auf die grüne Schaltfläche “Code”.</li>
 <li>Kopiere die HTTPS-URL in deine Zwischenablage.</li>
-<li>Öffne den rstatszh-k012 Arbeitsbereich (Workspace) auf <a href="https://posit.cloud/spaces/784141">posit.cloud</a></li>
+<li>Öffne den rstatszh-k013 Arbeitsbereich (Workspace) auf <a href="https://posit.cloud/spaces/789226">posit.cloud</a></li>
 <li>Klicke auf “New Project” &gt; “New Project from Git Repository”</li>
 <li>Füge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. <span class="highlight-yellow"><strong>Beachte:</strong></span> Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.</li>
 <li>Warte, bis das Projekt bereitgestellt wurde.</li>
@@ -3254,7 +3254,7 @@ lernende_ktzh |&gt;
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_5ccb073b" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_be7a22b2" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -3273,7 +3273,7 @@ lernende_ktzh |&gt;
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_d88bd130" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_0e0f5118" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -3334,13 +3334,13 @@ lernende_ktzh |&gt;
 <section id="abschlussprojekt" class="slide level2">
 <h2>Abschlussprojekt</h2>
 <div class="learn-more">
-<p><a href="https://rstatszh-k012.github.io/website//abschlussprojekt/">rstatszh-k012.github.io/website//abschlussprojekt/</a></p>
+<p><a href="https://rstatszh-k013.github.io/website//abschlussprojekt/">rstatszh-k013.github.io/website//abschlussprojekt/</a></p>
 </div>
 </section>
 <section id="abschlussveranstaltung" class="slide level2">
 <h2>Abschlussveranstaltung</h2>
 <ul>
-<li>2026-08-06</li>
+<li>2026-12-03</li>
 <li>13:00 bis 15:00</li>
 <li>MS Teams</li>
 </ul>
@@ -3406,7 +3406,7 @@ lernende_ktzh |&gt;
 </ol>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_9682487d" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_cd726b72" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -3421,7 +3421,7 @@ lernende_ktzh |&gt;
 <h2>Wie es für mich weiter geht</h2>
 <ol type="1">
 <li><strong>Beratung:</strong> Projektbezogener Support, Code Review, Coaching</li>
-<li><strong>rstatsZH Kursleitung:</strong> Info über den 12. Kurs verbreiten. Start: 12.05.2026</li>
+<li><strong>rstatsZH Kursleitung:</strong> Info über den XX. Kurs verbreiten. Start: TT.MM.JJJJ <!-- TODO: nächste Iteration eintragen --></li>
 <li><strong>Kurse zu vertiefenden Themen:</strong> Entwicklung von 3-Stunden Workshops</li>
 </ol>
 </section>
@@ -3432,7 +3432,7 @@ lernende_ktzh |&gt;
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_a5d3d17d" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_02f00259" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -3444,13 +3444,13 @@ lernende_ktzh |&gt;
 <section id="modul-10-dokumentation" class="slide level2">
 <h2>Modul 10 Dokumentation</h2>
 <div class="learn-more">
-<p><a href="https://rstatszh-k012.github.io/website//module/md-10.html">rstatszh-k012.github.io/website//module/md-10.html</a></p>
+<p><a href="https://rstatszh-k013.github.io/website//module/md-10.html">rstatszh-k013.github.io/website//module/md-10.html</a></p>
 </div>
 </section>
 <section id="zusatzaufgaben-abgabedatum" class="slide level2">
 <h2>Zusatzaufgaben Abgabedatum</h2>
 <ul>
-<li>Abgabedatum: <span class="highlight-yellow">Donnerstag, 30. Juli</span></li>
+<li>Abgabedatum: <span class="highlight-yellow">Mittwoch, 25. November</span></li>
 </ul>
 </section></section>
 <section>
@@ -3461,7 +3461,7 @@ lernende_ktzh |&gt;
 <section id="danke-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d" class="slide level2">
 <h2>Danke! <i class="fa-solid fa-sun" aria-label="sun"></i></h2>
 <p>Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/</p>
-<p>Folien als <a href="https://github.com/rstatszh-k012/website/raw/main/folien/md-10-funktionen.pdf">PDF auf GitHub</a></p>
+<p>Folien als <a href="https://github.com/rstatszh-k013/website/raw/main/folien/md-10-funktionen.pdf">PDF auf GitHub</a></p>
 <p>Alle Materialien sind lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 
 
@@ -3469,7 +3469,7 @@ lernende_ktzh |&gt;
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p><a href="https://rstatszh-k012.github.io/website/"><i class="fa-solid fa-link" aria-label="link"></i> rstatszh-k012.github.io/website/</a></p>
+<p><a href="https://rstatszh-k013.github.io/website/"><i class="fa-solid fa-link" aria-label="link"></i> rstatszh-k013.github.io/website/</a></p>
 </div>
 </div></div>
 
@@ -3791,7 +3791,7 @@ lernende_ktzh |&gt;
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/rstatszh-k012\.github\.io\/website");
+            var filterRegex = new RegExp("https:\/\/rstatszh-k013\.github\.io\/website");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }

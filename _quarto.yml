@@ -8,9 +8,9 @@ metadata-files:
 website:
   page-navigation: true
   title: "rstatsZH - Data Science mit R"
-  description: "Webseite des Kurses für Mai 2026"
-  site-url: "https://rstatszh-k012.github.io/website"
-  repo-url: "https://github.com/rstatszh-k012/website"
+  description: "Webseite des Kurses für September 2026"
+  site-url: "https://rstatszh-k013.github.io/website"
+  repo-url: "https://github.com/rstatszh-k013/website"
   search: false
   page-footer: 
     left: | 
@@ -22,7 +22,7 @@ website:
         href: "mailto:datashop@statistik.zh.ch"
         aria-label: Email
       - icon: github
-        href: https://github.com/rstatszh-k012/website
+        href: https://github.com/rstatszh-k013/website
         aria-label: GitHub
   
   sidebar:
@@ -89,7 +89,7 @@ format:
       margin-width: 300px
     include-in-header: 
         - text: |
-            <script defer data-domain="rstatszh-k012.github.io/website" src="https://plausible.io/js/script.js"></script>
+            <script defer data-domain="rstatszh-k013.github.io/website" src="https://plausible.io/js/script.js"></script>
 
 execute:
   freeze: auto
