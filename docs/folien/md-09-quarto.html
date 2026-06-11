@@ -620,7 +620,7 @@ um die Notiz zu schreiben.]</code></pre>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_01762b5e" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_912ba43f" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -630,7 +630,7 @@ um die Notiz zu schreiben.]</code></pre>
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_a192615c" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_4989dfc4" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -819,25 +819,41 @@ um die Notiz zu schreiben.]</code></pre>
 <section id="tabellen-mit-code-1" class="slide level2 smaller">
 <h2>Tabellen mit Code</h2>
 <p>Wenn du umfangreichere Tabellen möchtest, probiere das <strong>gt</strong>-Paket und <a href="https://gt.rstudio.com/">alles, was es bietet</a>!</p>
-<div class="cell">
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="fu">library</span>(gt)</span>
+<span id="cb29-2"><a></a></span>
+<span id="cb29-3"><a></a><span class="fu">head</span>(penguins) <span class="sc">|&gt;</span> </span>
+<span id="cb29-4"><a></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
+<span id="cb29-5"><a></a>  <span class="fu">tab_style</span>(</span>
+<span id="cb29-6"><a></a>    <span class="at">style =</span> <span class="fu">list</span>(</span>
+<span id="cb29-7"><a></a>      <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"pink"</span>),</span>
+<span id="cb29-8"><a></a>      <span class="fu">cell_text</span>(<span class="at">style =</span> <span class="st">"italic"</span>)</span>
+<span id="cb29-9"><a></a>      ),</span>
+<span id="cb29-10"><a></a>    <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
+<span id="cb29-11"><a></a>      <span class="at">columns =</span> bill_length_mm,</span>
+<span id="cb29-12"><a></a>      <span class="at">rows =</span> bill_length_mm <span class="sc">&gt;</span> <span class="dv">40</span></span>
+<span id="cb29-13"><a></a>    )</span>
+<span id="cb29-14"><a></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column fragment">
 <div class="cell-output-display">
-<div id="azoxamneqf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#azoxamneqf table {
+<div id="mpciwzjess" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mpciwzjess table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#azoxamneqf thead, #azoxamneqf tbody, #azoxamneqf tfoot, #azoxamneqf tr, #azoxamneqf td, #azoxamneqf th {
+#mpciwzjess thead, #mpciwzjess tbody, #mpciwzjess tfoot, #mpciwzjess tr, #mpciwzjess td, #mpciwzjess th {
   border-style: none;
 }
 
-#azoxamneqf p {
+#mpciwzjess p {
   margin: 0;
   padding: 0;
 }
 
-#azoxamneqf .gt_table {
+#mpciwzjess .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -863,12 +879,12 @@ um die Notiz zu schreiben.]</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#azoxamneqf .gt_caption {
+#mpciwzjess .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#azoxamneqf .gt_title {
+#mpciwzjess .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -880,7 +896,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-bottom-width: 0;
 }
 
-#azoxamneqf .gt_subtitle {
+#mpciwzjess .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -892,7 +908,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-top-width: 0;
 }
 
-#azoxamneqf .gt_heading {
+#mpciwzjess .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -904,13 +920,13 @@ um die Notiz zu schreiben.]</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#azoxamneqf .gt_bottom_border {
+#mpciwzjess .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#azoxamneqf .gt_col_headings {
+#mpciwzjess .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -925,7 +941,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#azoxamneqf .gt_col_heading {
+#mpciwzjess .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -945,7 +961,7 @@ um die Notiz zu schreiben.]</code></pre>
   overflow-x: hidden;
 }
 
-#azoxamneqf .gt_column_spanner_outer {
+#mpciwzjess .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -957,15 +973,15 @@ um die Notiz zu schreiben.]</code></pre>
   padding-right: 4px;
 }
 
-#azoxamneqf .gt_column_spanner_outer:first-child {
+#mpciwzjess .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#azoxamneqf .gt_column_spanner_outer:last-child {
+#mpciwzjess .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#azoxamneqf .gt_column_spanner {
+#mpciwzjess .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -977,11 +993,11 @@ um die Notiz zu schreiben.]</code></pre>
   width: 100%;
 }
 
-#azoxamneqf .gt_spanner_row {
+#mpciwzjess .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#azoxamneqf .gt_group_heading {
+#mpciwzjess .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1007,7 +1023,7 @@ um die Notiz zu schreiben.]</code></pre>
   text-align: left;
 }
 
-#azoxamneqf .gt_empty_group_heading {
+#mpciwzjess .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1022,15 +1038,15 @@ um die Notiz zu schreiben.]</code></pre>
   vertical-align: middle;
 }
 
-#azoxamneqf .gt_from_md > :first-child {
+#mpciwzjess .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#azoxamneqf .gt_from_md > :last-child {
+#mpciwzjess .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#azoxamneqf .gt_row {
+#mpciwzjess .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1049,7 +1065,7 @@ um die Notiz zu schreiben.]</code></pre>
   overflow-x: hidden;
 }
 
-#azoxamneqf .gt_stub {
+#mpciwzjess .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1062,7 +1078,7 @@ um die Notiz zu schreiben.]</code></pre>
   padding-right: 5px;
 }
 
-#azoxamneqf .gt_stub_row_group {
+#mpciwzjess .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1076,15 +1092,15 @@ um die Notiz zu schreiben.]</code></pre>
   vertical-align: top;
 }
 
-#azoxamneqf .gt_row_group_first td {
+#mpciwzjess .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#azoxamneqf .gt_row_group_first th {
+#mpciwzjess .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#azoxamneqf .gt_summary_row {
+#mpciwzjess .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1094,16 +1110,16 @@ um die Notiz zu schreiben.]</code></pre>
   padding-right: 5px;
 }
 
-#azoxamneqf .gt_first_summary_row {
+#mpciwzjess .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#azoxamneqf .gt_first_summary_row.thick {
+#mpciwzjess .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#azoxamneqf .gt_last_summary_row {
+#mpciwzjess .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1113,7 +1129,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#azoxamneqf .gt_grand_summary_row {
+#mpciwzjess .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1123,7 +1139,7 @@ um die Notiz zu schreiben.]</code></pre>
   padding-right: 5px;
 }
 
-#azoxamneqf .gt_first_grand_summary_row {
+#mpciwzjess .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1133,7 +1149,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#azoxamneqf .gt_last_grand_summary_row_top {
+#mpciwzjess .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1143,11 +1159,11 @@ um die Notiz zu schreiben.]</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#azoxamneqf .gt_striped {
+#mpciwzjess .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#azoxamneqf .gt_table_body {
+#mpciwzjess .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1156,7 +1172,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#azoxamneqf .gt_footnotes {
+#mpciwzjess .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1170,7 +1186,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#azoxamneqf .gt_footnote {
+#mpciwzjess .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1179,7 +1195,7 @@ um die Notiz zu schreiben.]</code></pre>
   padding-right: 5px;
 }
 
-#azoxamneqf .gt_sourcenotes {
+#mpciwzjess .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1193,7 +1209,7 @@ um die Notiz zu schreiben.]</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#azoxamneqf .gt_sourcenote {
+#mpciwzjess .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1201,72 +1217,72 @@ um die Notiz zu schreiben.]</code></pre>
   padding-right: 5px;
 }
 
-#azoxamneqf .gt_left {
+#mpciwzjess .gt_left {
   text-align: left;
 }
 
-#azoxamneqf .gt_center {
+#mpciwzjess .gt_center {
   text-align: center;
 }
 
-#azoxamneqf .gt_right {
+#mpciwzjess .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#azoxamneqf .gt_font_normal {
+#mpciwzjess .gt_font_normal {
   font-weight: normal;
 }
 
-#azoxamneqf .gt_font_bold {
+#mpciwzjess .gt_font_bold {
   font-weight: bold;
 }
 
-#azoxamneqf .gt_font_italic {
+#mpciwzjess .gt_font_italic {
   font-style: italic;
 }
 
-#azoxamneqf .gt_super {
+#mpciwzjess .gt_super {
   font-size: 65%;
 }
 
-#azoxamneqf .gt_footnote_marks {
+#mpciwzjess .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#azoxamneqf .gt_asterisk {
+#mpciwzjess .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#azoxamneqf .gt_indent_1 {
+#mpciwzjess .gt_indent_1 {
   text-indent: 5px;
 }
 
-#azoxamneqf .gt_indent_2 {
+#mpciwzjess .gt_indent_2 {
   text-indent: 10px;
 }
 
-#azoxamneqf .gt_indent_3 {
+#mpciwzjess .gt_indent_3 {
   text-indent: 15px;
 }
 
-#azoxamneqf .gt_indent_4 {
+#mpciwzjess .gt_indent_4 {
   text-indent: 20px;
 }
 
-#azoxamneqf .gt_indent_5 {
+#mpciwzjess .gt_indent_5 {
   text-indent: 25px;
 }
 
-#azoxamneqf .katex-display {
+#mpciwzjess .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#azoxamneqf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#mpciwzjess div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1350,7 +1366,7 @@ um die Notiz zu schreiben.]</code></pre>
 
 </div>
 </div>
-</div>
+</div></div>
 </section></section>
 <section>
 <section id="abbildungen-diagramme" class="title-slide slide level1 center" data-background-color="#4C326A">
@@ -1435,15 +1451,15 @@ Figure&nbsp;1: Zwei Pinguine
 <section id="abbildungen-mit-code-diagramme" class="slide level2">
 <h2>Abbildungen mit Code (Diagramme)</h2>
 <div class="cell" data-layout-align="right">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb31-2"><a></a><span class="co">#| fig-width: 4</span></span>
-<span id="cb31-3"><a></a><span class="co">#| fig-align: right</span></span>
-<span id="cb31-4"><a></a></span>
-<span id="cb31-5"><a></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"img/md-09/penguins-quarto-ball.png"</span>)</span>
-<span id="cb31-6"><a></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb32-2"><a></a><span class="co">#| fig-width: 4</span></span>
+<span id="cb32-3"><a></a><span class="co">#| fig-align: right</span></span>
+<span id="cb32-4"><a></a></span>
+<span id="cb32-5"><a></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"img/md-09/penguins-quarto-ball.png"</span>)</span>
+<span id="cb32-6"><a></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
-<img data-src="img/md-09/penguins-quarto-ball.png" class="quarto-figure quarto-figure-right r-stretch"></section>
+<img data-src="img/md-09/penguins-quarto-ball.png" class="quarto-figure quarto-figure-right r-stretch" width="1920"></section>
 <section id="pfade-in-r-code-referenzieren" class="slide level2">
 <h2>Pfade in R-Code referenzieren</h2>
 <p>Verwende das <strong>here</strong>-Paket, um auf das Projektverzeichnis zu verweisen, da <code>here::here()</code> immer im obersten Verzeichnis einer <code>.Rproj</code> beginnt:</p>
@@ -1456,10 +1472,10 @@ Figure&nbsp;1: Zwei Pinguine
 <section id="abbildungen-mit-code-diagramme-1" class="slide level2">
 <h2>Abbildungen mit Code (Diagramme)</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb33-2"><a></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> species, <span class="at">fill =</span> species)) <span class="sc">+</span></span>
-<span id="cb33-3"><a></a>  <span class="fu">geom_bar</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb33-4"><a></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb34-2"><a></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> species, <span class="at">fill =</span> species)) <span class="sc">+</span></span>
+<span id="cb34-3"><a></a>  <span class="fu">geom_bar</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb34-4"><a></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
 <img data-src="md-09-quarto_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"></section></section>
@@ -1486,19 +1502,19 @@ Figure&nbsp;1: Zwei Pinguine
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Markdown:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb34"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a></a>Siehe @fig-bill-dimensions für die Verteilung der Schnabellänge nach Art.</span>
-<span id="cb34-2"><a></a></span>
-<span id="cb34-3"><a></a><span class="in">```{r}</span></span>
-<span id="cb34-4"><a></a><span class="co">#| label: fig-bill-dimensions</span></span>
-<span id="cb34-5"><a></a><span class="co">#| fig-cap: Pinguin Schnabel Dimensionen</span></span>
-<span id="cb34-6"><a></a></span>
-<span id="cb34-7"><a></a><span class="fu">ggplot</span>(penguins,</span>
-<span id="cb34-8"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm,</span>
-<span id="cb34-9"><a></a>           <span class="at">fill =</span> species)) <span class="sc">+</span></span>
-<span id="cb34-10"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">20</span>) <span class="sc">+</span></span>
-<span id="cb34-11"><a></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Schnabellänge (mm)"</span>,</span>
-<span id="cb34-12"><a></a>       <span class="at">y =</span> <span class="st">"Anzahl"</span>)</span>
-<span id="cb34-13"><a></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb35"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a></a>Siehe @fig-bill-dimensions für die Verteilung der Schnabellänge nach Art.</span>
+<span id="cb35-2"><a></a></span>
+<span id="cb35-3"><a></a><span class="in">```{r}</span></span>
+<span id="cb35-4"><a></a><span class="co">#| label: fig-bill-dimensions</span></span>
+<span id="cb35-5"><a></a><span class="co">#| fig-cap: Pinguin Schnabel Dimensionen</span></span>
+<span id="cb35-6"><a></a></span>
+<span id="cb35-7"><a></a><span class="fu">ggplot</span>(penguins,</span>
+<span id="cb35-8"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm,</span>
+<span id="cb35-9"><a></a>           <span class="at">fill =</span> species)) <span class="sc">+</span></span>
+<span id="cb35-10"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">20</span>) <span class="sc">+</span></span>
+<span id="cb35-11"><a></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Schnabellänge (mm)"</span>,</span>
+<span id="cb35-12"><a></a>       <span class="at">y =</span> <span class="st">"Anzahl"</span>)</span>
+<span id="cb35-13"><a></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:50%;">
 <p><strong>Ausgabe:</strong></p>
 <p>Siehe <a href="#/fig-bill-dimensions" class="quarto-xref">Figure&nbsp;2</a> für die Verteilung der Schnabellänge nach Art.</p>
@@ -1524,8 +1540,8 @@ Figure&nbsp;2: Pinguin Schnabel Dimensionen
 <div class="columns">
 <div class="column" style="width:75%;">
 <p><strong>Markdown:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb35"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a></a>Siehe @fig-blue-penguin für einen süssen blauen Pinguin.</span>
-<span id="cb35-2"><a></a><span class="al">![Blauer Pinguin](img/md-09/blue-penguin.png)</span>{#fig-blue-penguin}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb36"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb36-1"><a></a>Siehe @fig-blue-penguin für einen süssen blauen Pinguin.</span>
+<span id="cb36-2"><a></a><span class="al">![Blauer Pinguin](img/md-09/blue-penguin.png)</span>{#fig-blue-penguin}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:25%;">
 <p><strong>Ausgabe:</strong></p>
 <p>Siehe <a href="#/fig-blue-penguin" class="quarto-xref">Figure&nbsp;3</a> für einen süssen blauen Pinguin.</p>
@@ -1547,15 +1563,15 @@ Figure&nbsp;3: Blauer Pinguin
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Markdown:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb36"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb36-1"><a></a>Siehe @tbl-penguins für Daten über einige Pinguine.</span>
-<span id="cb36-2"><a></a></span>
-<span id="cb36-3"><a></a><span class="in">```{r}</span></span>
-<span id="cb36-4"><a></a><span class="co">#| label: tbl-pinguine</span></span>
-<span id="cb36-5"><a></a><span class="co">#| tbl-cap: Ein paar Pinguine</span></span>
-<span id="cb36-6"><a></a></span>
-<span id="cb36-7"><a></a><span class="fu">head</span>(penguins) <span class="sc">|&gt;</span> </span>
-<span id="cb36-8"><a></a>  <span class="fu">gt</span>()</span>
-<span id="cb36-9"><a></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb37"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb37-1"><a></a>Siehe @tbl-penguins für Daten über einige Pinguine.</span>
+<span id="cb37-2"><a></a></span>
+<span id="cb37-3"><a></a><span class="in">```{r}</span></span>
+<span id="cb37-4"><a></a><span class="co">#| label: tbl-pinguine</span></span>
+<span id="cb37-5"><a></a><span class="co">#| tbl-cap: Ein paar Pinguine</span></span>
+<span id="cb37-6"><a></a></span>
+<span id="cb37-7"><a></a><span class="fu">head</span>(penguins) <span class="sc">|&gt;</span> </span>
+<span id="cb37-8"><a></a>  <span class="fu">gt</span>()</span>
+<span id="cb37-9"><a></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:50%;">
 <p><strong>Ausgabe:</strong></p>
 <p>Siehe <a href="#/tbl-penguins" class="quarto-xref">Table&nbsp;1</a> für Daten über einige Pinguine.</p>
@@ -1567,23 +1583,23 @@ Table&nbsp;1: Ein paar Pinguine
 </figcaption>
 <div aria-describedby="tbl-penguins-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="yeagdwbjou" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#yeagdwbjou table {
+<div id="nyosrwlste" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nyosrwlste table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#yeagdwbjou thead, #yeagdwbjou tbody, #yeagdwbjou tfoot, #yeagdwbjou tr, #yeagdwbjou td, #yeagdwbjou th {
+#nyosrwlste thead, #nyosrwlste tbody, #nyosrwlste tfoot, #nyosrwlste tr, #nyosrwlste td, #nyosrwlste th {
   border-style: none;
 }
 
-#yeagdwbjou p {
+#nyosrwlste p {
   margin: 0;
   padding: 0;
 }
 
-#yeagdwbjou .gt_table {
+#nyosrwlste .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1609,12 +1625,12 @@ Table&nbsp;1: Ein paar Pinguine
   border-left-color: #D3D3D3;
 }
 
-#yeagdwbjou .gt_caption {
+#nyosrwlste .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#yeagdwbjou .gt_title {
+#nyosrwlste .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1626,7 +1642,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-bottom-width: 0;
 }
 
-#yeagdwbjou .gt_subtitle {
+#nyosrwlste .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1638,7 +1654,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-top-width: 0;
 }
 
-#yeagdwbjou .gt_heading {
+#nyosrwlste .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1650,13 +1666,13 @@ Table&nbsp;1: Ein paar Pinguine
   border-right-color: #D3D3D3;
 }
 
-#yeagdwbjou .gt_bottom_border {
+#nyosrwlste .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#yeagdwbjou .gt_col_headings {
+#nyosrwlste .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1671,7 +1687,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-right-color: #D3D3D3;
 }
 
-#yeagdwbjou .gt_col_heading {
+#nyosrwlste .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1691,7 +1707,7 @@ Table&nbsp;1: Ein paar Pinguine
   overflow-x: hidden;
 }
 
-#yeagdwbjou .gt_column_spanner_outer {
+#nyosrwlste .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1703,15 +1719,15 @@ Table&nbsp;1: Ein paar Pinguine
   padding-right: 4px;
 }
 
-#yeagdwbjou .gt_column_spanner_outer:first-child {
+#nyosrwlste .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yeagdwbjou .gt_column_spanner_outer:last-child {
+#nyosrwlste .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yeagdwbjou .gt_column_spanner {
+#nyosrwlste .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1723,11 +1739,11 @@ Table&nbsp;1: Ein paar Pinguine
   width: 100%;
 }
 
-#yeagdwbjou .gt_spanner_row {
+#nyosrwlste .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#yeagdwbjou .gt_group_heading {
+#nyosrwlste .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1753,7 +1769,7 @@ Table&nbsp;1: Ein paar Pinguine
   text-align: left;
 }
 
-#yeagdwbjou .gt_empty_group_heading {
+#nyosrwlste .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1768,15 +1784,15 @@ Table&nbsp;1: Ein paar Pinguine
   vertical-align: middle;
 }
 
-#yeagdwbjou .gt_from_md > :first-child {
+#nyosrwlste .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yeagdwbjou .gt_from_md > :last-child {
+#nyosrwlste .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yeagdwbjou .gt_row {
+#nyosrwlste .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1795,7 +1811,7 @@ Table&nbsp;1: Ein paar Pinguine
   overflow-x: hidden;
 }
 
-#yeagdwbjou .gt_stub {
+#nyosrwlste .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1808,7 +1824,7 @@ Table&nbsp;1: Ein paar Pinguine
   padding-right: 5px;
 }
 
-#yeagdwbjou .gt_stub_row_group {
+#nyosrwlste .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1822,15 +1838,15 @@ Table&nbsp;1: Ein paar Pinguine
   vertical-align: top;
 }
 
-#yeagdwbjou .gt_row_group_first td {
+#nyosrwlste .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#yeagdwbjou .gt_row_group_first th {
+#nyosrwlste .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#yeagdwbjou .gt_summary_row {
+#nyosrwlste .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1840,16 +1856,16 @@ Table&nbsp;1: Ein paar Pinguine
   padding-right: 5px;
 }
 
-#yeagdwbjou .gt_first_summary_row {
+#nyosrwlste .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#yeagdwbjou .gt_first_summary_row.thick {
+#nyosrwlste .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#yeagdwbjou .gt_last_summary_row {
+#nyosrwlste .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1859,7 +1875,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-bottom-color: #D3D3D3;
 }
 
-#yeagdwbjou .gt_grand_summary_row {
+#nyosrwlste .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1869,7 +1885,7 @@ Table&nbsp;1: Ein paar Pinguine
   padding-right: 5px;
 }
 
-#yeagdwbjou .gt_first_grand_summary_row {
+#nyosrwlste .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1879,7 +1895,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-top-color: #D3D3D3;
 }
 
-#yeagdwbjou .gt_last_grand_summary_row_top {
+#nyosrwlste .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1889,11 +1905,11 @@ Table&nbsp;1: Ein paar Pinguine
   border-bottom-color: #D3D3D3;
 }
 
-#yeagdwbjou .gt_striped {
+#nyosrwlste .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#yeagdwbjou .gt_table_body {
+#nyosrwlste .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1902,7 +1918,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-bottom-color: #D3D3D3;
 }
 
-#yeagdwbjou .gt_footnotes {
+#nyosrwlste .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1916,7 +1932,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-right-color: #D3D3D3;
 }
 
-#yeagdwbjou .gt_footnote {
+#nyosrwlste .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1925,7 +1941,7 @@ Table&nbsp;1: Ein paar Pinguine
   padding-right: 5px;
 }
 
-#yeagdwbjou .gt_sourcenotes {
+#nyosrwlste .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1939,7 +1955,7 @@ Table&nbsp;1: Ein paar Pinguine
   border-right-color: #D3D3D3;
 }
 
-#yeagdwbjou .gt_sourcenote {
+#nyosrwlste .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1947,72 +1963,72 @@ Table&nbsp;1: Ein paar Pinguine
   padding-right: 5px;
 }
 
-#yeagdwbjou .gt_left {
+#nyosrwlste .gt_left {
   text-align: left;
 }
 
-#yeagdwbjou .gt_center {
+#nyosrwlste .gt_center {
   text-align: center;
 }
 
-#yeagdwbjou .gt_right {
+#nyosrwlste .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yeagdwbjou .gt_font_normal {
+#nyosrwlste .gt_font_normal {
   font-weight: normal;
 }
 
-#yeagdwbjou .gt_font_bold {
+#nyosrwlste .gt_font_bold {
   font-weight: bold;
 }
 
-#yeagdwbjou .gt_font_italic {
+#nyosrwlste .gt_font_italic {
   font-style: italic;
 }
 
-#yeagdwbjou .gt_super {
+#nyosrwlste .gt_super {
   font-size: 65%;
 }
 
-#yeagdwbjou .gt_footnote_marks {
+#nyosrwlste .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#yeagdwbjou .gt_asterisk {
+#nyosrwlste .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#yeagdwbjou .gt_indent_1 {
+#nyosrwlste .gt_indent_1 {
   text-indent: 5px;
 }
 
-#yeagdwbjou .gt_indent_2 {
+#nyosrwlste .gt_indent_2 {
   text-indent: 10px;
 }
 
-#yeagdwbjou .gt_indent_3 {
+#nyosrwlste .gt_indent_3 {
   text-indent: 15px;
 }
 
-#yeagdwbjou .gt_indent_4 {
+#nyosrwlste .gt_indent_4 {
   text-indent: 20px;
 }
 
-#yeagdwbjou .gt_indent_5 {
+#nyosrwlste .gt_indent_5 {
   text-indent: 25px;
 }
 
-#yeagdwbjou .katex-display {
+#nyosrwlste .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#yeagdwbjou div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#nyosrwlste div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2133,16 +2149,16 @@ Table&nbsp;1: Ein paar Pinguine
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_0b17e261" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_c7d8256a" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
 <section id="gehts-auch-auf-deutsch" class="slide level2">
 <h2>Geht’s auch auf Deutsch?</h2>
 <p>Ja!</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb37"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb37-1"><a></a><span class="pp">---</span></span>
-<span id="cb37-2"><a></a><span class="fu">lang</span><span class="kw">:</span><span class="at"> de</span></span>
-<span id="cb37-3"><a></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb38"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb38-1"><a></a><span class="pp">---</span></span>
+<span id="cb38-2"><a></a><span class="fu">lang</span><span class="kw">:</span><span class="at"> de</span></span>
+<span id="cb38-3"><a></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="pause-machen-1" class="slide level2">
 <h2>Pause machen</h2>
@@ -2150,7 +2166,7 @@ Table&nbsp;1: Ein paar Pinguine
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_89e9136b" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_bd525327" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -2185,7 +2201,7 @@ Table&nbsp;1: Ein paar Pinguine
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_da13fb2b" minutes="30" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_60f9f6fd" minutes="30" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -2200,7 +2216,7 @@ Table&nbsp;1: Ein paar Pinguine
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_961b32d1" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_49af626a" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -2234,7 +2250,7 @@ Table&nbsp;1: Ein paar Pinguine
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_325aa21e" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_b75834c4" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
