@@ -397,7 +397,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_3b393319" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_3d630fd0" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -417,7 +417,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_35bb8cdd" minutes="25" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_9880f70b" minutes="25" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -444,7 +444,7 @@ Lars Schöbitz
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="img/md-04/readr.png" style="width:80.0%"></p>
+<p><img data-src="img/md-04/readxl.png" style="width:80.0%"></p>
 </figure>
 </div>
 </div>
@@ -514,24 +514,20 @@ Lars Schöbitz
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>befragung_fct</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>befragung_fct <span class="sc">|&gt;</span> <span class="fu">print</span>(<span class="at">n =</span> <span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,213 × 5
-   geschlecht alter     gemeinde_groesse bezirk_name antwort          
-   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;fct&gt;            
- 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     
- 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     
- 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     
- 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     
- 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     
- 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen
- 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     
- 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     
- 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     
-10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     
-# ℹ 1,203 more rows</code></pre>
+  geschlecht alter     gemeinde_groesse bezirk_name antwort     
+  &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;fct&gt;       
+1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch
+2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch
+3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch
+4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch
+# ℹ 1,209 more rows</code></pre>
 </div>
 </div>
+</div>
+<div class="fragment">
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">write_csv</span>(befragung_fct, <span class="st">"daten/processed/ktzh-befragung-zufriedenheit.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -572,7 +568,7 @@ Lars Schöbitz
 <li>Eine CSV Datei enthält lediglich Werte, getrennt durch ein Komma</li>
 </ul>
 
-<img data-src="img/md-04/raw-csv-github.png" class="r-stretch"></section>
+<img data-src="img/md-04/raw-csv-github.png" width="731" class="r-stretch"></section>
 <section id="wie-speichern-wir-faktoren" class="slide level2 smaller">
 <h2>Wie speichern wir Faktoren?</h2>
 <ul>
@@ -777,7 +773,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_90d1fb50" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_2ee6ca4f" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -797,7 +793,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_823850f7" minutes="25" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_0714b244" minutes="25" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -816,7 +812,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_8a75f47e" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_43d03151" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>

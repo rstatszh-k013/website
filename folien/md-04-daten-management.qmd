@@ -268,7 +268,7 @@ knitr::include_graphics("img/md-04/readr.png")
 
 ::: {.column width="50%"}
 ```{r echo=FALSE, out.width="80%"}
-knitr::include_graphics("img/md-04/readr.png")
+knitr::include_graphics("img/md-04/readxl.png")
 ```
 :::
 :::::
@@ -331,8 +331,10 @@ befragung_fct <- befragung |>
 
 ```{r}
 #| echo: true
-befragung_fct
+befragung_fct |> print(n = 4)
 ```
+
+. . .
 
 ```{r}
 #| echo: true
