@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+  <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Lars Schöbitz">
   <title>rstatsZH - Data Science mit R – Daten Typen &amp; Vektoren &amp; For Loops</title>
@@ -22,10 +22,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -208,34 +211,34 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Lars Schöbitz 
+Lars Schöbitz
 </div>
 </div>
 </div>
 
-  <p class="date">Oct 22, 2026</p>
+  <p class="date">Mar 4, 2027</p>
 </section>
 <section id="modul-5---zusatzaufgabe-3" class="slide level2 smallest">
 <h2>Modul 5 - Zusatzaufgabe 3</h2>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" data-code-line-numbers="|1-6|7-8|9-14|15-17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> lernende_max_stufe_staat_sum,</span>
-<span id="cb1-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Stufe, </span>
-<span id="cb1-3"><a></a>                     <span class="at">y =</span> Prozent, </span>
-<span id="cb1-4"><a></a>                     <span class="at">fill =</span> Staatsangehoerigkeit)) <span class="sc">+</span></span>
-<span id="cb1-5"><a></a>    <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
-<span id="cb1-6"><a></a>    <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb1-7"><a></a>    <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(Prozent, <span class="dv">0</span>), <span class="st">"%"</span>)),  </span>
-<span id="cb1-8"><a></a>              <span class="at">position =</span> <span class="fu">position_stack</span>(<span class="at">vjust =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
-<span id="cb1-9"><a></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Lernende im Kanton Zürich "</span>,</span>
-<span id="cb1-10"><a></a>         <span class="at">subtitle =</span> <span class="st">"nach Staatsangehörigkeit und Stufe im Jahr 2023"</span>,</span>
-<span id="cb1-11"><a></a>         <span class="at">fill =</span> <span class="st">"Staatsangehörigkeit"</span>,</span>
-<span id="cb1-12"><a></a>         <span class="at">caption =</span> <span class="st">"Daten: zh.ch/daten"</span>,</span>
-<span id="cb1-13"><a></a>         <span class="at">y =</span> <span class="cn">NULL</span>,</span>
-<span id="cb1-14"><a></a>         <span class="at">x =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
-<span id="cb1-15"><a></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb1-16"><a></a>    <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>, </span>
-<span id="cb1-17"><a></a>          <span class="at">panel.grid.major.y =</span> <span class="fu">element_blank</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" data-code-line-numbers="|1-6|7-8|9-14|15-17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-label="1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> lernende_max_stufe_staat_sum,</span>
+<span id="cb1-2"><a aria-label="2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Stufe, </span>
+<span id="cb1-3"><a aria-label="3"></a>                     <span class="at">y =</span> Prozent, </span>
+<span id="cb1-4"><a aria-label="4"></a>                     <span class="at">fill =</span> Staatsangehoerigkeit)) <span class="sc">+</span></span>
+<span id="cb1-5"><a aria-label="5"></a>    <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb1-6"><a aria-label="6"></a>    <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb1-7"><a aria-label="7"></a>    <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(Prozent, <span class="dv">0</span>), <span class="st">"%"</span>)),  </span>
+<span id="cb1-8"><a aria-label="8"></a>              <span class="at">position =</span> <span class="fu">position_stack</span>(<span class="at">vjust =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
+<span id="cb1-9"><a aria-label="9"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Lernende im Kanton Zürich "</span>,</span>
+<span id="cb1-10"><a aria-label="10"></a>         <span class="at">subtitle =</span> <span class="st">"nach Staatsangehörigkeit und Stufe im Jahr 2023"</span>,</span>
+<span id="cb1-11"><a aria-label="11"></a>         <span class="at">fill =</span> <span class="st">"Staatsangehörigkeit"</span>,</span>
+<span id="cb1-12"><a aria-label="12"></a>         <span class="at">caption =</span> <span class="st">"Daten: zh.ch/daten"</span>,</span>
+<span id="cb1-13"><a aria-label="13"></a>         <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb1-14"><a aria-label="14"></a>         <span class="at">x =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb1-15"><a aria-label="15"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb1-16"><a aria-label="16"></a>    <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>, </span>
+<span id="cb1-17"><a aria-label="17"></a>          <span class="at">panel.grid.major.y =</span> <span class="fu">element_blank</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
@@ -408,8 +411,8 @@ Lars Schöbitz
 <section id="oh-warum-klappt-das-nicht" class="slide level2">
 <h2>Oh warum klappt das nicht?!</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb2-2"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-label="1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb2-2"><a aria-label="2"></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   mean_price_glass
@@ -421,8 +424,8 @@ Lars Schöbitz
 <section id="oh-warum-klappt-das-immernoch-nicht" class="slide level2">
 <h2>Oh warum klappt das immernoch nicht!!??</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb4-2"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb4-2"><a aria-label="2"></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   mean_price_glass
@@ -583,14 +586,14 @@ Lars Schöbitz
 <section id="ein-sehr-typischer-schritt-in-der-datenbereinigung" class="slide level2 small">
 <h2>Ein sehr typischer Schritt in der Datenbereinigung!</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7" data-code-line-numbers="|2|3,4|5,6|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb7-2"><a></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
-<span id="cb7-3"><a></a>    price_glass <span class="sc">==</span> <span class="st">"5-10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb7-4"><a></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb7-5"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"2chf"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"2"</span>,</span>
-<span id="cb7-6"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
-<span id="cb7-7"><a></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
-<span id="cb7-8"><a></a>  )) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7" data-code-line-numbers="|2|3,4|5,6|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-label="1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb7-2"><a aria-label="2"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
+<span id="cb7-3"><a aria-label="3"></a>    price_glass <span class="sc">==</span> <span class="st">"5-10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb7-4"><a aria-label="4"></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb7-5"><a aria-label="5"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"2chf"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"2"</span>,</span>
+<span id="cb7-6"><a aria-label="6"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
+<span id="cb7-7"><a aria-label="7"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
+<span id="cb7-8"><a aria-label="8"></a>  )) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="ein-sehr-typischer-schritt-in-der-datenbereinigung-1" class="slide level2 scrollable small">
@@ -753,15 +756,15 @@ Lars Schöbitz
 <section id="summarise-argh" class="slide level2 small" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Summarise? Argh!!!!</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8" data-code-line-numbers="9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb8-2" class="hljs-ln-code"><a></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
-<span id="cb8-3" class="hljs-ln-code"><a></a>    price_glass <span class="sc">==</span> <span class="st">"5-10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb8-4" class="hljs-ln-code"><a></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb8-5" class="hljs-ln-code"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"2chf"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"2"</span>,</span>
-<span id="cb8-6" class="hljs-ln-code"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
-<span id="cb8-7" class="hljs-ln-code"><a></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
-<span id="cb8-8" class="hljs-ln-code"><a></a>  )) <span class="sc">|&gt;</span> </span>
-<span id="cb8-9" class="hljs-ln-code"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass_new, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8" data-code-line-numbers="9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a aria-label="1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb8-2" class="hljs-ln-code"><a aria-label="2"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
+<span id="cb8-3" class="hljs-ln-code"><a aria-label="3"></a>    price_glass <span class="sc">==</span> <span class="st">"5-10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb8-4" class="hljs-ln-code"><a aria-label="4"></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb8-5" class="hljs-ln-code"><a aria-label="5"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"2chf"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"2"</span>,</span>
+<span id="cb8-6" class="hljs-ln-code"><a aria-label="6"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
+<span id="cb8-7" class="hljs-ln-code"><a aria-label="7"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
+<span id="cb8-8" class="hljs-ln-code"><a aria-label="8"></a>  )) <span class="sc">|&gt;</span> </span>
+<span id="cb8-9" class="hljs-ln-code"><a aria-label="9"></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass_new, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   mean_price_glass
@@ -804,16 +807,16 @@ Lars Schöbitz
 <section id="respektiere-deine-daten-typen-1" class="slide level2 smaller" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Respektiere deine Daten Typen!</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11" data-code-line-numbers="9|10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb11-1" class="hljs-ln-code"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb11-2" class="hljs-ln-code"><a></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
-<span id="cb11-3" class="hljs-ln-code"><a></a>    price_glass <span class="sc">==</span> <span class="st">"5-10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb11-4" class="hljs-ln-code"><a></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb11-5" class="hljs-ln-code"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"2chf"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"2"</span>,</span>
-<span id="cb11-6" class="hljs-ln-code"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
-<span id="cb11-7" class="hljs-ln-code"><a></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
-<span id="cb11-8" class="hljs-ln-code"><a></a>  )) <span class="sc">|&gt;</span> </span>
-<span id="cb11-9" class="hljs-ln-code"><a></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">as.numeric</span>(price_glass_new)) <span class="sc">|&gt;</span> </span>
-<span id="cb11-10" class="hljs-ln-code"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass_new, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11" data-code-line-numbers="9|10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb11-1" class="hljs-ln-code"><a aria-label="1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb11-2" class="hljs-ln-code"><a aria-label="2"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
+<span id="cb11-3" class="hljs-ln-code"><a aria-label="3"></a>    price_glass <span class="sc">==</span> <span class="st">"5-10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb11-4" class="hljs-ln-code"><a aria-label="4"></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb11-5" class="hljs-ln-code"><a aria-label="5"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"2chf"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"2"</span>,</span>
+<span id="cb11-6" class="hljs-ln-code"><a aria-label="6"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
+<span id="cb11-7" class="hljs-ln-code"><a aria-label="7"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
+<span id="cb11-8" class="hljs-ln-code"><a aria-label="8"></a>  )) <span class="sc">|&gt;</span> </span>
+<span id="cb11-9" class="hljs-ln-code"><a aria-label="9"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">as.numeric</span>(price_glass_new)) <span class="sc">|&gt;</span> </span>
+<span id="cb11-10" class="hljs-ln-code"><a aria-label="10"></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass_new, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   mean_price_glass
@@ -830,7 +833,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_d230707a" minutes="40" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_76fef2d7" minutes="40" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -840,7 +843,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_1733762c" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_dd5c32bf" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -860,7 +863,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_5a3439ea" minutes="40" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_d421af4a" minutes="40" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -871,7 +874,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_b9cf8546" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_a04c06e2" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -881,7 +884,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_ce8509db" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_451c1239" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -929,11 +932,11 @@ Lars Schöbitz
 <h2>Informationssicherheit</h2>
 <p>Folgender Dateipfad enthält Informationen zum Dateisystem und sollte nicht auf GitHub hochgeladen werden:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">read_csv</span>(<span class="st">"C:/Users/Lars/Documents/projekt-umfrage/daten/umfrage_daten.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a aria-label="1"></a><span class="fu">read_csv</span>(<span class="st">"C:/Users/Lars/Documents/projekt-umfrage/daten/umfrage_daten.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Ein guter Weg dies zu vermeiden ist die Verwendung von relativen Pfaden in Kombination mit der <code>here()</code> Funktion aus dem gleichnamigen R-Paket <code>here</code>. Im RStudio Project / GitHub Repository mit dem Namen <code>projekt-umfrage</code>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"daten/umfrage_daten.csv"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a aria-label="1"></a><span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"daten/umfrage_daten.csv"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="wir-sind-dran-03-gitignore-wir.qmd-docs04-dateipfade.qmd" class="slide level2">
@@ -948,7 +951,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_ad8c09b7" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_fd2b2cec" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -959,7 +962,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_aa09f7e1" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_3ec80683" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -977,7 +980,7 @@ Lars Schöbitz
 <section id="zusatzaufgaben-abgabedatum" class="slide level2">
 <h2>Zusatzaufgaben Abgabedatum</h2>
 <ul>
-<li>Abgabedatum: <span class="highlight-yellow">Mittwoch, 28. Oktober</span></li>
+<li>Abgabedatum: <span class="highlight-yellow">Mittwoch, 10. März</span></li>
 </ul>
 </section></section>
 <section>

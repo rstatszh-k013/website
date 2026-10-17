@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+  <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Lars Schöbitz">
   <title>rstatsZH - Data Science mit R – Mit Text Daten arbeiten &amp; KTZH Corporate Design mit statR</title>
@@ -22,10 +22,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -208,12 +211,12 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Lars Schöbitz 
+Lars Schöbitz
 </div>
 </div>
 </div>
 
-  <p class="date">Nov 5, 2026</p>
+  <p class="date">Mar 18, 2027</p>
 </section>
 <section id="lernziele-für-diese-woche" class="slide level2">
 <h2>Lernziele (für diese Woche)</h2>
@@ -246,9 +249,9 @@ Lars Schöbitz
 <li>Erstellt mit einfachen oder doppelten Anführungszeichen</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>string1 <span class="ot">&lt;-</span> <span class="st">"Dies ist eine Zeichenkette"</span></span>
-<span id="cb1-2"><a></a>string2 <span class="ot">&lt;-</span> <span class="st">'Wenn ich ein "Anführungszeichen" in eine Zeichenkette einfügen </span></span>
-<span id="cb1-3"><a></a><span class="st">            möchte, verwende ich einfache Anführungszeichen'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-label="1"></a>string1 <span class="ot">&lt;-</span> <span class="st">"Dies ist eine Zeichenkette"</span></span>
+<span id="cb1-2"><a aria-label="2"></a>string2 <span class="ot">&lt;-</span> <span class="st">'Wenn ich ein "Anführungszeichen" in eine Zeichenkette einfügen </span></span>
+<span id="cb1-3"><a aria-label="3"></a><span class="st">            möchte, verwende ich einfache Anführungszeichen'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="der-backslash" class="slide level2 smaller">
@@ -256,21 +259,21 @@ Lars Schöbitz
 <div class="fragment">
 <p>Um ein einfaches oder doppeltes Anführungszeichen in einer Zeichenkette zu verwenden, kann <code>\</code>, um es “auszunehmen”:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>double_quote <span class="ot">&lt;-</span> <span class="st">"</span><span class="sc">\"</span><span class="st">"</span> </span>
-<span id="cb2-2"><a></a>single_quote <span class="ot">&lt;-</span> <span class="st">'</span><span class="sc">\'</span><span class="st">'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-label="1"></a>double_quote <span class="ot">&lt;-</span> <span class="st">"</span><span class="sc">\"</span><span class="st">"</span> </span>
+<span id="cb2-2"><a aria-label="2"></a>single_quote <span class="ot">&lt;-</span> <span class="st">'</span><span class="sc">\'</span><span class="st">'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <div class="fragment">
 <p>Falls du ein wörtliches Backslash in deiner Zeichenkette verwenden möchtest, musst du es “ausnehmen”: <code>"\\"</code>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>backslash <span class="ot">&lt;-</span> <span class="st">"</span><span class="sc">\\</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-label="1"></a>backslash <span class="ot">&lt;-</span> <span class="st">"</span><span class="sc">\\</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <div class="fragment">
 <p>Beachte dass die gedruckte Darstellung einer Zeichenkette in der Console nicht identisch mit der Zeichenkette selbst ist:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(single_quote, double_quote, backslash)</span>
-<span id="cb4-2"><a></a>x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(single_quote, double_quote, backslash)</span>
+<span id="cb4-2"><a aria-label="2"></a>x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "'"  "\"" "\\"</code></pre>
 </div>
@@ -279,7 +282,7 @@ Lars Schöbitz
 <div class="fragment">
 <p>Um den Rohinhalt der Zeichenkette zu sehen, verwende <code>str_view()</code></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">str_view</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a><span class="fu">str_view</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] │ '
 [2] │ "
@@ -334,7 +337,7 @@ Lars Schöbitz
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>vornamen</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-label="1"></a>vornamen</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 997,548 × 4
    vorname   geburtsjahr  wert geschlecht
@@ -355,8 +358,8 @@ Lars Schöbitz
 </div><div class="column" style="width:50%;">
 <div class="fragment">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb10-2"><a></a>    <span class="fu">distinct</span>(vorname) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a aria-label="1"></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb10-2"><a aria-label="2"></a>    <span class="fu">distinct</span>(vorname) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 66,911 × 1
    vorname  
@@ -385,7 +388,7 @@ Lars Schöbitz
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>vornamen</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a aria-label="1"></a>vornamen</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 997,548 × 4
    vorname   geburtsjahr  wert geschlecht
@@ -406,8 +409,8 @@ Lars Schöbitz
 </div><div class="column" style="width:50%;">
 <div class="fragment">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb14-2"><a></a>    <span class="fu">count</span>(vorname, <span class="at">wt =</span> wert)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a aria-label="1"></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb14-2"><a aria-label="2"></a>    <span class="fu">count</span>(vorname, <span class="at">wt =</span> wert)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 66,911 × 2
    vorname      n
@@ -435,10 +438,10 @@ Lars Schöbitz
 </div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16" data-code-line-numbers="1-3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb16-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
-<span id="cb16-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb16-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16" data-code-line-numbers="1-3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a aria-label="1"></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb16-2"><a aria-label="2"></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
+<span id="cb16-3"><a aria-label="3"></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-4"><a aria-label="4"></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 3
@@ -467,12 +470,12 @@ Lars Schöbitz
 </div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb18-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
-<span id="cb18-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb18-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
-<span id="cb18-5"><a></a>    <span class="co"># aus dem knitr R-Paket</span></span>
-<span id="cb18-6"><a></a>    <span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a aria-label="1"></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb18-2"><a aria-label="2"></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
+<span id="cb18-3"><a aria-label="3"></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb18-4"><a aria-label="4"></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
+<span id="cb18-5"><a aria-label="5"></a>    <span class="co"># aus dem knitr R-Paket</span></span>
+<span id="cb18-6"><a aria-label="6"></a>    <span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column">
 <div class="cell-output-display">
 <table class="caption-top">
@@ -549,31 +552,31 @@ Lars Schöbitz
 </div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb19-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
-<span id="cb19-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb19-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
-<span id="cb19-5"><a></a>    <span class="co"># aus dem gt R-Paket</span></span>
-<span id="cb19-6"><a></a>    <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a aria-label="1"></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb19-2"><a aria-label="2"></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
+<span id="cb19-3"><a aria-label="3"></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-4"><a aria-label="4"></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-5"><a aria-label="5"></a>    <span class="co"># aus dem gt R-Paket</span></span>
+<span id="cb19-6"><a aria-label="6"></a>    <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column">
 <div class="cell-output-display">
-<div id="rdizlxamof" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rdizlxamof table {
+<div id="qsrkoghnqw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qsrkoghnqw table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rdizlxamof thead, #rdizlxamof tbody, #rdizlxamof tfoot, #rdizlxamof tr, #rdizlxamof td, #rdizlxamof th {
+#qsrkoghnqw thead, #qsrkoghnqw tbody, #qsrkoghnqw tfoot, #qsrkoghnqw tr, #qsrkoghnqw td, #qsrkoghnqw th {
   border-style: none;
 }
 
-#rdizlxamof p {
+#qsrkoghnqw p {
   margin: 0;
   padding: 0;
 }
 
-#rdizlxamof .gt_table {
+#qsrkoghnqw .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -599,12 +602,12 @@ Lars Schöbitz
   border-left-color: #D3D3D3;
 }
 
-#rdizlxamof .gt_caption {
+#qsrkoghnqw .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rdizlxamof .gt_title {
+#qsrkoghnqw .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -616,7 +619,7 @@ Lars Schöbitz
   border-bottom-width: 0;
 }
 
-#rdizlxamof .gt_subtitle {
+#qsrkoghnqw .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -628,7 +631,7 @@ Lars Schöbitz
   border-top-width: 0;
 }
 
-#rdizlxamof .gt_heading {
+#qsrkoghnqw .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -640,13 +643,13 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#rdizlxamof .gt_bottom_border {
+#qsrkoghnqw .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rdizlxamof .gt_col_headings {
+#qsrkoghnqw .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -661,7 +664,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#rdizlxamof .gt_col_heading {
+#qsrkoghnqw .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -681,7 +684,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#rdizlxamof .gt_column_spanner_outer {
+#qsrkoghnqw .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -693,15 +696,15 @@ Lars Schöbitz
   padding-right: 4px;
 }
 
-#rdizlxamof .gt_column_spanner_outer:first-child {
+#qsrkoghnqw .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rdizlxamof .gt_column_spanner_outer:last-child {
+#qsrkoghnqw .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rdizlxamof .gt_column_spanner {
+#qsrkoghnqw .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -713,11 +716,11 @@ Lars Schöbitz
   width: 100%;
 }
 
-#rdizlxamof .gt_spanner_row {
+#qsrkoghnqw .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rdizlxamof .gt_group_heading {
+#qsrkoghnqw .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -743,7 +746,7 @@ Lars Schöbitz
   text-align: left;
 }
 
-#rdizlxamof .gt_empty_group_heading {
+#qsrkoghnqw .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -758,15 +761,15 @@ Lars Schöbitz
   vertical-align: middle;
 }
 
-#rdizlxamof .gt_from_md > :first-child {
+#qsrkoghnqw .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rdizlxamof .gt_from_md > :last-child {
+#qsrkoghnqw .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rdizlxamof .gt_row {
+#qsrkoghnqw .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -785,7 +788,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#rdizlxamof .gt_stub {
+#qsrkoghnqw .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -798,7 +801,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#rdizlxamof .gt_stub_row_group {
+#qsrkoghnqw .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -812,15 +815,15 @@ Lars Schöbitz
   vertical-align: top;
 }
 
-#rdizlxamof .gt_row_group_first td {
+#qsrkoghnqw .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rdizlxamof .gt_row_group_first th {
+#qsrkoghnqw .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rdizlxamof .gt_summary_row {
+#qsrkoghnqw .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -830,16 +833,16 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#rdizlxamof .gt_first_summary_row {
+#qsrkoghnqw .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rdizlxamof .gt_first_summary_row.thick {
+#qsrkoghnqw .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rdizlxamof .gt_last_summary_row {
+#qsrkoghnqw .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -849,7 +852,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#rdizlxamof .gt_grand_summary_row {
+#qsrkoghnqw .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -859,7 +862,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#rdizlxamof .gt_first_grand_summary_row {
+#qsrkoghnqw .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -869,7 +872,7 @@ Lars Schöbitz
   border-top-color: #D3D3D3;
 }
 
-#rdizlxamof .gt_last_grand_summary_row_top {
+#qsrkoghnqw .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -879,11 +882,11 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#rdizlxamof .gt_striped {
+#qsrkoghnqw .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rdizlxamof .gt_table_body {
+#qsrkoghnqw .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -892,7 +895,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#rdizlxamof .gt_footnotes {
+#qsrkoghnqw .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -906,7 +909,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#rdizlxamof .gt_footnote {
+#qsrkoghnqw .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -915,7 +918,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#rdizlxamof .gt_sourcenotes {
+#qsrkoghnqw .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -929,7 +932,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#rdizlxamof .gt_sourcenote {
+#qsrkoghnqw .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -937,72 +940,72 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#rdizlxamof .gt_left {
+#qsrkoghnqw .gt_left {
   text-align: left;
 }
 
-#rdizlxamof .gt_center {
+#qsrkoghnqw .gt_center {
   text-align: center;
 }
 
-#rdizlxamof .gt_right {
+#qsrkoghnqw .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rdizlxamof .gt_font_normal {
+#qsrkoghnqw .gt_font_normal {
   font-weight: normal;
 }
 
-#rdizlxamof .gt_font_bold {
+#qsrkoghnqw .gt_font_bold {
   font-weight: bold;
 }
 
-#rdizlxamof .gt_font_italic {
+#qsrkoghnqw .gt_font_italic {
   font-style: italic;
 }
 
-#rdizlxamof .gt_super {
+#qsrkoghnqw .gt_super {
   font-size: 65%;
 }
 
-#rdizlxamof .gt_footnote_marks {
+#qsrkoghnqw .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rdizlxamof .gt_asterisk {
+#qsrkoghnqw .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rdizlxamof .gt_indent_1 {
+#qsrkoghnqw .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rdizlxamof .gt_indent_2 {
+#qsrkoghnqw .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rdizlxamof .gt_indent_3 {
+#qsrkoghnqw .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rdizlxamof .gt_indent_4 {
+#qsrkoghnqw .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rdizlxamof .gt_indent_5 {
+#qsrkoghnqw .gt_indent_5 {
   text-indent: 25px;
 }
 
-#rdizlxamof .katex-display {
+#qsrkoghnqw .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#rdizlxamof div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#qsrkoghnqw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1083,45 +1086,45 @@ Lars Schöbitz
 </div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20" data-code-line-numbers="7-13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb20-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
-<span id="cb20-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb20-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
-<span id="cb20-5"><a></a>    <span class="co"># nutze gt R-Package für die Darstellung</span></span>
-<span id="cb20-6"><a></a>    <span class="fu">gt</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb20-7"><a></a>    <span class="fu">tab_style</span>(</span>
-<span id="cb20-8"><a></a>        <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"#AFF0ED"</span>),</span>
-<span id="cb20-9"><a></a>        <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
-<span id="cb20-10"><a></a>            <span class="at">columns =</span> <span class="fu">everything</span>(),</span>
-<span id="cb20-11"><a></a>            <span class="at">rows =</span> geschlecht <span class="sc">==</span> <span class="st">"m"</span></span>
-<span id="cb20-12"><a></a>        )</span>
-<span id="cb20-13"><a></a>    ) <span class="sc">|&gt;</span></span>
-<span id="cb20-14"><a></a>    <span class="fu">tab_style</span>(</span>
-<span id="cb20-15"><a></a>        <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"#FFD700"</span>),</span>
-<span id="cb20-16"><a></a>        <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
-<span id="cb20-17"><a></a>            <span class="at">columns =</span> <span class="fu">everything</span>(),</span>
-<span id="cb20-18"><a></a>            <span class="at">rows =</span> geschlecht <span class="sc">==</span> <span class="st">"w"</span></span>
-<span id="cb20-19"><a></a>        )</span>
-<span id="cb20-20"><a></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20" data-code-line-numbers="7-13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a aria-label="1"></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb20-2"><a aria-label="2"></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
+<span id="cb20-3"><a aria-label="3"></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb20-4"><a aria-label="4"></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
+<span id="cb20-5"><a aria-label="5"></a>    <span class="co"># nutze gt R-Package für die Darstellung</span></span>
+<span id="cb20-6"><a aria-label="6"></a>    <span class="fu">gt</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb20-7"><a aria-label="7"></a>    <span class="fu">tab_style</span>(</span>
+<span id="cb20-8"><a aria-label="8"></a>        <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"#AFF0ED"</span>),</span>
+<span id="cb20-9"><a aria-label="9"></a>        <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
+<span id="cb20-10"><a aria-label="10"></a>            <span class="at">columns =</span> <span class="fu">everything</span>(),</span>
+<span id="cb20-11"><a aria-label="11"></a>            <span class="at">rows =</span> geschlecht <span class="sc">==</span> <span class="st">"m"</span></span>
+<span id="cb20-12"><a aria-label="12"></a>        )</span>
+<span id="cb20-13"><a aria-label="13"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb20-14"><a aria-label="14"></a>    <span class="fu">tab_style</span>(</span>
+<span id="cb20-15"><a aria-label="15"></a>        <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"#FFD700"</span>),</span>
+<span id="cb20-16"><a aria-label="16"></a>        <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
+<span id="cb20-17"><a aria-label="17"></a>            <span class="at">columns =</span> <span class="fu">everything</span>(),</span>
+<span id="cb20-18"><a aria-label="18"></a>            <span class="at">rows =</span> geschlecht <span class="sc">==</span> <span class="st">"w"</span></span>
+<span id="cb20-19"><a aria-label="19"></a>        )</span>
+<span id="cb20-20"><a aria-label="20"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column">
 <div class="cell-output-display">
-<div id="wmtzdhanpo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#wmtzdhanpo table {
+<div id="gfsrnuibgn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#gfsrnuibgn table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#wmtzdhanpo thead, #wmtzdhanpo tbody, #wmtzdhanpo tfoot, #wmtzdhanpo tr, #wmtzdhanpo td, #wmtzdhanpo th {
+#gfsrnuibgn thead, #gfsrnuibgn tbody, #gfsrnuibgn tfoot, #gfsrnuibgn tr, #gfsrnuibgn td, #gfsrnuibgn th {
   border-style: none;
 }
 
-#wmtzdhanpo p {
+#gfsrnuibgn p {
   margin: 0;
   padding: 0;
 }
 
-#wmtzdhanpo .gt_table {
+#gfsrnuibgn .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1147,12 +1150,12 @@ Lars Schöbitz
   border-left-color: #D3D3D3;
 }
 
-#wmtzdhanpo .gt_caption {
+#gfsrnuibgn .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#wmtzdhanpo .gt_title {
+#gfsrnuibgn .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1164,7 +1167,7 @@ Lars Schöbitz
   border-bottom-width: 0;
 }
 
-#wmtzdhanpo .gt_subtitle {
+#gfsrnuibgn .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1176,7 +1179,7 @@ Lars Schöbitz
   border-top-width: 0;
 }
 
-#wmtzdhanpo .gt_heading {
+#gfsrnuibgn .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1188,13 +1191,13 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#wmtzdhanpo .gt_bottom_border {
+#gfsrnuibgn .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#wmtzdhanpo .gt_col_headings {
+#gfsrnuibgn .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1209,7 +1212,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#wmtzdhanpo .gt_col_heading {
+#gfsrnuibgn .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1229,7 +1232,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#wmtzdhanpo .gt_column_spanner_outer {
+#gfsrnuibgn .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1241,15 +1244,15 @@ Lars Schöbitz
   padding-right: 4px;
 }
 
-#wmtzdhanpo .gt_column_spanner_outer:first-child {
+#gfsrnuibgn .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wmtzdhanpo .gt_column_spanner_outer:last-child {
+#gfsrnuibgn .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wmtzdhanpo .gt_column_spanner {
+#gfsrnuibgn .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1261,11 +1264,11 @@ Lars Schöbitz
   width: 100%;
 }
 
-#wmtzdhanpo .gt_spanner_row {
+#gfsrnuibgn .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#wmtzdhanpo .gt_group_heading {
+#gfsrnuibgn .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1291,7 +1294,7 @@ Lars Schöbitz
   text-align: left;
 }
 
-#wmtzdhanpo .gt_empty_group_heading {
+#gfsrnuibgn .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1306,15 +1309,15 @@ Lars Schöbitz
   vertical-align: middle;
 }
 
-#wmtzdhanpo .gt_from_md > :first-child {
+#gfsrnuibgn .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wmtzdhanpo .gt_from_md > :last-child {
+#gfsrnuibgn .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wmtzdhanpo .gt_row {
+#gfsrnuibgn .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1333,7 +1336,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#wmtzdhanpo .gt_stub {
+#gfsrnuibgn .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1346,7 +1349,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#wmtzdhanpo .gt_stub_row_group {
+#gfsrnuibgn .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1360,15 +1363,15 @@ Lars Schöbitz
   vertical-align: top;
 }
 
-#wmtzdhanpo .gt_row_group_first td {
+#gfsrnuibgn .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#wmtzdhanpo .gt_row_group_first th {
+#gfsrnuibgn .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#wmtzdhanpo .gt_summary_row {
+#gfsrnuibgn .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1378,16 +1381,16 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#wmtzdhanpo .gt_first_summary_row {
+#gfsrnuibgn .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#wmtzdhanpo .gt_first_summary_row.thick {
+#gfsrnuibgn .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#wmtzdhanpo .gt_last_summary_row {
+#gfsrnuibgn .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1397,7 +1400,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#wmtzdhanpo .gt_grand_summary_row {
+#gfsrnuibgn .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1407,7 +1410,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#wmtzdhanpo .gt_first_grand_summary_row {
+#gfsrnuibgn .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1417,7 +1420,7 @@ Lars Schöbitz
   border-top-color: #D3D3D3;
 }
 
-#wmtzdhanpo .gt_last_grand_summary_row_top {
+#gfsrnuibgn .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1427,11 +1430,11 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#wmtzdhanpo .gt_striped {
+#gfsrnuibgn .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#wmtzdhanpo .gt_table_body {
+#gfsrnuibgn .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1440,7 +1443,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#wmtzdhanpo .gt_footnotes {
+#gfsrnuibgn .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1454,7 +1457,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#wmtzdhanpo .gt_footnote {
+#gfsrnuibgn .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1463,7 +1466,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#wmtzdhanpo .gt_sourcenotes {
+#gfsrnuibgn .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1477,7 +1480,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#wmtzdhanpo .gt_sourcenote {
+#gfsrnuibgn .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1485,72 +1488,72 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#wmtzdhanpo .gt_left {
+#gfsrnuibgn .gt_left {
   text-align: left;
 }
 
-#wmtzdhanpo .gt_center {
+#gfsrnuibgn .gt_center {
   text-align: center;
 }
 
-#wmtzdhanpo .gt_right {
+#gfsrnuibgn .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wmtzdhanpo .gt_font_normal {
+#gfsrnuibgn .gt_font_normal {
   font-weight: normal;
 }
 
-#wmtzdhanpo .gt_font_bold {
+#gfsrnuibgn .gt_font_bold {
   font-weight: bold;
 }
 
-#wmtzdhanpo .gt_font_italic {
+#gfsrnuibgn .gt_font_italic {
   font-style: italic;
 }
 
-#wmtzdhanpo .gt_super {
+#gfsrnuibgn .gt_super {
   font-size: 65%;
 }
 
-#wmtzdhanpo .gt_footnote_marks {
+#gfsrnuibgn .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#wmtzdhanpo .gt_asterisk {
+#gfsrnuibgn .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#wmtzdhanpo .gt_indent_1 {
+#gfsrnuibgn .gt_indent_1 {
   text-indent: 5px;
 }
 
-#wmtzdhanpo .gt_indent_2 {
+#gfsrnuibgn .gt_indent_2 {
   text-indent: 10px;
 }
 
-#wmtzdhanpo .gt_indent_3 {
+#gfsrnuibgn .gt_indent_3 {
   text-indent: 15px;
 }
 
-#wmtzdhanpo .gt_indent_4 {
+#gfsrnuibgn .gt_indent_4 {
   text-indent: 20px;
 }
 
-#wmtzdhanpo .gt_indent_5 {
+#gfsrnuibgn .gt_indent_5 {
   text-indent: 25px;
 }
 
-#wmtzdhanpo .katex-display {
+#gfsrnuibgn .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#wmtzdhanpo div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#gfsrnuibgn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1631,11 +1634,11 @@ Lars Schöbitz
 </div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb21-2"><a></a>    <span class="fu">count</span>(vorname, <span class="at">wt =</span> wert) <span class="sc">|&gt;</span> </span>
-<span id="cb21-3"><a></a>    <span class="fu">mutate</span>(<span class="at">laenge =</span> <span class="fu">str_length</span>(vorname)) <span class="sc">|&gt;</span> </span>
-<span id="cb21-4"><a></a>    <span class="fu">count</span>(laenge) <span class="sc">|&gt;</span> </span>
-<span id="cb21-5"><a></a>    <span class="fu">print</span>(<span class="at">n =</span> <span class="dv">19</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a aria-label="1"></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb21-2"><a aria-label="2"></a>    <span class="fu">count</span>(vorname, <span class="at">wt =</span> wert) <span class="sc">|&gt;</span> </span>
+<span id="cb21-3"><a aria-label="3"></a>    <span class="fu">mutate</span>(<span class="at">laenge =</span> <span class="fu">str_length</span>(vorname)) <span class="sc">|&gt;</span> </span>
+<span id="cb21-4"><a aria-label="4"></a>    <span class="fu">count</span>(laenge) <span class="sc">|&gt;</span> </span>
+<span id="cb21-5"><a aria-label="5"></a>    <span class="fu">print</span>(<span class="at">n =</span> <span class="dv">19</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 19 × 2
@@ -1672,15 +1675,15 @@ Lars Schöbitz
 <p>Frage: Was ist die Verteilung der Vornamenlängen in der Schweiz?</p>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>vornamen_laenge_sum <span class="ot">&lt;-</span> vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb23-2"><a></a>    <span class="fu">count</span>(vorname, <span class="at">wt =</span> wert) <span class="sc">|&gt;</span> </span>
-<span id="cb23-3"><a></a>    <span class="fu">mutate</span>(<span class="at">laenge =</span> <span class="fu">str_length</span>(vorname)) <span class="sc">|&gt;</span> </span>
-<span id="cb23-4"><a></a>    <span class="fu">count</span>(laenge)</span>
-<span id="cb23-5"><a></a></span>
-<span id="cb23-6"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> vornamen_laenge_sum, </span>
-<span id="cb23-7"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> laenge, <span class="at">y =</span> n)) <span class="sc">+</span></span>
-<span id="cb23-8"><a></a>    <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb23-9"><a></a>    <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a aria-label="1"></a>vornamen_laenge_sum <span class="ot">&lt;-</span> vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb23-2"><a aria-label="2"></a>    <span class="fu">count</span>(vorname, <span class="at">wt =</span> wert) <span class="sc">|&gt;</span> </span>
+<span id="cb23-3"><a aria-label="3"></a>    <span class="fu">mutate</span>(<span class="at">laenge =</span> <span class="fu">str_length</span>(vorname)) <span class="sc">|&gt;</span> </span>
+<span id="cb23-4"><a aria-label="4"></a>    <span class="fu">count</span>(laenge)</span>
+<span id="cb23-5"><a aria-label="5"></a></span>
+<span id="cb23-6"><a aria-label="6"></a><span class="fu">ggplot</span>(<span class="at">data =</span> vornamen_laenge_sum, </span>
+<span id="cb23-7"><a aria-label="7"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> laenge, <span class="at">y =</span> n)) <span class="sc">+</span></span>
+<span id="cb23-8"><a aria-label="8"></a>    <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb23-9"><a aria-label="9"></a>    <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
 <img data-src="md-08-text-daten_files/figure-revealjs/unnamed-chunk-18-1.png" width="576" class="r-stretch"><div class="footer">
@@ -1698,7 +1701,7 @@ Lars Schöbitz
 </ol>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_f6c2d590" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_d4de4aca" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -1734,7 +1737,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_5929d09e" minutes="30" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_23e4c152" minutes="30" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -1744,7 +1747,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_78ce7223" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_d7544db2" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -1789,7 +1792,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_466c948c" minutes="30" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_219efe7b" minutes="30" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -1799,7 +1802,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_f9d7c106" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_e17b76fe" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -1819,7 +1822,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_7105fb03" minutes="30" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_8d84f774" minutes="30" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -1830,7 +1833,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_f11eaaee" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_de620ee5" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -1848,7 +1851,7 @@ Lars Schöbitz
 <section id="zusatzaufgaben-abgabedatum" class="slide level2">
 <h2>Zusatzaufgaben Abgabedatum</h2>
 <ul>
-<li>Abgabedatum: <span class="highlight-yellow">Mittwoch, 11. November</span></li>
+<li>Abgabedatum: <span class="highlight-yellow">Mittwoch, 31. März</span></li>
 </ul>
 </section></section>
 <section>

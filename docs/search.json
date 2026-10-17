@@ -4,7 +4,7 @@
     "href": "kalendar.html",
     "title": "Kurskalendar",
     "section": "",
-    "text": "modul\ndatum\ntitel\n\n\n\n\nModul 01\n10 September 2026\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n17 September 2026\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n24 September 2026\nDaten Transformation mit dplyr\n\n\nModul 04\n01 Oktober 2026\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n15 Oktober 2026\nBedingte Anweisungen & Datumswerte & OGD Ressourcen\n\n\nModul 06\n22 Oktober 2026\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n29 Oktober 2026\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n05 November 2026\nMit Text Daten arbeiten & KTZH Corporate Design mit statR\n\n\nModul 09\n12 November 2026\nErstellung von Berichten und Folien mit Quarto\n\n\nModul 10\n19 November 2026\nFunktionen schreiben & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n26 November 2026\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n03 Dezember 2026\nAbschlussveranstaltung",
+    "text": "modul\ndatum\ntitel\n\n\n\n\nKick-off\n14 Januar 2027\nKick-off\n\n\nModul 01\n21 Januar 2027\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n28 Januar 2027\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n04 Februar 2027\nDaten Transformation mit dplyr\n\n\nModul 04\n11 Februar 2027\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n25 Februar 2027\nBedingte Anweisungen & Datumswerte & OGD Ressourcen\n\n\nModul 06\n04 März 2027\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n11 März 2027\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n18 März 2027\nMit Text Daten arbeiten & KTZH Corporate Design mit statR\n\n\nModul 09\n01 April 2027\nErstellung von Berichten und Folien mit Quarto\n\n\nModul 10\n08 April 2027\nFunktionen schreiben & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n15 April 2027\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n22 April 2027\nAbschlussveranstaltung",
     "crumbs": [
       "Kurskalender"
     ]
@@ -24,7 +24,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-wann-findet-dieser-kurs-statt",
     "title": "Vorbereitung - rstatsZH Kurs 013",
     "section": " Wann findet dieser Kurs statt?",
-    "text": "Wann findet dieser Kurs statt?\nWir treffen uns ab 10. September 2026 jeweils von 12:30 bis 15:00 Uhr auf MS Teams. Der Link wird über eine Kalendareinladung verschickt.\nVor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Diese Vorarbeiten stellen sicher, dass wir unsere gemeinsame Zeit auf das Lernen konzentrieren können, anstatt die Infrastruktur einzurichten.",
+    "text": "Wann findet dieser Kurs statt?\nWir treffen uns ab 14. Januar 2027 jeweils von 12:30 bis 15:00 Uhr auf MS Teams. Der Link wird über eine Kalendareinladung verschickt.\nVor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Diese Vorarbeiten stellen sicher, dass wir unsere gemeinsame Zeit auf das Lernen konzentrieren können, anstatt die Infrastruktur einzurichten.",
     "crumbs": [
       "Vorbereitung"
     ]
@@ -34,7 +34,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-was-muss-ich-vor-tag-1-vorbereiten",
     "title": "Vorbereitung - rstatsZH Kurs 013",
     "section": " Was muss ich vor Tag 1 vorbereiten?",
-    "text": "Was muss ich vor Tag 1 vorbereiten?\nBitte erledige alle folgenden Schritte bis Montag, 7. September 2026:\n\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und trete dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R for Data Science.\nSchritt 4: Fülle den Fragebogen aus.",
+    "text": "Was muss ich vor Tag 1 vorbereiten?\nBitte erledige alle folgenden Schritte bis Montag, 11. Januar 2027:\n\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und trete dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R for Data Science.\nSchritt 4: Fülle den Fragebogen aus.",
     "crumbs": [
       "Vorbereitung"
     ]
@@ -77,7 +77,7 @@
     "href": "vorbereitung/04-umfrage.html",
     "title": "Fragebogen",
     "section": "",
-    "text": "Fragebogen\nVielen Dank für die Teilnahme am Kurs “rstatsZH - Data Science mit R”. Der folgende Fragebogen beinhaltet Fragen welche für die Kursverwaltung und für Berichtszwecke genutzt werden. Danke für das Ausfüllen.\nBitte fülle den Fragebogen bis Montag, 7. September 2026 aus.\nFragebogen: https://forms.gle/oRKgrm68UV17vUZ6A",
+    "text": "Fragebogen\nVielen Dank für die Teilnahme am Kurs “rstatsZH - Data Science mit R”. Der folgende Fragebogen beinhaltet Fragen welche für die Kursverwaltung und für Berichtszwecke genutzt werden. Danke für das Ausfüllen.\nBitte fülle den Fragebogen bis Montag, 11. Januar 2027 aus.\nFragebogen: https://forms.gle/oRKgrm68UV17vUZ6A",
     "crumbs": [
       "Vorbereitung",
       "Schritt 4: Umfrage"
@@ -968,7 +968,7 @@
     "href": "folien/md-09-quarto.html#zusatzaufgaben-abgabedatum",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 18. November"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 07. April"
   },
   {
     "objectID": "folien/md-09-quarto.html#danke-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d",
@@ -1150,7 +1150,7 @@
     "href": "folien/md-08-text-daten.html#zusatzaufgaben-abgabedatum",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 11. November"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 31. März"
   },
   {
     "objectID": "folien/md-08-text-daten.html#danke-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d",
@@ -1514,7 +1514,7 @@
     "href": "folien/md-07-daten-formen.html#zusatzaufgaben-abgabedatum",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 04. November"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 17. März"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#danke-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d",
@@ -1556,7 +1556,7 @@
     "href": "folien/md-01-willkommen.html#kurskalendar",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Kurskalendar",
-    "text": "Kurskalendar\n\n\n\n\n\n\n\n\n\n\nmodul\ndatum\ntitel\n\n\n\n\nModul 01\n10 September 2026\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n17 September 2026\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n24 September 2026\nDaten Transformation mit dplyr\n\n\nModul 04\n01 Oktober 2026\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n15 Oktober 2026\nBedingte Anweisungen & Datumswerte & OGD Ressourcen\n\n\nModul 06\n22 Oktober 2026\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n29 Oktober 2026\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n05 November 2026\nMit Text Daten arbeiten & KTZH Corporate Design mit statR\n\n\nModul 09\n12 November 2026\nErstellung von Berichten und Folien mit Quarto\n\n\nModul 10\n19 November 2026\nFunktionen schreiben & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n26 November 2026\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n03 Dezember 2026\nAbschlussveranstaltung"
+    "text": "Kurskalendar\n\n\n\n\n\n\n\n\n\n\nmodul\ndatum\ntitel\n\n\n\n\nKick-off\n14 Januar 2027\nKick-off\n\n\nModul 01\n21 Januar 2027\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n28 Januar 2027\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n04 Februar 2027\nDaten Transformation mit dplyr\n\n\nModul 04\n11 Februar 2027\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n25 Februar 2027\nBedingte Anweisungen & Datumswerte & OGD Ressourcen\n\n\nModul 06\n04 März 2027\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n11 März 2027\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n18 März 2027\nMit Text Daten arbeiten & KTZH Corporate Design mit statR\n\n\nModul 09\n01 April 2027\nErstellung von Berichten und Folien mit Quarto\n\n\nModul 10\n08 April 2027\nFunktionen schreiben & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n15 April 2027\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n22 April 2027\nAbschlussveranstaltung"
   },
   {
     "objectID": "folien/md-01-willkommen.html#kursstruktur",
@@ -1827,7 +1827,7 @@
     "href": "abschlussprojekt/index.html#abgabedatum",
     "title": "Abschlussprojekt",
     "section": "Abgabedatum",
-    "text": "Abgabedatum\nDer Termin für die Einreichung des Berichts ist Donnerstag, 26. November 2026.",
+    "text": "Abgabedatum\nDer Termin für die Einreichung des Berichts ist Donnerstag, 15. April 2027.",
     "crumbs": [
       "Abschlussprojekt"
     ]
@@ -2035,7 +2035,7 @@
     "href": "folien/md-06-daten-typen.html#zusatzaufgaben-abgabedatum",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 28. Oktober"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 10. März"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#danke-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d",
@@ -2217,7 +2217,7 @@
     "href": "folien/md-10-funktionen.html#abschlussveranstaltung",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Abschlussveranstaltung",
-    "text": "Abschlussveranstaltung\n\n2026-12-03\n13:00 bis 15:00\nMS Teams"
+    "text": "Abschlussveranstaltung\n\n2027-04-22\n13:00 bis 15:00\nMS Teams"
   },
   {
     "objectID": "folien/md-10-funktionen.html#raus-aus-posit-cloud",
@@ -2287,7 +2287,7 @@
     "href": "folien/md-10-funktionen.html#zusatzaufgaben-abgabedatum",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 25. November"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 14. April"
   },
   {
     "objectID": "folien/md-10-funktionen.html#danke-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d",
@@ -2539,7 +2539,7 @@
     "href": "folien/md-02-datenvisualisierung.html#zusatzaufgaben-abgabedatum",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 23. September"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 03. Februar"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#danke-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d",
@@ -2721,7 +2721,7 @@
     "href": "folien/md-04-daten-management.html#zusatzaufgaben-abgabedatum",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 14. Oktober"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 24. Februar"
   },
   {
     "objectID": "folien/md-04-daten-management.html#danke-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d",
@@ -2868,7 +2868,7 @@
     "href": "folien/md-03-datentransformation.html#zusatzaufgaben-abgabedatum",
     "title": "Daten Transformation mit dplyr",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 30. September"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 10. Februar"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#danke-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d",
@@ -2973,7 +2973,7 @@
     "href": "folien/md-05-datumswerte.html#zusatzaufgaben-abgabedatum",
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 21. Oktober"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Mittwoch, 03. März"
   },
   {
     "objectID": "folien/md-05-datumswerte.html#danke-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d",
@@ -3535,7 +3535,7 @@
     "href": "module/md-08.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6465203e7d7d-zusatzaufgaben",
     "title": "Modul 8",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nArbeitet weiter an eurem Abschlussprojekt. Die Zusatzaufgabe bleibt die gleiche wie in Modul 7. Bitte erledige die folgende Aufgabe bis 2026-11-11.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
+    "text": "Zusatzaufgaben\nArbeitet weiter an eurem Abschlussprojekt. Die Zusatzaufgabe bleibt die gleiche wie in Modul 7. Bitte erledige die folgende Aufgabe bis 2027-03-31.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
     "crumbs": [
       "Modul 08"
     ]

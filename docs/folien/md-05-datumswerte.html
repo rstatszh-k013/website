@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+  <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Lars Schöbitz">
   <title>rstatsZH - Data Science mit R – Bedingte Anweisungen &amp; Datumswerte &amp; OGD Ressourcen</title>
@@ -22,10 +22,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -142,12 +145,12 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Lars Schöbitz 
+Lars Schöbitz
 </div>
 </div>
 </div>
 
-  <p class="date">Oct 15, 2026</p>
+  <p class="date">Feb 25, 2027</p>
 </section>
 <section id="lernziele-für-diese-woche" class="slide level2">
 <h2>Lernziele (für diese Woche)</h2>
@@ -180,7 +183,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_a79a0c5d" minutes="25" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_5853ca05" minutes="25" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -197,7 +200,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_bd2ae6f4" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_3189adec" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -207,7 +210,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_1d447726" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_45b666c1" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -240,7 +243,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_4da008df" minutes="25" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_5ff7305e" minutes="25" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -257,7 +260,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_4ea023d5" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_f707d7ae" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -267,7 +270,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_b6af847a" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_f00a4a59" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -286,7 +289,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_ce717e75" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_a63d474d" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -297,7 +300,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_65fc7c33" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_6df2181f" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -315,7 +318,7 @@ Lars Schöbitz
 <section id="zusatzaufgaben-abgabedatum" class="slide level2">
 <h2>Zusatzaufgaben Abgabedatum</h2>
 <ul>
-<li>Abgabedatum: <span class="highlight-yellow">Mittwoch, 21. Oktober</span></li>
+<li>Abgabedatum: <span class="highlight-yellow">Mittwoch, 03. März</span></li>
 </ul>
 </section></section>
 <section>
