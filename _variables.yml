@@ -10,54 +10,54 @@ course:
 
 md-01:
   titel: "Willkommen zum Kurs & Werkzeugkiste"
-  date: "2026-09-10"
-  homework-due: "2026-09-16"
+  date: "2027-01-21"
+  homework-due: "2027-01-27"
 
 md-02:
   titel: "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)"
-  date: "2026-09-17"
-  homework-due: "2026-09-23"
+  date: "2027-01-28"
+  homework-due: "2027-02-03"
 
 md-03:
   titel: "Daten Transformation mit `dplyr`"
-  date: "2026-09-24"
-  homework-due: "2026-09-30"
+  date: "2027-02-04"
+  homework-due: "2027-02-10"
 
 md-04:
   titel: "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II"
-  date: "2026-10-01"
-  homework-due: "2026-10-14"
+  date: "2027-02-11"
+  homework-due: "2027-02-24"
 
 md-05:
   titel: "Bedingte Anweisungen & Datumswerte & OGD Ressourcen"
-  date: "2026-10-15"
-  homework-due: "2026-10-21"
+  date: "2027-02-25"
+  homework-due: "2027-03-03"
 
 md-06:
   titel: "Daten Typen & Vektoren & For Loops"
-  date: "2026-10-22"
-  homework-due: "2026-10-28"
+  date: "2027-03-04"
+  homework-due: "2027-03-10"
 
 md-07:
   titel: "Datenformen lang und breit & Daten zusammenfügen"
-  date: "2026-10-29"
-  homework-due: "2026-11-04"
+  date: "2027-03-11"
+  homework-due: "2027-03-17"
 
 md-08:
   titel: "Mit Text Daten arbeiten & KTZH Corporate Design mit statR"
-  date: "2026-11-05"
-  homework-due: "2026-11-11"
+  date: "2027-03-18"
+  homework-due: "2027-03-31"
 
 md-09:
   titel: "Erstellung von Berichten und Folien mit Quarto"
-  date: "2026-11-12"
-  homework-due: "2026-11-18"
+  date: "2027-04-01"
+  homework-due: "2027-04-07"
 
 md-10:
   titel: "Funktionen schreiben & Parameterisierung von Berichten"
-  date: "2026-11-19"
-  homework-due: "2026-11-25"
+  date: "2027-04-08"
+  homework-due: "2027-04-14"
 
 abschlussprojekt:
-  due-date: "2026-11-26"
-  due-date-long: "Donnerstag, 26. November 2026"
+  due-date: "2027-04-15"
+  due-date-long: "Donnerstag, 15. April 2027"

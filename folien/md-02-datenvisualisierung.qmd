@@ -2,7 +2,7 @@
 title: "{{< var md-02.titel >}}"
 subtitle: "{{< var course.long-titel >}}"
 author: "Lars Schöbitz"
-date: "2026-09-17"
+date: "2027-01-28"
 date-format: "MMM D, YYYY"
 format: 
   revealjs: 

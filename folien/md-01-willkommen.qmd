@@ -2,7 +2,7 @@
 title: "{{< var md-01.titel >}}"
 subtitle: "{{< var course.long-titel >}}"
 author: "Lars Schöbitz"
-date: "2026-09-10"
+date: "2027-01-21"
 date-format: "MMM D, YYYY"
 format: 
   revealjs: 
@@ -111,6 +111,7 @@ options(knitr.kable.NA = '')
 #| tbl-colwidths: [20, 20, 60]
 
 readr::read_csv("../data/tbl-00-rstatszh-kursplan.csv") |> 
+  dplyr::arrange(datum) |> 
   dplyr::select(modul, datum, titel) |> 
   dplyr::mutate(datum = format(datum, format = "%d %B %Y")) |> 
   knitr::kable()
