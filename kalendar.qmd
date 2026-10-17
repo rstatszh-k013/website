@@ -19,6 +19,7 @@ options(knitr.kable.NA = '')
 ```{r}
 #| tbl-colwidths: [15, 30, 55]
 readr::read_csv("data/tbl-00-rstatszh-kursplan.csv") |> 
+  dplyr::arrange(datum) |> 
   dplyr::select(modul, datum, titel) |> 
   dplyr::mutate(datum = format(datum, format = "%d %B %Y")) |> 
   knitr::kable()

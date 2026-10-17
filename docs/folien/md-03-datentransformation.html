@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+  <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Lars Schöbitz">
   <title>rstatsZH - Data Science mit R – Daten Transformation mit dplyr</title>
@@ -22,10 +22,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -208,12 +211,12 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Lars Schöbitz 
+Lars Schöbitz
 </div>
 </div>
 </div>
 
-  <p class="date">Sep 24, 2026</p>
+  <p class="date">Feb 4, 2027</p>
 </section>
 <section id="lernziele-für-diese-woche" class="slide level2">
 <h2>Lernziele (für diese Woche)</h2>
@@ -269,10 +272,10 @@ Lars Schöbitz
 <section id="funktionen-argumente" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Funktionen &amp; Argumente</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb1-1" class="hljs-ln-code"><a></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb1-2" class="hljs-ln-code"><a></a></span>
-<span id="cb1-3" class="hljs-ln-code"><a></a><span class="fu">filter</span>(<span class="at">.data =</span> gapminder, </span>
-<span id="cb1-4" class="hljs-ln-code"><a></a>       year <span class="sc">==</span> <span class="dv">2007</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb1-1" class="hljs-ln-code"><a aria-label="1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-2" class="hljs-ln-code"><a aria-label="2"></a></span>
+<span id="cb1-3" class="hljs-ln-code"><a aria-label="3"></a><span class="fu">filter</span>(<span class="at">.data =</span> gapminder, </span>
+<span id="cb1-4" class="hljs-ln-code"><a aria-label="4"></a>       year <span class="sc">==</span> <span class="dv">2007</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <ul>
 <li>Funktion: <code>filter()</code></li>
@@ -283,10 +286,10 @@ Lars Schöbitz
 <section id="objekte" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Objekte</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb2-1" class="hljs-ln-code"><a></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb2-2" class="hljs-ln-code"><a></a></span>
-<span id="cb2-3" class="hljs-ln-code"><a></a>gapminder_2007 <span class="ot">&lt;-</span> <span class="fu">filter</span>(<span class="at">.data =</span> gapminder, </span>
-<span id="cb2-4" class="hljs-ln-code"><a></a>                            year <span class="sc">==</span> <span class="dv">2007</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb2-1" class="hljs-ln-code"><a aria-label="1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb2-2" class="hljs-ln-code"><a aria-label="2"></a></span>
+<span id="cb2-3" class="hljs-ln-code"><a aria-label="3"></a>gapminder_2007 <span class="ot">&lt;-</span> <span class="fu">filter</span>(<span class="at">.data =</span> gapminder, </span>
+<span id="cb2-4" class="hljs-ln-code"><a aria-label="4"></a>                            year <span class="sc">==</span> <span class="dv">2007</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <ul>
 <li>Funktion: <code>filter()</code></li>
@@ -298,10 +301,10 @@ Lars Schöbitz
 <section id="operatoren" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Operatoren</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb3-2" class="hljs-ln-code"><a></a></span>
-<span id="cb3-3" class="hljs-ln-code"><a></a>gapminder_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">|&gt;</span> </span>
-<span id="cb3-4" class="hljs-ln-code"><a></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a aria-label="1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-2" class="hljs-ln-code"><a aria-label="2"></a></span>
+<span id="cb3-3" class="hljs-ln-code"><a aria-label="3"></a>gapminder_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">|&gt;</span> </span>
+<span id="cb3-4" class="hljs-ln-code"><a aria-label="4"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <ul>
 <li>Funktion: <code>filter()</code></li>
@@ -315,16 +318,16 @@ Lars Schöbitz
 <section id="grafik" class="slide level2 smaller" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Grafik</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" data-code-line-numbers="3-4,6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb4-2" class="hljs-ln-code"><a></a></span>
-<span id="cb4-3" class="hljs-ln-code"><a></a>gapminder_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">|&gt;</span> </span>
-<span id="cb4-4" class="hljs-ln-code"><a></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>) </span>
-<span id="cb4-5" class="hljs-ln-code"><a></a></span>
-<span id="cb4-6" class="hljs-ln-code"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007,</span>
-<span id="cb4-7" class="hljs-ln-code"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
-<span id="cb4-8" class="hljs-ln-code"><a></a>                     <span class="at">y =</span> lifeExp,</span>
-<span id="cb4-9" class="hljs-ln-code"><a></a>                     <span class="at">fill =</span> continent)) <span class="sc">+</span></span>
-<span id="cb4-10" class="hljs-ln-code"><a></a>  <span class="fu">geom_boxplot</span>(<span class="at">outlier.shape =</span> <span class="cn">NA</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" data-code-line-numbers="3-4,6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a aria-label="1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb4-2" class="hljs-ln-code"><a aria-label="2"></a></span>
+<span id="cb4-3" class="hljs-ln-code"><a aria-label="3"></a>gapminder_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">|&gt;</span> </span>
+<span id="cb4-4" class="hljs-ln-code"><a aria-label="4"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>) </span>
+<span id="cb4-5" class="hljs-ln-code"><a aria-label="5"></a></span>
+<span id="cb4-6" class="hljs-ln-code"><a aria-label="6"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007,</span>
+<span id="cb4-7" class="hljs-ln-code"><a aria-label="7"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
+<span id="cb4-8" class="hljs-ln-code"><a aria-label="8"></a>                     <span class="at">y =</span> lifeExp,</span>
+<span id="cb4-9" class="hljs-ln-code"><a aria-label="9"></a>                     <span class="at">fill =</span> continent)) <span class="sc">+</span></span>
+<span id="cb4-10" class="hljs-ln-code"><a aria-label="10"></a>  <span class="fu">geom_boxplot</span>(<span class="at">outlier.shape =</span> <span class="cn">NA</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
 <img data-src="md-03-datentransformation_files/figure-revealjs/unnamed-chunk-6-1.png" width="384" class="r-stretch"></section></section>
@@ -336,10 +339,10 @@ Lars Schöbitz
 <section id="daten" class="slide level2 smallest">
 <h2>Daten</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>treibhausgase <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"daten/ktzh-treibhausgase.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-label="1"></a>treibhausgase <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"daten/ktzh-treibhausgase.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">head</span>(treibhausgase)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a><span class="fu">head</span>(treibhausgase)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p><br></p>
 <div class="cell">
@@ -411,7 +414,7 @@ Lars Schöbitz
 <p><br></p>
 <div class="fragment">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">ncol</span>(treibhausgase)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-label="1"></a><span class="fu">ncol</span>(treibhausgase)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 6</code></pre>
 </div>
@@ -420,7 +423,7 @@ Lars Schöbitz
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">nrow</span>(treibhausgase)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a aria-label="1"></a><span class="fu">nrow</span>(treibhausgase)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1980</code></pre>
 </div>
@@ -430,8 +433,8 @@ Lars Schöbitz
 <section id="data" class="slide level2 smaller scrollable">
 <h2>Data</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>treibhausgase <span class="sc">|&gt;</span> </span>
-<span id="cb11-2"><a></a>  <span class="fu">distinct</span>(hauptgruppe, untergruppe)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a aria-label="1"></a>treibhausgase <span class="sc">|&gt;</span> </span>
+<span id="cb11-2"><a aria-label="2"></a>  <span class="fu">distinct</span>(hauptgruppe, untergruppe)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -552,7 +555,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_0cd44025" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_626093d0" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -562,7 +565,7 @@ Lars Schöbitz
 
 <img data-src="img/md-03/get-up-and-move.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_d89a2525" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_8ea9d095" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -582,17 +585,17 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_e66ee6a4" minutes="25" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_ddca4d73" minutes="25" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
 <section id="r-terminologie" class="slide level2">
 <h2>R Terminologie</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb12-2"><a></a></span>
-<span id="cb12-3"><a></a>treibhausgase_verkehr <span class="ot">&lt;-</span> treibhausgase <span class="sc">|&gt;</span> </span>
-<span id="cb12-4"><a></a>    <span class="fu">filter</span>(hauptgruppe <span class="sc">==</span> <span class="st">"Verkehr"</span>, jahr <span class="sc">==</span> <span class="dv">2022</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a aria-label="1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb12-2"><a aria-label="2"></a></span>
+<span id="cb12-3"><a aria-label="3"></a>treibhausgase_verkehr <span class="ot">&lt;-</span> treibhausgase <span class="sc">|&gt;</span> </span>
+<span id="cb12-4"><a aria-label="4"></a>    <span class="fu">filter</span>(hauptgruppe <span class="sc">==</span> <span class="st">"Verkehr"</span>, jahr <span class="sc">==</span> <span class="dv">2022</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <ul>
 <li>Funktion: <code>filter()</code></li>
@@ -620,12 +623,12 @@ Lars Schöbitz
 </ol>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>treibhausgase <span class="sc">|&gt;</span> </span>
-<span id="cb13-2"><a></a>    <span class="fu">filter</span>(hauptgruppe <span class="sc">==</span> <span class="st">"Gebäude"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb13-3"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> jahr, <span class="at">y =</span> emission, <span class="at">color =</span> untergruppe)) <span class="sc">+</span></span>
-<span id="cb13-4"><a></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb13-5"><a></a>    <span class="fu">geom_path</span>() <span class="sc">+</span></span>
-<span id="cb13-6"><a></a>    <span class="fu">scale_color_colorblind</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a aria-label="1"></a>treibhausgase <span class="sc">|&gt;</span> </span>
+<span id="cb13-2"><a aria-label="2"></a>    <span class="fu">filter</span>(hauptgruppe <span class="sc">==</span> <span class="st">"Gebäude"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb13-3"><a aria-label="3"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> jahr, <span class="at">y =</span> emission, <span class="at">color =</span> untergruppe)) <span class="sc">+</span></span>
+<span id="cb13-4"><a aria-label="4"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb13-5"><a aria-label="5"></a>    <span class="fu">geom_path</span>() <span class="sc">+</span></span>
+<span id="cb13-6"><a aria-label="6"></a>    <span class="fu">scale_color_colorblind</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 </section>
@@ -649,7 +652,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_c167a150" minutes="25" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_5c2c15a4" minutes="25" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -659,7 +662,7 @@ Lars Schöbitz
 
 <img data-src="img/md-03/get-up-and-move.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_4205a01d" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_fa657547" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -673,7 +676,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_cc47847c" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_93b10010" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -692,7 +695,7 @@ Lars Schöbitz
 <section id="zusatzaufgaben-abgabedatum" class="slide level2">
 <h2>Zusatzaufgaben Abgabedatum</h2>
 <ul>
-<li>Abgabedatum: <span class="highlight-yellow">Mittwoch, 30. September</span></li>
+<li>Abgabedatum: <span class="highlight-yellow">Mittwoch, 10. Februar</span></li>
 </ul>
 </section></section>
 <section>

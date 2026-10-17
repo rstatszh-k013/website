@@ -8,7 +8,7 @@ metadata-files:
 website:
   page-navigation: true
   title: "rstatsZH - Data Science mit R"
-  description: "Webseite des Kurses für September 2026"
+  description: "Webseite des Kurses für Januar 2027"
   site-url: "https://rstatszh-k013.github.io/website"
   repo-url: "https://github.com/rstatszh-k013/website"
   search: false
